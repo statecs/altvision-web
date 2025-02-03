@@ -14,7 +14,7 @@ const Navigation = () => {
     <header className="flex justify-between items-center p-4 bg-gray-900 border-b border-gray-800">
       <Link to="/" className="flex items-center space-x-2">
         <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-        <span className="font-semibold">Altvision</span>
+        <span className="font-semibold">AltVision</span>
       </Link>
     </header>
   );
@@ -27,14 +27,24 @@ const HomePage = () => (
     <h1 className="text-4xl font-bold mb-8 animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
     Make the web accessible<br />with AI-powered alt text
     </h1>
-    <a 
-        href=""
-        rel="noopener noreferrer"
-        className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium mt-4 animate-slide-up opacity-0"
-        style={{ animationDelay: '0.4s' }}
-      >
-        Download Now Free
-      </a>
+    <div className="mx-2 flex gap-4 justify-center">
+      <a 
+          href="https://wordpress.org/plugins/altvision-ai-alt-text-generator/"
+          rel="noopener noreferrer"
+          className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium mt-4 animate-slide-up opacity-0 hover:bg-blue-700 transition-colors"
+          style={{ animationDelay: '0.4s' }}
+        >
+          Wordpress Plugin
+        </a>
+        <a 
+          href="https://chromewebstore.google.com/detail/altvision/iogpbgncdhijknmmhkllijfaioecfcoa"
+          rel="noopener noreferrer"
+          className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium mt-4 animate-slide-up opacity-0 hover:bg-blue-700 transition-colors"
+          style={{ animationDelay: '0.4s' }}
+        >
+          Chrome Extension
+        </a>
+      </div>
     
     <div className="mt-12 relative w-screen md:w-full -mx-4 md:mx-auto h-[600px] md:h-[800px]"> {/* Full screen width only on mobile */}
       <div 

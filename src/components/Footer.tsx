@@ -11,14 +11,24 @@ const Footer = () => {
             <h2 className="text-2xl font-bold text-white mb-4">
               Download Altvision
             </h2>
-            <a 
-              href=""
-              rel="noopener noreferrer"
-              className="bg-black text-white px-6 py-3 rounded-full inline-flex items-center gap-2 hover:bg-gray-800 transition-colors"
-            >
-              Download Free
-              <ArrowRight className="w-4 h-4" />
-            </a>
+            <div className="flex flex-col gap-4 items-start">
+              <a 
+                href="https://wordpress.org/plugins/altvision-ai-alt-text-generator/"
+                rel="noopener noreferrer"
+                className="bg-black text-white px-6 py-3 rounded-full inline-flex items-center gap-2 hover:bg-gray-800 transition-colors w-fit"
+              >
+                Download Wordpress Plugin
+                <ArrowRight className="w-4 h-4" />
+              </a>
+              <a 
+                href="https://chromewebstore.google.com/detail/altvision/iogpbgncdhijknmmhkllijfaioecfcoa"
+                rel="noopener noreferrer"
+                className="bg-black text-white px-6 py-3 rounded-full inline-flex items-center gap-2 hover:bg-gray-800 transition-colors w-fit"
+              >
+                Download Chrome Extension
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
           </div>
 
           {/* Right side - Links */}
