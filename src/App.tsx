@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import TermsOfUse from './components/TermsOfUse';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import placeholder from './images/placeholder.png';
+import placeholder1 from './images/placeholder-1.png';
 
 // Navigation Component
 const Navigation = () => {
@@ -21,7 +22,23 @@ const Navigation = () => {
 };
 
 // Home Page
-const HomePage = () => (
+const HomePage = () => {
+  const [currentImage, setCurrentImage] = React.useState(0);
+  const images = [placeholder, placeholder1];
+
+  const [isPaused, setIsPaused] = React.useState(false);
+
+  React.useEffect(() => {
+    if (isPaused) return; // Don't start the timer if paused
+
+    const timer = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [isPaused, images.length]); // Add both dependenciesncies
+
+  return (
   <div className="container mx-auto px-4">
   <section className="pt-16 text-center">
     <h1 className="text-4xl font-bold mb-8 animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
@@ -46,16 +63,25 @@ const HomePage = () => (
         </a>
       </div>
     
-    <div className="mt-12 relative w-screen md:w-full -mx-4 md:mx-auto h-[600px] md:h-[800px]"> {/* Full screen width only on mobile */}
+      <div className="mt-12 relative w-screen md:w-full -mx-4 md:mx-auto h-[600px] md:h-[800px]">
       <div 
-        className="h-full animate-slide-up opacity-0 md:p-4 md:max-w-[1200px] md:mx-auto" 
+        className="h-full animate-slide-up opacity-0 md:p-4 md:max-w-[1200px] md:mx-auto relative" 
         style={{ animationDelay: '0.6s' }}
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
       >
-        <img 
-          src={placeholder} 
-          alt="App screenshot"
-          className="w-full h-full object-cover rounded-none md:rounded-2xl" 
-        />
+        {[placeholder, placeholder1].map((image, index) => (
+          <img 
+            key={index}
+            src={image} 
+            alt="App screenshot"
+            className={`
+              absolute top-0 left-0 w-full h-full object-cover rounded-none md:rounded-2xl
+              transition-opacity duration-1000
+              ${index === currentImage ? 'opacity-100' : 'opacity-0'}
+            `}
+          />
+        ))}
       </div>
     </div>
   </section>
@@ -82,7 +108,8 @@ const HomePage = () => (
    
     <Footer />
   </div>
-);
+  )
+};
 
 // Terms Page
 const TermsPage = () => (
