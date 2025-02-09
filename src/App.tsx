@@ -86,23 +86,55 @@ const HomePage = () => {
     </div>
   </section>
 
-  <section className="pb-16 mt-16"> {/* Changed py-16 to py-32 and added mt-16 */}
-      <div className="flex flex-col md:flex-row justify-center md:space-x-8 space-y-8 md:space-y-0 mb-8 items-center">
-        <h1 className="text-3xl md:text-4xl font-bold text-center md:text-left animate-slide-up opacity-0" style={{ animationDelay: '0.8s' }}>
-        Empowering creators to build<br/>a more inclusive web experience
-        </h1>
-        <div className="flex gap-8 md:gap-12 animate-slide-up opacity-0" style={{ animationDelay: '1s' }}>
-          <div className="text-center">
-            <div className="text-blue-400 text-4xl md:text-5xl font-bold">1k+</div>
-            <div className="text-gray-400 mt-2">Images processed</div>
+  <section className="py-16">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-lg text-gray-300 mb-8 animate-slide-up opacity-0" style={{ animationDelay: '0.6s' }}>
+            AltVision automatically generates precise alt text for your images by analyzing both the image and its surrounding context. The plugin considers headings, paragraphs, and captions near the image to create highly relevant descriptions. Stop spending hours writing manual descriptions – let AI do the heavy lifting!
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mt-16">
+          <div className="space-y-8 animate-slide-up opacity-0" style={{ animationDelay: '0.8s' }}>
+            <h2 className="text-2xl font-bold text-blue-400">WordPress Plugin Features</h2>
+            <ul className="space-y-4 text-gray-300">
+              <li className="flex items-start">
+                <span className="mr-2">🎯</span>
+                <span>One-click Generation: Generate intelligent alt text instantly</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">🔌</span>
+                <span>WordPress Ready: Seamless WordPress and Gutenberg integration</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">🎨</span>
+                <span>Format Support: Works with JPG, PNG, WebP, and more</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">🔒</span>
+                <span>Accessibility First: WCAG 2.1 compliance support</span>
+              </li>
+            </ul>
           </div>
-          <div className="text-center">
-            <div className="text-blue-400 text-4xl md:text-5xl font-bold">4.9</div>
-            <div className="text-gray-400 mt-2">Rating out of 5</div>
+
+          <div className="space-y-8 animate-slide-up opacity-0" style={{ animationDelay: '1s' }}>
+            <h2 className="text-2xl font-bold text-blue-400">Chrome Extension Features</h2>
+            <ul className="space-y-4 text-gray-300">
+              <li className="flex items-start">
+                <span className="mr-2">🔍</span>
+                <span>Alt Text Detection: Find and highlight images that need attention</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">🧠</span>
+                <span>Context-Aware: Create descriptive and accurate alternative texts using state-of-the-art AI</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">🌍</span>
+                <span>Multiple Languages: Available in English and Swedish</span>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
 
    
