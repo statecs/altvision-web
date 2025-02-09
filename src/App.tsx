@@ -40,7 +40,7 @@ const HomePage = () => {
 
   return (
   <div className="container mx-auto px-4">
-  <section className="pt-16 text-center">
+  <section className="pt-16 text-center" aria-label="Hero section">
     <h1 className="text-4xl font-bold mb-8 animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
     Make the web accessible<br />with AI-powered alt text
     </h1>
