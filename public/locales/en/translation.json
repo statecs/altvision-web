@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "wordpressPlugin": "WordPress Plugin",
+    "chromeExtension": "Chrome Extension"
+  },
+  "home": {
+    "hero": {
+      "title": "Make the web accessible",
+      "titleHighlight": "with AI-powered alt text",
+      "wpButton": "WordPress Plugin",
+      "chromeButton": "Chrome Extension",
+      "imageAlt": "AltVision App Screenshot"
+    },
+    "description": "AltVision automatically generates precise alt text for your images by analyzing both the image and its surrounding context. The plugin considers headings, paragraphs, and captions near the image to create highly relevant descriptions. Stop spending hours writing manual descriptions – let AI do the heavy lifting!",
+    "wordpress": {
+      "title": "WordPress Plugin Features",
+      "oneClick": "One-click Generation: Generate intelligent alt text instantly",
+      "wpReady": "WordPress Ready: Seamless WordPress and Gutenberg integration",
+      "formatSupport": "Format Support: Works with JPG, PNG, WebP, and more",
+      "accessibility": "Accessibility First: WCAG 2.1 compliance support"
+    },
+    "chrome": {
+      "title": "Chrome Extension Features",
+      "altTextDetection": "Alt Text Detection: Find and highlight images that need attention",
+      "contextAware": "Context-Aware: Create descriptive and accurate alternative texts using state-of-the-art AI",
+      "multipleLanguages": "Multiple Languages: Available in English and Swedish"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Download AltVision",
+    "downloadWP": "Download WordPress Plugin",
+    "downloadChrome": "Download Chrome Extension",
+    "termsOfUse": "Terms of use",
+    "privacyPolicy": "Privacy Policy",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: February 1, 2025"
+  },
+  "terms": {
+    "title": "Terms of Use"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry"
+  }
+}

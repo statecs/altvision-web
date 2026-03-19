@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "wordpressPlugin": "Plugin de WordPress",
+    "chromeExtension": "Extensión de Chrome"
+  },
+  "home": {
+    "hero": {
+      "title": "Haz la web accesible",
+      "titleHighlight": "con texto alternativo impulsado por IA",
+      "wpButton": "Plugin de WordPress",
+      "chromeButton": "Extensión de Chrome",
+      "imageAlt": "Captura de pantalla de AltVision"
+    },
+    "description": "AltVision genera automáticamente texto alternativo preciso para tus imágenes analizando tanto la imagen como su contexto circundante. El plugin considera encabezados, párrafos y pies de foto cercanos a la imagen para crear descripciones altamente relevantes. ¡Deja de pasar horas escribiendo descripciones manuales y deja que la IA haga el trabajo pesado!",
+    "wordpress": {
+      "title": "Características del Plugin de WordPress",
+      "oneClick": "Generación con un clic: Genera texto alternativo inteligente al instante",
+      "wpReady": "Listo para WordPress: Integración perfecta con WordPress y Gutenberg",
+      "formatSupport": "Compatibilidad de formatos: Funciona con JPG, PNG, WebP y más",
+      "accessibility": "Accesibilidad primero: Soporte para cumplimiento con WCAG 2.1"
+    },
+    "chrome": {
+      "title": "Características de la Extensión de Chrome",
+      "altTextDetection": "Detección de texto alternativo: Encuentra y resalta imágenes que necesitan atención",
+      "contextAware": "Sensible al contexto: Crea textos alternativos descriptivos y precisos usando IA de vanguardia",
+      "multipleLanguages": "Múltiples idiomas: Disponible en inglés y sueco"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Descargar AltVision",
+    "downloadWP": "Descargar Plugin de WordPress",
+    "downloadChrome": "Descargar Extensión de Chrome",
+    "termsOfUse": "Términos de uso",
+    "privacyPolicy": "Política de privacidad",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: 1 de febrero de 2025"
+  },
+  "terms": {
+    "title": "Términos de Uso"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "retry": "Reintentar"
+  }
+}

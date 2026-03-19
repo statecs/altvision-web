@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "WordPress-laajennus", "chromeExtension": "Chrome-laajennus" },
+  "home": {
+    "hero": {
+      "title": "Tee verkosta saavutettava",
+      "titleHighlight": "tekoälypohjaisella vaihtoehtoistekstillä",
+      "wpButton": "WordPress-laajennus",
+      "chromeButton": "Chrome-laajennus",
+      "imageAlt": "AltVision-sovelluksen kuvakaappaus"
+    },
+    "description": "AltVision luo automaattisesti tarkan vaihtoehtoistekstin kuvillesi analysoimalla sekä kuvan että sen ympäristön kontekstin. Laajennus ottaa huomioon kuvan lähellä olevat otsikot, kappaleet ja kuvatekstit luodakseen erittäin relevantteja kuvauksia. Lopeta tuntien käyttäminen manuaalisten kuvausten kirjoittamiseen – anna tekoälyn tehdä raskaat työt!",
+    "wordpress": {
+      "title": "WordPress-laajennuksen Ominaisuudet",
+      "oneClick": "Yhden napsautuksen luonti: Luo älykäs vaihtoehtoisteksti välittömästi",
+      "wpReady": "WordPress-valmis: Saumaton integrointi WordPressin ja Gutenbergin kanssa",
+      "formatSupport": "Muototuki: Toimii JPG-, PNG-, WebP- ja muiden formaattien kanssa",
+      "accessibility": "Saavutettavuus ensin: WCAG 2.1 -vaatimustenmukaisuustuki"
+    },
+    "chrome": {
+      "title": "Chrome-laajennuksen Ominaisuudet",
+      "altTextDetection": "Vaihtoehtoistekstin tunnistus: Löydä ja korosta kuvia, jotka tarvitsevat huomiota",
+      "contextAware": "Kontekstiherkkä: Luo kuvaavia ja tarkkoja vaihtoehtoistekstejä huippuluokan tekoälyn avulla",
+      "multipleLanguages": "Useita kieliä: Saatavilla englanniksi ja ruotsiksi"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Lataa AltVision",
+    "downloadWP": "Lataa WordPress-laajennus",
+    "downloadChrome": "Lataa Chrome-laajennus",
+    "termsOfUse": "Käyttöehdot",
+    "privacyPolicy": "Tietosuojakäytäntö",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "Tietosuojakäytäntö", "lastUpdated": "Viimeksi päivitetty: 1. helmikuuta 2025" },
+  "terms": { "title": "Käyttöehdot" },
+  "common": { "loading": "Ladataan...", "error": "Virhe", "retry": "Yritä uudelleen" }
+}

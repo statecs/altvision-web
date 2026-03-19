@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "Plugin WordPress", "chromeExtension": "Επέκταση Chrome" },
+  "home": {
+    "hero": {
+      "title": "Κάντε τον ιστό προσβάσιμο",
+      "titleHighlight": "με εναλλακτικό κείμενο από AI",
+      "wpButton": "Plugin WordPress",
+      "chromeButton": "Επέκταση Chrome",
+      "imageAlt": "Στιγμιότυπο οθόνης εφαρμογής AltVision"
+    },
+    "description": "Το AltVision δημιουργεί αυτόματα ακριβές εναλλακτικό κείμενο για τις εικόνες σας αναλύοντας τόσο την εικόνα όσο και το περιβάλλον της. Το plugin λαμβάνει υπόψη τίτλους, παραγράφους και λεζάντες κοντά στην εικόνα για να δημιουργήσει εξαιρετικά σχετικές περιγραφές. Σταματήστε να αφιερώνετε ώρες στη χειροκίνητη συγγραφή περιγραφών – αφήστε το AI να κάνει τη βαριά δουλειά!",
+    "wordpress": {
+      "title": "Χαρακτηριστικά Plugin WordPress",
+      "oneClick": "Δημιουργία με ένα κλικ: Δημιουργήστε έξυπνο εναλλακτικό κείμενο άμεσα",
+      "wpReady": "Έτοιμο για WordPress: Απρόσκοπτη ενσωμάτωση με WordPress και Gutenberg",
+      "formatSupport": "Υποστήριξη μορφών: Λειτουργεί με JPG, PNG, WebP και άλλα",
+      "accessibility": "Προσβασιμότητα πρώτα: Υποστήριξη συμμόρφωσης WCAG 2.1"
+    },
+    "chrome": {
+      "title": "Χαρακτηριστικά Επέκτασης Chrome",
+      "altTextDetection": "Ανίχνευση εναλλακτικού κειμένου: Εντοπίστε και επισημάνετε εικόνες που χρειάζονται προσοχή",
+      "contextAware": "Ευαίσθητο στο πλαίσιο: Δημιουργήστε περιγραφικά και ακριβή εναλλακτικά κείμενα με τεχνολογία AI αιχμής",
+      "multipleLanguages": "Πολλές γλώσσες: Διαθέσιμο στα αγγλικά και σουηδικά"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Λήψη AltVision",
+    "downloadWP": "Λήψη Plugin WordPress",
+    "downloadChrome": "Λήψη Επέκτασης Chrome",
+    "termsOfUse": "Όροι χρήσης",
+    "privacyPolicy": "Πολιτική απορρήτου",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "Πολιτική Απορρήτου", "lastUpdated": "Τελευταία ενημέρωση: 1 Φεβρουαρίου 2025" },
+  "terms": { "title": "Όροι Χρήσης" },
+  "common": { "loading": "Φόρτωση...", "error": "Σφάλμα", "retry": "Επανάληψη" }
+}

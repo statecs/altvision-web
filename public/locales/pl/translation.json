@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "Wtyczka WordPress", "chromeExtension": "Rozszerzenie Chrome" },
+  "home": {
+    "hero": {
+      "title": "Spraw, by internet był dostępny",
+      "titleHighlight": "dzięki tekstowi alt opartemu na AI",
+      "wpButton": "Wtyczka WordPress",
+      "chromeButton": "Rozszerzenie Chrome",
+      "imageAlt": "Zrzut ekranu aplikacji AltVision"
+    },
+    "description": "AltVision automatycznie generuje precyzyjny tekst alternatywny dla Twoich obrazów, analizując zarówno obraz, jak i jego otaczający kontekst. Wtyczka bierze pod uwagę nagłówki, akapity i podpisy w pobliżu obrazu, aby tworzyć wysoce trafne opisy. Przestań spędzać godziny na pisaniu opisów ręcznie – pozwól AI wykonać ciężką pracę!",
+    "wordpress": {
+      "title": "Funkcje Wtyczki WordPress",
+      "oneClick": "Generowanie jednym kliknięciem: Natychmiast generuj inteligentny tekst alternatywny",
+      "wpReady": "Gotowy na WordPress: Bezproblemowa integracja z WordPress i Gutenbergiem",
+      "formatSupport": "Obsługa formatów: Działa z JPG, PNG, WebP i innymi",
+      "accessibility": "Dostępność na pierwszym miejscu: Wsparcie zgodności z WCAG 2.1"
+    },
+    "chrome": {
+      "title": "Funkcje Rozszerzenia Chrome",
+      "altTextDetection": "Wykrywanie tekstu alt: Znajdź i wyróżnij obrazy wymagające uwagi",
+      "contextAware": "Świadomy kontekstu: Twórz opisowe i precyzyjne teksty alternatywne przy użyciu najnowocześniejszej AI",
+      "multipleLanguages": "Wiele języków: Dostępne w języku angielskim i szwedzkim"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Pobierz AltVision",
+    "downloadWP": "Pobierz Wtyczkę WordPress",
+    "downloadChrome": "Pobierz Rozszerzenie Chrome",
+    "termsOfUse": "Warunki użytkowania",
+    "privacyPolicy": "Polityka prywatności",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "Polityka Prywatności", "lastUpdated": "Ostatnia aktualizacja: 1 lutego 2025" },
+  "terms": { "title": "Warunki Użytkowania" },
+  "common": { "loading": "Ładowanie...", "error": "Błąd", "retry": "Spróbuj ponownie" }
+}

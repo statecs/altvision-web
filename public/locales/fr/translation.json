@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "wordpressPlugin": "Plugin WordPress",
+    "chromeExtension": "Extension Chrome"
+  },
+  "home": {
+    "hero": {
+      "title": "Rendez le web accessible",
+      "titleHighlight": "avec du texte alternatif alimenté par l'IA",
+      "wpButton": "Plugin WordPress",
+      "chromeButton": "Extension Chrome",
+      "imageAlt": "Capture d'écran de AltVision"
+    },
+    "description": "AltVision génère automatiquement un texte alternatif précis pour vos images en analysant à la fois l'image et son contexte environnant. Le plugin tient compte des titres, des paragraphes et des légendes proches de l'image pour créer des descriptions très pertinentes. Arrêtez de passer des heures à rédiger des descriptions manuelles – laissez l'IA faire le gros du travail !",
+    "wordpress": {
+      "title": "Fonctionnalités du Plugin WordPress",
+      "oneClick": "Génération en un clic : Générez du texte alternatif intelligent instantanément",
+      "wpReady": "Prêt pour WordPress : Intégration transparente avec WordPress et Gutenberg",
+      "formatSupport": "Support de format : Fonctionne avec JPG, PNG, WebP et plus",
+      "accessibility": "Accessibilité d'abord : Support de conformité WCAG 2.1"
+    },
+    "chrome": {
+      "title": "Fonctionnalités de l'Extension Chrome",
+      "altTextDetection": "Détection de texte alternatif : Trouvez et mettez en évidence les images qui nécessitent attention",
+      "contextAware": "Sensible au contexte : Créez des textes alternatifs descriptifs et précis grâce à une IA de pointe",
+      "multipleLanguages": "Plusieurs langues : Disponible en anglais et en suédois"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Télécharger AltVision",
+    "downloadWP": "Télécharger le Plugin WordPress",
+    "downloadChrome": "Télécharger l'Extension Chrome",
+    "termsOfUse": "Conditions d'utilisation",
+    "privacyPolicy": "Politique de confidentialité",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour : 1er février 2025"
+  },
+  "terms": {
+    "title": "Conditions d'Utilisation"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "retry": "Réessayer"
+  }
+}

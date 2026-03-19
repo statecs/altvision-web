@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "WordPress Plugin", "chromeExtension": "Rozšíření pro Chrome" },
+  "home": {
+    "hero": {
+      "title": "Zpřístupněte web všem",
+      "titleHighlight": "s AI-generovaným alternativním textem",
+      "wpButton": "WordPress Plugin",
+      "chromeButton": "Rozšíření pro Chrome",
+      "imageAlt": "Screenshot aplikace AltVision"
+    },
+    "description": "AltVision automaticky generuje přesný alternativní text pro vaše obrázky analýzou samotného obrázku i jeho okolního kontextu. Plugin bere v úvahu nadpisy, odstavce a popisky v blízkosti obrázku, aby vytvořil vysoce relevantní popisy. Přestaňte trávit hodiny ručním psaním popisů – nechte AI dělat tu těžkou práci!",
+    "wordpress": {
+      "title": "Funkce WordPress Pluginu",
+      "oneClick": "Generování jedním kliknutím: Okamžitě generujte inteligentní alternativní text",
+      "wpReady": "Připraveno pro WordPress: Bezproblémová integrace s WordPress a Gutenbergem",
+      "formatSupport": "Podpora formátů: Funguje s JPG, PNG, WebP a dalšími",
+      "accessibility": "Přístupnost na prvním místě: Podpora shody s WCAG 2.1"
+    },
+    "chrome": {
+      "title": "Funkce Rozšíření pro Chrome",
+      "altTextDetection": "Detekce alternativního textu: Najděte a zvýrazněte obrázky, které potřebují pozornost",
+      "contextAware": "Kontextově citlivé: Vytvářejte popisné a přesné alternativní texty pomocí nejmodernější AI",
+      "multipleLanguages": "Více jazyků: Dostupné v angličtině a švédštině"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Stáhnout AltVision",
+    "downloadWP": "Stáhnout WordPress Plugin",
+    "downloadChrome": "Stáhnout Rozšíření pro Chrome",
+    "termsOfUse": "Podmínky použití",
+    "privacyPolicy": "Zásady ochrany osobních údajů",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "Zásady Ochrany Osobních Údajů", "lastUpdated": "Poslední aktualizace: 1. února 2025" },
+  "terms": { "title": "Podmínky Použití" },
+  "common": { "loading": "Načítání...", "error": "Chyba", "retry": "Zkusit znovu" }
+}

@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "WordPress-plugin", "chromeExtension": "Chrome-utvidelse" },
+  "home": {
+    "hero": {
+      "title": "Gjør nettet tilgjengelig",
+      "titleHighlight": "med AI-drevet alternativ tekst",
+      "wpButton": "WordPress-plugin",
+      "chromeButton": "Chrome-utvidelse",
+      "imageAlt": "Skjermbilde av AltVision-appen"
+    },
+    "description": "AltVision genererer automatisk presis alternativ tekst for bildene dine ved å analysere både bildet og dets omgivende kontekst. Plugin-en tar hensyn til overskrifter, avsnitt og bildetekster i nærheten av bildet for å lage svært relevante beskrivelser. Slutt å bruke timer på å skrive manuelle beskrivelser – la AI gjøre det tunge løftet!",
+    "wordpress": {
+      "title": "WordPress-plugin Funksjoner",
+      "oneClick": "Generering med ett klikk: Generer intelligent alternativ tekst umiddelbart",
+      "wpReady": "WordPress-klar: Sømløs integrasjon med WordPress og Gutenberg",
+      "formatSupport": "Formatstøtte: Fungerer med JPG, PNG, WebP og mer",
+      "accessibility": "Tilgjengelighet først: Støtte for WCAG 2.1-etterlevelse"
+    },
+    "chrome": {
+      "title": "Chrome-utvidelse Funksjoner",
+      "altTextDetection": "Alternativ tekstdeteksjon: Finn og fremhev bilder som trenger oppmerksomhet",
+      "contextAware": "Kontekstbevisst: Lag beskrivende og nøyaktige alternativtekster ved hjelp av banebrytende AI",
+      "multipleLanguages": "Flere språk: Tilgjengelig på engelsk og svensk"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Last ned AltVision",
+    "downloadWP": "Last ned WordPress-plugin",
+    "downloadChrome": "Last ned Chrome-utvidelse",
+    "termsOfUse": "Bruksvilkår",
+    "privacyPolicy": "Personvernpolicy",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "Personvernpolicy", "lastUpdated": "Sist oppdatert: 1. februar 2025" },
+  "terms": { "title": "Bruksvilkår" },
+  "common": { "loading": "Laster...", "error": "Feil", "retry": "Prøv igjen" }
+}

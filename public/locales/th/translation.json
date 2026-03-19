@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "ปลั๊กอิน WordPress", "chromeExtension": "ส่วนขยาย Chrome" },
+  "home": {
+    "hero": {
+      "title": "ทำให้เว็บเข้าถึงได้สำหรับทุกคน",
+      "titleHighlight": "ด้วย alt text ที่ขับเคลื่อนด้วย AI",
+      "wpButton": "ปลั๊กอิน WordPress",
+      "chromeButton": "ส่วนขยาย Chrome",
+      "imageAlt": "ภาพหน้าจอแอป AltVision"
+    },
+    "description": "AltVision สร้าง alt text ที่แม่นยำสำหรับรูปภาพของคุณโดยอัตโนมัติ ด้วยการวิเคราะห์ทั้งรูปภาพและบริบทโดยรอบ ปลั๊กอินพิจารณาหัวข้อ ย่อหน้า และคำบรรยายใกล้รูปภาพเพื่อสร้างคำอธิบายที่มีความเกี่ยวข้องสูง หยุดเสียเวลาหลายชั่วโมงในการเขียนคำอธิบายด้วยตนเอง – ให้ AI ทำงานหนักแทน!",
+    "wordpress": {
+      "title": "คุณสมบัติปลั๊กอิน WordPress",
+      "oneClick": "สร้างด้วยคลิกเดียว: สร้าง alt text อัจฉริยะได้ทันที",
+      "wpReady": "พร้อมสำหรับ WordPress: การผสานรวมอย่างราบรื่นกับ WordPress และ Gutenberg",
+      "formatSupport": "รองรับรูปแบบ: ทำงานกับ JPG, PNG, WebP และอื่นๆ",
+      "accessibility": "การเข้าถึงเป็นอันดับแรก: การสนับสนุนการปฏิบัติตาม WCAG 2.1"
+    },
+    "chrome": {
+      "title": "คุณสมบัติส่วนขยาย Chrome",
+      "altTextDetection": "การตรวจจับ alt text: ค้นหาและเน้นรูปภาพที่ต้องการความสนใจ",
+      "contextAware": "รับรู้บริบท: สร้าง alt text ที่บรรยายและแม่นยำโดยใช้ AI ล้ำสมัย",
+      "multipleLanguages": "หลายภาษา: มีให้ในภาษาอังกฤษและสวีเดน"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "ดาวน์โหลด AltVision",
+    "downloadWP": "ดาวน์โหลดปลั๊กอิน WordPress",
+    "downloadChrome": "ดาวน์โหลดส่วนขยาย Chrome",
+    "termsOfUse": "เงื่อนไขการใช้งาน",
+    "privacyPolicy": "นโยบายความเป็นส่วนตัว",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "นโยบายความเป็นส่วนตัว", "lastUpdated": "อัปเดตล่าสุด: 1 กุมภาพันธ์ 2568" },
+  "terms": { "title": "เงื่อนไขการใช้งาน" },
+  "common": { "loading": "กำลังโหลด...", "error": "ข้อผิดพลาด", "retry": "ลองอีกครั้ง" }
+}

@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "WordPress 플러그인", "chromeExtension": "Chrome 확장 프로그램" },
+  "home": {
+    "hero": {
+      "title": "웹을 모두에게 접근 가능하게",
+      "titleHighlight": "AI 기반 대체 텍스트로",
+      "wpButton": "WordPress 플러그인",
+      "chromeButton": "Chrome 확장 프로그램",
+      "imageAlt": "AltVision 앱 스크린샷"
+    },
+    "description": "AltVision은 이미지와 주변 컨텍스트를 분석하여 이미지에 대한 정확한 대체 텍스트를 자동으로 생성합니다. 플러그인은 이미지 근처의 제목, 단락, 캡션을 고려하여 매우 관련성 높은 설명을 만듭니다. 수동으로 설명을 작성하는 데 시간을 낭비하지 마세요 – AI가 힘든 일을 하도록 하세요!",
+    "wordpress": {
+      "title": "WordPress 플러그인 기능",
+      "oneClick": "원클릭 생성: 즉시 지능적인 대체 텍스트 생성",
+      "wpReady": "WordPress 준비 완료: WordPress 및 Gutenberg와 완벽한 통합",
+      "formatSupport": "형식 지원: JPG, PNG, WebP 등과 함께 작동",
+      "accessibility": "접근성 우선: WCAG 2.1 준수 지원"
+    },
+    "chrome": {
+      "title": "Chrome 확장 프로그램 기능",
+      "altTextDetection": "대체 텍스트 감지: 주의가 필요한 이미지 찾기 및 강조 표시",
+      "contextAware": "컨텍스트 인식: 최첨단 AI를 사용하여 설명적이고 정확한 대체 텍스트 생성",
+      "multipleLanguages": "다국어 지원: 영어와 스웨덴어로 제공"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "AltVision 다운로드",
+    "downloadWP": "WordPress 플러그인 다운로드",
+    "downloadChrome": "Chrome 확장 프로그램 다운로드",
+    "termsOfUse": "이용 약관",
+    "privacyPolicy": "개인정보 처리방침",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "개인정보 처리방침", "lastUpdated": "최종 업데이트: 2025년 2월 1일" },
+  "terms": { "title": "이용 약관" },
+  "common": { "loading": "로딩 중...", "error": "오류", "retry": "다시 시도" }
+}

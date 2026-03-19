@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "Plugin WordPress", "chromeExtension": "Estensione Chrome" },
+  "home": {
+    "hero": {
+      "title": "Rendi il web accessibile",
+      "titleHighlight": "con testo alternativo basato sull'AI",
+      "wpButton": "Plugin WordPress",
+      "chromeButton": "Estensione Chrome",
+      "imageAlt": "Screenshot dell'app AltVision"
+    },
+    "description": "AltVision genera automaticamente testo alternativo preciso per le tue immagini analizzando sia l'immagine che il contesto circostante. Il plugin considera titoli, paragrafi e didascalie vicini all'immagine per creare descrizioni altamente pertinenti. Smetti di trascorrere ore a scrivere descrizioni manuali – lascia che l'AI faccia il lavoro pesante!",
+    "wordpress": {
+      "title": "Funzionalità del Plugin WordPress",
+      "oneClick": "Generazione con un clic: Genera testo alternativo intelligente istantaneamente",
+      "wpReady": "Pronto per WordPress: Integrazione perfetta con WordPress e Gutenberg",
+      "formatSupport": "Supporto formati: Funziona con JPG, PNG, WebP e altro",
+      "accessibility": "Accessibilità prima di tutto: Supporto per la conformità WCAG 2.1"
+    },
+    "chrome": {
+      "title": "Funzionalità dell'Estensione Chrome",
+      "altTextDetection": "Rilevamento testo alternativo: Trova ed evidenzia le immagini che richiedono attenzione",
+      "contextAware": "Consapevole del contesto: Crea testi alternativi descrittivi e accurati usando AI all'avanguardia",
+      "multipleLanguages": "Più lingue: Disponibile in inglese e svedese"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Scarica AltVision",
+    "downloadWP": "Scarica Plugin WordPress",
+    "downloadChrome": "Scarica Estensione Chrome",
+    "termsOfUse": "Termini di utilizzo",
+    "privacyPolicy": "Informativa sulla privacy",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "Informativa sulla Privacy", "lastUpdated": "Ultimo aggiornamento: 1 febbraio 2025" },
+  "terms": { "title": "Termini di Utilizzo" },
+  "common": { "loading": "Caricamento...", "error": "Errore", "retry": "Riprova" }
+}

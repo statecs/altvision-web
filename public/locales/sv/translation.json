@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "wordpressPlugin": "WordPress-plugin",
+    "chromeExtension": "Chrome-tillägg"
+  },
+  "home": {
+    "hero": {
+      "title": "Gör webben tillgänglig",
+      "titleHighlight": "med AI-driven alternativtext",
+      "wpButton": "WordPress-plugin",
+      "chromeButton": "Chrome-tillägg",
+      "imageAlt": "Skärmdump av AltVision"
+    },
+    "description": "AltVision genererar automatiskt exakt alternativtext för dina bilder genom att analysera både bilden och dess omgivande kontext. Pluginet tar hänsyn till rubriker, stycken och bildtexter nära bilden för att skapa mycket relevanta beskrivningar. Sluta lägga timmar på att skriva manuella beskrivningar – låt AI göra det tunga arbetet!",
+    "wordpress": {
+      "title": "WordPress-pluginets funktioner",
+      "oneClick": "Generering med ett klick: Generera intelligent alternativtext direkt",
+      "wpReady": "WordPress-redo: Sömlös integration med WordPress och Gutenberg",
+      "formatSupport": "Formatstöd: Fungerar med JPG, PNG, WebP och mer",
+      "accessibility": "Tillgänglighet i fokus: Stöd för WCAG 2.1-efterlevnad"
+    },
+    "chrome": {
+      "title": "Chrome-tilläggsfunktioner",
+      "altTextDetection": "Alternativtextdetektering: Hitta och markera bilder som behöver uppmärksamhet",
+      "contextAware": "Kontextmedveten: Skapa beskrivande och exakta alternativtexter med hjälp av banbrytande AI",
+      "multipleLanguages": "Flera språk: Tillgänglig på engelska och svenska"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Ladda ner AltVision",
+    "downloadWP": "Ladda ner WordPress-plugin",
+    "downloadChrome": "Ladda ner Chrome-tillägg",
+    "termsOfUse": "Användarvillkor",
+    "privacyPolicy": "Integritetspolicy",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": {
+    "title": "Integritetspolicy",
+    "lastUpdated": "Senast uppdaterad: 1 februari 2025"
+  },
+  "terms": {
+    "title": "Användarvillkor"
+  },
+  "common": {
+    "loading": "Laddar...",
+    "error": "Fel",
+    "retry": "Försök igen"
+  }
+}

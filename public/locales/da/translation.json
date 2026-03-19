@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "WordPress-plugin", "chromeExtension": "Chrome-udvidelse" },
+  "home": {
+    "hero": {
+      "title": "Gør nettet tilgængeligt",
+      "titleHighlight": "med AI-drevet alternativ tekst",
+      "wpButton": "WordPress-plugin",
+      "chromeButton": "Chrome-udvidelse",
+      "imageAlt": "Skærmbillede af AltVision"
+    },
+    "description": "AltVision genererer automatisk præcis alternativ tekst til dine billeder ved at analysere både billedet og dets omgivende kontekst. Pluginet tager hensyn til overskrifter, afsnit og billedtekster i nærheden af billedet for at skabe meget relevante beskrivelser. Stop med at bruge timer på at skrive manuelle beskrivelser – lad AI gøre det tunge løft!",
+    "wordpress": {
+      "title": "WordPress-plugin Funktioner",
+      "oneClick": "Generering med ét klik: Generer intelligent alternativ tekst øjeblikkeligt",
+      "wpReady": "WordPress-klar: Problemfri integration med WordPress og Gutenberg",
+      "formatSupport": "Formatsupport: Virker med JPG, PNG, WebP og mere",
+      "accessibility": "Tilgængelighed først: Understøttelse af WCAG 2.1-overholdelse"
+    },
+    "chrome": {
+      "title": "Chrome-udvidelse Funktioner",
+      "altTextDetection": "Alternativ tekstdetektering: Find og fremhæv billeder, der kræver opmærksomhed",
+      "contextAware": "Kontekstbevidst: Opret beskrivende og præcise alternativtekster ved hjælp af avanceret AI",
+      "multipleLanguages": "Flere sprog: Tilgængelig på engelsk og svensk"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Download AltVision",
+    "downloadWP": "Download WordPress-plugin",
+    "downloadChrome": "Download Chrome-udvidelse",
+    "termsOfUse": "Brugsvilkår",
+    "privacyPolicy": "Privatlivspolitik",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "Privatlivspolitik", "lastUpdated": "Sidst opdateret: 1. februar 2025" },
+  "terms": { "title": "Brugsvilkår" },
+  "common": { "loading": "Indlæser...", "error": "Fejl", "retry": "Prøv igen" }
+}

@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "WordPress Eklentisi", "chromeExtension": "Chrome Uzantısı" },
+  "home": {
+    "hero": {
+      "title": "Web'i erişilebilir kılın",
+      "titleHighlight": "AI destekli alt metin ile",
+      "wpButton": "WordPress Eklentisi",
+      "chromeButton": "Chrome Uzantısı",
+      "imageAlt": "AltVision Uygulama Ekran Görüntüsü"
+    },
+    "description": "AltVision, hem görüntüyü hem de çevresindeki bağlamı analiz ederek görüntüleriniz için otomatik olarak hassas alt metin oluşturur. Eklenti, son derece ilgili açıklamalar oluşturmak için görüntünün yakınındaki başlıkları, paragrafları ve açıklamaları dikkate alır. Manuel açıklamalar yazmak için saatler harcamayı bırakın – AI'nın ağır işi yapmasına izin verin!",
+    "wordpress": {
+      "title": "WordPress Eklentisi Özellikleri",
+      "oneClick": "Tek Tıkla Oluşturma: Anında akıllı alt metin oluşturun",
+      "wpReady": "WordPress Hazır: WordPress ve Gutenberg ile sorunsuz entegrasyon",
+      "formatSupport": "Format Desteği: JPG, PNG, WebP ve daha fazlasıyla çalışır",
+      "accessibility": "Erişilebilirlik Önce: WCAG 2.1 uyumluluk desteği"
+    },
+    "chrome": {
+      "title": "Chrome Uzantısı Özellikleri",
+      "altTextDetection": "Alt Metin Algılama: Dikkat gerektiren görüntüleri bulun ve vurgulayın",
+      "contextAware": "Bağlam Duyarlı: Son teknoloji AI kullanarak açıklayıcı ve doğru alternatif metinler oluşturun",
+      "multipleLanguages": "Birden Fazla Dil: İngilizce ve İsveççe olarak mevcuttur"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "AltVision'ı İndir",
+    "downloadWP": "WordPress Eklentisini İndir",
+    "downloadChrome": "Chrome Uzantısını İndir",
+    "termsOfUse": "Kullanım Şartları",
+    "privacyPolicy": "Gizlilik Politikası",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "Gizlilik Politikası", "lastUpdated": "Son güncelleme: 1 Şubat 2025" },
+  "terms": { "title": "Kullanım Şartları" },
+  "common": { "loading": "Yükleniyor...", "error": "Hata", "retry": "Yeniden Dene" }
+}

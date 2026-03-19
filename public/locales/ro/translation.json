@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "wordpressPlugin": "Plugin WordPress",
+    "chromeExtension": "Extensie Chrome"
+  },
+  "home": {
+    "hero": {
+      "title": "Faceți web-ul accesibil",
+      "titleHighlight": "cu text alternativ alimentat de IA",
+      "wpButton": "Plugin WordPress",
+      "chromeButton": "Extensie Chrome",
+      "imageAlt": "Captură de ecran AltVision"
+    },
+    "description": "AltVision generează automat text alternativ precis pentru imaginile dvs. analizând atât imaginea, cât și contextul înconjurător. Plugin-ul ia în considerare titlurile, paragrafele și legendele din apropierea imaginii pentru a crea descrieri foarte relevante. Nu mai pierdeți ore scriind descrieri manuale – lăsați IA să facă munca grea!",
+    "wordpress": {
+      "title": "Caracteristici Plugin WordPress",
+      "oneClick": "Generare cu un singur clic: Generați text alternativ inteligent instantaneu",
+      "wpReady": "Pregătit pentru WordPress: Integrare perfectă cu WordPress și Gutenberg",
+      "formatSupport": "Suport format: Funcționează cu JPG, PNG, WebP și altele",
+      "accessibility": "Accesibilitate pe primul loc: Suport pentru conformitatea WCAG 2.1"
+    },
+    "chrome": {
+      "title": "Caracteristici Extensie Chrome",
+      "altTextDetection": "Detectarea textului alternativ: Găsiți și evidențiați imaginile care necesită atenție",
+      "contextAware": "Conștient de context: Creați texte alternative descriptive și precise folosind IA de ultimă generație",
+      "multipleLanguages": "Mai multe limbi: Disponibil în engleză și suedeză"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Descărcați AltVision",
+    "downloadWP": "Descărcați Plugin WordPress",
+    "downloadChrome": "Descărcați Extensia Chrome",
+    "termsOfUse": "Termeni de utilizare",
+    "privacyPolicy": "Politica de confidențialitate",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": {
+    "title": "Politica de Confidențialitate",
+    "lastUpdated": "Ultima actualizare: 1 februarie 2025"
+  },
+  "terms": {
+    "title": "Termeni de Utilizare"
+  },
+  "common": {
+    "loading": "Se încarcă...",
+    "error": "Eroare",
+    "retry": "Reîncercați"
+  }
+}

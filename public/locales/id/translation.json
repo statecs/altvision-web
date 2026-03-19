@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "Plugin WordPress", "chromeExtension": "Ekstensi Chrome" },
+  "home": {
+    "hero": {
+      "title": "Jadikan web dapat diakses",
+      "titleHighlight": "dengan teks alt bertenaga AI",
+      "wpButton": "Plugin WordPress",
+      "chromeButton": "Ekstensi Chrome",
+      "imageAlt": "Tangkapan layar Aplikasi AltVision"
+    },
+    "description": "AltVision secara otomatis menghasilkan teks alt yang tepat untuk gambar Anda dengan menganalisis gambar dan konteks sekitarnya. Plugin mempertimbangkan judul, paragraf, dan keterangan gambar yang dekat dengan gambar untuk membuat deskripsi yang sangat relevan. Hentikan penghabisan waktu berjam-jam menulis deskripsi manual – biarkan AI melakukan pekerjaan berat!",
+    "wordpress": {
+      "title": "Fitur Plugin WordPress",
+      "oneClick": "Pembuatan Satu Klik: Hasilkan teks alt cerdas secara instan",
+      "wpReady": "Siap WordPress: Integrasi mulus dengan WordPress dan Gutenberg",
+      "formatSupport": "Dukungan Format: Bekerja dengan JPG, PNG, WebP, dan lainnya",
+      "accessibility": "Aksesibilitas Utama: Dukungan kepatuhan WCAG 2.1"
+    },
+    "chrome": {
+      "title": "Fitur Ekstensi Chrome",
+      "altTextDetection": "Deteksi Teks Alt: Temukan dan sorot gambar yang membutuhkan perhatian",
+      "contextAware": "Sadar Konteks: Buat teks alternatif yang deskriptif dan akurat menggunakan AI mutakhir",
+      "multipleLanguages": "Banyak Bahasa: Tersedia dalam bahasa Inggris dan Swedia"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Unduh AltVision",
+    "downloadWP": "Unduh Plugin WordPress",
+    "downloadChrome": "Unduh Ekstensi Chrome",
+    "termsOfUse": "Syarat Penggunaan",
+    "privacyPolicy": "Kebijakan Privasi",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "Kebijakan Privasi", "lastUpdated": "Terakhir diperbarui: 1 Februari 2025" },
+  "terms": { "title": "Syarat Penggunaan" },
+  "common": { "loading": "Memuat...", "error": "Kesalahan", "retry": "Coba Lagi" }
+}

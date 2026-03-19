@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "WordPress Plugin", "chromeExtension": "Chrome Bővítmény" },
+  "home": {
+    "hero": {
+      "title": "Tedd elérhetővé a webet",
+      "titleHighlight": "AI-alapú alt szöveggel",
+      "wpButton": "WordPress Plugin",
+      "chromeButton": "Chrome Bővítmény",
+      "imageAlt": "AltVision alkalmazás képernyőkép"
+    },
+    "description": "Az AltVision automatikusan pontos alt szöveget generál a képeidhez, elemezve mind a képet, mind annak környező kontextusát. A plugin figyelembe veszi a kép közelében lévő fejléceket, bekezdéseket és feliratokat, hogy rendkívül releváns leírásokat hozzon létre. Hagyj fel a manuális leírások írásával töltött órákkal – engedd az AI-t elvégezni a nehéz munkát!",
+    "wordpress": {
+      "title": "WordPress Plugin Funkciók",
+      "oneClick": "Egykattintásos generálás: Azonnal generálj intelligens alt szöveget",
+      "wpReady": "WordPress-kész: Zökkenőmentes WordPress és Gutenberg integráció",
+      "formatSupport": "Formátumtámogatás: Működik JPG, PNG, WebP és más formátumokkal",
+      "accessibility": "Az akadálymentesség az első: WCAG 2.1 megfelelőségi támogatás"
+    },
+    "chrome": {
+      "title": "Chrome Bővítmény Funkciók",
+      "altTextDetection": "Alt szöveg felismerés: Keresd meg és emeld ki a figyelmet igénylő képeket",
+      "contextAware": "Kontextusérzékeny: Készíts leíró és pontos alternatív szövegeket élvonalbeli AI segítségével",
+      "multipleLanguages": "Több nyelv: Elérhető angolul és svédül"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "AltVision letöltése",
+    "downloadWP": "WordPress Plugin letöltése",
+    "downloadChrome": "Chrome Bővítmény letöltése",
+    "termsOfUse": "Felhasználási feltételek",
+    "privacyPolicy": "Adatvédelmi irányelvek",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "Adatvédelmi Irányelvek", "lastUpdated": "Utoljára frissítve: 2025. február 1." },
+  "terms": { "title": "Felhasználási Feltételek" },
+  "common": { "loading": "Betöltés...", "error": "Hiba", "retry": "Újrapróbálkozás" }
+}

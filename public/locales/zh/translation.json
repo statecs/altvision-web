@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "WordPress插件", "chromeExtension": "Chrome扩展程序" },
+  "home": {
+    "hero": {
+      "title": "让网络对所有人无障碍",
+      "titleHighlight": "借助AI驱动的替代文本",
+      "wpButton": "WordPress插件",
+      "chromeButton": "Chrome扩展程序",
+      "imageAlt": "AltVision应用截图"
+    },
+    "description": "AltVision通过分析图像及其周围背景，自动为您的图像生成精确的替代文本。该插件考虑图像附近的标题、段落和说明文字，以创建高度相关的描述。停止花费数小时手动编写描述——让AI来完成繁重的工作！",
+    "wordpress": {
+      "title": "WordPress插件功能",
+      "oneClick": "一键生成：即时生成智能替代文本",
+      "wpReady": "WordPress就绪：与WordPress和Gutenberg无缝集成",
+      "formatSupport": "格式支持：支持JPG、PNG、WebP等格式",
+      "accessibility": "无障碍优先：支持WCAG 2.1合规性"
+    },
+    "chrome": {
+      "title": "Chrome扩展程序功能",
+      "altTextDetection": "替代文本检测：查找并突出显示需要关注的图像",
+      "contextAware": "上下文感知：使用最先进的AI创建描述性和准确的替代文本",
+      "multipleLanguages": "多种语言：支持英语和瑞典语"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "下载AltVision",
+    "downloadWP": "下载WordPress插件",
+    "downloadChrome": "下载Chrome扩展程序",
+    "termsOfUse": "使用条款",
+    "privacyPolicy": "隐私政策",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "隐私政策", "lastUpdated": "最后更新：2025年2月1日" },
+  "terms": { "title": "使用条款" },
+  "common": { "loading": "加载中...", "error": "错误", "retry": "重试" }
+}

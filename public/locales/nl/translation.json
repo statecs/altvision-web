@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "WordPress-plugin", "chromeExtension": "Chrome-extensie" },
+  "home": {
+    "hero": {
+      "title": "Maak het web toegankelijk",
+      "titleHighlight": "met AI-aangedreven alt-tekst",
+      "wpButton": "WordPress-plugin",
+      "chromeButton": "Chrome-extensie",
+      "imageAlt": "AltVision App-screenshot"
+    },
+    "description": "AltVision genereert automatisch nauwkeurige alt-tekst voor uw afbeeldingen door zowel de afbeelding als de omringende context te analyseren. De plugin houdt rekening met koppen, alinea's en bijschriften in de buurt van de afbeelding om zeer relevante beschrijvingen te maken. Stop met uren besteden aan het handmatig schrijven van beschrijvingen – laat AI het zware werk doen!",
+    "wordpress": {
+      "title": "WordPress-plugin Functies",
+      "oneClick": "Generatie met één klik: Genereer direct intelligente alt-tekst",
+      "wpReady": "WordPress-klaar: Naadloze integratie met WordPress en Gutenberg",
+      "formatSupport": "Formaatondersteuning: Werkt met JPG, PNG, WebP en meer",
+      "accessibility": "Toegankelijkheid voorop: Ondersteuning voor WCAG 2.1-naleving"
+    },
+    "chrome": {
+      "title": "Chrome-extensie Functies",
+      "altTextDetection": "Alt-tekstdetectie: Vind en markeer afbeeldingen die aandacht nodig hebben",
+      "contextAware": "Contextbewust: Maak beschrijvende en nauwkeurige alternatieve teksten met behulp van geavanceerde AI",
+      "multipleLanguages": "Meerdere talen: Beschikbaar in het Engels en Zweeds"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "AltVision downloaden",
+    "downloadWP": "WordPress-plugin downloaden",
+    "downloadChrome": "Chrome-extensie downloaden",
+    "termsOfUse": "Gebruiksvoorwaarden",
+    "privacyPolicy": "Privacybeleid",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "Privacybeleid", "lastUpdated": "Laatst bijgewerkt: 1 februari 2025" },
+  "terms": { "title": "Gebruiksvoorwaarden" },
+  "common": { "loading": "Laden...", "error": "Fout", "retry": "Opnieuw proberen" }
+}

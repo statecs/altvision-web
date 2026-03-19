@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "wordpressPlugin": "Plugin WordPress",
+    "chromeExtension": "Tiện ích Chrome"
+  },
+  "home": {
+    "hero": {
+      "title": "Làm cho web dễ tiếp cận",
+      "titleHighlight": "với văn bản thay thế được hỗ trợ bởi AI",
+      "wpButton": "Plugin WordPress",
+      "chromeButton": "Tiện ích Chrome",
+      "imageAlt": "Ảnh chụp màn hình ứng dụng AltVision"
+    },
+    "description": "AltVision tự động tạo văn bản thay thế chính xác cho hình ảnh của bạn bằng cách phân tích cả hình ảnh và ngữ cảnh xung quanh nó. Plugin xem xét các tiêu đề, đoạn văn và chú thích gần hình ảnh để tạo ra các mô tả có liên quan cao. Hãy ngừng dành hàng giờ viết mô tả thủ công – hãy để AI làm phần việc nặng nhọc!",
+    "wordpress": {
+      "title": "Tính năng Plugin WordPress",
+      "oneClick": "Tạo bằng một cú nhấp: Tạo văn bản thay thế thông minh ngay lập tức",
+      "wpReady": "Sẵn sàng cho WordPress: Tích hợp liền mạch với WordPress và Gutenberg",
+      "formatSupport": "Hỗ trợ định dạng: Hoạt động với JPG, PNG, WebP và nhiều hơn nữa",
+      "accessibility": "Ưu tiên khả năng tiếp cận: Hỗ trợ tuân thủ WCAG 2.1"
+    },
+    "chrome": {
+      "title": "Tính năng Tiện ích Chrome",
+      "altTextDetection": "Phát hiện văn bản thay thế: Tìm và làm nổi bật các hình ảnh cần chú ý",
+      "contextAware": "Nhận thức ngữ cảnh: Tạo văn bản thay thế mô tả và chính xác bằng AI tiên tiến",
+      "multipleLanguages": "Nhiều ngôn ngữ: Có sẵn bằng tiếng Anh và tiếng Thụy Điển"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Tải xuống AltVision",
+    "downloadWP": "Tải xuống Plugin WordPress",
+    "downloadChrome": "Tải xuống Tiện ích Chrome",
+    "termsOfUse": "Điều khoản sử dụng",
+    "privacyPolicy": "Chính sách bảo mật",
+    "copyright": "© Bản quyền 2025 Christopher State"
+  },
+  "privacy": {
+    "title": "Chính Sách Bảo Mật",
+    "lastUpdated": "Cập nhật lần cuối: 1 tháng 2 năm 2025"
+  },
+  "terms": {
+    "title": "Điều Khoản Sử Dụng"
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Lỗi",
+    "retry": "Thử lại"
+  }
+}

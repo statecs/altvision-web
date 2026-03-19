@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "wordpressPlugin": "Plugin WordPress",
+    "chromeExtension": "Extensão Chrome"
+  },
+  "home": {
+    "hero": {
+      "title": "Torne a web acessível",
+      "titleHighlight": "com texto alternativo alimentado por IA",
+      "wpButton": "Plugin WordPress",
+      "chromeButton": "Extensão Chrome",
+      "imageAlt": "Captura de tela do AltVision"
+    },
+    "description": "O AltVision gera automaticamente texto alternativo preciso para suas imagens analisando tanto a imagem quanto seu contexto circundante. O plugin considera títulos, parágrafos e legendas próximas à imagem para criar descrições altamente relevantes. Pare de passar horas escrevendo descrições manuais – deixe a IA fazer o trabalho pesado!",
+    "wordpress": {
+      "title": "Recursos do Plugin WordPress",
+      "oneClick": "Geração com um clique: Gere texto alternativo inteligente instantaneamente",
+      "wpReady": "Pronto para WordPress: Integração perfeita com WordPress e Gutenberg",
+      "formatSupport": "Suporte de formato: Funciona com JPG, PNG, WebP e mais",
+      "accessibility": "Acessibilidade em primeiro lugar: Suporte à conformidade com WCAG 2.1"
+    },
+    "chrome": {
+      "title": "Recursos da Extensão Chrome",
+      "altTextDetection": "Detecção de texto alternativo: Encontre e destaque imagens que precisam de atenção",
+      "contextAware": "Sensível ao contexto: Crie textos alternativos descritivos e precisos usando IA de ponta",
+      "multipleLanguages": "Vários idiomas: Disponível em inglês e sueco"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "Baixar AltVision",
+    "downloadWP": "Baixar Plugin WordPress",
+    "downloadChrome": "Baixar Extensão Chrome",
+    "termsOfUse": "Termos de uso",
+    "privacyPolicy": "Política de privacidade",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "lastUpdated": "Última atualização: 1 de fevereiro de 2025"
+  },
+  "terms": {
+    "title": "Termos de Uso"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "retry": "Tentar novamente"
+  }
+}

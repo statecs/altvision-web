@@ -1,0 +1,37 @@
+{
+  "nav": { "wordpressPlugin": "WordPressプラグイン", "chromeExtension": "Chrome拡張機能" },
+  "home": {
+    "hero": {
+      "title": "ウェブをアクセシブルにする",
+      "titleHighlight": "AIによる自動代替テキストで",
+      "wpButton": "WordPressプラグイン",
+      "chromeButton": "Chrome拡張機能",
+      "imageAlt": "AltVisionアプリのスクリーンショット"
+    },
+    "description": "AltVisionは、画像とその周辺のコンテキストを分析することで、画像の正確な代替テキストを自動生成します。プラグインは画像の近くにある見出し、段落、キャプションを考慮して、非常に関連性の高い説明を作成します。手動で説明を書く時間を費やすのをやめましょう – AIに重労働を任せてください！",
+    "wordpress": {
+      "title": "WordPressプラグインの機能",
+      "oneClick": "ワンクリック生成：インテリジェントな代替テキストを瞬時に生成",
+      "wpReady": "WordPress対応：WordPressとGutenbergのシームレスな統合",
+      "formatSupport": "フォーマット対応：JPG、PNG、WebPなどに対応",
+      "accessibility": "アクセシビリティ優先：WCAG 2.1準拠のサポート"
+    },
+    "chrome": {
+      "title": "Chrome拡張機能の機能",
+      "altTextDetection": "代替テキスト検出：注意が必要な画像を見つけてハイライト",
+      "contextAware": "コンテキスト対応：最先端のAIを使用して記述的かつ正確な代替テキストを作成",
+      "multipleLanguages": "多言語対応：英語とスウェーデン語で利用可能"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "AltVisionをダウンロード",
+    "downloadWP": "WordPressプラグインをダウンロード",
+    "downloadChrome": "Chrome拡張機能をダウンロード",
+    "termsOfUse": "利用規約",
+    "privacyPolicy": "プライバシーポリシー",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": { "title": "プライバシーポリシー", "lastUpdated": "最終更新日：2025年2月1日" },
+  "terms": { "title": "利用規約" },
+  "common": { "loading": "読み込み中...", "error": "エラー", "retry": "再試行" }
+}

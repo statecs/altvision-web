@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "wordpressPlugin": "WordPress-Plugin",
+    "chromeExtension": "Chrome-Erweiterung"
+  },
+  "home": {
+    "hero": {
+      "title": "Das Web zugänglich machen",
+      "titleHighlight": "mit KI-getriebenem Alt-Text",
+      "wpButton": "WordPress-Plugin",
+      "chromeButton": "Chrome-Erweiterung",
+      "imageAlt": "AltVision App Screenshot"
+    },
+    "description": "AltVision generiert automatisch präzisen Alt-Text für Ihre Bilder, indem es sowohl das Bild als auch seinen umgebenden Kontext analysiert. Das Plugin berücksichtigt Überschriften, Absätze und Bildunterschriften in der Nähe des Bildes, um hochrelevante Beschreibungen zu erstellen. Hören Sie auf, Stunden damit zu verbringen, manuelle Beschreibungen zu schreiben – lassen Sie die KI die schwere Arbeit erledigen!",
+    "wordpress": {
+      "title": "WordPress-Plugin Funktionen",
+      "oneClick": "Ein-Klick-Generierung: Intelligenten Alt-Text sofort generieren",
+      "wpReady": "WordPress-bereit: Nahtlose WordPress- und Gutenberg-Integration",
+      "formatSupport": "Formatunterstützung: Funktioniert mit JPG, PNG, WebP und mehr",
+      "accessibility": "Barrierefreiheit zuerst: Unterstützung der WCAG 2.1-Konformität"
+    },
+    "chrome": {
+      "title": "Chrome-Erweiterungs-Funktionen",
+      "altTextDetection": "Alt-Text-Erkennung: Finden und markieren Sie Bilder, die Aufmerksamkeit benötigen",
+      "contextAware": "Kontextbewusst: Erstellen Sie beschreibende und genaue Alternativtexte mit modernster KI",
+      "multipleLanguages": "Mehrere Sprachen: Verfügbar auf Englisch und Schwedisch"
+    }
+  },
+  "footer": {
+    "downloadAltVision": "AltVision herunterladen",
+    "downloadWP": "WordPress-Plugin herunterladen",
+    "downloadChrome": "Chrome-Erweiterung herunterladen",
+    "termsOfUse": "Nutzungsbedingungen",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "copyright": "© Copyright 2025 Christopher State"
+  },
+  "privacy": {
+    "title": "Datenschutzrichtlinie",
+    "lastUpdated": "Zuletzt aktualisiert: 1. Februar 2025"
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen"
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "error": "Fehler",
+    "retry": "Wiederholen"
+  }
+}
