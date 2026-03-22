@@ -21,6 +21,23 @@
       "altTextDetection": "Vaihtoehtoistekstin tunnistus: Löydä ja korosta kuvia, jotka tarvitsevat huomiota",
       "contextAware": "Kontekstiherkkä: Luo kuvaavia ja tarkkoja vaihtoehtoistekstejä huippuluokan tekoälyn avulla",
       "multipleLanguages": "Useita kieliä: Saatavilla englanniksi ja ruotsiksi"
+    },
+    "demo": {
+      "tryIt": "Kokeile!",
+      "dragDrop": "Klikkaa valitaksesi tai vedä ja pudota",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (enintään 16 MB)",
+      "chooseFile": "Valitse tiedosto",
+      "seoKeywords": "Mukautetut SEO-avainsanat",
+      "optional": "Valinnainen",
+      "generateButton": "Luo vaihtoehtoinen teksti",
+      "generating": "Luodaan...",
+      "resultLabel": "Luotu vaihtoehtoinen teksti",
+      "copyButton": "Kopioi",
+      "copied": "Kopioitu!",
+      "errorFileTooLarge": "Tiedosto on liian suuri. Enintään 16 MB.",
+      "errorInvalidType": "Virheellinen tiedostotyyppi. Käytä PNG, JPG, GIF, WebP tai BMP.",
+      "errorGenerate": "Vaihtoehtoisen tekstin luominen epäonnistui. Yritä uudelleen.",
+      "errorRateLimit": "Päivittäinen raja saavutettu. Yritä uudelleen huomenna tai päivitä premiumiin rajoittamattoman käytön saamiseksi."
     }
   },
   "footer": {

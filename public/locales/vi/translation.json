@@ -24,6 +24,23 @@
       "altTextDetection": "Phát hiện văn bản thay thế: Tìm và làm nổi bật các hình ảnh cần chú ý",
       "contextAware": "Nhận thức ngữ cảnh: Tạo văn bản thay thế mô tả và chính xác bằng AI tiên tiến",
       "multipleLanguages": "Nhiều ngôn ngữ: Có sẵn bằng tiếng Anh và tiếng Thụy Điển"
+    },
+    "demo": {
+      "tryIt": "Thử ngay!",
+      "dragDrop": "Nhấp để chọn hoặc kéo và thả",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (tối đa 16 MB)",
+      "chooseFile": "Chọn tệp",
+      "seoKeywords": "Từ khóa SEO tùy chỉnh",
+      "optional": "Tùy chọn",
+      "generateButton": "Tạo văn bản thay thế",
+      "generating": "Đang tạo...",
+      "resultLabel": "Văn bản thay thế đã tạo",
+      "copyButton": "Sao chép",
+      "copied": "Đã sao chép!",
+      "errorFileTooLarge": "Tệp quá lớn. Tối đa 16 MB.",
+      "errorInvalidType": "Loại tệp không hợp lệ. Dùng PNG, JPG, GIF, WebP hoặc BMP.",
+      "errorGenerate": "Không thể tạo văn bản thay thế. Vui lòng thử lại.",
+      "errorRateLimit": "Đã đạt giới hạn hàng ngày. Thử lại vào ngày mai hoặc nâng cấp lên gói cao cấp để truy cập không giới hạn."
     }
   },
   "footer": {

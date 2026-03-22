@@ -24,6 +24,23 @@
       "altTextDetection": "Detectarea textului alternativ: Găsiți și evidențiați imaginile care necesită atenție",
       "contextAware": "Conștient de context: Creați texte alternative descriptive și precise folosind IA de ultimă generație",
       "multipleLanguages": "Mai multe limbi: Disponibil în engleză și suedeză"
+    },
+    "demo": {
+      "tryIt": "Încearcă!",
+      "dragDrop": "Faceți clic pentru a selecta sau trageți și plasați",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (max. 16 MB)",
+      "chooseFile": "Alege fișier",
+      "seoKeywords": "Cuvinte cheie SEO personalizate",
+      "optional": "Opțional",
+      "generateButton": "Generează text alternativ",
+      "generating": "Se generează...",
+      "resultLabel": "Text alternativ generat",
+      "copyButton": "Copiați",
+      "copied": "Copiat!",
+      "errorFileTooLarge": "Fișierul este prea mare. Max. 16 MB.",
+      "errorInvalidType": "Tip de fișier invalid. Folosiți PNG, JPG, GIF, WebP sau BMP.",
+      "errorGenerate": "Nu s-a putut genera textul alternativ. Vă rugăm să încercați din nou.",
+      "errorRateLimit": "Limita zilnică atinsă. Încearcă din nou mâine sau fă upgrade la premium pentru acces nelimitat."
     }
   },
   "footer": {

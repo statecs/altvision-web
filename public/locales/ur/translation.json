@@ -21,6 +21,23 @@
       "altTextDetection": "Alt متن کا پتہ لگانا: توجہ کی ضرورت والی تصویریں تلاش کریں اور نمایاں کریں",
       "contextAware": "سیاق و سباق سے آگاہ: جدید ترین AI کا استعمال کرتے ہوئے وضاحتی اور درست متبادل متن بنائیں",
       "multipleLanguages": "متعدد زبانیں: انگریزی اور سویڈش میں دستیاب"
+    },
+    "demo": {
+      "tryIt": "آزمائیں!",
+      "dragDrop": "منتخب کرنے کے لیے کلک کریں یا گھسیٹ کر چھوڑیں",
+      "fileTypes": "PNG، JPG، GIF، WebP، BMP (زیادہ سے زیادہ 16 MB)",
+      "chooseFile": "فائل منتخب کریں",
+      "seoKeywords": "حسب ضرورت SEO کلیدی الفاظ",
+      "optional": "اختیاری",
+      "generateButton": "Alt متن بنائیں",
+      "generating": "بنایا جا رہا ہے...",
+      "resultLabel": "بنایا گیا Alt متن",
+      "copyButton": "کاپی کریں",
+      "copied": "کاپی ہو گیا!",
+      "errorFileTooLarge": "فائل بہت بڑی ہے۔ زیادہ سے زیادہ 16 MB۔",
+      "errorInvalidType": "غلط فائل قسم۔ PNG، JPG، GIF، WebP یا BMP استعمال کریں۔",
+      "errorGenerate": "Alt متن بنانے میں ناکامی۔ دوبارہ کوشش کریں۔",
+      "errorRateLimit": "یومیہ حد پہنچ گئی۔ کل دوبارہ کوشش کریں یا لامحدود رسائی کے لیے پریمیم میں اپ گریڈ کریں۔"
     }
   },
   "footer": {

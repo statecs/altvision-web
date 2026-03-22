@@ -21,6 +21,23 @@
       "altTextDetection": "Detekce alternativního textu: Najděte a zvýrazněte obrázky, které potřebují pozornost",
       "contextAware": "Kontextově citlivé: Vytvářejte popisné a přesné alternativní texty pomocí nejmodernější AI",
       "multipleLanguages": "Více jazyků: Dostupné v angličtině a švédštině"
+    },
+    "demo": {
+      "tryIt": "Vyzkoušejte!",
+      "dragDrop": "Klikněte pro výběr nebo přetáhněte soubor",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (max. 16 MB)",
+      "chooseFile": "Vybrat soubor",
+      "seoKeywords": "Vlastní klíčová slova SEO",
+      "optional": "Volitelné",
+      "generateButton": "Generovat alternativní text",
+      "generating": "Generování...",
+      "resultLabel": "Vygenerovaný alternativní text",
+      "copyButton": "Kopírovat",
+      "copied": "Zkopírováno!",
+      "errorFileTooLarge": "Soubor je příliš velký. Max. 16 MB.",
+      "errorInvalidType": "Neplatný typ souboru. Použijte PNG, JPG, GIF, WebP nebo BMP.",
+      "errorGenerate": "Nepodařilo se vygenerovat alternativní text. Zkuste to znovu.",
+      "errorRateLimit": "Byl dosažen denní limit. Zkuste to zítra znovu nebo upgradujte na premium pro neomezený přístup."
     }
   },
   "footer": {

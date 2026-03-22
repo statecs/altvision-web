@@ -21,6 +21,23 @@
       "altTextDetection": "Alt-tekstdetectie: Vind en markeer afbeeldingen die aandacht nodig hebben",
       "contextAware": "Contextbewust: Maak beschrijvende en nauwkeurige alternatieve teksten met behulp van geavanceerde AI",
       "multipleLanguages": "Meerdere talen: Beschikbaar in het Engels en Zweeds"
+    },
+    "demo": {
+      "tryIt": "Probeer het!",
+      "dragDrop": "Klik om te selecteren of sleep en zet neer",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (max 16 MB)",
+      "chooseFile": "Bestand kiezen",
+      "seoKeywords": "Aangepaste SEO-trefwoorden",
+      "optional": "Optioneel",
+      "generateButton": "Alt-tekst genereren",
+      "generating": "Genereren...",
+      "resultLabel": "Gegenereerde alt-tekst",
+      "copyButton": "Kopiëren",
+      "copied": "Gekopieerd!",
+      "errorFileTooLarge": "Bestand te groot. Max 16 MB.",
+      "errorInvalidType": "Ongeldig bestandstype. Gebruik PNG, JPG, GIF, WebP of BMP.",
+      "errorGenerate": "Kon alt-tekst niet genereren. Probeer het opnieuw.",
+      "errorRateLimit": "Daglimiet bereikt. Probeer het morgen opnieuw of upgrade naar premium voor onbeperkte toegang."
     }
   },
   "footer": {

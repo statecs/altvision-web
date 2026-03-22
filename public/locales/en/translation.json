@@ -24,6 +24,23 @@
       "altTextDetection": "Alt Text Detection: Find and highlight images that need attention",
       "contextAware": "Context-Aware: Create descriptive and accurate alternative texts using state-of-the-art AI",
       "multipleLanguages": "Multiple Languages: Available in English and Swedish"
+    },
+    "demo": {
+      "dragDrop": "Click to select or drag and drop",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (max 16MB)",
+      "chooseFile": "Choose File",
+      "seoKeywords": "Custom SEO keywords",
+      "optional": "Optional",
+      "generateButton": "Generate Alt Text",
+      "generating": "Generating...",
+      "resultLabel": "Generated Alt Text",
+      "copyButton": "Copy",
+      "copied": "Copied!",
+      "errorFileTooLarge": "File too large. Max 16MB.",
+      "errorInvalidType": "Invalid file type. Use PNG, JPG, GIF, WebP or BMP.",
+      "errorGenerate": "Failed to generate alt text. Please try again.",
+      "errorRateLimit": "Daily limit reached. Try again tomorrow or upgrade to premium for unlimited access.",
+      "tryIt": "Try It!"
     }
   },
   "footer": {

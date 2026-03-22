@@ -21,6 +21,23 @@
       "altTextDetection": "代替テキスト検出：注意が必要な画像を見つけてハイライト",
       "contextAware": "コンテキスト対応：最先端のAIを使用して記述的かつ正確な代替テキストを作成",
       "multipleLanguages": "多言語対応：英語とスウェーデン語で利用可能"
+    },
+    "demo": {
+      "tryIt": "試してみる！",
+      "dragDrop": "クリックして選択またはドラッグ＆ドロップ",
+      "fileTypes": "PNG、JPG、GIF、WebP、BMP（最大 16 MB）",
+      "chooseFile": "ファイルを選択",
+      "seoKeywords": "カスタム SEO キーワード",
+      "optional": "任意",
+      "generateButton": "代替テキストを生成",
+      "generating": "生成中...",
+      "resultLabel": "生成された代替テキスト",
+      "copyButton": "コピー",
+      "copied": "コピーしました！",
+      "errorFileTooLarge": "ファイルが大きすぎます。最大 16 MB。",
+      "errorInvalidType": "無効なファイル形式。PNG、JPG、GIF、WebP または BMP を使用してください。",
+      "errorGenerate": "代替テキストの生成に失敗しました。もう一度お試しください。",
+      "errorRateLimit": "1日の利用上限に達しました。明日もう一度お試しいただくか、無制限アクセスのためにプレミアムにアップグレードしてください。"
     }
   },
   "footer": {

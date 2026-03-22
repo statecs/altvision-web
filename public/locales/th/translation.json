@@ -21,6 +21,23 @@
       "altTextDetection": "การตรวจจับ alt text: ค้นหาและเน้นรูปภาพที่ต้องการความสนใจ",
       "contextAware": "รับรู้บริบท: สร้าง alt text ที่บรรยายและแม่นยำโดยใช้ AI ล้ำสมัย",
       "multipleLanguages": "หลายภาษา: มีให้ในภาษาอังกฤษและสวีเดน"
+    },
+    "demo": {
+      "tryIt": "ลองใช้เลย!",
+      "dragDrop": "คลิกเพื่อเลือกหรือลากและวาง",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (สูงสุด 16 MB)",
+      "chooseFile": "เลือกไฟล์",
+      "seoKeywords": "คีย์เวิร์ด SEO ที่กำหนดเอง",
+      "optional": "ไม่บังคับ",
+      "generateButton": "สร้าง Alt Text",
+      "generating": "กำลังสร้าง...",
+      "resultLabel": "Alt Text ที่สร้างแล้ว",
+      "copyButton": "คัดลอก",
+      "copied": "คัดลอกแล้ว!",
+      "errorFileTooLarge": "ไฟล์ใหญ่เกินไป สูงสุด 16 MB",
+      "errorInvalidType": "ประเภทไฟล์ไม่ถูกต้อง ใช้ PNG, JPG, GIF, WebP หรือ BMP",
+      "errorGenerate": "ไม่สามารถสร้าง Alt Text ได้ โปรดลองอีกครั้ง",
+      "errorRateLimit": "ถึงขีดจำกัดรายวันแล้ว ลองอีกครั้งในวันพรุ่งนี้หรืออัปเกรดเป็นพรีเมียมเพื่อการเข้าถึงไม่จำกัด"
     }
   },
   "footer": {

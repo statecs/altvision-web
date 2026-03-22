@@ -6,8 +6,7 @@ import TermsOfUse from './components/TermsOfUse';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import LocaleRouter from './components/LocaleRouter';
 import LanguageSelector from './components/LanguageSelector';
-import placeholder from './images/placeholder.png';
-import placeholder1 from './images/placeholder-1.png';
+import ImageUploadDemo from './components/ImageUploadDemo';
 
 // Navigation Component
 const Navigation = () => {
@@ -25,65 +24,38 @@ const Navigation = () => {
 // Home Page
 const HomePage = () => {
   const { t } = useTranslation();
-  const [currentImage, setCurrentImage] = React.useState(0);
-  const images = [placeholder, placeholder1];
-
-  const [isPaused, setIsPaused] = React.useState(false);
-
-  React.useEffect(() => {
-    if (isPaused) return;
-
-    const timer = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, [isPaused, images.length]);
 
   return (
   <div className="container mx-auto px-4">
-  <section className="pt-16 text-center" aria-label="Hero section">
-    <h1 className="text-4xl font-bold mb-8 animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
-      {t('home.hero.title')}<br />{t('home.hero.titleHighlight')}
-    </h1>
-    <div className="mx-2 flex gap-4 justify-center">
-      <a
-          href="https://wordpress.org/plugins/altvision-ai-alt-text-generator/"
-          rel="noopener noreferrer"
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium mt-4 animate-slide-up opacity-0 hover:bg-blue-700 transition-colors"
-          style={{ animationDelay: '0.4s' }}
-        >
-          {t('home.hero.wpButton')}
-        </a>
-        <a
-          href="https://chromewebstore.google.com/detail/altvision/iogpbgncdhijknmmhkllijfaioecfcoa"
-          rel="noopener noreferrer"
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium mt-4 animate-slide-up opacity-0 hover:bg-blue-700 transition-colors"
-          style={{ animationDelay: '0.4s' }}
-        >
-          {t('home.hero.chromeButton')}
-        </a>
+  <section className="pt-16" aria-label="Hero section">
+    {/* Two-column layout on desktop, stacked on mobile */}
+    <div className="grid md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
+      {/* Left column: headline + CTAs (shown first on desktop, first on mobile) */}
+      <div className="order-1">
+        <h1 className="text-4xl font-bold mb-6 animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
+          {t('home.hero.title')}<br />{t('home.hero.titleHighlight')}
+        </h1>
+        <div className="flex flex-wrap gap-4 animate-slide-up opacity-0" style={{ animationDelay: '0.4s' }}>
+          <a
+            href="https://wordpress.org/plugins/altvision-ai-alt-text-generator/"
+            rel="noopener noreferrer"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+          >
+            {t('home.hero.wpButton')}
+          </a>
+          <a
+            href="https://chromewebstore.google.com/detail/altvision/iogpbgncdhijknmmhkllijfaioecfcoa"
+            rel="noopener noreferrer"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+          >
+            {t('home.hero.chromeButton')}
+          </a>
+        </div>
       </div>
 
-      <div className="mt-12 relative w-screen md:w-full -mx-4 md:mx-auto h-[600px] md:h-[800px]">
-      <div
-        className="h-full animate-slide-up opacity-0 md:p-4 md:max-w-[1200px] md:mx-auto relative"
-        style={{ animationDelay: '0.6s' }}
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
-      >
-        {[placeholder, placeholder1].map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={t('home.hero.imageAlt')}
-            className={`
-              absolute top-0 left-0 w-full h-full object-cover rounded-none md:rounded-2xl
-              transition-opacity duration-1000
-              ${index === currentImage ? 'opacity-100' : 'opacity-0'}
-            `}
-          />
-        ))}
+      {/* Right column: demo widget */}
+      <div className="order-2 animate-slide-up opacity-0" style={{ animationDelay: '0.6s' }}>
+        <ImageUploadDemo />
       </div>
     </div>
   </section>

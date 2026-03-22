@@ -24,6 +24,23 @@
       "altTextDetection": "Alt-Text-Erkennung: Finden und markieren Sie Bilder, die Aufmerksamkeit benötigen",
       "contextAware": "Kontextbewusst: Erstellen Sie beschreibende und genaue Alternativtexte mit modernster KI",
       "multipleLanguages": "Mehrere Sprachen: Verfügbar auf Englisch und Schwedisch"
+    },
+    "demo": {
+      "tryIt": "Ausprobieren!",
+      "dragDrop": "Klicken zum Auswählen oder per Drag & Drop",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (max. 16 MB)",
+      "chooseFile": "Datei auswählen",
+      "seoKeywords": "Benutzerdefinierte SEO-Keywords",
+      "optional": "Optional",
+      "generateButton": "Alt-Text generieren",
+      "generating": "Wird generiert...",
+      "resultLabel": "Generierter Alt-Text",
+      "copyButton": "Kopieren",
+      "copied": "Kopiert!",
+      "errorFileTooLarge": "Datei zu groß. Max. 16 MB.",
+      "errorInvalidType": "Ungültiger Dateityp. Verwenden Sie PNG, JPG, GIF, WebP oder BMP.",
+      "errorGenerate": "Alt-Text konnte nicht generiert werden. Bitte erneut versuchen.",
+      "errorRateLimit": "Tageslimit erreicht. Versuche es morgen erneut oder upgrade auf Premium für unbegrenzten Zugriff."
     }
   },
   "footer": {

@@ -21,6 +21,23 @@
       "altTextDetection": "대체 텍스트 감지: 주의가 필요한 이미지 찾기 및 강조 표시",
       "contextAware": "컨텍스트 인식: 최첨단 AI를 사용하여 설명적이고 정확한 대체 텍스트 생성",
       "multipleLanguages": "다국어 지원: 영어와 스웨덴어로 제공"
+    },
+    "demo": {
+      "tryIt": "사용해 보기!",
+      "dragDrop": "클릭하여 선택하거나 드래그 앤 드롭",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (최대 16MB)",
+      "chooseFile": "파일 선택",
+      "seoKeywords": "맞춤 SEO 키워드",
+      "optional": "선택 사항",
+      "generateButton": "대체 텍스트 생성",
+      "generating": "생성 중...",
+      "resultLabel": "생성된 대체 텍스트",
+      "copyButton": "복사",
+      "copied": "복사됨!",
+      "errorFileTooLarge": "파일이 너무 큽니다. 최대 16MB.",
+      "errorInvalidType": "잘못된 파일 형식. PNG, JPG, GIF, WebP 또는 BMP를 사용하세요.",
+      "errorGenerate": "대체 텍스트 생성에 실패했습니다. 다시 시도해 주세요.",
+      "errorRateLimit": "일일 한도에 도달했습니다. 내일 다시 시도하거나 무제한 액세스를 위해 프리미엄으로 업그레이드하세요."
     }
   },
   "footer": {

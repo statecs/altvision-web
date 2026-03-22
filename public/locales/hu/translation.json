@@ -21,6 +21,23 @@
       "altTextDetection": "Alt szöveg felismerés: Keresd meg és emeld ki a figyelmet igénylő képeket",
       "contextAware": "Kontextusérzékeny: Készíts leíró és pontos alternatív szövegeket élvonalbeli AI segítségével",
       "multipleLanguages": "Több nyelv: Elérhető angolul és svédül"
+    },
+    "demo": {
+      "tryIt": "Próbálja ki!",
+      "dragDrop": "Kattintson a kiválasztáshoz vagy húzza ide a fájlt",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (max. 16 MB)",
+      "chooseFile": "Fájl kiválasztása",
+      "seoKeywords": "Egyéni SEO-kulcsszavak",
+      "optional": "Nem kötelező",
+      "generateButton": "Alt szöveg generálása",
+      "generating": "Generálás...",
+      "resultLabel": "Generált alt szöveg",
+      "copyButton": "Másolás",
+      "copied": "Másolva!",
+      "errorFileTooLarge": "A fájl túl nagy. Max. 16 MB.",
+      "errorInvalidType": "Érvénytelen fájltípus. Használjon PNG, JPG, GIF, WebP vagy BMP formátumot.",
+      "errorGenerate": "Nem sikerült generálni az alt szöveget. Kérjük, próbálja újra.",
+      "errorRateLimit": "Elérte a napi korlátot. Próbálkozzon holnap újra, vagy váltson prémiumra a korlátlan hozzáférésért."
     }
   },
   "footer": {

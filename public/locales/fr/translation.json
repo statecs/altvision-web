@@ -24,6 +24,23 @@
       "altTextDetection": "Détection de texte alternatif : Trouvez et mettez en évidence les images qui nécessitent attention",
       "contextAware": "Sensible au contexte : Créez des textes alternatifs descriptifs et précis grâce à une IA de pointe",
       "multipleLanguages": "Plusieurs langues : Disponible en anglais et en suédois"
+    },
+    "demo": {
+      "tryIt": "Essayez-le !",
+      "dragDrop": "Cliquez pour sélectionner ou glissez-déposez",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (max 16 Mo)",
+      "chooseFile": "Choisir un fichier",
+      "seoKeywords": "Mots-clés SEO personnalisés",
+      "optional": "Facultatif",
+      "generateButton": "Générer le texte alternatif",
+      "generating": "Génération en cours...",
+      "resultLabel": "Texte alternatif généré",
+      "copyButton": "Copier",
+      "copied": "Copié !",
+      "errorFileTooLarge": "Fichier trop volumineux. Max 16 Mo.",
+      "errorInvalidType": "Type de fichier invalide. Utilisez PNG, JPG, GIF, WebP ou BMP.",
+      "errorGenerate": "Échec de la génération du texte alternatif. Veuillez réessayer.",
+      "errorRateLimit": "Limite quotidienne atteinte. Réessayez demain ou passez à la version premium pour un accès illimité."
     }
   },
   "footer": {

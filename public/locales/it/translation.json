@@ -21,6 +21,23 @@
       "altTextDetection": "Rilevamento testo alternativo: Trova ed evidenzia le immagini che richiedono attenzione",
       "contextAware": "Consapevole del contesto: Crea testi alternativi descrittivi e accurati usando AI all'avanguardia",
       "multipleLanguages": "Più lingue: Disponibile in inglese e svedese"
+    },
+    "demo": {
+      "tryIt": "Provalo!",
+      "dragDrop": "Clicca per selezionare o trascina e rilascia",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (max 16 MB)",
+      "chooseFile": "Scegli file",
+      "seoKeywords": "Parole chiave SEO personalizzate",
+      "optional": "Opzionale",
+      "generateButton": "Genera testo alternativo",
+      "generating": "Generazione in corso...",
+      "resultLabel": "Testo alternativo generato",
+      "copyButton": "Copia",
+      "copied": "Copiato!",
+      "errorFileTooLarge": "File troppo grande. Max 16 MB.",
+      "errorInvalidType": "Tipo di file non valido. Usa PNG, JPG, GIF, WebP o BMP.",
+      "errorGenerate": "Impossibile generare il testo alternativo. Riprova.",
+      "errorRateLimit": "Limite giornaliero raggiunto. Riprova domani o passa al premium per accesso illimitato."
     }
   },
   "footer": {

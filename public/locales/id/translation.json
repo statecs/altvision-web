@@ -21,6 +21,23 @@
       "altTextDetection": "Deteksi Teks Alt: Temukan dan sorot gambar yang membutuhkan perhatian",
       "contextAware": "Sadar Konteks: Buat teks alternatif yang deskriptif dan akurat menggunakan AI mutakhir",
       "multipleLanguages": "Banyak Bahasa: Tersedia dalam bahasa Inggris dan Swedia"
+    },
+    "demo": {
+      "tryIt": "Coba sekarang!",
+      "dragDrop": "Klik untuk memilih atau seret dan lepas",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (maks. 16 MB)",
+      "chooseFile": "Pilih File",
+      "seoKeywords": "Kata kunci SEO kustom",
+      "optional": "Opsional",
+      "generateButton": "Buat Teks Alternatif",
+      "generating": "Membuat...",
+      "resultLabel": "Teks Alternatif yang Dibuat",
+      "copyButton": "Salin",
+      "copied": "Disalin!",
+      "errorFileTooLarge": "File terlalu besar. Maks. 16 MB.",
+      "errorInvalidType": "Jenis file tidak valid. Gunakan PNG, JPG, GIF, WebP atau BMP.",
+      "errorGenerate": "Gagal membuat teks alternatif. Silakan coba lagi.",
+      "errorRateLimit": "Batas harian tercapai. Coba lagi besok atau tingkatkan ke premium untuk akses tak terbatas."
     }
   },
   "footer": {

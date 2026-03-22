@@ -21,6 +21,23 @@
       "altTextDetection": "Alt Metin Algılama: Dikkat gerektiren görüntüleri bulun ve vurgulayın",
       "contextAware": "Bağlam Duyarlı: Son teknoloji AI kullanarak açıklayıcı ve doğru alternatif metinler oluşturun",
       "multipleLanguages": "Birden Fazla Dil: İngilizce ve İsveççe olarak mevcuttur"
+    },
+    "demo": {
+      "tryIt": "Deneyin!",
+      "dragDrop": "Seçmek için tıklayın veya sürükleyip bırakın",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (maks. 16 MB)",
+      "chooseFile": "Dosya Seç",
+      "seoKeywords": "Özel SEO anahtar kelimeleri",
+      "optional": "İsteğe bağlı",
+      "generateButton": "Alt Metin Oluştur",
+      "generating": "Oluşturuluyor...",
+      "resultLabel": "Oluşturulan Alt Metin",
+      "copyButton": "Kopyala",
+      "copied": "Kopyalandı!",
+      "errorFileTooLarge": "Dosya çok büyük. Maks. 16 MB.",
+      "errorInvalidType": "Geçersiz dosya türü. PNG, JPG, GIF, WebP veya BMP kullanın.",
+      "errorGenerate": "Alt metin oluşturulamadı. Lütfen tekrar deneyin.",
+      "errorRateLimit": "Günlük limit doldu. Yarın tekrar deneyin veya sınırsız erişim için premium'a yükseltin."
     }
   },
   "footer": {

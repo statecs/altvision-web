@@ -21,6 +21,23 @@
       "altTextDetection": "Alternativ tekstdetektering: Find og fremhæv billeder, der kræver opmærksomhed",
       "contextAware": "Kontekstbevidst: Opret beskrivende og præcise alternativtekster ved hjælp af avanceret AI",
       "multipleLanguages": "Flere sprog: Tilgængelig på engelsk og svensk"
+    },
+    "demo": {
+      "tryIt": "Prøv det!",
+      "dragDrop": "Klik for at vælge eller træk og slip",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (maks. 16 MB)",
+      "chooseFile": "Vælg fil",
+      "seoKeywords": "Brugerdefinerede SEO-søgeord",
+      "optional": "Valgfrit",
+      "generateButton": "Generer alternativ tekst",
+      "generating": "Genererer...",
+      "resultLabel": "Genereret alternativ tekst",
+      "copyButton": "Kopiér",
+      "copied": "Kopieret!",
+      "errorFileTooLarge": "Filen er for stor. Maks. 16 MB.",
+      "errorInvalidType": "Ugyldig filtype. Brug PNG, JPG, GIF, WebP eller BMP.",
+      "errorGenerate": "Kunne ikke generere alternativ tekst. Prøv igen.",
+      "errorRateLimit": "Daglig grænse nået. Prøv igen i morgen eller opgrader til premium for ubegrænset adgang."
     }
   },
   "footer": {

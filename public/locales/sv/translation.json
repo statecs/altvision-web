@@ -24,6 +24,23 @@
       "altTextDetection": "Alternativtextdetektering: Hitta och markera bilder som behöver uppmärksamhet",
       "contextAware": "Kontextmedveten: Skapa beskrivande och exakta alternativtexter med hjälp av banbrytande AI",
       "multipleLanguages": "Flera språk: Tillgänglig på engelska och svenska"
+    },
+    "demo": {
+      "tryIt": "Prova det!",
+      "dragDrop": "Klicka för att välja eller dra och släpp",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (max 16 MB)",
+      "chooseFile": "Välj fil",
+      "seoKeywords": "Anpassade SEO-nyckelord",
+      "optional": "Valfritt",
+      "generateButton": "Generera alternativtext",
+      "generating": "Genererar...",
+      "resultLabel": "Genererad alternativtext",
+      "copyButton": "Kopiera",
+      "copied": "Kopierad!",
+      "errorFileTooLarge": "Filen är för stor. Max 16 MB.",
+      "errorInvalidType": "Ogiltigt filformat. Använd PNG, JPG, GIF, WebP eller BMP.",
+      "errorGenerate": "Det gick inte att generera alternativtext. Försök igen.",
+      "errorRateLimit": "Daglig gräns nådd. Försök igen imorgon eller uppgradera till premium för obegränsad åtkomst."
     }
   },
   "footer": {

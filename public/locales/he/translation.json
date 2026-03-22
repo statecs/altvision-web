@@ -21,6 +21,23 @@
       "altTextDetection": "זיהוי טקסט חלופי: מצא והדגש תמונות הזקוקות לתשומת לב",
       "contextAware": "מודע להקשר: צור טקסטים חלופיים תיאוריים ומדויקים באמצעות בינה מלאכותית מתקדמת",
       "multipleLanguages": "שפות מרובות: זמין באנגלית ושוודית"
+    },
+    "demo": {
+      "tryIt": "נסה זאת!",
+      "dragDrop": "לחץ לבחירה או גרור ושחרר",
+      "fileTypes": "PNG, JPG, GIF, WebP, BMP (מקסימום 16 MB)",
+      "chooseFile": "בחר קובץ",
+      "seoKeywords": "מילות מפתח SEO מותאמות אישית",
+      "optional": "אופציונלי",
+      "generateButton": "צור טקסט חלופי",
+      "generating": "יוצר...",
+      "resultLabel": "טקסט חלופי שנוצר",
+      "copyButton": "העתק",
+      "copied": "הועתק!",
+      "errorFileTooLarge": "הקובץ גדול מדי. מקסימום 16 MB.",
+      "errorInvalidType": "סוג קובץ לא חוקי. השתמש ב-PNG, JPG, GIF, WebP או BMP.",
+      "errorGenerate": "נכשל ביצירת טקסט חלופי. אנא נסה שוב.",
+      "errorRateLimit": "הגעת למגבלה היומית. נסה שוב מחר או שדרג לפרמיום לגישה ללא הגבלה."
     }
   },
   "footer": {

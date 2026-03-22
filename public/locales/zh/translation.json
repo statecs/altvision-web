@@ -21,6 +21,23 @@
       "altTextDetection": "替代文本检测：查找并突出显示需要关注的图像",
       "contextAware": "上下文感知：使用最先进的AI创建描述性和准确的替代文本",
       "multipleLanguages": "多种语言：支持英语和瑞典语"
+    },
+    "demo": {
+      "tryIt": "立即体验！",
+      "dragDrop": "点击选择或拖放文件",
+      "fileTypes": "PNG、JPG、GIF、WebP、BMP（最大 16 MB）",
+      "chooseFile": "选择文件",
+      "seoKeywords": "自定义 SEO 关键词",
+      "optional": "可选",
+      "generateButton": "生成替代文字",
+      "generating": "生成中...",
+      "resultLabel": "已生成的替代文字",
+      "copyButton": "复制",
+      "copied": "已复制！",
+      "errorFileTooLarge": "文件过大。最大 16 MB。",
+      "errorInvalidType": "文件类型无效。请使用 PNG、JPG、GIF、WebP 或 BMP。",
+      "errorGenerate": "生成替代文字失败。请重试。",
+      "errorRateLimit": "已达到每日限制。请明天再试，或升级到高级版以获得无限访问权限。"
     }
   },
   "footer": {
