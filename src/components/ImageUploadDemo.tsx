@@ -16,7 +16,7 @@ const LANGUAGE_NAMES: Record<string, string> = {
 const ALLOWED_TYPES = ['image/png', 'image/jpeg', 'image/gif', 'image/webp', 'image/bmp'];
 const MAX_SIZE = 16 * 1024 * 1024;
 
-const MAX_DIMENSION = 900;
+const MAX_DIMENSION = 512;
 const TARGET_SIZE = 200_000;
 
 async function compressImage(dataUrl: string): Promise<string> {
