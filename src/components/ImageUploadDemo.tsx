@@ -190,11 +190,11 @@ const ImageUploadDemo: React.FC = () => {
         ) : (
           <>
             <Upload className="mx-auto mb-3 text-gray-400" size={36} />
-            <div className="flex items-center justify-center gap-2 mb-1">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 mb-1">
               <span className="bg-blue-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">
                 {t('home.demo.tryIt')}
               </span>
-              <span className="text-gray-300 text-sm">{t('home.demo.dragDrop')}</span>
+              <span className="text-gray-300 text-sm text-center">{t('home.demo.dragDrop')}</span>
             </div>
             <p className="text-gray-500 text-xs mb-3">{t('home.demo.fileTypes')}</p>
           </>
