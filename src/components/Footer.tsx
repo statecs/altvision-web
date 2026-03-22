@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Github } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
@@ -45,6 +45,15 @@ const Footer = () => {
             </a>
             <a href="/privacy" className="text-gray-500 hover:text-gray-300 transition-colors">
               {t('footer.privacyPolicy')}
+            </a>
+            <a
+              href="https://github.com/statecs/AltVision-plugin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-gray-300 transition-colors inline-flex items-center gap-2"
+            >
+              <Github className="w-4 h-4" />
+              {t('footer.openSource')}
             </a>
           </div>
         </div>
