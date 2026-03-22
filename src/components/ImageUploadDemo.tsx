@@ -53,8 +53,10 @@ async function compressImage(dataUrl: string): Promise<string> {
 const ImageUploadDemo: React.FC = () => {
   const { t, i18n } = useTranslation();
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const uploadZoneRef = useRef<HTMLDivElement>(null);
 
   const [file, setFile] = useState<File | null>(null);
+  const [uploadRequired, setUploadRequired] = useState(false);
   const [preview, setPreview] = useState<string | null>(null);
   const [keywords, setKeywords] = useState('');
   const [keywordsEnabled, setKeywordsEnabled] = useState(false);
@@ -67,6 +69,7 @@ const ImageUploadDemo: React.FC = () => {
   const validateAndSetFile = (f: File) => {
     setResult(null);
     setError(null);
+    setUploadRequired(false);
     if (!ALLOWED_TYPES.includes(f.type)) {
       setError(t('home.demo.errorInvalidType'));
       return;
@@ -105,7 +108,12 @@ const ImageUploadDemo: React.FC = () => {
   const handleDragLeave = () => setIsDragging(false);
 
   const handleGenerate = async () => {
-    if (!file || !preview) return;
+    if (!file || !preview) {
+      setUploadRequired(true);
+      uploadZoneRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      uploadZoneRef.current?.focus();
+      return;
+    }
     setLoading(true);
     setResult(null);
     setError(null);
@@ -165,8 +173,10 @@ const ImageUploadDemo: React.FC = () => {
     <div className="bg-gray-800 border border-gray-700 rounded-2xl p-6 space-y-4">
       {/* Upload zone */}
       <div
-        className={`border-2 border-dashed rounded-xl p-6 text-center cursor-pointer transition-colors ${
-          isDragging ? 'border-blue-400 bg-blue-900/20' : 'border-gray-600 hover:border-gray-500'
+        ref={uploadZoneRef}
+        tabIndex={-1}
+        className={`border-2 border-dashed rounded-xl p-6 text-center cursor-pointer transition-colors outline-none ${
+          uploadRequired ? 'border-red-500 bg-red-900/10' : isDragging ? 'border-blue-400 bg-blue-900/20' : 'border-gray-600 hover:border-gray-500'
         }`}
         onClick={() => fileInputRef.current?.click()}
         onDrop={handleDrop}
@@ -252,7 +262,7 @@ const ImageUploadDemo: React.FC = () => {
       {/* Generate button */}
       <button
         type="button"
-        disabled={!file || loading}
+        disabled={loading}
         onClick={handleGenerate}
         className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 disabled:text-gray-500 text-white font-medium py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2"
       >
