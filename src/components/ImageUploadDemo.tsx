@@ -16,8 +16,8 @@ const LANGUAGE_NAMES: Record<string, string> = {
 const ALLOWED_TYPES = ['image/png', 'image/jpeg', 'image/gif', 'image/webp', 'image/bmp'];
 const MAX_SIZE = 16 * 1024 * 1024;
 
-const MAX_DIMENSION = 1600;
-const TARGET_SIZE = 900_000;
+const MAX_DIMENSION = 900;
+const TARGET_SIZE = 200_000;
 
 async function compressImage(dataUrl: string): Promise<string> {
   return new Promise((resolve) => {
@@ -38,9 +38,9 @@ async function compressImage(dataUrl: string): Promise<string> {
       ctx.fillRect(0, 0, width, height);
       ctx.drawImage(img, 0, 0, width, height);
 
-      let quality = 0.85;
+      let quality = 0.6;
       let result  = canvas.toDataURL('image/jpeg', quality);
-      while (result.length > TARGET_SIZE * 1.37 && quality > 0.3) {
+      while (result.length > TARGET_SIZE * 1.37 && quality > 0.15) {
         quality -= 0.1;
         result   = canvas.toDataURL('image/jpeg', quality);
       }
