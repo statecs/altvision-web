@@ -47,7 +47,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-gray-500 text-sm">
-          {t('footer.copyright')}
+          © Copyright {new Date().getFullYear()} Christopher State
         </div>
       </div>
     </footer>
