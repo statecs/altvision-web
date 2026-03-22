@@ -23,7 +23,7 @@
       "title": "Chrome Extension Features",
       "altTextDetection": "Alt Text Detection: Find and highlight images that need attention",
       "contextAware": "Context-Aware: Create descriptive and accurate alternative texts using state-of-the-art AI",
-      "multipleLanguages": "Multiple Languages: Available in English and Swedish"
+      "multipleLanguages": "We support 31 languages including English, Spanish, French, German, Arabic, Chinese, Hindi, and many more."
     },
     "demo": {
       "dragDrop": "Click to select or drag and drop",
@@ -61,6 +61,7 @@
   "common": {
     "loading": "Loading...",
     "error": "Error",
-    "retry": "Retry"
+    "retry": "Retry",
+    "readMore": "read more"
   }
 }

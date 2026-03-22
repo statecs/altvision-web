@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "WordPress 플러그인", "chromeExtension": "Chrome 확장 프로그램" },
+  "nav": {
+    "wordpressPlugin": "WordPress 플러그인",
+    "chromeExtension": "Chrome 확장 프로그램"
+  },
   "home": {
     "hero": {
       "title": "웹을 모두에게 접근 가능하게",
@@ -20,7 +23,7 @@
       "title": "Chrome 확장 프로그램 기능",
       "altTextDetection": "대체 텍스트 감지: 주의가 필요한 이미지 찾기 및 강조 표시",
       "contextAware": "컨텍스트 인식: 최첨단 AI를 사용하여 설명적이고 정확한 대체 텍스트 생성",
-      "multipleLanguages": "다국어 지원: 영어와 스웨덴어로 제공"
+      "multipleLanguages": "영어, 스페인어, 프랑스어, 독일어, 아랍어, 중국어, 힌디어 등 31개 언어를 지원합니다."
     },
     "demo": {
       "tryIt": "사용해 보기!",
@@ -48,7 +51,17 @@
     "privacyPolicy": "개인정보 처리방침",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "개인정보 처리방침", "lastUpdated": "최종 업데이트: 2025년 2월 1일" },
-  "terms": { "title": "이용 약관" },
-  "common": { "loading": "로딩 중...", "error": "오류", "retry": "다시 시도" }
+  "privacy": {
+    "title": "개인정보 처리방침",
+    "lastUpdated": "최종 업데이트: 2025년 2월 1일"
+  },
+  "terms": {
+    "title": "이용 약관"
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "error": "오류",
+    "retry": "다시 시도",
+    "readMore": "더 읽기"
+  }
 }

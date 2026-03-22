@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "WordPress Plugin", "chromeExtension": "Chrome Bővítmény" },
+  "nav": {
+    "wordpressPlugin": "WordPress Plugin",
+    "chromeExtension": "Chrome Bővítmény"
+  },
   "home": {
     "hero": {
       "title": "Tedd elérhetővé a webet",
@@ -20,7 +23,7 @@
       "title": "Chrome Bővítmény Funkciók",
       "altTextDetection": "Alt szöveg felismerés: Keresd meg és emeld ki a figyelmet igénylő képeket",
       "contextAware": "Kontextusérzékeny: Készíts leíró és pontos alternatív szövegeket élvonalbeli AI segítségével",
-      "multipleLanguages": "Több nyelv: Elérhető angolul és svédül"
+      "multipleLanguages": "31 nyelvet támogatunk, köztük az angolt, a spanyolt, a franciát, a németet, az arabot, a kínait, a hindit és még sok mást."
     },
     "demo": {
       "tryIt": "Próbálja ki!",
@@ -48,7 +51,17 @@
     "privacyPolicy": "Adatvédelmi irányelvek",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "Adatvédelmi Irányelvek", "lastUpdated": "Utoljára frissítve: 2025. február 1." },
-  "terms": { "title": "Felhasználási Feltételek" },
-  "common": { "loading": "Betöltés...", "error": "Hiba", "retry": "Újrapróbálkozás" }
+  "privacy": {
+    "title": "Adatvédelmi Irányelvek",
+    "lastUpdated": "Utoljára frissítve: 2025. február 1."
+  },
+  "terms": {
+    "title": "Felhasználási Feltételek"
+  },
+  "common": {
+    "loading": "Betöltés...",
+    "error": "Hiba",
+    "retry": "Újrapróbálkozás",
+    "readMore": "olvass tovább"
+  }
 }

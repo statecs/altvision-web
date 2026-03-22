@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "WordPress Plugin", "chromeExtension": "Rozšíření pro Chrome" },
+  "nav": {
+    "wordpressPlugin": "WordPress Plugin",
+    "chromeExtension": "Rozšíření pro Chrome"
+  },
   "home": {
     "hero": {
       "title": "Zpřístupněte web všem",
@@ -20,7 +23,7 @@
       "title": "Funkce Rozšíření pro Chrome",
       "altTextDetection": "Detekce alternativního textu: Najděte a zvýrazněte obrázky, které potřebují pozornost",
       "contextAware": "Kontextově citlivé: Vytvářejte popisné a přesné alternativní texty pomocí nejmodernější AI",
-      "multipleLanguages": "Více jazyků: Dostupné v angličtině a švédštině"
+      "multipleLanguages": "Podporujeme 31 jazyků včetně angličtiny, španělštiny, francouzštiny, němčiny, arabštiny, čínštiny, hindštiny a mnoha dalších."
     },
     "demo": {
       "tryIt": "Vyzkoušejte!",
@@ -48,7 +51,17 @@
     "privacyPolicy": "Zásady ochrany osobních údajů",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "Zásady Ochrany Osobních Údajů", "lastUpdated": "Poslední aktualizace: 1. února 2025" },
-  "terms": { "title": "Podmínky Použití" },
-  "common": { "loading": "Načítání...", "error": "Chyba", "retry": "Zkusit znovu" }
+  "privacy": {
+    "title": "Zásady Ochrany Osobních Údajů",
+    "lastUpdated": "Poslední aktualizace: 1. února 2025"
+  },
+  "terms": {
+    "title": "Podmínky Použití"
+  },
+  "common": {
+    "loading": "Načítání...",
+    "error": "Chyba",
+    "retry": "Zkusit znovu",
+    "readMore": "číst dále"
+  }
 }

@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "WordPress-plugin", "chromeExtension": "Chrome-utvidelse" },
+  "nav": {
+    "wordpressPlugin": "WordPress-plugin",
+    "chromeExtension": "Chrome-utvidelse"
+  },
   "home": {
     "hero": {
       "title": "Gjør nettet tilgjengelig",
@@ -20,7 +23,7 @@
       "title": "Chrome-utvidelse Funksjoner",
       "altTextDetection": "Alternativ tekstdeteksjon: Finn og fremhev bilder som trenger oppmerksomhet",
       "contextAware": "Kontekstbevisst: Lag beskrivende og nøyaktige alternativtekster ved hjelp av banebrytende AI",
-      "multipleLanguages": "Flere språk: Tilgjengelig på engelsk og svensk"
+      "multipleLanguages": "Vi støtter 31 språk, inkludert engelsk, spansk, fransk, tysk, arabisk, kinesisk, hindi og mange flere."
     },
     "demo": {
       "tryIt": "Prøv det!",
@@ -48,7 +51,17 @@
     "privacyPolicy": "Personvernpolicy",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "Personvernpolicy", "lastUpdated": "Sist oppdatert: 1. februar 2025" },
-  "terms": { "title": "Bruksvilkår" },
-  "common": { "loading": "Laster...", "error": "Feil", "retry": "Prøv igjen" }
+  "privacy": {
+    "title": "Personvernpolicy",
+    "lastUpdated": "Sist oppdatert: 1. februar 2025"
+  },
+  "terms": {
+    "title": "Bruksvilkår"
+  },
+  "common": {
+    "loading": "Laster...",
+    "error": "Feil",
+    "retry": "Prøv igjen",
+    "readMore": "les mer"
+  }
 }

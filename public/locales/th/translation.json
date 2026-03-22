@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "ปลั๊กอิน WordPress", "chromeExtension": "ส่วนขยาย Chrome" },
+  "nav": {
+    "wordpressPlugin": "ปลั๊กอิน WordPress",
+    "chromeExtension": "ส่วนขยาย Chrome"
+  },
   "home": {
     "hero": {
       "title": "ทำให้เว็บเข้าถึงได้สำหรับทุกคน",
@@ -20,7 +23,7 @@
       "title": "คุณสมบัติส่วนขยาย Chrome",
       "altTextDetection": "การตรวจจับ alt text: ค้นหาและเน้นรูปภาพที่ต้องการความสนใจ",
       "contextAware": "รับรู้บริบท: สร้าง alt text ที่บรรยายและแม่นยำโดยใช้ AI ล้ำสมัย",
-      "multipleLanguages": "หลายภาษา: มีให้ในภาษาอังกฤษและสวีเดน"
+      "multipleLanguages": "เราสนับสนุน 31 ภาษา รวมถึงภาษาอังกฤษ สเปน ฝรั่งเศส เยอรมัน อาหรับ จีน ฮินดี และอื่นๆ อีกมากมาย"
     },
     "demo": {
       "tryIt": "ลองใช้เลย!",
@@ -48,7 +51,17 @@
     "privacyPolicy": "นโยบายความเป็นส่วนตัว",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "นโยบายความเป็นส่วนตัว", "lastUpdated": "อัปเดตล่าสุด: 1 กุมภาพันธ์ 2568" },
-  "terms": { "title": "เงื่อนไขการใช้งาน" },
-  "common": { "loading": "กำลังโหลด...", "error": "ข้อผิดพลาด", "retry": "ลองอีกครั้ง" }
+  "privacy": {
+    "title": "นโยบายความเป็นส่วนตัว",
+    "lastUpdated": "อัปเดตล่าสุด: 1 กุมภาพันธ์ 2568"
+  },
+  "terms": {
+    "title": "เงื่อนไขการใช้งาน"
+  },
+  "common": {
+    "loading": "กำลังโหลด...",
+    "error": "ข้อผิดพลาด",
+    "retry": "ลองอีกครั้ง",
+    "readMore": "อ่านเพิ่มเติม"
+  }
 }

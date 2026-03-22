@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "WordPress Eklentisi", "chromeExtension": "Chrome Uzantısı" },
+  "nav": {
+    "wordpressPlugin": "WordPress Eklentisi",
+    "chromeExtension": "Chrome Uzantısı"
+  },
   "home": {
     "hero": {
       "title": "Web'i erişilebilir kılın",
@@ -20,7 +23,7 @@
       "title": "Chrome Uzantısı Özellikleri",
       "altTextDetection": "Alt Metin Algılama: Dikkat gerektiren görüntüleri bulun ve vurgulayın",
       "contextAware": "Bağlam Duyarlı: Son teknoloji AI kullanarak açıklayıcı ve doğru alternatif metinler oluşturun",
-      "multipleLanguages": "Birden Fazla Dil: İngilizce ve İsveççe olarak mevcuttur"
+      "multipleLanguages": "İngilizce, İspanyolca, Fransızca, Almanca, Arapça, Çince, Hintçe ve daha pek çok dil dahil 31 dili destekliyoruz."
     },
     "demo": {
       "tryIt": "Deneyin!",
@@ -48,7 +51,17 @@
     "privacyPolicy": "Gizlilik Politikası",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "Gizlilik Politikası", "lastUpdated": "Son güncelleme: 1 Şubat 2025" },
-  "terms": { "title": "Kullanım Şartları" },
-  "common": { "loading": "Yükleniyor...", "error": "Hata", "retry": "Yeniden Dene" }
+  "privacy": {
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son güncelleme: 1 Şubat 2025"
+  },
+  "terms": {
+    "title": "Kullanım Şartları"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "retry": "Yeniden Dene",
+    "readMore": "daha fazla oku"
+  }
 }

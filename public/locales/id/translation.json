@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "Plugin WordPress", "chromeExtension": "Ekstensi Chrome" },
+  "nav": {
+    "wordpressPlugin": "Plugin WordPress",
+    "chromeExtension": "Ekstensi Chrome"
+  },
   "home": {
     "hero": {
       "title": "Jadikan web dapat diakses",
@@ -20,7 +23,7 @@
       "title": "Fitur Ekstensi Chrome",
       "altTextDetection": "Deteksi Teks Alt: Temukan dan sorot gambar yang membutuhkan perhatian",
       "contextAware": "Sadar Konteks: Buat teks alternatif yang deskriptif dan akurat menggunakan AI mutakhir",
-      "multipleLanguages": "Banyak Bahasa: Tersedia dalam bahasa Inggris dan Swedia"
+      "multipleLanguages": "Kami mendukung 31 bahasa termasuk Inggris, Spanyol, Prancis, Jerman, Arab, Cina, Hindi, dan masih banyak lagi."
     },
     "demo": {
       "tryIt": "Coba sekarang!",
@@ -48,7 +51,17 @@
     "privacyPolicy": "Kebijakan Privasi",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "Kebijakan Privasi", "lastUpdated": "Terakhir diperbarui: 1 Februari 2025" },
-  "terms": { "title": "Syarat Penggunaan" },
-  "common": { "loading": "Memuat...", "error": "Kesalahan", "retry": "Coba Lagi" }
+  "privacy": {
+    "title": "Kebijakan Privasi",
+    "lastUpdated": "Terakhir diperbarui: 1 Februari 2025"
+  },
+  "terms": {
+    "title": "Syarat Penggunaan"
+  },
+  "common": {
+    "loading": "Memuat...",
+    "error": "Kesalahan",
+    "retry": "Coba Lagi",
+    "readMore": "baca selengkapnya"
+  }
 }

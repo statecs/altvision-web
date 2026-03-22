@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "Plugin WordPress", "chromeExtension": "Estensione Chrome" },
+  "nav": {
+    "wordpressPlugin": "Plugin WordPress",
+    "chromeExtension": "Estensione Chrome"
+  },
   "home": {
     "hero": {
       "title": "Rendi il web accessibile",
@@ -20,7 +23,7 @@
       "title": "Funzionalità dell'Estensione Chrome",
       "altTextDetection": "Rilevamento testo alternativo: Trova ed evidenzia le immagini che richiedono attenzione",
       "contextAware": "Consapevole del contesto: Crea testi alternativi descrittivi e accurati usando AI all'avanguardia",
-      "multipleLanguages": "Più lingue: Disponibile in inglese e svedese"
+      "multipleLanguages": "Supportiamo 31 lingue tra cui inglese, spagnolo, francese, tedesco, arabo, cinese, hindi e molte altre."
     },
     "demo": {
       "tryIt": "Provalo!",
@@ -48,7 +51,17 @@
     "privacyPolicy": "Informativa sulla privacy",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "Informativa sulla Privacy", "lastUpdated": "Ultimo aggiornamento: 1 febbraio 2025" },
-  "terms": { "title": "Termini di Utilizzo" },
-  "common": { "loading": "Caricamento...", "error": "Errore", "retry": "Riprova" }
+  "privacy": {
+    "title": "Informativa sulla Privacy",
+    "lastUpdated": "Ultimo aggiornamento: 1 febbraio 2025"
+  },
+  "terms": {
+    "title": "Termini di Utilizzo"
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "retry": "Riprova",
+    "readMore": "leggi di più"
+  }
 }

@@ -23,7 +23,7 @@
       "title": "Tính năng Tiện ích Chrome",
       "altTextDetection": "Phát hiện văn bản thay thế: Tìm và làm nổi bật các hình ảnh cần chú ý",
       "contextAware": "Nhận thức ngữ cảnh: Tạo văn bản thay thế mô tả và chính xác bằng AI tiên tiến",
-      "multipleLanguages": "Nhiều ngôn ngữ: Có sẵn bằng tiếng Anh và tiếng Thụy Điển"
+      "multipleLanguages": "Chúng tôi hỗ trợ 31 ngôn ngữ bao gồm tiếng Anh, Tây Ban Nha, Pháp, Đức, Ả Rập, Trung Quốc, Hindi và nhiều ngôn ngữ khác."
     },
     "demo": {
       "tryIt": "Thử ngay!",
@@ -61,6 +61,7 @@
   "common": {
     "loading": "Đang tải...",
     "error": "Lỗi",
-    "retry": "Thử lại"
+    "retry": "Thử lại",
+    "readMore": "đọc thêm"
   }
 }

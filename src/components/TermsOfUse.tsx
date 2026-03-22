@@ -347,7 +347,7 @@ const TermsOfUse = () => {
                 <p>• Privacy Concerns: privacy@cstate.se</p>
               </div>
               <p className="mt-4 text-sm text-gray-500">
-                2024 © State Creative
+                {new Date().getFullYear()} © State Creative
               </p>
             </div>
           </div>

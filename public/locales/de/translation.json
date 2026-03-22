@@ -23,7 +23,7 @@
       "title": "Chrome-Erweiterungs-Funktionen",
       "altTextDetection": "Alt-Text-Erkennung: Finden und markieren Sie Bilder, die Aufmerksamkeit benötigen",
       "contextAware": "Kontextbewusst: Erstellen Sie beschreibende und genaue Alternativtexte mit modernster KI",
-      "multipleLanguages": "Mehrere Sprachen: Verfügbar auf Englisch und Schwedisch"
+      "multipleLanguages": "Wir unterstützen 31 Sprachen, darunter Englisch, Spanisch, Französisch, Deutsch, Arabisch, Chinesisch, Hindi und viele mehr."
     },
     "demo": {
       "tryIt": "Ausprobieren!",
@@ -61,6 +61,7 @@
   "common": {
     "loading": "Wird geladen...",
     "error": "Fehler",
-    "retry": "Wiederholen"
+    "retry": "Wiederholen",
+    "readMore": "mehr lesen"
   }
 }

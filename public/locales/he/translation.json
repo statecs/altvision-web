@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "תוסף וורדפרס", "chromeExtension": "הרחבת כרום" },
+  "nav": {
+    "wordpressPlugin": "תוסף וורדפרס",
+    "chromeExtension": "הרחבת כרום"
+  },
   "home": {
     "hero": {
       "title": "הפוך את האינטרנט לנגיש",
@@ -20,7 +23,7 @@
       "title": "תכונות הרחבת כרום",
       "altTextDetection": "זיהוי טקסט חלופי: מצא והדגש תמונות הזקוקות לתשומת לב",
       "contextAware": "מודע להקשר: צור טקסטים חלופיים תיאוריים ומדויקים באמצעות בינה מלאכותית מתקדמת",
-      "multipleLanguages": "שפות מרובות: זמין באנגלית ושוודית"
+      "multipleLanguages": "אנו תומכים ב-31 שפות כולל אנגלית, ספרדית, צרפתית, גרמנית, ערבית, סינית, הינדי ועוד רבות."
     },
     "demo": {
       "tryIt": "נסה זאת!",
@@ -48,7 +51,17 @@
     "privacyPolicy": "מדיניות פרטיות",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "מדיניות פרטיות", "lastUpdated": "עודכן לאחרונה: 1 בפברואר 2025" },
-  "terms": { "title": "תנאי שימוש" },
-  "common": { "loading": "טוען...", "error": "שגיאה", "retry": "נסה שוב" }
+  "privacy": {
+    "title": "מדיניות פרטיות",
+    "lastUpdated": "עודכן לאחרונה: 1 בפברואר 2025"
+  },
+  "terms": {
+    "title": "תנאי שימוש"
+  },
+  "common": {
+    "loading": "טוען...",
+    "error": "שגיאה",
+    "retry": "נסה שוב",
+    "readMore": "קרא עוד"
+  }
 }

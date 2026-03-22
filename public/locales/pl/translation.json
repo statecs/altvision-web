@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "Wtyczka WordPress", "chromeExtension": "Rozszerzenie Chrome" },
+  "nav": {
+    "wordpressPlugin": "Wtyczka WordPress",
+    "chromeExtension": "Rozszerzenie Chrome"
+  },
   "home": {
     "hero": {
       "title": "Spraw, by internet był dostępny",
@@ -20,7 +23,7 @@
       "title": "Funkcje Rozszerzenia Chrome",
       "altTextDetection": "Wykrywanie tekstu alt: Znajdź i wyróżnij obrazy wymagające uwagi",
       "contextAware": "Świadomy kontekstu: Twórz opisowe i precyzyjne teksty alternatywne przy użyciu najnowocześniejszej AI",
-      "multipleLanguages": "Wiele języków: Dostępne w języku angielskim i szwedzkim"
+      "multipleLanguages": "Obsługujemy 31 języków, w tym angielski, hiszpański, francuski, niemiecki, arabski, chiński, hindi i wiele innych."
     },
     "demo": {
       "tryIt": "Wypróbuj!",
@@ -48,7 +51,17 @@
     "privacyPolicy": "Polityka prywatności",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "Polityka Prywatności", "lastUpdated": "Ostatnia aktualizacja: 1 lutego 2025" },
-  "terms": { "title": "Warunki Użytkowania" },
-  "common": { "loading": "Ładowanie...", "error": "Błąd", "retry": "Spróbuj ponownie" }
+  "privacy": {
+    "title": "Polityka Prywatności",
+    "lastUpdated": "Ostatnia aktualizacja: 1 lutego 2025"
+  },
+  "terms": {
+    "title": "Warunki Użytkowania"
+  },
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Błąd",
+    "retry": "Spróbuj ponownie",
+    "readMore": "czytaj więcej"
+  }
 }

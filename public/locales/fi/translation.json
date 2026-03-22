@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "WordPress-laajennus", "chromeExtension": "Chrome-laajennus" },
+  "nav": {
+    "wordpressPlugin": "WordPress-laajennus",
+    "chromeExtension": "Chrome-laajennus"
+  },
   "home": {
     "hero": {
       "title": "Tee verkosta saavutettava",
@@ -20,7 +23,7 @@
       "title": "Chrome-laajennuksen Ominaisuudet",
       "altTextDetection": "Vaihtoehtoistekstin tunnistus: Löydä ja korosta kuvia, jotka tarvitsevat huomiota",
       "contextAware": "Kontekstiherkkä: Luo kuvaavia ja tarkkoja vaihtoehtoistekstejä huippuluokan tekoälyn avulla",
-      "multipleLanguages": "Useita kieliä: Saatavilla englanniksi ja ruotsiksi"
+      "multipleLanguages": "Tuemme 31 kieltä, mukaan lukien englanti, espanja, ranska, saksa, arabia, kiina, hindi ja monet muut."
     },
     "demo": {
       "tryIt": "Kokeile!",
@@ -48,7 +51,17 @@
     "privacyPolicy": "Tietosuojakäytäntö",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "Tietosuojakäytäntö", "lastUpdated": "Viimeksi päivitetty: 1. helmikuuta 2025" },
-  "terms": { "title": "Käyttöehdot" },
-  "common": { "loading": "Ladataan...", "error": "Virhe", "retry": "Yritä uudelleen" }
+  "privacy": {
+    "title": "Tietosuojakäytäntö",
+    "lastUpdated": "Viimeksi päivitetty: 1. helmikuuta 2025"
+  },
+  "terms": {
+    "title": "Käyttöehdot"
+  },
+  "common": {
+    "loading": "Ladataan...",
+    "error": "Virhe",
+    "retry": "Yritä uudelleen",
+    "readMore": "lue lisää"
+  }
 }

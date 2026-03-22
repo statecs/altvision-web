@@ -23,7 +23,7 @@
       "title": "Caracteristici Extensie Chrome",
       "altTextDetection": "Detectarea textului alternativ: Găsiți și evidențiați imaginile care necesită atenție",
       "contextAware": "Conștient de context: Creați texte alternative descriptive și precise folosind IA de ultimă generație",
-      "multipleLanguages": "Mai multe limbi: Disponibil în engleză și suedeză"
+      "multipleLanguages": "Suportăm 31 de limbi, inclusiv engleză, spaniolă, franceză, germană, arabă, chineză, hindi și multe altele."
     },
     "demo": {
       "tryIt": "Încearcă!",
@@ -61,6 +61,7 @@
   "common": {
     "loading": "Se încarcă...",
     "error": "Eroare",
-    "retry": "Reîncercați"
+    "retry": "Reîncercați",
+    "readMore": "citește mai mult"
   }
 }

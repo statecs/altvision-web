@@ -170,7 +170,7 @@ const ImageUploadDemo: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-800 border border-gray-700 rounded-2xl p-6 space-y-4">
+    <div className="bg-gray-800/70 border border-gray-700/50 rounded-2xl p-6 space-y-4 shadow-2xl shadow-black/40 backdrop-blur-sm">
       {/* Upload zone */}
       <div
         ref={uploadZoneRef}

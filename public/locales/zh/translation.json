@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "WordPress插件", "chromeExtension": "Chrome扩展程序" },
+  "nav": {
+    "wordpressPlugin": "WordPress插件",
+    "chromeExtension": "Chrome扩展程序"
+  },
   "home": {
     "hero": {
       "title": "让网络对所有人无障碍",
@@ -20,7 +23,7 @@
       "title": "Chrome扩展程序功能",
       "altTextDetection": "替代文本检测：查找并突出显示需要关注的图像",
       "contextAware": "上下文感知：使用最先进的AI创建描述性和准确的替代文本",
-      "multipleLanguages": "多种语言：支持英语和瑞典语"
+      "multipleLanguages": "我们支持31种语言，包括英语、西班牙语、法语、德语、阿拉伯语、中文、印地语等更多语言。"
     },
     "demo": {
       "tryIt": "立即体验！",
@@ -48,7 +51,17 @@
     "privacyPolicy": "隐私政策",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "隐私政策", "lastUpdated": "最后更新：2025年2月1日" },
-  "terms": { "title": "使用条款" },
-  "common": { "loading": "加载中...", "error": "错误", "retry": "重试" }
+  "privacy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：2025年2月1日"
+  },
+  "terms": {
+    "title": "使用条款"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "retry": "重试",
+    "readMore": "阅读更多"
+  }
 }

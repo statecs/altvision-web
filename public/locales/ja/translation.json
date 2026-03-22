@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "WordPressプラグイン", "chromeExtension": "Chrome拡張機能" },
+  "nav": {
+    "wordpressPlugin": "WordPressプラグイン",
+    "chromeExtension": "Chrome拡張機能"
+  },
   "home": {
     "hero": {
       "title": "ウェブをアクセシブルにする",
@@ -20,7 +23,7 @@
       "title": "Chrome拡張機能の機能",
       "altTextDetection": "代替テキスト検出：注意が必要な画像を見つけてハイライト",
       "contextAware": "コンテキスト対応：最先端のAIを使用して記述的かつ正確な代替テキストを作成",
-      "multipleLanguages": "多言語対応：英語とスウェーデン語で利用可能"
+      "multipleLanguages": "英語、スペイン語、フランス語、ドイツ語、アラビア語、中国語、ヒンディー語など、31の言語に対応しています。"
     },
     "demo": {
       "tryIt": "試してみる！",
@@ -48,7 +51,17 @@
     "privacyPolicy": "プライバシーポリシー",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "プライバシーポリシー", "lastUpdated": "最終更新日：2025年2月1日" },
-  "terms": { "title": "利用規約" },
-  "common": { "loading": "読み込み中...", "error": "エラー", "retry": "再試行" }
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "lastUpdated": "最終更新日：2025年2月1日"
+  },
+  "terms": {
+    "title": "利用規約"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "retry": "再試行",
+    "readMore": "続きを読む"
+  }
 }

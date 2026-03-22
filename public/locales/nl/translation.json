@@ -1,5 +1,8 @@
 {
-  "nav": { "wordpressPlugin": "WordPress-plugin", "chromeExtension": "Chrome-extensie" },
+  "nav": {
+    "wordpressPlugin": "WordPress-plugin",
+    "chromeExtension": "Chrome-extensie"
+  },
   "home": {
     "hero": {
       "title": "Maak het web toegankelijk",
@@ -20,7 +23,7 @@
       "title": "Chrome-extensie Functies",
       "altTextDetection": "Alt-tekstdetectie: Vind en markeer afbeeldingen die aandacht nodig hebben",
       "contextAware": "Contextbewust: Maak beschrijvende en nauwkeurige alternatieve teksten met behulp van geavanceerde AI",
-      "multipleLanguages": "Meerdere talen: Beschikbaar in het Engels en Zweeds"
+      "multipleLanguages": "We ondersteunen 31 talen, waaronder Engels, Spaans, Frans, Duits, Arabisch, Chinees, Hindi en nog veel meer."
     },
     "demo": {
       "tryIt": "Probeer het!",
@@ -48,7 +51,17 @@
     "privacyPolicy": "Privacybeleid",
     "copyright": "© Copyright 2025 Christopher State"
   },
-  "privacy": { "title": "Privacybeleid", "lastUpdated": "Laatst bijgewerkt: 1 februari 2025" },
-  "terms": { "title": "Gebruiksvoorwaarden" },
-  "common": { "loading": "Laden...", "error": "Fout", "retry": "Opnieuw proberen" }
+  "privacy": {
+    "title": "Privacybeleid",
+    "lastUpdated": "Laatst bijgewerkt: 1 februari 2025"
+  },
+  "terms": {
+    "title": "Gebruiksvoorwaarden"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Fout",
+    "retry": "Opnieuw proberen",
+    "readMore": "lees meer"
+  }
 }

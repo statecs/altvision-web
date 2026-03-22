@@ -23,7 +23,7 @@
       "title": "Chrome-tilläggsfunktioner",
       "altTextDetection": "Alternativtextdetektering: Hitta och markera bilder som behöver uppmärksamhet",
       "contextAware": "Kontextmedveten: Skapa beskrivande och exakta alternativtexter med hjälp av banbrytande AI",
-      "multipleLanguages": "Flera språk: Tillgänglig på engelska och svenska"
+      "multipleLanguages": "Vi stöder 31 språk inklusive engelska, spanska, franska, tyska, arabiska, kinesiska, hindi och många fler."
     },
     "demo": {
       "tryIt": "Prova det!",
@@ -61,6 +61,7 @@
   "common": {
     "loading": "Laddar...",
     "error": "Fel",
-    "retry": "Försök igen"
+    "retry": "Försök igen",
+    "readMore": "läs mer"
   }
 }

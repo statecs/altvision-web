@@ -23,7 +23,7 @@
       "title": "Recursos da Extensão Chrome",
       "altTextDetection": "Detecção de texto alternativo: Encontre e destaque imagens que precisam de atenção",
       "contextAware": "Sensível ao contexto: Crie textos alternativos descritivos e precisos usando IA de ponta",
-      "multipleLanguages": "Vários idiomas: Disponível em inglês e sueco"
+      "multipleLanguages": "Suportamos 31 idiomas, incluindo inglês, espanhol, francês, alemão, árabe, chinês, hindi e muito mais."
     },
     "demo": {
       "tryIt": "Experimente!",
@@ -61,6 +61,7 @@
   "common": {
     "loading": "Carregando...",
     "error": "Erro",
-    "retry": "Tentar novamente"
+    "retry": "Tentar novamente",
+    "readMore": "ler mais"
   }
 }
