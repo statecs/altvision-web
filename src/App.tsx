@@ -7,6 +7,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import LocaleRouter from './components/LocaleRouter';
 import LanguageSelector from './components/LanguageSelector';
 import ImageUploadDemo from './components/ImageUploadDemo';
+import { trackEvent } from './analytics';
 
 // Navigation Component
 const Navigation = () => {
@@ -48,6 +49,7 @@ const HomePage = () => {
             href="https://wordpress.org/plugins/altvision-ai-alt-text-generator/"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-500 hover:to-violet-500 text-white px-6 py-3 rounded-xl font-medium transition-all shadow-lg shadow-blue-700/30"
+            onClick={() => trackEvent('cta_click', { label: 'wordpress_plugin' })}
           >
             {t('home.hero.wpButton')}
           </a>
@@ -55,6 +57,7 @@ const HomePage = () => {
             href="https://chromewebstore.google.com/detail/altvision/iogpbgncdhijknmmhkllijfaioecfcoa"
             rel="noopener noreferrer"
             className="border border-blue-500/50 text-blue-300 hover:border-blue-400 hover:bg-blue-500/10 px-6 py-3 rounded-xl font-medium transition-all"
+            onClick={() => trackEvent('cta_click', { label: 'chrome_extension' })}
           >
             {t('home.hero.chromeButton')}
           </a>

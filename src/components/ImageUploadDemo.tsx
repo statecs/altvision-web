@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Upload, Copy, Check, Loader2 } from 'lucide-react';
+import { trackEvent } from '../analytics';
 
 const API_BASE = 'https://cloudfare-worker-altvision-api.chris-172.workers.dev';
 
@@ -90,14 +91,14 @@ const ImageUploadDemo: React.FC = () => {
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const f = e.target.files?.[0];
-    if (f) validateAndSetFile(f);
+    if (f) { validateAndSetFile(f); trackEvent('file_upload', { method: 'click' }); }
   };
 
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
     setIsDragging(false);
     const f = e.dataTransfer.files?.[0];
-    if (f) validateAndSetFile(f);
+    if (f) { validateAndSetFile(f); trackEvent('file_upload', { method: 'drag_drop' }); }
   };
 
   const handleDragOver = (e: React.DragEvent) => {
@@ -117,6 +118,7 @@ const ImageUploadDemo: React.FC = () => {
     setLoading(true);
     setResult(null);
     setError(null);
+    trackEvent('generate_alt_text');
 
     try {
       // Step 1: fetch/process image
@@ -147,8 +149,10 @@ const ImageUploadDemo: React.FC = () => {
 
       if (visionData.message && (!visionData.code || visionData.code === 'success')) {
         setResult(visionData.message);
+        trackEvent('generate_success');
       } else if (visionData.code === 'limit') {
         setError(t('home.demo.errorRateLimit'));
+        trackEvent('generate_error', { reason: 'rate_limit' });
       } else if (visionData.message) {
         setError(visionData.message);
       } else {
@@ -156,6 +160,7 @@ const ImageUploadDemo: React.FC = () => {
       }
     } catch {
       setError(t('home.demo.errorGenerate'));
+      trackEvent('generate_error', { reason: 'api_error' });
     } finally {
       setLoading(false);
     }
@@ -166,6 +171,7 @@ const ImageUploadDemo: React.FC = () => {
     navigator.clipboard.writeText(result).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
+      trackEvent('copy_alt_text');
     });
   };
 
