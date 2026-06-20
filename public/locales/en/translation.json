@@ -41,7 +41,8 @@
       "errorInvalidType": "Invalid file type. Use PNG, JPG, GIF, WebP or BMP.",
       "errorGenerate": "Failed to generate alt text. Please try again.",
       "errorRateLimit": "Daily limit reached. Try again tomorrow or upgrade to premium for unlimited access.",
-      "tryIt": "Try It!"
+      "tryIt": "Try It!",
+      "outputLanguage": "Output language"
     }
   },
   "footer": {

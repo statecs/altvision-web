@@ -27,6 +27,7 @@
     },
     "demo": {
       "tryIt": "사용해 보기!",
+      "outputLanguage": "출력 언어",
       "dragDrop": "클릭하여 선택하거나 드래그 앤 드롭",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (최대 16MB)",
       "chooseFile": "파일 선택",

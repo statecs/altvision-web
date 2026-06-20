@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Upload, Copy, Check, Loader2 } from 'lucide-react';
 import { trackEvent } from '../analytics';
+import LanguageDropdown from './LanguageDropdown';
 
 const API_BASE = 'https://cloudfare-worker-altvision-api.chris-172.workers.dev';
 
@@ -193,6 +194,12 @@ const ImageUploadDemo: React.FC = () => {
 
   return (
     <div className="bg-gray-800/70 border border-gray-700/50 rounded-2xl p-6 space-y-4 shadow-2xl shadow-black/40 backdrop-blur-sm">
+      {/* Output language */}
+      <div className="space-y-1.5">
+        <span className="text-xs text-gray-500">{t('home.demo.outputLanguage')}</span>
+        <LanguageDropdown variant="inline" />
+      </div>
+
       {/* Upload zone */}
       <div
         ref={uploadZoneRef}

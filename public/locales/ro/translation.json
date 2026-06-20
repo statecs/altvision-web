@@ -27,6 +27,7 @@
     },
     "demo": {
       "tryIt": "Încearcă!",
+      "outputLanguage": "Limba de ieșire",
       "dragDrop": "Faceți clic pentru a selecta sau trageți și plasați",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (max. 16 MB)",
       "chooseFile": "Alege fișier",

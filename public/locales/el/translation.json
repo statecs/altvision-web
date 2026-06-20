@@ -27,6 +27,7 @@
     },
     "demo": {
       "tryIt": "Δοκιμάστε το!",
+      "outputLanguage": "Γλώσσα εξόδου",
       "dragDrop": "Κάντε κλικ για επιλογή ή σύρετε και αφήστε",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (μέγ. 16 MB)",
       "chooseFile": "Επιλογή αρχείου",

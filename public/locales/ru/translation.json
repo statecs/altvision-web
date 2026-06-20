@@ -27,6 +27,7 @@
     },
     "demo": {
       "tryIt": "Попробуйте!",
+      "outputLanguage": "Язык вывода",
       "dragDrop": "Нажмите для выбора или перетащите файл",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (макс. 16 МБ)",
       "chooseFile": "Выбрать файл",
