@@ -17,6 +17,16 @@ const LANGUAGE_NAMES: Record<string, string> = {
 const ALLOWED_TYPES = ['image/png', 'image/jpeg', 'image/gif', 'image/webp', 'image/bmp'];
 const MAX_SIZE = 16 * 1024 * 1024;
 
+function parseAltTextAndTags(message: string): { altText: string; tags: string[] } {
+  const match = message.match(/ALT TEXT:\s*([\s\S]*?)\s*TAGS:\s*([\s\S]*)/i);
+  if (!match) return { altText: message.trim(), tags: [] };
+  const tags = match[2]
+    .split(',')
+    .map((tag) => tag.trim())
+    .filter(Boolean);
+  return { altText: match[1].trim(), tags };
+}
+
 const MAX_DIMENSION = 512;
 const TARGET_SIZE = 200_000;
 
@@ -62,13 +72,15 @@ const ImageUploadDemo: React.FC = () => {
   const [keywords, setKeywords] = useState('');
   const [keywordsEnabled, setKeywordsEnabled] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState<string | null>(null);
+  const [altText, setAltText] = useState<string | null>(null);
+  const [tags, setTags] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [isDragging, setIsDragging] = useState(false);
-  const [copied, setCopied] = useState(false);
+  const [copiedField, setCopiedField] = useState<'alt' | 'tags' | null>(null);
 
   const validateAndSetFile = (f: File) => {
-    setResult(null);
+    setAltText(null);
+    setTags([]);
     setError(null);
     setUploadRequired(false);
     if (!ALLOWED_TYPES.includes(f.type)) {
@@ -116,7 +128,8 @@ const ImageUploadDemo: React.FC = () => {
       return;
     }
     setLoading(true);
-    setResult(null);
+    setAltText(null);
+    setTags([]);
     setError(null);
     trackEvent('generate_alt_text');
 
@@ -131,10 +144,10 @@ const ImageUploadDemo: React.FC = () => {
       const fetchData = await fetchRes.json();
       const base64Image: string = fetchData.base64;
 
-      // Step 2: generate alt text
+      // Step 2: generate alt text + tags
       const langCode = i18n.language?.split('-')[0] || 'en';
       const langName = LANGUAGE_NAMES[langCode] || 'English';
-      let promptText = `Write the alt text in ${langName}.`;
+      let promptText = `Write the alt text in ${langName}, then on a new line write 6-8 short, comma-separated SEO tags relevant to the image (no hashtags, no numbering). Format your response exactly as:\nALT TEXT: <alt text>\nTAGS: <tag1, tag2, tag3>`;
       if (keywordsEnabled && keywords.trim()) {
         promptText += ` Adjacent content: ${keywords.trim()}`;
       }
@@ -148,7 +161,9 @@ const ImageUploadDemo: React.FC = () => {
       const visionData = await visionRes.json();
 
       if (visionData.message && (!visionData.code || visionData.code === 'success')) {
-        setResult(visionData.message);
+        const parsed = parseAltTextAndTags(visionData.message);
+        setAltText(parsed.altText);
+        setTags(parsed.tags);
         trackEvent('generate_success');
       } else if (visionData.code === 'limit') {
         setError(t('home.demo.errorRateLimit'));
@@ -166,12 +181,13 @@ const ImageUploadDemo: React.FC = () => {
     }
   };
 
-  const handleCopy = () => {
-    if (!result) return;
-    navigator.clipboard.writeText(result).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-      trackEvent('copy_alt_text');
+  const handleCopy = (field: 'alt' | 'tags') => {
+    const text = field === 'alt' ? altText : tags.join(', ');
+    if (!text) return;
+    navigator.clipboard.writeText(text).then(() => {
+      setCopiedField(field);
+      setTimeout(() => setCopiedField(null), 2000);
+      trackEvent(field === 'alt' ? 'copy_alt_text' : 'copy_tags');
     });
   };
 
@@ -282,18 +298,44 @@ const ImageUploadDemo: React.FC = () => {
         )}
       </button>
 
-      {/* Result */}
-      {result && (
-        <div className="bg-gray-900 border border-gray-700 rounded-xl p-4 flex items-start gap-3">
-          <p className="text-gray-200 text-sm leading-relaxed flex-1">{result}</p>
-          <button
-            type="button"
-            onClick={handleCopy}
-            className="flex-shrink-0 text-gray-400 hover:text-white transition-colors mt-0.5"
-            aria-label={copied ? t('home.demo.copied') : t('home.demo.copyButton')}
-          >
-            {copied ? <Check size={16} /> : <Copy size={16} />}
-          </button>
+      {/* Results */}
+      {altText && (
+        <div className="space-y-3">
+          <div className="bg-gray-900 border border-gray-700 rounded-xl p-4">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-xs font-semibold text-gray-400 uppercase tracking-wide">
+                {t('home.demo.resultLabel')}
+              </span>
+              <button
+                type="button"
+                onClick={() => handleCopy('alt')}
+                className="flex-shrink-0 text-gray-400 hover:text-white transition-colors"
+                aria-label={copiedField === 'alt' ? t('home.demo.copied') : t('home.demo.copyButton')}
+              >
+                {copiedField === 'alt' ? <Check size={16} /> : <Copy size={16} />}
+              </button>
+            </div>
+            <p className="text-gray-200 text-sm leading-relaxed">{altText}</p>
+          </div>
+
+          {tags.length > 0 && (
+            <div className="bg-gray-900 border border-gray-700 rounded-xl p-4">
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-xs font-semibold text-gray-400 uppercase tracking-wide">
+                  {t('home.demo.tagsLabel')}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => handleCopy('tags')}
+                  className="flex-shrink-0 text-gray-400 hover:text-white transition-colors"
+                  aria-label={copiedField === 'tags' ? t('home.demo.copied') : t('home.demo.copyButton')}
+                >
+                  {copiedField === 'tags' ? <Check size={16} /> : <Copy size={16} />}
+                </button>
+              </div>
+              <p className="text-gray-200 text-sm leading-relaxed">{tags.join(', ')}</p>
+            </div>
+          )}
         </div>
       )}
     </div>

@@ -35,6 +35,7 @@
       "generateButton": "Generer alternativ tekst",
       "generating": "Genererer...",
       "resultLabel": "Genereret alternativ tekst",
+      "tagsLabel": "Foreslåede tags",
       "copyButton": "Kopiér",
       "copied": "Kopieret!",
       "errorFileTooLarge": "Filen er for stor. Maks. 16 MB.",

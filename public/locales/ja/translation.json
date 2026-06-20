@@ -35,6 +35,7 @@
       "generateButton": "代替テキストを生成",
       "generating": "生成中...",
       "resultLabel": "生成された代替テキスト",
+      "tagsLabel": "おすすめタグ",
       "copyButton": "コピー",
       "copied": "コピーしました！",
       "errorFileTooLarge": "ファイルが大きすぎます。最大 16 MB。",

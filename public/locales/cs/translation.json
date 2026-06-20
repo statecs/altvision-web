@@ -35,6 +35,7 @@
       "generateButton": "Generovat alternativní text",
       "generating": "Generování...",
       "resultLabel": "Vygenerovaný alternativní text",
+      "tagsLabel": "Navrhované štítky",
       "copyButton": "Kopírovat",
       "copied": "Zkopírováno!",
       "errorFileTooLarge": "Soubor je příliš velký. Max. 16 MB.",

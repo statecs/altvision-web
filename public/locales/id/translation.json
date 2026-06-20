@@ -35,6 +35,7 @@
       "generateButton": "Buat Teks Alternatif",
       "generating": "Membuat...",
       "resultLabel": "Teks Alternatif yang Dibuat",
+      "tagsLabel": "Tag yang Disarankan",
       "copyButton": "Salin",
       "copied": "Disalin!",
       "errorFileTooLarge": "File terlalu besar. Maks. 16 MB.",

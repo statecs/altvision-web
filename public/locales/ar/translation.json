@@ -35,6 +35,7 @@
       "generateButton": "توليد النص البديل",
       "generating": "جارٍ التوليد...",
       "resultLabel": "النص البديل المُولَّد",
+      "tagsLabel": "العلامات المقترحة",
       "copyButton": "نسخ",
       "copied": "تم النسخ!",
       "errorFileTooLarge": "الملف كبير جداً. الحد الأقصى 16 ميجابايت.",

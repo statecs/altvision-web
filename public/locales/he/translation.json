@@ -35,6 +35,7 @@
       "generateButton": "צור טקסט חלופי",
       "generating": "יוצר...",
       "resultLabel": "טקסט חלופי שנוצר",
+      "tagsLabel": "תגים מומלצים",
       "copyButton": "העתק",
       "copied": "הועתק!",
       "errorFileTooLarge": "הקובץ גדול מדי. מקסימום 16 MB.",

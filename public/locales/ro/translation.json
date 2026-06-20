@@ -35,6 +35,7 @@
       "generateButton": "Generează text alternativ",
       "generating": "Se generează...",
       "resultLabel": "Text alternativ generat",
+      "tagsLabel": "Etichete sugerate",
       "copyButton": "Copiați",
       "copied": "Copiat!",
       "errorFileTooLarge": "Fișierul este prea mare. Max. 16 MB.",

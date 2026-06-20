@@ -35,6 +35,7 @@
       "generateButton": "Alt szöveg generálása",
       "generating": "Generálás...",
       "resultLabel": "Generált alt szöveg",
+      "tagsLabel": "Javasolt címkék",
       "copyButton": "Másolás",
       "copied": "Másolva!",
       "errorFileTooLarge": "A fájl túl nagy. Max. 16 MB.",

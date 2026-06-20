@@ -35,6 +35,7 @@
       "generateButton": "สร้าง Alt Text",
       "generating": "กำลังสร้าง...",
       "resultLabel": "Alt Text ที่สร้างแล้ว",
+      "tagsLabel": "แท็กที่แนะนำ",
       "copyButton": "คัดลอก",
       "copied": "คัดลอกแล้ว!",
       "errorFileTooLarge": "ไฟล์ใหญ่เกินไป สูงสุด 16 MB",

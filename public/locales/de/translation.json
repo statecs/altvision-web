@@ -35,6 +35,7 @@
       "generateButton": "Alt-Text generieren",
       "generating": "Wird generiert...",
       "resultLabel": "Generierter Alt-Text",
+      "tagsLabel": "Vorgeschlagene Tags",
       "copyButton": "Kopieren",
       "copied": "Kopiert!",
       "errorFileTooLarge": "Datei zu groß. Max. 16 MB.",

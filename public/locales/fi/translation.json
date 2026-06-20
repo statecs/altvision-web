@@ -35,6 +35,7 @@
       "generateButton": "Luo vaihtoehtoinen teksti",
       "generating": "Luodaan...",
       "resultLabel": "Luotu vaihtoehtoinen teksti",
+      "tagsLabel": "Ehdotetut tunnisteet",
       "copyButton": "Kopioi",
       "copied": "Kopioitu!",
       "errorFileTooLarge": "Tiedosto on liian suuri. Enintään 16 MB.",

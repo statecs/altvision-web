@@ -35,6 +35,7 @@
       "generateButton": "Alt-tekst genereren",
       "generating": "Genereren...",
       "resultLabel": "Gegenereerde alt-tekst",
+      "tagsLabel": "Voorgestelde tags",
       "copyButton": "Kopiëren",
       "copied": "Gekopieerd!",
       "errorFileTooLarge": "Bestand te groot. Max 16 MB.",

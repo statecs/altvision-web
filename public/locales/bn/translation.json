@@ -35,6 +35,7 @@
       "generateButton": "Alt টেক্সট তৈরি করুন",
       "generating": "তৈরি হচ্ছে...",
       "resultLabel": "তৈরি করা Alt টেক্সট",
+      "tagsLabel": "প্রস্তাবিত ট্যাগ",
       "copyButton": "কপি করুন",
       "copied": "কপি হয়েছে!",
       "errorFileTooLarge": "ফাইল অনেক বড়। সর্বোচ্চ 16 MB।",

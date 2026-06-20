@@ -35,6 +35,7 @@
       "generateButton": "Alt टेक्स्ट बनाएँ",
       "generating": "बनाया जा रहा है...",
       "resultLabel": "बनाया गया Alt टेक्स्ट",
+      "tagsLabel": "सुझाए गए टैग",
       "copyButton": "कॉपी करें",
       "copied": "कॉपी हो गया!",
       "errorFileTooLarge": "फ़ाइल बहुत बड़ी है। अधिकतम 16 MB।",

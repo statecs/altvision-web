@@ -35,6 +35,7 @@
       "generateButton": "Generera alternativtext",
       "generating": "Genererar...",
       "resultLabel": "Genererad alternativtext",
+      "tagsLabel": "Föreslagna taggar",
       "copyButton": "Kopiera",
       "copied": "Kopierad!",
       "errorFileTooLarge": "Filen är för stor. Max 16 MB.",

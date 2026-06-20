@@ -35,6 +35,7 @@
       "generateButton": "Tạo văn bản thay thế",
       "generating": "Đang tạo...",
       "resultLabel": "Văn bản thay thế đã tạo",
+      "tagsLabel": "Thẻ gợi ý",
       "copyButton": "Sao chép",
       "copied": "Đã sao chép!",
       "errorFileTooLarge": "Tệp quá lớn. Tối đa 16 MB.",

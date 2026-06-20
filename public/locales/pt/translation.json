@@ -35,6 +35,7 @@
       "generateButton": "Gerar texto alternativo",
       "generating": "Gerando...",
       "resultLabel": "Texto alternativo gerado",
+      "tagsLabel": "Tags sugeridas",
       "copyButton": "Copiar",
       "copied": "Copiado!",
       "errorFileTooLarge": "Arquivo muito grande. Máx. 16 MB.",

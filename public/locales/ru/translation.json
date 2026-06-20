@@ -35,6 +35,7 @@
       "generateButton": "Создать alt-текст",
       "generating": "Создание...",
       "resultLabel": "Созданный alt-текст",
+      "tagsLabel": "Предлагаемые теги",
       "copyButton": "Копировать",
       "copied": "Скопировано!",
       "errorFileTooLarge": "Файл слишком большой. Макс. 16 МБ.",

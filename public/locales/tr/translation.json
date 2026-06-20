@@ -35,6 +35,7 @@
       "generateButton": "Alt Metin Oluştur",
       "generating": "Oluşturuluyor...",
       "resultLabel": "Oluşturulan Alt Metin",
+      "tagsLabel": "Önerilen Etiketler",
       "copyButton": "Kopyala",
       "copied": "Kopyalandı!",
       "errorFileTooLarge": "Dosya çok büyük. Maks. 16 MB.",
