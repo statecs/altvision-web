@@ -31,6 +31,7 @@
       "dragDrop": "Klik untuk memilih atau seret dan lepas",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (maks. 16 MB)",
       "chooseFile": "Pilih File",
+      "replaceFile": "Ganti dengan file lain",
       "seoKeywords": "Kata kunci SEO kustom",
       "optional": "Opsional",
       "generateButton": "Buat Teks Alternatif",

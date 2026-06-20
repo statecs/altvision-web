@@ -31,6 +31,7 @@
       "dragDrop": "Kattintson a kiválasztáshoz vagy húzza ide a fájlt",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (max. 16 MB)",
       "chooseFile": "Fájl kiválasztása",
+      "replaceFile": "Csere másik fájlra",
       "seoKeywords": "Egyéni SEO-kulcsszavak",
       "optional": "Nem kötelező",
       "generateButton": "Alt szöveg generálása",

@@ -31,6 +31,7 @@
       "dragDrop": "தேர்வு செய்ய கிளிக் செய்யவும் அல்லது இழுத்து விடவும்",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (அதிகபட்சம் 16 MB)",
       "chooseFile": "கோப்பு தேர்வு செய்க",
+      "replaceFile": "வேறு கோப்புடன் மாற்றவும்",
       "seoKeywords": "தனிப்பயன் SEO முக்கியச்சொற்கள்",
       "optional": "விருப்பத்தேர்வு",
       "generateButton": "Alt உரை உருவாக்கு",

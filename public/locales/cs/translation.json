@@ -31,6 +31,7 @@
       "dragDrop": "Klikněte pro výběr nebo přetáhněte soubor",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (max. 16 MB)",
       "chooseFile": "Vybrat soubor",
+      "replaceFile": "Nahradit jiným souborem",
       "seoKeywords": "Vlastní klíčová slova SEO",
       "optional": "Volitelné",
       "generateButton": "Generovat alternativní text",

@@ -31,6 +31,7 @@
       "dragDrop": "चुनने के लिए क्लिक करें या खींचें और छोड़ें",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (अधिकतम 16 MB)",
       "chooseFile": "फ़ाइल चुनें",
+      "replaceFile": "किसी अन्य फ़ाइल से बदलें",
       "seoKeywords": "कस्टम SEO कीवर्ड",
       "optional": "वैकल्पिक",
       "generateButton": "Alt टेक्स्ट बनाएँ",

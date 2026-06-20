@@ -31,6 +31,7 @@
       "dragDrop": "انقر للاختيار أو اسحب وأفلت",
       "fileTypes": "PNG، JPG، GIF، WebP، BMP (الحد الأقصى 16 ميجابايت)",
       "chooseFile": "اختر ملفاً",
+      "replaceFile": "استبدال بملف آخر",
       "seoKeywords": "كلمات مفتاحية SEO مخصصة",
       "optional": "اختياري",
       "generateButton": "توليد النص البديل",

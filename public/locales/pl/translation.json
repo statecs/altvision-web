@@ -31,6 +31,7 @@
       "dragDrop": "Kliknij, aby wybrać lub przeciągnij i upuść",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (maks. 16 MB)",
       "chooseFile": "Wybierz plik",
+      "replaceFile": "Zamień na inny plik",
       "seoKeywords": "Niestandardowe słowa kluczowe SEO",
       "optional": "Opcjonalne",
       "generateButton": "Generuj tekst alternatywny",

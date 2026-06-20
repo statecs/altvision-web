@@ -31,6 +31,7 @@
       "dragDrop": "点击选择或拖放文件",
       "fileTypes": "PNG、JPG、GIF、WebP、BMP（最大 16 MB）",
       "chooseFile": "选择文件",
+      "replaceFile": "替换为其他文件",
       "seoKeywords": "自定义 SEO 关键词",
       "optional": "可选",
       "generateButton": "生成替代文字",

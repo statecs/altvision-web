@@ -31,6 +31,7 @@
       "dragDrop": "Klik for at vælge eller træk og slip",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (maks. 16 MB)",
       "chooseFile": "Vælg fil",
+      "replaceFile": "Udskift med en anden fil",
       "seoKeywords": "Brugerdefinerede SEO-søgeord",
       "optional": "Valgfrit",
       "generateButton": "Generer alternativ tekst",

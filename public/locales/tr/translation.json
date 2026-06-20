@@ -31,6 +31,7 @@
       "dragDrop": "Seçmek için tıklayın veya sürükleyip bırakın",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (maks. 16 MB)",
       "chooseFile": "Dosya Seç",
+      "replaceFile": "Başka bir dosyayla değiştir",
       "seoKeywords": "Özel SEO anahtar kelimeleri",
       "optional": "İsteğe bağlı",
       "generateButton": "Alt Metin Oluştur",

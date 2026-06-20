@@ -31,6 +31,7 @@
       "dragDrop": "クリックして選択またはドラッグ＆ドロップ",
       "fileTypes": "PNG、JPG、GIF、WebP、BMP（最大 16 MB）",
       "chooseFile": "ファイルを選択",
+      "replaceFile": "別のファイルに置き換える",
       "seoKeywords": "カスタム SEO キーワード",
       "optional": "任意",
       "generateButton": "代替テキストを生成",

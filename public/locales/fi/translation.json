@@ -31,6 +31,7 @@
       "dragDrop": "Klikkaa valitaksesi tai vedä ja pudota",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (enintään 16 MB)",
       "chooseFile": "Valitse tiedosto",
+      "replaceFile": "Korvaa toisella tiedostolla",
       "seoKeywords": "Mukautetut SEO-avainsanat",
       "optional": "Valinnainen",
       "generateButton": "Luo vaihtoehtoinen teksti",

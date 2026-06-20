@@ -29,6 +29,7 @@
       "dragDrop": "Click to select or drag and drop",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (max 16MB)",
       "chooseFile": "Choose File",
+      "replaceFile": "Replace with another file",
       "seoKeywords": "Custom SEO keywords",
       "optional": "Optional",
       "generateButton": "Generate Alt Text",

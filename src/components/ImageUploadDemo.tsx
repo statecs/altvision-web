@@ -241,10 +241,14 @@ const ImageUploadDemo: React.FC = () => {
 
         <button
           type="button"
-          className="mt-3 bg-gray-700 hover:bg-gray-600 text-gray-200 text-sm px-4 py-1.5 rounded-lg transition-colors"
+          className={`mt-3 text-sm px-4 py-1.5 rounded-lg transition-colors ${
+            preview
+              ? 'border border-dashed border-gray-600 text-gray-400 hover:text-gray-200 hover:border-gray-500 bg-transparent'
+              : 'bg-gray-700 hover:bg-gray-600 text-gray-200'
+          }`}
           onClick={(e) => { e.stopPropagation(); fileInputRef.current?.click(); }}
         >
-          {t('home.demo.chooseFile')}
+          {preview ? t('home.demo.replaceFile') : t('home.demo.chooseFile')}
         </button>
       </div>
 

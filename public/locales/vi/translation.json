@@ -31,6 +31,7 @@
       "dragDrop": "Nhấp để chọn hoặc kéo và thả",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (tối đa 16 MB)",
       "chooseFile": "Chọn tệp",
+      "replaceFile": "Thay bằng tệp khác",
       "seoKeywords": "Từ khóa SEO tùy chỉnh",
       "optional": "Tùy chọn",
       "generateButton": "Tạo văn bản thay thế",

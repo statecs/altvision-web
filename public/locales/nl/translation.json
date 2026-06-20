@@ -31,6 +31,7 @@
       "dragDrop": "Klik om te selecteren of sleep en zet neer",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (max 16 MB)",
       "chooseFile": "Bestand kiezen",
+      "replaceFile": "Vervangen door een ander bestand",
       "seoKeywords": "Aangepaste SEO-trefwoorden",
       "optional": "Optioneel",
       "generateButton": "Alt-tekst genereren",

@@ -31,6 +31,7 @@
       "dragDrop": "Натисніть для вибору або перетягніть файл",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (макс. 16 МБ)",
       "chooseFile": "Вибрати файл",
+      "replaceFile": "Замінити іншим файлом",
       "seoKeywords": "Власні SEO-ключові слова",
       "optional": "Необов'язково",
       "generateButton": "Створити alt-текст",

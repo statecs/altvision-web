@@ -31,6 +31,7 @@
       "dragDrop": "Κάντε κλικ για επιλογή ή σύρετε και αφήστε",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (μέγ. 16 MB)",
       "chooseFile": "Επιλογή αρχείου",
+      "replaceFile": "Αντικατάσταση με άλλο αρχείο",
       "seoKeywords": "Προσαρμοσμένες λέξεις-κλειδιά SEO",
       "optional": "Προαιρετικό",
       "generateButton": "Δημιουργία εναλλακτικού κειμένου",

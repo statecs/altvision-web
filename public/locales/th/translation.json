@@ -31,6 +31,7 @@
       "dragDrop": "คลิกเพื่อเลือกหรือลากและวาง",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (สูงสุด 16 MB)",
       "chooseFile": "เลือกไฟล์",
+      "replaceFile": "แทนที่ด้วยไฟล์อื่น",
       "seoKeywords": "คีย์เวิร์ด SEO ที่กำหนดเอง",
       "optional": "ไม่บังคับ",
       "generateButton": "สร้าง Alt Text",

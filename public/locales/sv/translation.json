@@ -31,6 +31,7 @@
       "dragDrop": "Klicka för att välja eller dra och släpp",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (max 16 MB)",
       "chooseFile": "Välj fil",
+      "replaceFile": "Ersätt med en annan fil",
       "seoKeywords": "Anpassade SEO-nyckelord",
       "optional": "Valfritt",
       "generateButton": "Generera alternativtext",

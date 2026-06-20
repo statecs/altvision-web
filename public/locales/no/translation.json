@@ -31,6 +31,7 @@
       "dragDrop": "Klikk for å velge eller dra og slipp",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (maks. 16 MB)",
       "chooseFile": "Velg fil",
+      "replaceFile": "Erstatt med en annen fil",
       "seoKeywords": "Egendefinerte SEO-nøkkelord",
       "optional": "Valgfritt",
       "generateButton": "Generer alternativ tekst",
