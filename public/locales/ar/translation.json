@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "جرّبه!",
-      "outputLanguage": "لغة الإخراج",
+      "outputLanguage": "اللغة",
       "dragDrop": "انقر للاختيار أو اسحب وأفلت",
       "fileTypes": "PNG، JPG، GIF، WebP، BMP (الحد الأقصى 16 ميجابايت)",
       "chooseFile": "اختر ملفاً",

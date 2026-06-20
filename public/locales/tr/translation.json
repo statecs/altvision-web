@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "Deneyin!",
-      "outputLanguage": "Çıkış dili",
+      "outputLanguage": "Dil",
       "dragDrop": "Seçmek için tıklayın veya sürükleyip bırakın",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (maks. 16 MB)",
       "chooseFile": "Dosya Seç",

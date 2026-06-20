@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "முயற்சிக்கவும்!",
-      "outputLanguage": "வெளியீட்டு மொழி",
+      "outputLanguage": "மொழி",
       "dragDrop": "தேர்வு செய்ய கிளிக் செய்யவும் அல்லது இழுத்து விடவும்",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (அதிகபட்சம் 16 MB)",
       "chooseFile": "கோப்பு தேர்வு செய்க",

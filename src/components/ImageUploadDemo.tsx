@@ -195,7 +195,7 @@ const ImageUploadDemo: React.FC = () => {
   return (
     <div className="bg-gray-800/70 border border-gray-700/50 rounded-2xl p-6 space-y-4 shadow-2xl shadow-black/40 backdrop-blur-sm">
       {/* Output language */}
-      <div className="space-y-1.5">
+      <div className="flex items-center justify-between">
         <span className="text-xs text-gray-500">{t('home.demo.outputLanguage')}</span>
         <LanguageDropdown variant="inline" />
       </div>

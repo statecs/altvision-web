@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "Vyzkoušejte!",
-      "outputLanguage": "Výstupní jazyk",
+      "outputLanguage": "Jazyk",
       "dragDrop": "Klikněte pro výběr nebo přetáhněte soubor",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (max. 16 MB)",
       "chooseFile": "Vybrat soubor",

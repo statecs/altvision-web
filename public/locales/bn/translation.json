@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "এটি ব্যবহার করুন!",
-      "outputLanguage": "আউটপুট ভাষা",
+      "outputLanguage": "ভাষা",
       "dragDrop": "নির্বাচন করতে ক্লিক করুন বা টেনে ছাড়ুন",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (সর্বোচ্চ 16 MB)",
       "chooseFile": "ফাইল বেছে নিন",

@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "Coba sekarang!",
-      "outputLanguage": "Bahasa keluaran",
+      "outputLanguage": "Bahasa",
       "dragDrop": "Klik untuk memilih atau seret dan lepas",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (maks. 16 MB)",
       "chooseFile": "Pilih File",

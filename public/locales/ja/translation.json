@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "試してみる！",
-      "outputLanguage": "出力言語",
+      "outputLanguage": "言語",
       "dragDrop": "クリックして選択またはドラッグ＆ドロップ",
       "fileTypes": "PNG、JPG、GIF、WebP、BMP（最大 16 MB）",
       "chooseFile": "ファイルを選択",

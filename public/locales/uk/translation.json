@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "Спробуйте!",
-      "outputLanguage": "Мова виводу",
+      "outputLanguage": "Мова",
       "dragDrop": "Натисніть для вибору або перетягніть файл",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (макс. 16 МБ)",
       "chooseFile": "Вибрати файл",

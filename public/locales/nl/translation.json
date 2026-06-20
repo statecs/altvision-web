@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "Probeer het!",
-      "outputLanguage": "Uitvoertaal",
+      "outputLanguage": "Taal",
       "dragDrop": "Klik om te selecteren of sleep en zet neer",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (max 16 MB)",
       "chooseFile": "Bestand kiezen",

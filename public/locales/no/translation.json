@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "Prøv det!",
-      "outputLanguage": "Utdataspråk",
+      "outputLanguage": "Språk",
       "dragDrop": "Klikk for å velge eller dra og slipp",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (maks. 16 MB)",
       "chooseFile": "Velg fil",

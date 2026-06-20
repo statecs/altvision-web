@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "立即体验！",
-      "outputLanguage": "输出语言",
+      "outputLanguage": "语言",
       "dragDrop": "点击选择或拖放文件",
       "fileTypes": "PNG、JPG、GIF、WebP、BMP（最大 16 MB）",
       "chooseFile": "选择文件",

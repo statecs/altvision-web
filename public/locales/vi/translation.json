@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "Thử ngay!",
-      "outputLanguage": "Ngôn ngữ đầu ra",
+      "outputLanguage": "Ngôn ngữ",
       "dragDrop": "Nhấp để chọn hoặc kéo và thả",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (tối đa 16 MB)",
       "chooseFile": "Chọn tệp",

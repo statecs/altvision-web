@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "נסה זאת!",
-      "outputLanguage": "שפת הפלט",
+      "outputLanguage": "שפה",
       "dragDrop": "לחץ לבחירה או גרור ושחרר",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (מקסימום 16 MB)",
       "chooseFile": "בחר קובץ",

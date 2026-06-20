@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "Kokeile!",
-      "outputLanguage": "Tulostuskieli",
+      "outputLanguage": "Kieli",
       "dragDrop": "Klikkaa valitaksesi tai vedä ja pudota",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (enintään 16 MB)",
       "chooseFile": "Valitse tiedosto",

@@ -27,7 +27,7 @@
     },
     "demo": {
       "tryIt": "Próbálja ki!",
-      "outputLanguage": "Kimeneti nyelv",
+      "outputLanguage": "Nyelv",
       "dragDrop": "Kattintson a kiválasztáshoz vagy húzza ide a fájlt",
       "fileTypes": "PNG, JPG, GIF, WebP, BMP (max. 16 MB)",
       "chooseFile": "Fájl kiválasztása",

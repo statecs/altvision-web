@@ -104,14 +104,12 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ variant = 'header' 
       ) : (
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-full flex items-center justify-between gap-2 bg-gray-700 hover:bg-gray-600 text-gray-200 text-sm px-3 py-1.5 rounded-lg transition-colors"
+          className="inline-flex items-center gap-1.5 bg-gray-700/70 hover:bg-gray-700 text-gray-300 hover:text-white text-xs px-2.5 py-1 rounded-full transition-colors"
         >
-          <span className="flex items-center gap-2">
-            <span>{currentLanguage.flag}</span>
-            <span>{currentLanguage.name}</span>
-          </span>
+          <span>{currentLanguage.flag}</span>
+          <span>{currentLanguage.name}</span>
           <svg
-            className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+            className={`w-3 h-3 transition-transform ${isOpen ? 'rotate-180' : ''}`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -122,9 +120,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ variant = 'header' 
       )}
 
       {isOpen && (
-        <div className={`absolute mt-2 w-52 bg-gray-800 border border-gray-700 rounded-lg shadow-lg z-50 max-h-96 overflow-y-auto ${
-          variant === 'header' ? 'right-0' : 'left-0'
-        }`}>
+        <div className="absolute right-0 mt-2 w-52 bg-gray-800 border border-gray-700 rounded-lg shadow-lg z-50 max-h-96 overflow-y-auto">
           <div className="py-1">
             {languages.map((language) => (
               <button
