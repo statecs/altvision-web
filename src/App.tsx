@@ -48,12 +48,19 @@ const altSamples = [
   ['pt', 'Crianças a empinar papagaios na praia'],
 ];
 
-const AltMarquee = () => (
+const AltMarquee = () => {
+  const [stopped, setStopped] = useState(false);
+  return (
   <div
     aria-hidden="true"
-    className="relative left-1/2 -translate-x-1/2 w-screen overflow-hidden border-y border-ink/15 bg-paper-deep/60 -rotate-1 my-14"
+    onClick={() => setStopped((v) => !v)}
+    className="group relative left-1/2 -translate-x-1/2 w-screen overflow-hidden border-y border-ink/15 bg-paper-deep/60 -rotate-1 my-14 cursor-pointer select-none"
   >
-    <div className="flex w-max animate-marquee whitespace-nowrap py-3">
+    <div
+      className={`flex w-max animate-marquee whitespace-nowrap py-3 group-hover:[animation-play-state:paused] ${
+        stopped ? '[animation-play-state:paused]' : ''
+      }`}
+    >
       {[0, 1].map((dup) => (
         <div key={dup} className="flex shrink-0">
           {altSamples.map(([code, text]) => (
@@ -68,7 +75,8 @@ const AltMarquee = () => (
       ))}
     </div>
   </div>
-);
+  );
+};
 
 // Home Page
 const HomePage = () => {
