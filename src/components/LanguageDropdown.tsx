@@ -88,7 +88,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ variant = 'header' 
       {variant === 'header' ? (
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors px-2 py-1 rounded-md hover:bg-gray-800"
+          className="flex items-center space-x-2 text-ink-soft hover:text-ink transition-colors px-2 py-1 rounded-md hover:bg-ink/5"
         >
           <Globe size={16} />
           <span className="text-sm">{currentLanguage.flag}</span>
@@ -104,7 +104,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ variant = 'header' 
       ) : (
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex items-center gap-1.5 bg-gray-700/70 hover:bg-gray-700 text-gray-300 hover:text-white text-xs px-2.5 py-1 rounded-full transition-colors"
+          className="inline-flex items-center gap-1.5 bg-paper border border-ink/20 hover:border-ink/50 text-ink-soft hover:text-ink text-xs px-2.5 py-1 rounded-full transition-colors"
         >
           <span>{currentLanguage.flag}</span>
           <span>{currentLanguage.name}</span>
@@ -120,22 +120,22 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ variant = 'header' 
       )}
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-52 bg-gray-800 border border-gray-700 rounded-lg shadow-lg z-50 max-h-96 overflow-y-auto">
+        <div className="absolute right-0 mt-2 w-52 bg-white border border-ink/20 rounded-md shadow-[4px_4px_0_rgba(26,22,19,0.15)] z-50 max-h-96 overflow-y-auto">
           <div className="py-1">
             {languages.map((language) => (
               <button
                 key={language.code}
                 onClick={() => handleLanguageChange(language.code)}
-                className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-700 flex items-center space-x-3 ${
+                className={`w-full text-left px-4 py-2 text-sm hover:bg-paper flex items-center space-x-3 ${
                   currentLanguage.code === language.code
-                    ? 'text-blue-400 bg-gray-700'
-                    : 'text-gray-300'
+                    ? 'text-vermilion bg-paper'
+                    : 'text-ink/80'
                 }`}
               >
                 <span>{language.flag}</span>
                 <span>{language.name}</span>
                 {currentLanguage.code === language.code && (
-                  <span className="ml-auto text-blue-400">✓</span>
+                  <span className="ml-auto text-vermilion">✓</span>
                 )}
               </button>
             ))}

@@ -193,10 +193,10 @@ const ImageUploadDemo: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-800/70 border border-gray-700/50 rounded-2xl p-6 space-y-4 shadow-2xl shadow-black/40 backdrop-blur-sm">
+    <div className="bg-white border border-ink rounded-lg p-6 space-y-4 shadow-[8px_8px_0_rgba(26,22,19,0.9)]">
       {/* Output language */}
-      <div className="flex items-center justify-between">
-        <span className="text-xs text-gray-500">{t('home.demo.outputLanguage')}</span>
+      <div className="flex items-center justify-between border-b border-ink/10 pb-3 -mx-6 px-6">
+        <span className="font-mono text-xs uppercase tracking-[0.15em] text-ink-soft">{t('home.demo.outputLanguage')}</span>
         <LanguageDropdown variant="inline" />
       </div>
 
@@ -204,8 +204,8 @@ const ImageUploadDemo: React.FC = () => {
       <div
         ref={uploadZoneRef}
         tabIndex={-1}
-        className={`border-2 border-dashed rounded-xl p-6 text-center cursor-pointer transition-colors outline-none ${
-          uploadRequired ? 'border-red-500 bg-red-900/10' : isDragging ? 'border-blue-400 bg-blue-900/20' : 'border-gray-600 hover:border-gray-500'
+        className={`border-2 border-dashed rounded-md p-6 text-center cursor-pointer transition-colors outline-none ${
+          uploadRequired ? 'border-red-600 bg-red-50' : isDragging ? 'border-vermilion bg-vermilion/5' : 'border-ink/25 bg-paper/60 hover:border-ink/50'
         }`}
         onClick={() => fileInputRef.current?.click()}
         onDrop={handleDrop}
@@ -228,23 +228,23 @@ const ImageUploadDemo: React.FC = () => {
           />
         ) : (
           <>
-            <Upload className="mx-auto mb-3 text-gray-400" size={36} />
+            <Upload className="mx-auto mb-3 text-ink/40" size={36} strokeWidth={1.5} />
             <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 mb-1">
-              <span className="bg-blue-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">
+              <span className="bg-vermilion text-white font-mono text-xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded-sm">
                 {t('home.demo.tryIt')}
               </span>
-              <span className="text-gray-300 text-sm text-center">{t('home.demo.dragDrop')}</span>
+              <span className="text-ink/80 text-sm text-center">{t('home.demo.dragDrop')}</span>
             </div>
-            <p className="text-gray-500 text-xs mb-3">{t('home.demo.fileTypes')}</p>
+            <p className="text-ink-soft text-xs mb-3">{t('home.demo.fileTypes')}</p>
           </>
         )}
 
         <button
           type="button"
-          className={`mt-3 text-sm px-4 py-1.5 rounded-lg transition-colors ${
+          className={`mt-3 text-sm px-4 py-1.5 rounded-md transition-colors ${
             preview
-              ? 'border border-dashed border-gray-600 text-gray-400 hover:text-gray-200 hover:border-gray-500 bg-transparent'
-              : 'bg-gray-700 hover:bg-gray-600 text-gray-200'
+              ? 'border border-dashed border-ink/30 text-ink-soft hover:text-ink hover:border-ink/60 bg-transparent'
+              : 'bg-ink text-paper hover:bg-ink/80'
           }`}
           onClick={(e) => { e.stopPropagation(); fileInputRef.current?.click(); }}
         >
@@ -254,22 +254,22 @@ const ImageUploadDemo: React.FC = () => {
 
       {/* Error */}
       {error && (
-        <p className="text-red-400 text-sm">{error}</p>
+        <p className="text-red-600 text-sm">{error}</p>
       )}
 
       {/* Keywords toggle */}
       <div className="space-y-2">
         <div className="flex items-center justify-between">
-          <span className="text-sm text-gray-300">{t('home.demo.seoKeywords')}</span>
+          <span className="text-sm text-ink/80">{t('home.demo.seoKeywords')}</span>
           <div className="flex items-center gap-2">
-            <span className="text-xs text-gray-500">{t('home.demo.optional')}</span>
+            <span className="text-xs text-ink-soft">{t('home.demo.optional')}</span>
             <button
               type="button"
               role="switch"
               aria-checked={keywordsEnabled}
               onClick={() => setKeywordsEnabled((v) => !v)}
               className={`relative w-10 h-5 rounded-full transition-colors ${
-                keywordsEnabled ? 'bg-blue-600' : 'bg-gray-600'
+                keywordsEnabled ? 'bg-vermilion' : 'bg-ink/20'
               }`}
             >
               <span
@@ -287,7 +287,7 @@ const ImageUploadDemo: React.FC = () => {
             value={keywords}
             onChange={(e) => setKeywords(e.target.value)}
             placeholder="e.g. product photography outdoor"
-            className="w-full bg-gray-700 border border-gray-600 rounded-lg px-3 py-2 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-blue-500"
+            className="w-full bg-paper border border-ink/20 rounded-md px-3 py-2 text-sm text-ink placeholder-ink/40 focus:outline-none focus:border-vermilion"
           />
         )}
       </div>
@@ -297,7 +297,7 @@ const ImageUploadDemo: React.FC = () => {
         type="button"
         disabled={loading}
         onClick={handleGenerate}
-        className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 disabled:text-gray-500 text-white font-medium py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2"
+        className="w-full bg-vermilion hover:bg-vermilion-deep disabled:bg-ink/10 disabled:text-ink/40 text-white font-semibold py-2.5 rounded-md transition-colors flex items-center justify-center gap-2"
       >
         {loading ? (
           <>
@@ -312,39 +312,49 @@ const ImageUploadDemo: React.FC = () => {
       {/* Results */}
       {altText && (
         <div className="space-y-3">
-          <div className="bg-gray-900 border border-gray-700 rounded-xl p-4">
+          <div className="bg-paper border border-ink/15 rounded-md p-4">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-xs font-semibold text-gray-400 uppercase tracking-wide">
+              <span className="font-mono text-xs font-medium text-ink-soft uppercase tracking-[0.15em]">
                 {t('home.demo.resultLabel')}
               </span>
               <button
                 type="button"
                 onClick={() => handleCopy('alt')}
-                className="flex-shrink-0 text-gray-400 hover:text-white transition-colors"
+                className="flex-shrink-0 text-ink-soft hover:text-vermilion transition-colors"
                 aria-label={copiedField === 'alt' ? t('home.demo.copied') : t('home.demo.copyButton')}
               >
                 {copiedField === 'alt' ? <Check size={16} /> : <Copy size={16} />}
               </button>
             </div>
-            <p className="text-gray-200 text-sm leading-relaxed">{altText}</p>
+            <p className="text-ink text-sm leading-relaxed">
+              <span className="font-mono text-vermilion" aria-hidden="true">alt="</span>
+              {altText}
+              <span className="font-mono text-vermilion" aria-hidden="true">"</span>
+            </p>
           </div>
 
           {tags.length > 0 && (
-            <div className="bg-gray-900 border border-gray-700 rounded-xl p-4">
+            <div className="bg-paper border border-ink/15 rounded-md p-4">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-xs font-semibold text-gray-400 uppercase tracking-wide">
+                <span className="font-mono text-xs font-medium text-ink-soft uppercase tracking-[0.15em]">
                   {t('home.demo.tagsLabel')}
                 </span>
                 <button
                   type="button"
                   onClick={() => handleCopy('tags')}
-                  className="flex-shrink-0 text-gray-400 hover:text-white transition-colors"
+                  className="flex-shrink-0 text-ink-soft hover:text-vermilion transition-colors"
                   aria-label={copiedField === 'tags' ? t('home.demo.copied') : t('home.demo.copyButton')}
                 >
                   {copiedField === 'tags' ? <Check size={16} /> : <Copy size={16} />}
                 </button>
               </div>
-              <p className="text-gray-200 text-sm leading-relaxed">{tags.join(', ')}</p>
+              <div className="flex flex-wrap gap-1.5">
+                {tags.map((tag) => (
+                  <span key={tag} className="font-mono text-xs text-ink bg-paper-deep border border-ink/15 rounded-sm px-2 py-0.5">
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
           )}
         </div>

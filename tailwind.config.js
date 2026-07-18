@@ -8,7 +8,24 @@ module.exports = {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			display: ['Fraunces', 'Georgia', 'serif'],
+  			sans: ['Archivo', 'Helvetica Neue', 'Arial', 'sans-serif'],
+  			mono: ['"Spline Sans Mono"', 'ui-monospace', 'monospace']
+  		},
   		colors: {
+  			paper: {
+  				DEFAULT: '#F7F2E9',
+  				deep: '#EFE7D8'
+  			},
+  			ink: {
+  				DEFAULT: '#1A1613',
+  				soft: '#6B6157'
+  			},
+  			vermilion: {
+  				DEFAULT: '#D64416',
+  				deep: '#B23610'
+  			},
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
@@ -73,20 +90,25 @@ module.exports = {
   				}
   			},
         'slide-up': {
-        '0%': { 
-          transform: 'translateY(20px)', 
-          opacity: '0' 
+        '0%': {
+          transform: 'translateY(20px)',
+          opacity: '0'
         },
-        '100%': { 
+        '100%': {
           transform: 'translateY(0)',
-          opacity: '1' 
+          opacity: '1'
         },
+      },
+        marquee: {
+        '0%': { transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(-50%)' },
       },
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
         'slide-up': 'slide-up 0.5s ease-out forwards',
+        marquee: 'marquee 55s linear infinite',
   		}
   	}
   },

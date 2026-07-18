@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Zap, Plug, FileImage, Accessibility, ScanSearch, Brain, Languages } from 'lucide-react';
 import Footer from './components/Footer';
 import TermsOfUse from './components/TermsOfUse';
 import PrivacyPolicy from './components/PrivacyPolicy';
@@ -9,18 +10,65 @@ import LanguageSelector from './components/LanguageSelector';
 import ImageUploadDemo from './components/ImageUploadDemo';
 import { trackEvent } from './analytics';
 
+// Small crop-mark logo: a viewfinder frame around a vermilion dot
+const Logomark = () => (
+  <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+    <g stroke="currentColor" strokeWidth="1.5" fill="none">
+      <path d="M1 5V1h4" />
+      <path d="M13 1h4v4" />
+      <path d="M17 13v4h-4" />
+      <path d="M5 17H1v-4" />
+    </g>
+    <circle cx="9" cy="9" r="3" fill="#D64416" />
+  </svg>
+);
+
 // Navigation Component
 const Navigation = () => {
   return (
-    <header className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 backdrop-blur-md bg-gray-900/80 border-b border-white/5">
-      <Link to="/" className="flex items-center space-x-2">
-        <div className="w-3 h-3 rounded-full bg-gradient-to-br from-blue-400 to-violet-500 shadow-sm shadow-blue-500/50"></div>
-        <span className="font-semibold tracking-tight">AltVision</span>
+    <header className="sticky top-0 z-50 flex justify-between items-center px-6 py-3.5 bg-paper/90 backdrop-blur-md border-b border-ink/10">
+      <Link to="/" className="flex items-center gap-2.5 text-ink">
+        <Logomark />
+        <span className="font-display font-semibold text-lg tracking-tight">AltVision</span>
       </Link>
       <LanguageSelector />
     </header>
   );
 };
+
+// Decorative marquee of alt text in different languages — reinforces the 31-language support
+const altSamples = [
+  ['en', 'A cyclist crossing a rain-soaked street at dusk'],
+  ['sv', 'En röd stuga vid en stilla sjö'],
+  ['fr', 'Un chat endormi sur une pile de livres'],
+  ['de', 'Ein Leuchtturm an einer felsigen Küste'],
+  ['es', 'Dos tazas de café sobre una mesa de madera'],
+  ['ja', '桜の木の下で読書する女性'],
+  ['ar', 'قارب صغير يبحر عند الغروب'],
+  ['pt', 'Crianças a empinar papagaios na praia'],
+];
+
+const AltMarquee = () => (
+  <div
+    aria-hidden="true"
+    className="relative left-1/2 -translate-x-1/2 w-screen overflow-hidden border-y border-ink/15 bg-paper-deep/60 -rotate-1 my-14"
+  >
+    <div className="flex w-max animate-marquee whitespace-nowrap py-3">
+      {[0, 1].map((dup) => (
+        <div key={dup} className="flex shrink-0">
+          {altSamples.map(([code, text]) => (
+            <span key={`${dup}-${code}`} className="font-mono text-sm text-ink-soft mx-6">
+              <span className="text-ink/40 uppercase mr-2">{code}</span>
+              <span className="text-vermilion">alt="</span>
+              {text}
+              <span className="text-vermilion">"</span>
+            </span>
+          ))}
+        </div>
+      ))}
+    </div>
+  </div>
+);
 
 // Home Page
 const HomePage = () => {
@@ -31,119 +79,127 @@ const HomePage = () => {
   const preview = firstSentenceEnd !== -1 ? fullDesc.slice(0, firstSentenceEnd + 1) : fullDesc;
   const remainder = firstSentenceEnd !== -1 ? fullDesc.slice(firstSentenceEnd + 2) : '';
 
+  const wpFeatures = [
+    { icon: Zap, key: 'home.wordpress.oneClick' },
+    { icon: Plug, key: 'home.wordpress.wpReady' },
+    { icon: FileImage, key: 'home.wordpress.formatSupport' },
+    { icon: Accessibility, key: 'home.wordpress.accessibility' },
+  ];
+  const chromeFeatures = [
+    { icon: ScanSearch, key: 'home.chrome.altTextDetection' },
+    { icon: Brain, key: 'home.chrome.contextAware' },
+    { icon: Languages, key: 'home.chrome.multipleLanguages' },
+  ];
+
   return (
-  <div className="container mx-auto px-4">
-  <section className="pt-16" aria-label="Hero section">
-    {/* Two-column layout on desktop, stacked on mobile */}
-    <div className="grid md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
-      {/* Left column: headline + CTAs (shown first on desktop, first on mobile) */}
-      <div className="order-1">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
-          {t('home.hero.title')}<br />
-          <span className="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-400 bg-clip-text text-transparent">
-            {t('home.hero.titleHighlight')}
-          </span>
-        </h1>
-        <div className="flex flex-wrap gap-4 animate-slide-up opacity-0" style={{ animationDelay: '0.4s' }}>
-          <a
-            href="https://wordpress.org/plugins/altvision-ai-alt-text-generator/"
-            rel="noopener noreferrer"
-            className="bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-500 hover:to-violet-500 text-white px-6 py-3 rounded-xl font-medium transition-all shadow-lg shadow-blue-700/30"
-            onClick={() => trackEvent('cta_click', { label: 'wordpress_plugin' })}
-          >
-            {t('home.hero.wpButton')}
-          </a>
-          <a
-            href="https://chromewebstore.google.com/detail/altvision/iogpbgncdhijknmmhkllijfaioecfcoa"
-            rel="noopener noreferrer"
-            className="border border-blue-500/50 text-blue-300 hover:border-blue-400 hover:bg-blue-500/10 px-6 py-3 rounded-xl font-medium transition-all"
-            onClick={() => trackEvent('cta_click', { label: 'chrome_extension' })}
-          >
-            {t('home.hero.chromeButton')}
-          </a>
-        </div>
-      </div>
-
-      {/* Right column: demo widget */}
-      <div className="order-2 animate-slide-up opacity-0" style={{ animationDelay: '0.6s' }}>
-        <ImageUploadDemo />
-      </div>
-    </div>
-  </section>
-
-  <section className="py-16">
-    <div className="max-w-xl mx-auto text-center">
-      <div className="h-px w-32 mx-auto mb-10 bg-gradient-to-r from-transparent via-gray-600 to-transparent" />
-      <p className="text-base leading-relaxed text-gray-500 mb-8 animate-slide-up opacity-0" style={{ animationDelay: '0.6s' }}>
-        {preview}
-        {!descExpanded && remainder && (
-          <>
-            {' '}
-            <button
-              onClick={() => setDescExpanded(true)}
-              className="text-gray-400 underline underline-offset-2 hover:text-gray-200 transition-colors cursor-pointer"
-            >
-              {t('common.readMore', 'read more')}
-            </button>
-          </>
-        )}
-        {descExpanded && remainder && ` ${remainder}`}
-      </p>
-    </div>
-
-    <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto mt-16">
-      {/* WordPress column */}
-      <div className="animate-slide-up opacity-0 rounded-3xl border border-blue-500/10 bg-gradient-to-b from-blue-500/5 to-transparent p-6" style={{ animationDelay: '0.8s' }}>
-        <div className="mb-6">
-          <span className="inline-flex items-center text-xs font-semibold tracking-wide px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 ring-1 ring-blue-500/20 mb-3">
-            WordPress Plugin
-          </span>
-          <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">{t('home.wordpress.title')}</h2>
-        </div>
-        <div className="grid grid-cols-2 gap-3">
-          {[
-            { icon: '🎯', key: 'home.wordpress.oneClick' },
-            { icon: '🔌', key: 'home.wordpress.wpReady' },
-            { icon: '🎨', key: 'home.wordpress.formatSupport' },
-            { icon: '🔒', key: 'home.wordpress.accessibility' },
-          ].map(({ icon, key }) => (
-            <div key={key} className="group bg-gray-900/60 border border-gray-700/40 rounded-2xl p-4 flex flex-col gap-3 hover:border-blue-500/30 hover:bg-blue-500/5 transition-all backdrop-blur-sm">
-              <span className="bg-gradient-to-br from-blue-500/20 to-violet-500/10 rounded-xl p-2.5 text-xl w-fit ring-1 ring-white/5 group-hover:ring-blue-500/20 transition-all">{icon}</span>
-              <span className="text-gray-300 text-sm leading-snug">{t(key)}</span>
+    <div className="container mx-auto px-6">
+      <section className="pt-16 md:pt-24" aria-label="Hero section">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
+          {/* Left column: headline + CTAs */}
+          <div className="order-1">
+            <p className="font-mono text-xs uppercase tracking-[0.25em] text-ink-soft mb-6 animate-slide-up opacity-0" style={{ animationDelay: '0.1s' }}>
+              {t('nav.wordpressPlugin')} · {t('nav.chromeExtension')}
+            </p>
+            <h1 className="font-display text-5xl md:text-6xl font-medium mb-8 leading-[1.05] tracking-tight animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
+              {t('home.hero.title')}{' '}
+              <em className="text-vermilion font-normal">{t('home.hero.titleHighlight')}</em>
+            </h1>
+            <div className="flex flex-wrap gap-4 animate-slide-up opacity-0" style={{ animationDelay: '0.4s' }}>
+              <a
+                href="https://wordpress.org/plugins/altvision-ai-alt-text-generator/"
+                rel="noopener noreferrer"
+                className="bg-ink text-paper px-6 py-3 rounded-md font-medium shadow-[4px_4px_0_#D64416] hover:shadow-[2px_2px_0_#D64416] hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
+                onClick={() => trackEvent('cta_click', { label: 'wordpress_plugin' })}
+              >
+                {t('home.hero.wpButton')}
+              </a>
+              <a
+                href="https://chromewebstore.google.com/detail/altvision/iogpbgncdhijknmmhkllijfaioecfcoa"
+                rel="noopener noreferrer"
+                className="border border-ink/30 text-ink px-6 py-3 rounded-md font-medium hover:border-ink hover:bg-ink/5 transition-all"
+                onClick={() => trackEvent('cta_click', { label: 'chrome_extension' })}
+              >
+                {t('home.hero.chromeButton')}
+              </a>
             </div>
-          ))}
-        </div>
-      </div>
+          </div>
 
-      {/* Chrome column */}
-      <div className="animate-slide-up opacity-0 rounded-3xl border border-violet-500/10 bg-gradient-to-b from-violet-500/5 to-transparent p-6" style={{ animationDelay: '1s' }}>
-        <div className="mb-6">
-          <span className="inline-flex items-center text-xs font-semibold tracking-wide px-3 py-1 rounded-full bg-violet-500/10 text-violet-400 ring-1 ring-violet-500/20 mb-3">
-            Chrome Extension
-          </span>
-          <h2 className="text-2xl font-bold bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent">{t('home.chrome.title')}</h2>
+          {/* Right column: demo widget */}
+          <div className="order-2 animate-slide-up opacity-0" style={{ animationDelay: '0.6s' }}>
+            <ImageUploadDemo />
+          </div>
         </div>
-        <div className="space-y-3">
-          {[
-            { icon: '🔍', key: 'home.chrome.altTextDetection' },
-            { icon: '🧠', key: 'home.chrome.contextAware' },
-            { icon: '🌍', key: 'home.chrome.multipleLanguages' },
-          ].map(({ icon, key }) => (
-            <div key={key} className="group bg-gray-900/60 border border-gray-700/40 rounded-2xl p-4 flex items-center gap-3 hover:border-violet-500/30 hover:bg-violet-500/5 transition-all backdrop-blur-sm">
-              <span className="bg-gradient-to-br from-violet-500/20 to-purple-500/10 rounded-xl p-2.5 text-xl flex-shrink-0 ring-1 ring-white/5 group-hover:ring-violet-500/20 transition-all">{icon}</span>
-              <span className="text-gray-300 text-sm leading-snug">{t(key)}</span>
+      </section>
+
+      <AltMarquee />
+
+      <section className="pb-16">
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="font-display text-xl md:text-2xl leading-relaxed text-ink/80 mb-8 animate-slide-up opacity-0" style={{ animationDelay: '0.6s' }}>
+            {preview}
+            {!descExpanded && remainder && (
+              <>
+                {' '}
+                <button
+                  onClick={() => setDescExpanded(true)}
+                  className="font-sans text-base text-vermilion underline underline-offset-4 hover:text-vermilion-deep transition-colors cursor-pointer"
+                >
+                  {t('common.readMore', 'read more')}
+                </button>
+              </>
+            )}
+            {descExpanded && remainder && ` ${remainder}`}
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-x-16 gap-y-14 max-w-6xl mx-auto mt-16">
+          {/* WordPress column */}
+          <div className="animate-slide-up opacity-0" style={{ animationDelay: '0.8s' }}>
+            <div className="border-b border-ink pb-4 mb-2">
+              <span className="font-mono text-xs uppercase tracking-[0.2em] text-vermilion block mb-2">
+                {t('nav.wordpressPlugin')}
+              </span>
+              <h2 className="font-display text-3xl font-medium tracking-tight">{t('home.wordpress.title')}</h2>
             </div>
-          ))}
+            <ul>
+              {wpFeatures.map(({ icon: Icon, key }, i) => (
+                <li key={key} className="group flex items-start gap-5 py-5 border-b border-ink/10 hover:bg-paper-deep/50 hover:px-3 transition-all">
+                  <span className="font-mono text-xs text-ink/40 pt-1 group-hover:text-vermilion transition-colors">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <Icon size={20} strokeWidth={1.75} className="shrink-0 mt-0.5 text-ink" aria-hidden="true" />
+                  <span className="text-ink/80 text-[15px] leading-relaxed">{t(key)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Chrome column */}
+          <div className="animate-slide-up opacity-0" style={{ animationDelay: '1s' }}>
+            <div className="border-b border-ink pb-4 mb-2">
+              <span className="font-mono text-xs uppercase tracking-[0.2em] text-vermilion block mb-2">
+                {t('nav.chromeExtension')}
+              </span>
+              <h2 className="font-display text-3xl font-medium tracking-tight">{t('home.chrome.title')}</h2>
+            </div>
+            <ul>
+              {chromeFeatures.map(({ icon: Icon, key }, i) => (
+                <li key={key} className="group flex items-start gap-5 py-5 border-b border-ink/10 hover:bg-paper-deep/50 hover:px-3 transition-all">
+                  <span className="font-mono text-xs text-ink/40 pt-1 group-hover:text-vermilion transition-colors">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <Icon size={20} strokeWidth={1.75} className="shrink-0 mt-0.5 text-ink" aria-hidden="true" />
+                  <span className="text-ink/80 text-[15px] leading-relaxed">{t(key)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <Footer />
     </div>
-  </section>
-
-
-
-    <Footer />
-  </div>
-  )
+  );
 };
 
 // Terms Page
@@ -156,17 +212,11 @@ const PrivacyPage = () => (
   <PrivacyPolicy />
 );
 
-
-
 // Main App Component
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-900 text-white">
-        <div className="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-          <div className="absolute -top-40 left-1/3 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl" />
-          <div className="absolute top-1/2 right-1/4 w-80 h-80 bg-violet-600/15 rounded-full blur-3xl" />
-        </div>
+      <div className="grain min-h-screen bg-paper text-ink overflow-x-clip">
         <Navigation />
         <Routes>
           {/* Locale-aware routes */}

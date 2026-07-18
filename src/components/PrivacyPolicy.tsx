@@ -277,10 +277,10 @@ const PrivacyPolicy = () => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           {/* Header */}
-          <div className="bg-indigo-600 px-6 py-8 text-white">
+          <div className="bg-ink px-6 py-8 text-paper">
             <h1 className="text-3xl font-bold">Privacy Policy</h1>
-            <p className="mt-2 text-indigo-100">Last updated: February 1, 2025</p>
-            <p className="mt-4 text-indigo-200">
+            <p className="mt-2 text-paper/70">Last updated: February 1, 2025</p>
+            <p className="mt-4 text-paper/60">
               This privacy notice explains how Altvision collects and protects your information.
             </p>
           </div>

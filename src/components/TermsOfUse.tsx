@@ -297,9 +297,9 @@ const TermsOfUse = () => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           {/* Header */}
-          <div className="bg-blue-600 px-6 py-8 text-white">
+          <div className="bg-ink px-6 py-8 text-paper">
             <h1 className="text-3xl font-bold">Terms of Use</h1>
-            <p className="mt-2 text-blue-100">Last updated: February 1, 2025</p>
+            <p className="mt-2 text-paper/70">Last updated: February 1, 2025</p>
           </div>
 
           {/* Terms Content */}
