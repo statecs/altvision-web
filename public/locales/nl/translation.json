@@ -44,6 +44,90 @@
       "errorInvalidType": "Ongeldig bestandstype. Gebruik PNG, JPG, GIF, WebP of BMP.",
       "errorGenerate": "Kon alt-tekst niet genereren. Probeer het opnieuw.",
       "errorRateLimit": "Daglimiet bereikt. Probeer het morgen opnieuw of upgrade naar premium voor onbeperkte toegang."
+    },
+    "reviews": {
+      "label": "Beoordelingen",
+      "title": "Vertrouwd door teams met oog voor toegankelijkheid",
+      "ratingCaption": "Op basis van {{count}} Google-beoordelingen",
+      "verified": "Geverifieerde Google-beoordeling",
+      "verifiedWp": "Geverifieerde WordPress.org-beoordeling",
+      "translated": "Vertaald",
+      "items": [
+        {
+          "title": "De ontwikkelaar liet het precies doen wat ik nodig had.",
+          "quote": "Van alle alt-tekstoplossingen is dit toch wel de beste. De ontwikkelaar is ongelooflijk responsief, bouwde een functie die ik voor mijn situatie nodig had en ondersteunt nu pro-credits, zodat ik pro-functies krijg precies wanneer en hoe ik ze nodig heb. Geen verspild geld. Geen verspilde tijd. Precies mijn favoriete soort software."
+        },
+        {
+          "title": "Geweldige plugin en snelle support",
+          "quote": "Geweldige plugin voor het in bulk genereren van alt-tekst; het werkt en de ontwikkelaar is snel met support, dus alles wat je van een plugin verwacht."
+        },
+        {
+          "quote": "Geweldige tools."
+        },
+        {
+          "quote": "Ik gebruik een schermlezer en werk in webontwikkeling. Deze tool helpt me niet alleen om mijn eigen werk toegankelijk te maken, maar stelt me ook in staat de toegankelijkheid van andere sites die ik beoordeel te controleren en te begrijpen. Een onmisbare tool."
+        },
+        {
+          "quote": "Zeer nuttige tool voor mijn website. Sommige AI-suggesties moeten wat bijgeschaafd worden, maar over het geheel genomen fantastisch."
+        },
+        {
+          "quote": "Als UX-designer vind ik het geweldig hoe AltVision rekening houdt met de omringende inhoud om betekenisvolle alt-tekst te maken. Het is onderdeel geworden van onze standaardworkflow."
+        },
+        {
+          "quote": "Een geweldige tool voor iedereen die met toegankelijkheid, design of front-end-ontwikkeling werkt. Het maakt alt-tekst en aria-labels op de pagina zichtbaar, dingen die normaal voor mij verborgen zijn tenzij ik de code inspecteer. Ik ben dol op de AI-suggestiefunctie voor ontbrekende alt-tekst. Echt nuttig. Van harte aanbevolen!"
+        },
+        {
+          "title": "Geweldige plugin met snelle support",
+          "quote": "Ik gebruik Alt Text Manager om afbeeldingsbeschrijvingen in WordPress te beheren – het is supermakkelijk in te stellen en werkt soepel. Ik liep tegen een klein probleem aan, maar de ontwikkelaar reageerde meteen en bracht binnen enkele uren een fix uit. Ik raad deze betrouwbare, gebruiksvriendelijke oplossing van harte aan!"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Veelgestelde vragen",
+      "subtitle": "Alles wat je moet weten over AltVision.",
+      "items": [
+        {
+          "q": "Hoe nauwkeurig is de door AI gegenereerde alt-tekst?",
+          "a": "AltVision leest zowel de afbeelding als de omringende inhoud – nabije koppen, alinea’s en bijschriften – om beschrijvingen te schrijven die bij de context passen, niet alleen bij de pixels. Suggesties hebben soms een kleine aanpassing nodig, maar geven je in seconden een nauwkeurig, toegankelijk startpunt."
+        },
+        {
+          "q": "Welke afbeeldingsformaten worden ondersteund?",
+          "a": "JPG, PNG, WebP, GIF en BMP, tot 16 MB per afbeelding."
+        },
+        {
+          "q": "Hoeveel talen ondersteunt AltVision?",
+          "a": "31 talen, waaronder Engels, Spaans, Frans, Duits, Arabisch, Chinees, Hindi en Japans. Jij kiest de uitvoertaal zodat de alt-tekst bij je inhoud past."
+        },
+        {
+          "q": "Kan ik mijn eigen SEO-trefwoorden toevoegen?",
+          "a": "Ja. Voeg vóór het genereren eigen trefwoorden toe en AltVision verwerkt ze in de beschrijving om de zichtbaarheid in afbeeldingszoekopdrachten te verbeteren, terwijl de tekst natuurlijk blijft."
+        },
+        {
+          "q": "Helpt het bij toegankelijkheidsnaleving?",
+          "a": "Ja. AltVision is gebouwd om te voldoen aan de WCAG 2.1-eisen voor alt-tekst. De Chrome-extensie markeert bovendien afbeeldingen zonder alt-tekst en laat je bestaande alt-tekst en aria-labels rechtstreeks op de pagina inspecteren."
+        },
+        {
+          "q": "Hoe installeer ik AltVision?",
+          "a": "De WordPress-plugin installeer je zoals elke andere plugin en werkt met zowel de klassieke editor als Gutenberg, direct in de mediabibliotheek. De Chrome-extensie installeer je met één klik vanuit de Chrome Web Store."
+        },
+        {
+          "q": "Is AltVision gratis te gebruiken?",
+          "a": "Je kunt AltVision gratis proberen met een daglimiet. Upgrade naar premium voor onbeperkt genereren."
+        },
+        {
+          "q": "Hoe worden mijn gegevens verwerkt?",
+          "a": "Afbeeldingen worden alleen verwerkt om hun beschrijvingen te genereren en worden nergens anders voor gebruikt. Zie ons privacybeleid voor alle details.",
+          "href": "/privacy",
+          "linkText": "Privacybeleid"
+        },
+        {
+          "q": "Is AltVision open source?",
+          "a": "Ja – de WordPress-plugin is open source, dus je kunt op GitHub precies zien hoe het werkt.",
+          "href": "https://github.com/statecs/AltVision-plugin",
+          "linkText": "Bekijk op GitHub"
+        }
+      ]
     }
   },
   "footer": {

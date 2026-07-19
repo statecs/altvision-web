@@ -8,6 +8,8 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import LocaleRouter from './components/LocaleRouter';
 import LanguageSelector from './components/LanguageSelector';
 import ImageUploadDemo from './components/ImageUploadDemo';
+import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
 import { trackEvent } from './analytics';
 
 // Small crop-mark logo: a viewfinder frame around a vermilion dot
@@ -204,6 +206,10 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      <Testimonials />
+
+      <FAQ />
 
       <Footer />
     </div>

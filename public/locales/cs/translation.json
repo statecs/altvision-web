@@ -44,6 +44,90 @@
       "errorInvalidType": "Neplatný typ souboru. Použijte PNG, JPG, GIF, WebP nebo BMP.",
       "errorGenerate": "Nepodařilo se vygenerovat alternativní text. Zkuste to znovu.",
       "errorRateLimit": "Byl dosažen denní limit. Zkuste to zítra znovu nebo upgradujte na premium pro neomezený přístup."
+    },
+    "reviews": {
+      "label": "Recenze",
+      "title": "Důvěřují mu týmy dbající na přístupnost",
+      "ratingCaption": "Na základě {{count}} recenzí Google",
+      "verified": "Ověřená recenze Google",
+      "verifiedWp": "Ověřená recenze WordPress.org",
+      "translated": "Přeloženo",
+      "items": [
+        {
+          "title": "Vývojář zařídil, aby to dělalo přesně to, co jsem potřeboval.",
+          "quote": "Ze všech řešení pro alternativní text musí být tohle to nejlepší. Vývojář reaguje neuvěřitelně rychle, implementoval funkci, kterou jsem pro svůj případ potřeboval, a nyní podporuje pro kredity, takže pro funkce dostanu přesně tehdy a tak, jak je potřebuji. Žádné vyhozené peníze. Žádný ztracený čas. Přesně ten typ softwaru, který mám rád."
+        },
+        {
+          "title": "Skvělý plugin a rychlá podpora",
+          "quote": "Skvělý plugin pro hromadné generování alternativního textu; funguje a vývojář rychle reaguje na podporu, takže má vše, co od pluginu potřebujete."
+        },
+        {
+          "quote": "Úžasné nástroje."
+        },
+        {
+          "quote": "Používám čtečku obrazovky a pracuji ve vývoji webu. Tento nástroj mi pomáhá nejen zajistit přístupnost mé vlastní práce, ale také auditovat a chápat přístupnost jiných webů, které kontroluji. Nepostradatelný nástroj."
+        },
+        {
+          "quote": "Velmi užitečný nástroj pro můj web. Některé návrhy AI je třeba doladit, ale celkově je to fantastické."
+        },
+        {
+          "quote": "Jako UX designér miluji, jak AltVision zohledňuje okolní obsah, aby vytvořil smysluplný alternativní text. Stal se součástí našeho běžného pracovního postupu."
+        },
+        {
+          "quote": "Skvělý nástroj pro každého, kdo pracuje s přístupností, designem nebo front-end vývojem. Zviditelňuje alternativní text a aria-labels na stránce – věci, které jsou pro mě obvykle skryté, pokud neprozkoumám kód. Miluji funkci návrhů pomocí AI pro chybějící alternativní text. Opravdu užitečné. Vřele doporučuji!"
+        },
+        {
+          "title": "Skvělý plugin s rychlou podporou",
+          "quote": "Používám Alt Text Manager ke správě popisů obrázků ve WordPressu – nastavení je nesmírně snadné a vše běží hladce. Narazil jsem na drobný problém, ale vývojář okamžitě odpověděl a během několika hodin vydal opravu. Vřele doporučuji toto spolehlivé a uživatelsky přívětivé řešení!"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Často kladené otázky",
+      "subtitle": "Vše, co potřebujete vědět o AltVision.",
+      "items": [
+        {
+          "q": "Jak přesný je alternativní text generovaný AI?",
+          "a": "AltVision čte jak obrázek, tak obsah kolem něj – blízké nadpisy, odstavce a popisky – aby psal popisy odpovídající kontextu, ne jen pixelům. Návrhy někdy potřebují drobné doladění, ale během několika sekund vám dají přesný a přístupný výchozí bod."
+        },
+        {
+          "q": "Jaké formáty obrázků jsou podporovány?",
+          "a": "JPG, PNG, WebP, GIF a BMP, až 16 MB na obrázek."
+        },
+        {
+          "q": "Kolik jazyků AltVision podporuje?",
+          "a": "31 jazyků, včetně angličtiny, španělštiny, francouzštiny, němčiny, arabštiny, čínštiny, hindštiny a japonštiny. Vyberete si výstupní jazyk, aby alternativní text odpovídal vašemu obsahu."
+        },
+        {
+          "q": "Mohu přidat vlastní klíčová slova pro SEO?",
+          "a": "Ano. Před generováním přidejte vlastní klíčová slova a AltVision je vetká do popisu, aby zlepšil viditelnost ve vyhledávání obrázků a zároveň zachoval přirozený text."
+        },
+        {
+          "q": "Pomáhá s dodržováním přístupnosti?",
+          "a": "Ano. AltVision je vytvořen tak, aby splňoval požadavky WCAG 2.1 na alternativní text. Rozšíření pro Chrome navíc zvýrazňuje obrázky bez alternativního textu a umožňuje kontrolovat stávající alternativní text a aria-labels přímo na stránce."
+        },
+        {
+          "q": "Jak nainstaluji AltVision?",
+          "a": "Plugin pro WordPress se instaluje jako kterýkoli jiný a funguje s klasickým editorem i s Gutenbergem přímo v knihovně médií. Rozšíření pro Chrome se instaluje jedním kliknutím z Chrome Web Store."
+        },
+        {
+          "q": "Je AltVision zdarma?",
+          "a": "AltVision můžete vyzkoušet zdarma s denním limitem. Přejděte na premium pro neomezené generování."
+        },
+        {
+          "q": "Jak se nakládá s mými daty?",
+          "a": "Obrázky se zpracovávají pouze za účelem vygenerování jejich popisů a nepoužívají se k ničemu jinému. Všechny podrobnosti najdete v našich zásadách ochrany osobních údajů.",
+          "href": "/privacy",
+          "linkText": "Zásady ochrany osobních údajů"
+        },
+        {
+          "q": "Je AltVision open source?",
+          "a": "Ano – plugin pro WordPress je open source, takže si na GitHubu můžete přesně prohlédnout, jak funguje.",
+          "href": "https://github.com/statecs/AltVision-plugin",
+          "linkText": "Zobrazit na GitHubu"
+        }
+      ]
     }
   },
   "footer": {

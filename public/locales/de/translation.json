@@ -44,6 +44,90 @@
       "errorInvalidType": "Ungültiger Dateityp. Verwenden Sie PNG, JPG, GIF, WebP oder BMP.",
       "errorGenerate": "Alt-Text konnte nicht generiert werden. Bitte erneut versuchen.",
       "errorRateLimit": "Tageslimit erreicht. Versuche es morgen erneut oder upgrade auf Premium für unbegrenzten Zugriff."
+    },
+    "reviews": {
+      "label": "Bewertungen",
+      "title": "Vertraut von barrierefreiheitsbewussten Teams",
+      "ratingCaption": "Basierend auf {{count}} Google-Bewertungen",
+      "verified": "Verifizierte Google-Bewertung",
+      "verifiedWp": "Verifizierte WordPress.org-Bewertung",
+      "translated": "Übersetzt",
+      "items": [
+        {
+          "title": "Der Entwickler hat es genau das tun lassen, was ich brauchte.",
+          "quote": "Von allen Alt-Text-Lösungen ist das hier die beste. Der Entwickler reagiert unglaublich schnell, hat eine Funktion umgesetzt, die ich für meinen Anwendungsfall brauchte, und unterstützt jetzt Pro-Credits, sodass ich Pro-Funktionen genau dann und so bekomme, wie ich sie brauche. Kein verschwendetes Geld. Keine verschwendete Zeit. Genau die Art von Software, die ich mag."
+        },
+        {
+          "title": "Tolles Plugin und schneller Support",
+          "quote": "Tolles Plugin für die Alt-Text-Erstellung in großen Mengen, es funktioniert und der Entwickler ist schnell beim Support – also alles, was man von einem Plugin braucht."
+        },
+        {
+          "quote": "Fantastische Tools."
+        },
+        {
+          "quote": "Ich nutze einen Screenreader und arbeite in der Webentwicklung. Dieses Tool hilft mir nicht nur, meine eigene Arbeit barrierefrei zu halten, sondern erlaubt mir auch, die Barrierefreiheit anderer Seiten, die ich prüfe, zu bewerten und zu verstehen. Ein unverzichtbares Tool."
+        },
+        {
+          "quote": "Sehr hilfreiches Tool für meine Website. Manche KI-Vorschläge müssen etwas angepasst werden, aber insgesamt fantastisch."
+        },
+        {
+          "quote": "Als UX-Designer liebe ich, wie AltVision den umgebenden Inhalt berücksichtigt, um sinnvollen Alt-Text zu erstellen. Es ist Teil unseres Standard-Workflows geworden."
+        },
+        {
+          "quote": "Ein großartiges Tool für alle, die mit Barrierefreiheit, Design oder Frontend-Entwicklung arbeiten. Es macht Alt-Text und aria-labels auf der Seite sichtbar – Dinge, die für mich sonst verborgen bleiben, wenn ich nicht den Code inspiziere. Ich liebe die KI-Vorschlagsfunktion für fehlenden Alt-Text. Wirklich nützlich. Sehr zu empfehlen!"
+        },
+        {
+          "title": "Tolles Plugin mit schnellem Support",
+          "quote": "Ich nutze Alt Text Manager, um Bildbeschreibungen in WordPress zu verwalten – es ist super einfach einzurichten und läuft reibungslos. Ich hatte ein kleines Problem, aber der Entwickler antwortete sofort und veröffentlichte innerhalb von Stunden einen Fix. Kann diese zuverlässige, benutzerfreundliche Lösung sehr empfehlen!"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Alles, was du über AltVision wissen musst.",
+      "items": [
+        {
+          "q": "Wie genau ist der KI-generierte Alternativtext?",
+          "a": "AltVision liest sowohl das Bild als auch den umgebenden Inhalt – nahe Überschriften, Absätze und Bildunterschriften – um Beschreibungen zu schreiben, die zum Kontext passen und nicht nur zu den Pixeln. Vorschläge müssen gelegentlich leicht angepasst werden, liefern dir aber in Sekunden einen genauen, barrierefreien Ausgangspunkt."
+        },
+        {
+          "q": "Welche Bildformate werden unterstützt?",
+          "a": "JPG, PNG, WebP, GIF und BMP, bis zu 16 MB pro Bild."
+        },
+        {
+          "q": "Wie viele Sprachen unterstützt AltVision?",
+          "a": "31 Sprachen, darunter Englisch, Spanisch, Französisch, Deutsch, Arabisch, Chinesisch, Hindi und Japanisch. Du wählst die Ausgabesprache, damit der Alternativtext zu deinem Inhalt passt."
+        },
+        {
+          "q": "Kann ich eigene SEO-Keywords hinzufügen?",
+          "a": "Ja. Füge vor der Generierung eigene Keywords hinzu, und AltVision arbeitet sie in die Beschreibung ein, um die Sichtbarkeit in der Bildsuche zu verbessern, während der Text natürlich bleibt."
+        },
+        {
+          "q": "Hilft es bei der Barrierefreiheit-Konformität?",
+          "a": "Ja. AltVision ist darauf ausgelegt, die WCAG-2.1-Anforderungen an Alternativtexte zu unterstützen. Die Chrome-Erweiterung hebt außerdem Bilder ohne Alternativtext hervor und lässt dich vorhandenen Alternativtext und aria-labels direkt auf der Seite prüfen."
+        },
+        {
+          "q": "Wie installiere ich AltVision?",
+          "a": "Das WordPress-Plugin wird wie jedes andere Plugin installiert und funktioniert direkt in der Mediathek mit dem klassischen Editor und mit Gutenberg. Die Chrome-Erweiterung installierst du mit einem Klick aus dem Chrome Web Store."
+        },
+        {
+          "q": "Ist AltVision kostenlos nutzbar?",
+          "a": "Du kannst AltVision mit einem täglichen Limit kostenlos testen. Für unbegrenzte Generierungen kannst du auf Premium upgraden."
+        },
+        {
+          "q": "Wie werden meine Daten verarbeitet?",
+          "a": "Bilder werden nur verarbeitet, um ihre Beschreibungen zu erstellen, und für nichts anderes verwendet. Alle Details findest du in unserer Datenschutzerklärung.",
+          "href": "/privacy",
+          "linkText": "Datenschutzerklärung"
+        },
+        {
+          "q": "Ist AltVision Open Source?",
+          "a": "Ja – das WordPress-Plugin ist Open Source, du kannst also auf GitHub genau nachvollziehen, wie es funktioniert.",
+          "href": "https://github.com/statecs/AltVision-plugin",
+          "linkText": "Auf GitHub ansehen"
+        }
+      ]
     }
   },
   "footer": {

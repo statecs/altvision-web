@@ -44,6 +44,90 @@
       "errorInvalidType": "Jenis file tidak valid. Gunakan PNG, JPG, GIF, WebP atau BMP.",
       "errorGenerate": "Gagal membuat teks alternatif. Silakan coba lagi.",
       "errorRateLimit": "Batas harian tercapai. Coba lagi besok atau tingkatkan ke premium untuk akses tak terbatas."
+    },
+    "reviews": {
+      "label": "Ulasan",
+      "title": "Dipercaya oleh tim yang peduli aksesibilitas",
+      "ratingCaption": "Berdasarkan {{count}} ulasan Google",
+      "verified": "Ulasan Google terverifikasi",
+      "verifiedWp": "Ulasan WordPress.org terverifikasi",
+      "translated": "Diterjemahkan",
+      "items": [
+        {
+          "title": "Pengembangnya membuatnya melakukan persis seperti yang saya butuhkan.",
+          "quote": "Dari semua solusi teks alternatif, ini pasti yang terbaik. Pengembangnya sangat responsif, mengimplementasikan fitur yang saya butuhkan untuk kasus penggunaan saya, dan kini mendukung kredit pro sehingga saya bisa mendapatkan fitur pro tepat saat dan sesuai kebutuhan. Tidak ada uang yang terbuang. Tidak ada waktu yang terbuang. Inilah jenis perangkat lunak favorit saya."
+        },
+        {
+          "title": "Plugin hebat dan dukungan cepat",
+          "quote": "Plugin hebat untuk membuat teks alternatif secara massal; berfungsi dan pengembangnya cepat dalam dukungan, jadi semua yang Anda butuhkan dari sebuah plugin."
+        },
+        {
+          "quote": "Alat yang luar biasa."
+        },
+        {
+          "quote": "Saya menggunakan pembaca layar dan bekerja di pengembangan web. Alat ini tidak hanya membantu saya memastikan karya saya sendiri dapat diakses, tetapi juga memungkinkan saya mengaudit dan memahami aksesibilitas situs lain yang saya tinjau. Alat yang sangat penting."
+        },
+        {
+          "quote": "Alat yang sangat membantu untuk situs web saya. Beberapa saran AI perlu disesuaikan, tetapi secara keseluruhan luar biasa."
+        },
+        {
+          "quote": "Sebagai desainer UX, saya suka bagaimana AltVision mempertimbangkan konten di sekitarnya untuk menyusun teks alternatif yang bermakna. Ini telah menjadi bagian dari alur kerja standar kami."
+        },
+        {
+          "quote": "Alat yang hebat untuk siapa pun yang bekerja di bidang aksesibilitas, desain, atau pengembangan front-end. Alat ini memvisualisasikan teks alternatif dan aria-labels di halaman, hal-hal yang biasanya tersembunyi bagi saya kecuali saya memeriksa kodenya. Saya suka fitur saran AI untuk teks alternatif yang hilang. Sungguh berguna. Sangat direkomendasikan!"
+        },
+        {
+          "title": "Plugin hebat dengan dukungan cepat",
+          "quote": "Saya telah menggunakan Alt Text Manager untuk menangani deskripsi gambar di WordPress – sangat mudah diatur dan berjalan mulus. Saya menemui masalah kecil, tetapi pengembangnya langsung membalas dan merilis perbaikan dalam hitungan jam. Sangat merekomendasikan solusi yang andal dan ramah pengguna ini!"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Pertanyaan yang sering diajukan",
+      "subtitle": "Semua yang perlu Anda ketahui tentang AltVision.",
+      "items": [
+        {
+          "q": "Seberapa akurat teks alternatif yang dihasilkan AI?",
+          "a": "AltVision membaca gambar sekaligus konten di sekitarnya — judul, paragraf, dan keterangan terdekat — untuk menulis deskripsi yang sesuai dengan konteks, bukan hanya pikselnya. Saran kadang perlu sedikit penyesuaian, tetapi memberi Anda titik awal yang akurat dan siap aksesibilitas dalam hitungan detik."
+        },
+        {
+          "q": "Format gambar apa saja yang didukung?",
+          "a": "JPG, PNG, WebP, GIF, dan BMP, hingga 16 MB per gambar."
+        },
+        {
+          "q": "Berapa banyak bahasa yang didukung AltVision?",
+          "a": "31 bahasa, termasuk Inggris, Spanyol, Prancis, Jerman, Arab, Mandarin, Hindi, dan Jepang. Anda memilih bahasa keluaran agar teks alternatif sesuai dengan konten Anda."
+        },
+        {
+          "q": "Bisakah saya menambahkan kata kunci SEO sendiri?",
+          "a": "Ya. Tambahkan kata kunci khusus sebelum menghasilkan, dan AltVision menyisipkannya ke dalam deskripsi untuk meningkatkan visibilitas di penelusuran gambar sambil menjaga teks tetap alami."
+        },
+        {
+          "q": "Apakah ini membantu kepatuhan aksesibilitas?",
+          "a": "Ya. AltVision dibuat untuk memenuhi persyaratan teks alternatif WCAG 2.1. Ekstensi Chrome juga menyoroti gambar yang tidak memiliki teks alternatif dan memungkinkan Anda memeriksa teks alternatif serta aria-labels yang ada langsung di halaman."
+        },
+        {
+          "q": "Bagaimana cara memasang AltVision?",
+          "a": "Plugin WordPress dipasang seperti plugin lainnya dan bekerja dengan editor klasik maupun Gutenberg, langsung di pustaka media. Ekstensi Chrome dipasang dengan satu klik dari Chrome Web Store."
+        },
+        {
+          "q": "Apakah AltVision gratis digunakan?",
+          "a": "Anda dapat mencoba AltVision gratis dengan batas harian. Tingkatkan ke premium untuk pembuatan tanpa batas."
+        },
+        {
+          "q": "Bagaimana data saya ditangani?",
+          "a": "Gambar hanya diproses untuk menghasilkan deskripsinya dan tidak digunakan untuk hal lain. Lihat kebijakan privasi kami untuk detail lengkapnya.",
+          "href": "/privacy",
+          "linkText": "Kebijakan Privasi"
+        },
+        {
+          "q": "Apakah AltVision open source?",
+          "a": "Ya — plugin WordPress bersifat open source, sehingga Anda dapat melihat persis cara kerjanya di GitHub.",
+          "href": "https://github.com/statecs/AltVision-plugin",
+          "linkText": "Lihat di GitHub"
+        }
+      ]
     }
   },
   "footer": {

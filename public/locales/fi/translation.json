@@ -44,6 +44,90 @@
       "errorInvalidType": "Virheellinen tiedostotyyppi. Käytä PNG, JPG, GIF, WebP tai BMP.",
       "errorGenerate": "Vaihtoehtoisen tekstin luominen epäonnistui. Yritä uudelleen.",
       "errorRateLimit": "Päivittäinen raja saavutettu. Yritä uudelleen huomenna tai päivitä premiumiin rajoittamattoman käytön saamiseksi."
+    },
+    "reviews": {
+      "label": "Arvostelut",
+      "title": "Saavutettavuustietoisten tiimien luottama",
+      "ratingCaption": "Perustuu {{count}} Google-arvosteluun",
+      "verified": "Vahvistettu Google-arvostelu",
+      "verifiedWp": "Vahvistettu WordPress.org-arvostelu",
+      "translated": "Käännetty",
+      "items": [
+        {
+          "title": "Kehittäjä sai sen tekemään juuri sen, mitä tarvitsin.",
+          "quote": "Kaikista alt-tekstiratkaisuista tämän on pakko olla paras. Kehittäjä reagoi uskomattoman nopeasti, toteutti tarvitsemani ominaisuuden käyttötapaukseeni ja tukee nyt pro-krediittejä, joten saan pro-ominaisuudet juuri silloin ja niin kuin tarvitsen. Ei tuhlattua rahaa. Ei hukattua aikaa. Juuri tällaisesta ohjelmistosta pidän."
+        },
+        {
+          "title": "Loistava lisäosa ja nopea tuki",
+          "quote": "Loistava lisäosa alt-tekstin massatuotantoon; se toimii ja kehittäjä on nopea tuen kanssa, joten kaikki mitä lisäosalta tarvitsee."
+        },
+        {
+          "quote": "Mahtavia työkaluja."
+        },
+        {
+          "quote": "Käytän ruudunlukijaa ja työskentelen web-kehityksen parissa. Työkalu auttaa minua paitsi varmistamaan oman työni saavutettavuuden myös arvioimaan ja ymmärtämään muiden tarkastelemieni sivustojen saavutettavuutta. Korvaamaton työkalu."
+        },
+        {
+          "quote": "Erittäin hyödyllinen työkalu sivustolleni. Jotkin tekoälyn ehdotukset kaipaavat hienosäätöä, mutta kokonaisuutena mahtava."
+        },
+        {
+          "quote": "UX-suunnittelijana rakastan sitä, miten AltVision huomioi ympäröivän sisällön luodakseen merkityksellistä alt-tekstiä. Siitä on tullut osa vakiotyönkulkuamme."
+        },
+        {
+          "quote": "Erinomainen työkalu kaikille, jotka työskentelevät saavutettavuuden, suunnittelun tai frontend-kehityksen parissa. Se visualisoi alt-tekstin ja aria-labelit sivulla – asioita, jotka ovat minulta yleensä piilossa, ellen tutki koodia. Rakastan tekoälyn ehdotustoimintoa puuttuvalle alt-tekstille. Aidosti hyödyllinen. Lämpimästi suositeltava!"
+        },
+        {
+          "title": "Loistava lisäosa ja nopea tuki",
+          "quote": "Olen käyttänyt Alt Text Manageria kuvien kuvausten hallintaan WordPressissä – sen käyttöönotto on äärimmäisen helppoa ja se toimii sujuvasti. Törmäsin pieneen ongelmaan, mutta kehittäjä vastasi välittömästi ja julkaisi korjauksen tuntien sisällä. Suosittelen lämpimästi tätä luotettavaa ja käyttäjäystävällistä ratkaisua!"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Usein kysytyt kysymykset",
+      "subtitle": "Kaikki mitä sinun tarvitsee tietää AltVisionista.",
+      "items": [
+        {
+          "q": "Kuinka tarkka tekoälyn tuottama alt-teksti on?",
+          "a": "AltVision lukee sekä kuvan että sitä ympäröivän sisällön – lähellä olevat otsikot, kappaleet ja kuvatekstit – kirjoittaakseen kuvauksia, jotka sopivat kontekstiin eivätkä vain pikseleihin. Ehdotukset vaativat toisinaan pientä hienosäätöä, mutta antavat sinulle sekunneissa tarkan ja saavutettavuusvalmiin lähtökohdan."
+        },
+        {
+          "q": "Mitä kuvamuotoja tuetaan?",
+          "a": "JPG, PNG, WebP, GIF ja BMP, enintään 16 Mt kuvaa kohti."
+        },
+        {
+          "q": "Kuinka montaa kieltä AltVision tukee?",
+          "a": "31 kieltä, mukaan lukien englanti, espanja, ranska, saksa, arabia, kiina, hindi ja japani. Valitset tulostuskielen, jotta alt-teksti vastaa sisältöäsi."
+        },
+        {
+          "q": "Voinko lisätä omat SEO-avainsanani?",
+          "a": "Kyllä. Lisää omat avainsanat ennen luontia, niin AltVision punoo ne kuvaukseen parantaakseen näkyvyyttä kuvahaussa pitäen tekstin luonnollisena."
+        },
+        {
+          "q": "Auttaako se saavutettavuusvaatimusten täyttämisessä?",
+          "a": "Kyllä. AltVision on suunniteltu täyttämään WCAG 2.1 -vaatimukset alt-tekstille. Chrome-laajennus korostaa myös kuvat, joista alt-teksti puuttuu, ja antaa sinun tarkastella olemassa olevaa alt-tekstiä ja aria-labeleita suoraan sivulla."
+        },
+        {
+          "q": "Miten asennan AltVisionin?",
+          "a": "WordPress-lisäosa asennetaan kuten mikä tahansa muu lisäosa, ja se toimii sekä klassisen editorin että Gutenbergin kanssa suoraan mediakirjastossa. Chrome-laajennus asennetaan yhdellä klikkauksella Chrome Web Storesta."
+        },
+        {
+          "q": "Onko AltVision ilmainen käyttää?",
+          "a": "Voit kokeilla AltVisionia ilmaiseksi päivittäisellä rajalla. Päivitä premiumiin rajattomia luontikertoja varten."
+        },
+        {
+          "q": "Miten tietojani käsitellään?",
+          "a": "Kuvia käsitellään vain niiden kuvausten luomiseksi, eikä niitä käytetä mihinkään muuhun. Katso kaikki tiedot tietosuojakäytännöstämme.",
+          "href": "/privacy",
+          "linkText": "Tietosuojakäytäntö"
+        },
+        {
+          "q": "Onko AltVision avointa lähdekoodia?",
+          "a": "Kyllä – WordPress-lisäosa on avointa lähdekoodia, joten voit tarkastella GitHubissa tarkalleen, miten se toimii.",
+          "href": "https://github.com/statecs/AltVision-plugin",
+          "linkText": "Näytä GitHubissa"
+        }
+      ]
     }
   },
   "footer": {

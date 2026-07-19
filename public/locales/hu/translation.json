@@ -44,6 +44,90 @@
       "errorInvalidType": "Érvénytelen fájltípus. Használjon PNG, JPG, GIF, WebP vagy BMP formátumot.",
       "errorGenerate": "Nem sikerült generálni az alt szöveget. Kérjük, próbálja újra.",
       "errorRateLimit": "Elérte a napi korlátot. Próbálkozzon holnap újra, vagy váltson prémiumra a korlátlan hozzáférésért."
+    },
+    "reviews": {
+      "label": "Vélemények",
+      "title": "Akadálymentességre figyelő csapatok bizalmát élvezi",
+      "ratingCaption": "{{count}} Google-vélemény alapján",
+      "verified": "Ellenőrzött Google-vélemény",
+      "verifiedWp": "Ellenőrzött WordPress.org-vélemény",
+      "translated": "Lefordítva",
+      "items": [
+        {
+          "title": "A fejlesztő pontosan azt csináltatta vele, amire szükségem volt.",
+          "quote": "Az összes alternatívszöveg-megoldás közül ez a legjobb. A fejlesztő hihetetlenül gyorsan reagál, megvalósított egy funkciót, amire az én esetemhez szükségem volt, és most már pro krediteket is támogat, így pontosan akkor és úgy kapom meg a pro funkciókat, ahogy szükségem van rájuk. Semmi pénzkidobás. Semmi időveszteség. Ez a kedvenc szoftvertípusom."
+        },
+        {
+          "title": "Remek bővítmény és gyors támogatás",
+          "quote": "Remek bővítmény tömeges alternatívszöveg-generáláshoz; működik, és a fejlesztő gyors a támogatásban, tehát minden megvan benne, amit egy bővítménytől elvárnál."
+        },
+        {
+          "quote": "Csodálatos eszközök."
+        },
+        {
+          "quote": "Képernyőolvasót használok, és webfejlesztéssel foglalkozom. Ez az eszköz nemcsak abban segít, hogy a saját munkám akadálymentes legyen, hanem lehetővé teszi, hogy auditáljam és megértsem az általam átnézett más oldalak akadálymentességét is. Nélkülözhetetlen eszköz."
+        },
+        {
+          "quote": "Nagyon hasznos eszköz a webhelyemhez. Néhány MI-javaslatot finomítani kell, de összességében fantasztikus."
+        },
+        {
+          "quote": "UX-tervezőként imádom, ahogy az AltVision figyelembe veszi a környező tartalmat, hogy értelmes alternatív szöveget hozzon létre. A megszokott munkafolyamatunk részévé vált."
+        },
+        {
+          "quote": "Kiváló eszköz mindenkinek, aki akadálymentességgel, tervezéssel vagy frontend-fejlesztéssel foglalkozik. Láthatóvá teszi az alternatív szöveget és az aria-labels címkéket az oldalon – olyasmit, ami számomra általában rejtve marad, hacsak nem vizsgálom meg a kódot. Imádom az MI-javaslat funkciót a hiányzó alternatív szöveghez. Igazán hasznos. Melegen ajánlom!"
+        },
+        {
+          "title": "Remek bővítmény gyors támogatással",
+          "quote": "Az Alt Text Managert használom a képleírások kezelésére WordPressben – rendkívül egyszerű beállítani, és zökkenőmentesen működik. Egy apró problémába ütköztem, de a fejlesztő azonnal válaszolt, és órákon belül kiadott egy javítást. Melegen ajánlom ezt a megbízható, felhasználóbarát megoldást!"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Gyakran ismételt kérdések",
+      "subtitle": "Minden, amit az AltVisionről tudnod kell.",
+      "items": [
+        {
+          "q": "Mennyire pontos az MI által generált alternatív szöveg?",
+          "a": "Az AltVision egyszerre olvassa a képet és a körülötte lévő tartalmat – a közeli címsorokat, bekezdéseket és képaláírásokat –, hogy a kontextushoz, ne csak a képpontokhoz illő leírásokat írjon. A javaslatok néha kisebb finomítást igényelnek, de másodpercek alatt pontos, akadálymentességre kész kiindulópontot adnak."
+        },
+        {
+          "q": "Milyen képformátumok támogatottak?",
+          "a": "JPG, PNG, WebP, GIF és BMP, képenként legfeljebb 16 MB."
+        },
+        {
+          "q": "Hány nyelvet támogat az AltVision?",
+          "a": "31 nyelvet, köztük az angolt, spanyolt, franciát, németet, arabot, kínait, hindit és japánt. Te választod ki a kimeneti nyelvet, hogy az alternatív szöveg illeszkedjen a tartalmadhoz."
+        },
+        {
+          "q": "Hozzáadhatom a saját SEO-kulcsszavaimat?",
+          "a": "Igen. Adj hozzá egyéni kulcsszavakat a generálás előtt, és az AltVision beleszövi őket a leírásba, hogy javítsa a képkeresésben a láthatóságot, miközben a szöveg természetes marad."
+        },
+        {
+          "q": "Segít az akadálymentességi megfelelésben?",
+          "a": "Igen. Az AltVision úgy készült, hogy megfeleljen a WCAG 2.1 alternatív szövegre vonatkozó követelményeinek. A Chrome-bővítmény kiemeli az alternatív szöveg nélküli képeket is, és lehetővé teszi a meglévő alternatív szöveg és aria-labels vizsgálatát közvetlenül az oldalon."
+        },
+        {
+          "q": "Hogyan telepítem az AltVisiont?",
+          "a": "A WordPress-bővítmény ugyanúgy települ, mint bármely más bővítmény, és a klasszikus szerkesztővel és a Gutenberggel is működik, közvetlenül a médiatárban. A Chrome-bővítmény egyetlen kattintással telepíthető a Chrome Web Store-ból."
+        },
+        {
+          "q": "Ingyenes az AltVision használata?",
+          "a": "Az AltVisiont ingyenesen kipróbálhatod napi limittel. Válts prémiumra a korlátlan generálásért."
+        },
+        {
+          "q": "Hogyan kezelitek az adataimat?",
+          "a": "A képeket kizárólag a leírásaik generálásához dolgozzuk fel, és semmi másra nem használjuk. Minden részletet megtalálsz az adatvédelmi szabályzatunkban.",
+          "href": "/privacy",
+          "linkText": "Adatvédelmi szabályzat"
+        },
+        {
+          "q": "Nyílt forráskódú az AltVision?",
+          "a": "Igen – a WordPress-bővítmény nyílt forráskódú, így a GitHubon pontosan megnézheted, hogyan működik.",
+          "href": "https://github.com/statecs/AltVision-plugin",
+          "linkText": "Megtekintés a GitHubon"
+        }
+      ]
     }
   },
   "footer": {

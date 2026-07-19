@@ -44,6 +44,90 @@
       "errorRateLimit": "Daily limit reached. Try again tomorrow or upgrade to premium for unlimited access.",
       "tryIt": "Try It!",
       "outputLanguage": "Language"
+    },
+    "reviews": {
+      "label": "Reviews",
+      "title": "Trusted by accessibility-minded teams",
+      "ratingCaption": "Based on {{count}} Google reviews",
+      "verified": "Verified Google review",
+      "verifiedWp": "Verified WordPress.org review",
+      "translated": "Translated",
+      "items": [
+        {
+          "title": "The developer made it do exactly what I needed.",
+          "quote": "Out of all the alt text solutions, this has to be the best one. The developer is incredibly responsive, implemented a feature I needed for my use case, now supports pro credits so I can get pro features just when and how I need them. No wasted money. No wasted time. That’s my favorite kind of software."
+        },
+        {
+          "title": "Great plugin and quick support",
+          "quote": "Great plugin for bulk alt image generation, it works and the developer is fast with support so everything you need from a plugin."
+        },
+        {
+          "quote": "Amazing tools."
+        },
+        {
+          "quote": "I use a screen reader and work in web dev. This tool not only helps me ensure my own work is accessible but also allows me to audit and understand the accessibility of other sites I’m reviewing. A vital tool."
+        },
+        {
+          "quote": "Very helpful tool for my website. Some AI suggestions need tweaking, but overall fantastic."
+        },
+        {
+          "quote": "As a UX designer, I love how AltVision considers surrounding content to craft meaningful alt text. It’s become part of our standard workflow."
+        },
+        {
+          "quote": "A great tool for anyone working with accessibility, design, or front-end development. It visualises alt text and aria-labels on the page, things that are usually hidden for me unless I inspect the code. I love the AI suggestion feature for missing alt text. Genuinely useful. Highly recommended!"
+        },
+        {
+          "title": "Great plugin with fast support",
+          "quote": "I’ve been using Alt Text Manager to handle image descriptions in WordPress – it’s super easy to set up and works smoothly. I hit a minor issue, but the developer replied instantly and pushed a fix within hours. Highly recommend this reliable, user-friendly solution!"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Frequently asked questions",
+      "subtitle": "Everything you need to know about AltVision.",
+      "items": [
+        {
+          "q": "How accurate is the AI-generated alt text?",
+          "a": "AltVision reads both the image and the content around it — nearby headings, paragraphs, and captions — to write descriptions that fit the context, not just the pixels. Suggestions occasionally need light tweaking, but they give you an accurate, accessibility-ready starting point in seconds."
+        },
+        {
+          "q": "Which image formats are supported?",
+          "a": "JPG, PNG, WebP, GIF, and BMP, up to 16 MB per image."
+        },
+        {
+          "q": "How many languages does AltVision support?",
+          "a": "31 languages, including English, Spanish, French, German, Arabic, Chinese, Hindi, and Japanese. You pick the output language so the alt text matches your content."
+        },
+        {
+          "q": "Can I add my own SEO keywords?",
+          "a": "Yes. Add custom keywords before generating and AltVision works them into the description to improve image search visibility while keeping the text natural."
+        },
+        {
+          "q": "Does it help with accessibility compliance?",
+          "a": "Yes. AltVision is built to support WCAG 2.1 alt-text requirements. The Chrome extension also highlights images missing alt text and lets you inspect existing alt text and aria-labels directly on the page."
+        },
+        {
+          "q": "How do I install AltVision?",
+          "a": "The WordPress plugin installs like any other plugin and works with both the classic editor and Gutenberg, right inside the media library. The Chrome extension installs from the Chrome Web Store in one click."
+        },
+        {
+          "q": "Is AltVision free to use?",
+          "a": "You can try AltVision for free with a daily limit. Upgrade to premium for unlimited generations."
+        },
+        {
+          "q": "How is my data handled?",
+          "a": "Images are processed only to generate their descriptions and are not used for anything else. See our Privacy Policy for the full details.",
+          "href": "/privacy",
+          "linkText": "Privacy Policy"
+        },
+        {
+          "q": "Is AltVision open source?",
+          "a": "Yes — the WordPress plugin is open source, so you can review exactly how it works on GitHub.",
+          "href": "https://github.com/statecs/AltVision-plugin",
+          "linkText": "View on GitHub"
+        }
+      ]
     }
   },
   "footer": {

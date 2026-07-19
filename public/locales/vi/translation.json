@@ -44,6 +44,90 @@
       "errorInvalidType": "Loại tệp không hợp lệ. Dùng PNG, JPG, GIF, WebP hoặc BMP.",
       "errorGenerate": "Không thể tạo văn bản thay thế. Vui lòng thử lại.",
       "errorRateLimit": "Đã đạt giới hạn hàng ngày. Thử lại vào ngày mai hoặc nâng cấp lên gói cao cấp để truy cập không giới hạn."
+    },
+    "reviews": {
+      "label": "Đánh giá",
+      "title": "Được các nhóm chú trọng khả năng truy cập tin dùng",
+      "ratingCaption": "Dựa trên {{count}} đánh giá Google",
+      "verified": "Đánh giá Google đã xác minh",
+      "verifiedWp": "Đánh giá WordPress.org đã xác minh",
+      "translated": "Đã dịch",
+      "items": [
+        {
+          "title": "Nhà phát triển đã làm cho nó thực hiện đúng những gì tôi cần.",
+          "quote": "Trong tất cả các giải pháp văn bản thay thế, đây chắc chắn là giải pháp tốt nhất. Nhà phát triển phản hồi cực kỳ nhanh, đã triển khai một tính năng tôi cần cho trường hợp của mình, và giờ còn hỗ trợ tín dụng pro để tôi có được các tính năng pro đúng lúc và đúng cách tôi cần. Không lãng phí tiền. Không lãng phí thời gian. Đó là kiểu phần mềm tôi yêu thích."
+        },
+        {
+          "title": "Plugin tuyệt vời và hỗ trợ nhanh",
+          "quote": "Plugin tuyệt vời để tạo văn bản thay thế hàng loạt; nó hoạt động và nhà phát triển hỗ trợ nhanh, nên có mọi thứ bạn cần ở một plugin."
+        },
+        {
+          "quote": "Công cụ tuyệt vời."
+        },
+        {
+          "quote": "Tôi dùng trình đọc màn hình và làm việc trong lĩnh vực phát triển web. Công cụ này không chỉ giúp tôi đảm bảo công việc của mình dễ tiếp cận mà còn cho phép tôi kiểm tra và hiểu khả năng truy cập của các trang khác mà tôi đang xem xét. Một công cụ thiết yếu."
+        },
+        {
+          "quote": "Công cụ rất hữu ích cho trang web của tôi. Một số gợi ý của AI cần chỉnh sửa, nhưng nhìn chung là tuyệt vời."
+        },
+        {
+          "quote": "Là một nhà thiết kế UX, tôi thích cách AltVision cân nhắc nội dung xung quanh để tạo ra văn bản thay thế có ý nghĩa. Nó đã trở thành một phần trong quy trình làm việc tiêu chuẩn của chúng tôi."
+        },
+        {
+          "quote": "Một công cụ tuyệt vời cho bất kỳ ai làm việc về khả năng truy cập, thiết kế hoặc phát triển front-end. Nó trực quan hóa văn bản thay thế và aria-labels trên trang, những thứ thường bị ẩn với tôi trừ khi tôi kiểm tra mã. Tôi thích tính năng gợi ý bằng AI cho văn bản thay thế còn thiếu. Thực sự hữu ích. Rất khuyến khích!"
+        },
+        {
+          "title": "Plugin tuyệt vời với hỗ trợ nhanh",
+          "quote": "Tôi đã dùng Alt Text Manager để xử lý phần mô tả hình ảnh trong WordPress – cực kỳ dễ thiết lập và chạy mượt mà. Tôi gặp một sự cố nhỏ, nhưng nhà phát triển đã trả lời ngay lập tức và tung ra bản sửa lỗi trong vòng vài giờ. Rất khuyến khích giải pháp đáng tin cậy và thân thiện với người dùng này!"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Câu hỏi thường gặp",
+      "subtitle": "Mọi điều bạn cần biết về AltVision.",
+      "items": [
+        {
+          "q": "Văn bản thay thế do AI tạo ra chính xác đến mức nào?",
+          "a": "AltVision đọc cả hình ảnh lẫn nội dung xung quanh — các tiêu đề, đoạn văn và chú thích gần đó — để viết mô tả phù hợp với ngữ cảnh, chứ không chỉ với các điểm ảnh. Các gợi ý đôi khi cần chỉnh sửa nhẹ, nhưng chỉ trong vài giây, chúng mang lại cho bạn một điểm khởi đầu chính xác và sẵn sàng cho khả năng truy cập."
+        },
+        {
+          "q": "Những định dạng hình ảnh nào được hỗ trợ?",
+          "a": "JPG, PNG, WebP, GIF và BMP, tối đa 16 MB mỗi hình."
+        },
+        {
+          "q": "AltVision hỗ trợ bao nhiêu ngôn ngữ?",
+          "a": "31 ngôn ngữ, bao gồm tiếng Anh, Tây Ban Nha, Pháp, Đức, Ả Rập, Trung, Hindi và Nhật. Bạn chọn ngôn ngữ đầu ra để văn bản thay thế khớp với nội dung của mình."
+        },
+        {
+          "q": "Tôi có thể thêm từ khóa SEO của riêng mình không?",
+          "a": "Có. Thêm từ khóa tùy chỉnh trước khi tạo và AltVision sẽ lồng chúng vào mô tả để cải thiện khả năng hiển thị trong tìm kiếm hình ảnh mà vẫn giữ văn bản tự nhiên."
+        },
+        {
+          "q": "Nó có giúp tuân thủ khả năng truy cập không?",
+          "a": "Có. AltVision được xây dựng để đáp ứng các yêu cầu về văn bản thay thế của WCAG 2.1. Tiện ích Chrome còn làm nổi bật những hình ảnh thiếu văn bản thay thế và cho phép bạn kiểm tra văn bản thay thế và aria-labels hiện có ngay trên trang."
+        },
+        {
+          "q": "Tôi cài đặt AltVision như thế nào?",
+          "a": "Plugin WordPress được cài đặt như bất kỳ plugin nào khác và hoạt động với cả trình soạn thảo cổ điển lẫn Gutenberg, ngay trong thư viện phương tiện. Tiện ích Chrome được cài đặt chỉ bằng một cú nhấp từ Chrome Web Store."
+        },
+        {
+          "q": "AltVision có miễn phí không?",
+          "a": "Bạn có thể dùng thử AltVision miễn phí với giới hạn hằng ngày. Nâng cấp lên premium để tạo không giới hạn."
+        },
+        {
+          "q": "Dữ liệu của tôi được xử lý như thế nào?",
+          "a": "Hình ảnh chỉ được xử lý để tạo mô tả và không được dùng cho bất kỳ mục đích nào khác. Xem chính sách quyền riêng tư của chúng tôi để biết toàn bộ chi tiết.",
+          "href": "/privacy",
+          "linkText": "Chính sách quyền riêng tư"
+        },
+        {
+          "q": "AltVision có phải là mã nguồn mở không?",
+          "a": "Có — plugin WordPress là mã nguồn mở, vì vậy bạn có thể xem chính xác cách nó hoạt động trên GitHub.",
+          "href": "https://github.com/statecs/AltVision-plugin",
+          "linkText": "Xem trên GitHub"
+        }
+      ]
     }
   },
   "footer": {

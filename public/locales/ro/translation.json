@@ -44,6 +44,90 @@
       "errorInvalidType": "Tip de fișier invalid. Folosiți PNG, JPG, GIF, WebP sau BMP.",
       "errorGenerate": "Nu s-a putut genera textul alternativ. Vă rugăm să încercați din nou.",
       "errorRateLimit": "Limita zilnică atinsă. Încearcă din nou mâine sau fă upgrade la premium pentru acces nelimitat."
+    },
+    "reviews": {
+      "label": "Recenzii",
+      "title": "Ales de echipe atente la accesibilitate",
+      "ratingCaption": "Pe baza a {{count}} recenzii Google",
+      "verified": "Recenzie Google verificată",
+      "verifiedWp": "Recenzie WordPress.org verificată",
+      "translated": "Tradus",
+      "items": [
+        {
+          "title": "Dezvoltatorul l-a făcut să facă exact ceea ce aveam nevoie.",
+          "quote": "Dintre toate soluțiile de text alternativ, aceasta trebuie să fie cea mai bună. Dezvoltatorul răspunde incredibil de repede, a implementat o funcție de care aveam nevoie pentru cazul meu de utilizare și acum acceptă credite pro, așa că primesc funcțiile pro exact când și cum am nevoie de ele. Niciun ban irosit. Niciun timp pierdut. Este tipul meu preferat de software."
+        },
+        {
+          "title": "Plugin excelent și suport rapid",
+          "quote": "Plugin excelent pentru generarea în masă a textului alternativ; funcționează, iar dezvoltatorul e rapid la suport, deci are tot ce ai nevoie de la un plugin."
+        },
+        {
+          "quote": "Instrumente uimitoare."
+        },
+        {
+          "quote": "Folosesc un cititor de ecran și lucrez în dezvoltare web. Acest instrument nu doar mă ajută să mă asigur că propria mea muncă este accesibilă, ci îmi permite și să auditez și să înțeleg accesibilitatea altor site-uri pe care le analizez. Un instrument esențial."
+        },
+        {
+          "quote": "Instrument foarte util pentru site-ul meu. Unele sugestii ale IA au nevoie de ajustări, dar per ansamblu este fantastic."
+        },
+        {
+          "quote": "Ca designer UX, îmi place cum AltVision ține cont de conținutul din jur pentru a crea text alternativ semnificativ. A devenit parte din fluxul nostru obișnuit de lucru."
+        },
+        {
+          "quote": "Un instrument excelent pentru oricine lucrează cu accesibilitate, design sau dezvoltare front-end. Vizualizează textul alternativ și aria-labels de pe pagină, lucruri de obicei ascunse pentru mine dacă nu inspectez codul. Îmi place funcția de sugestii cu IA pentru textul alternativ lipsă. Cu adevărat util. Recomand cu căldură!"
+        },
+        {
+          "title": "Plugin excelent cu suport rapid",
+          "quote": "Folosesc Alt Text Manager pentru a gestiona descrierile imaginilor în WordPress – este extrem de ușor de configurat și funcționează fără probleme. Am întâmpinat o mică problemă, dar dezvoltatorul a răspuns instantaneu și a lansat o remediere în câteva ore. Recomand cu căldură această soluție fiabilă și ușor de folosit!"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Întrebări frecvente",
+      "subtitle": "Tot ce trebuie să știi despre AltVision.",
+      "items": [
+        {
+          "q": "Cât de precis este textul alternativ generat de IA?",
+          "a": "AltVision citește atât imaginea, cât și contextul din jurul ei – titluri, paragrafe și legende apropiate – pentru a scrie descrieri potrivite contextului, nu doar pixelilor. Sugestiile au uneori nevoie de o mică ajustare, dar îți oferă în câteva secunde un punct de plecare precis și pregatit pentru accesibilitate."
+        },
+        {
+          "q": "Ce formate de imagine sunt acceptate?",
+          "a": "JPG, PNG, WebP, GIF și BMP, până la 16 MB per imagine."
+        },
+        {
+          "q": "Câte limbi acceptă AltVision?",
+          "a": "31 de limbi, printre care engleză, spaniolă, franceză, germană, arabă, chineză, hindi și japoneză. Tu alegi limba de ieșire, astfel încât textul alternativ să se potrivească conținutului tău."
+        },
+        {
+          "q": "Pot adăuga propriile cuvinte cheie SEO?",
+          "a": "Da. Adaugă cuvinte cheie personalizate înainte de generare, iar AltVision le integrează în descriere pentru a îmbunătăți vizibilitatea în căutarea de imagini, păstrând textul natural."
+        },
+        {
+          "q": "Ajută la conformitatea cu accesibilitatea?",
+          "a": "Da. AltVision este construit pentru a respecta cerințele WCAG 2.1 privind textul alternativ. Extensia Chrome evidențiază, de asemenea, imaginile fără text alternativ și îți permite să inspectezi textul alternativ și aria-labels existente direct în pagină."
+        },
+        {
+          "q": "Cum instalez AltVision?",
+          "a": "Pluginul WordPress se instalează ca orice alt plugin și funcționează atât cu editorul clasic, cât și cu Gutenberg, direct în biblioteca media. Extensia Chrome se instalează cu un clic din Chrome Web Store."
+        },
+        {
+          "q": "AltVision este gratuit?",
+          "a": "Poți încerca AltVision gratuit cu o limită zilnică. Treci la premium pentru generări nelimitate."
+        },
+        {
+          "q": "Cum îmi sunt gestionate datele?",
+          "a": "Imaginile sunt procesate doar pentru a genera descrierile lor și nu sunt folosite în alt scop. Consultă politica noastră de confidențialitate pentru toate detaliile.",
+          "href": "/privacy",
+          "linkText": "Politica de confidențialitate"
+        },
+        {
+          "q": "AltVision este open source?",
+          "a": "Da – pluginul WordPress este open source, așa că poți vedea exact cum funcționează pe GitHub.",
+          "href": "https://github.com/statecs/AltVision-plugin",
+          "linkText": "Vezi pe GitHub"
+        }
+      ]
     }
   },
   "footer": {

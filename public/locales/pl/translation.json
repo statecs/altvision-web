@@ -44,6 +44,90 @@
       "errorInvalidType": "Nieprawidłowy typ pliku. Użyj PNG, JPG, GIF, WebP lub BMP.",
       "errorGenerate": "Nie udało się wygenerować tekstu alternatywnego. Spróbuj ponownie.",
       "errorRateLimit": "Osiągnięto dzienny limit. Spróbuj ponownie jutro lub przejdź na premium, aby uzyskać nieograniczony dostęp."
+    },
+    "reviews": {
+      "label": "Opinie",
+      "title": "Zaufany przez zespoły dbające o dostępność",
+      "ratingCaption": "Na podstawie {{count}} opinii w Google",
+      "verified": "Zweryfikowana opinia Google",
+      "verifiedWp": "Zweryfikowana opinia WordPress.org",
+      "translated": "Przetłumaczono",
+      "items": [
+        {
+          "title": "Twórca sprawił, że robi dokładnie to, czego potrzebowałem.",
+          "quote": "Ze wszystkich rozwiązań do tekstu alternatywnego to musi być najlepsze. Twórca reaguje błyskawicznie, zaimplementował funkcję, której potrzebowałem do mojego zastosowania, a teraz obsługuje kredyty pro, dzięki czemu otrzymuję funkcje pro dokładnie wtedy i tak, jak ich potrzebuję. Żadnych zmarnowanych pieniędzy. Żadnego zmarnowanego czasu. To mój ulubiony rodzaj oprogramowania."
+        },
+        {
+          "title": "Świetna wtyczka i szybkie wsparcie",
+          "quote": "Świetna wtyczka do masowego generowania tekstu alternatywnego; działa, a twórca szybko odpowiada w kwestii wsparcia, więc ma wszystko, czego potrzeba od wtyczki."
+        },
+        {
+          "quote": "Wspaniałe narzędzia."
+        },
+        {
+          "quote": "Korzystam z czytnika ekranu i pracuję w tworzeniu stron. To narzędzie nie tylko pomaga mi zadbać o dostępność mojej własnej pracy, ale też pozwala audytować i rozumieć dostępność innych witryn, które sprawdzam. Niezbędne narzędzie."
+        },
+        {
+          "quote": "Bardzo przydatne narzędzie dla mojej strony. Niektóre podpowiedzi AI wymagają dopracowania, ale ogólnie fantastyczne."
+        },
+        {
+          "quote": "Jako projektant UX uwielbiam to, jak AltVision uwzględnia otaczającą treść, aby tworzyć sensowny tekst alternatywny. Stał się częścią naszego standardowego procesu pracy."
+        },
+        {
+          "quote": "Świetne narzędzie dla każdego, kto zajmuje się dostępnością, projektowaniem lub programowaniem front-end. Wizualizuje tekst alternatywny i aria-labels na stronie – rzeczy zwykle dla mnie ukryte, chyba że zajrzę w kod. Uwielbiam funkcję sugestii AI dla brakującego tekstu alternatywnego. Naprawdę przydatne. Gorąco polecam!"
+        },
+        {
+          "title": "Świetna wtyczka z szybkim wsparciem",
+          "quote": "Używam Alt Text Manager do zarządzania opisami obrazów w WordPress – konfiguracja jest banalnie prosta, a wszystko działa płynnie. Napotkałem drobny problem, ale twórca odpowiedział natychmiast i wypuścił poprawkę w ciągu kilku godzin. Gorąco polecam to niezawodne i przyjazne w obsłudze rozwiązanie!"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Najczęściej zadawane pytania",
+      "subtitle": "Wszystko, co musisz wiedzieć o AltVision.",
+      "items": [
+        {
+          "q": "Jak dokładny jest tekst alternatywny generowany przez AI?",
+          "a": "AltVision analizuje zarówno obraz, jak i otaczającą go treść – pobliskie nagłówki, akapity i podpisy – aby tworzyć opisy pasujące do kontekstu, a nie tylko do pikseli. Sugestie czasem wymagają drobnej korekty, ale w kilka sekund dają dokładny i gotowy pod kątem dostępności punkt wyjścia."
+        },
+        {
+          "q": "Jakie formaty obrazów są obsługiwane?",
+          "a": "JPG, PNG, WebP, GIF i BMP, do 16 MB na obraz."
+        },
+        {
+          "q": "Ile języków obsługuje AltVision?",
+          "a": "31 języków, w tym angielski, hiszpański, francuski, niemiecki, arabski, chiński, hindi i japoński. Wybierasz język wyjściowy, aby tekst alternatywny pasował do Twojej treści."
+        },
+        {
+          "q": "Czy mogę dodać własne słowa kluczowe SEO?",
+          "a": "Tak. Dodaj własne słowa kluczowe przed generowaniem, a AltVision wplecie je w opis, aby poprawić widoczność w wyszukiwarce obrazów, zachowując naturalny tekst."
+        },
+        {
+          "q": "Czy pomaga w zgodności z dostępnością?",
+          "a": "Tak. AltVision został zbudowany z myślą o wymaganiach WCAG 2.1 dotyczących tekstu alternatywnego. Rozszerzenie Chrome dodatkowo wyróżnia obrazy bez tekstu alternatywnego i pozwala sprawdzać istniejący tekst alternatywny oraz aria-labels bezpośrednio na stronie."
+        },
+        {
+          "q": "Jak zainstalować AltVision?",
+          "a": "Wtyczkę WordPress instaluje się jak każdą inną i działa zarówno z klasycznym edytorem, jak i z Gutenbergiem, bezpośrednio w bibliotece mediów. Rozszerzenie Chrome instaluje się jednym kliknięciem z Chrome Web Store."
+        },
+        {
+          "q": "Czy AltVision jest darmowy?",
+          "a": "Możesz wypróbować AltVision za darmo z dziennym limitem. Przejdź na wersję premium, aby generować bez ograniczeń."
+        },
+        {
+          "q": "Jak przetwarzane są moje dane?",
+          "a": "Obrazy są przetwarzane wyłącznie w celu wygenerowania ich opisów i nie są wykorzystywane do niczego innego. Zobacz naszą politykę prywatności, aby poznać wszystkie szczegóły.",
+          "href": "/privacy",
+          "linkText": "Polityka prywatności"
+        },
+        {
+          "q": "Czy AltVision jest open source?",
+          "a": "Tak – wtyczka WordPress jest open source, więc na GitHubie możesz zobaczyć dokładnie, jak działa.",
+          "href": "https://github.com/statecs/AltVision-plugin",
+          "linkText": "Zobacz na GitHubie"
+        }
+      ]
     }
   },
   "footer": {

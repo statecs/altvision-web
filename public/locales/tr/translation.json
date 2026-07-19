@@ -44,6 +44,90 @@
       "errorInvalidType": "Geçersiz dosya türü. PNG, JPG, GIF, WebP veya BMP kullanın.",
       "errorGenerate": "Alt metin oluşturulamadı. Lütfen tekrar deneyin.",
       "errorRateLimit": "Günlük limit doldu. Yarın tekrar deneyin veya sınırsız erişim için premium'a yükseltin."
+    },
+    "reviews": {
+      "label": "Yorumlar",
+      "title": "Erişilebilirliğe önem veren ekiplerin tercihi",
+      "ratingCaption": "{{count}} Google yorumuna göre",
+      "verified": "Doğrulanmış Google yorumu",
+      "verifiedWp": "Doğrulanmış WordPress.org yorumu",
+      "translated": "Çevrildi",
+      "items": [
+        {
+          "title": "Geliştirici, tam olarak ihtiyacım olan şeyi yaptırdı.",
+          "quote": "Tüm alternatif metin çözümleri arasında bu en iyisi olmalı. Geliştirici inanılmaz derecede duyarlı, benim kullanım senaryom için ihtiyacım olan bir özelliği ekledi ve artık pro kredileri destekliyor; böylece pro özellikleri tam ihtiyacım olduğunda ve istediğim şekilde alıyorum. Boşa harcanan para yok. Boşa harcanan zaman yok. En sevdiğim yazılım türü."
+        },
+        {
+          "title": "Harika eklenti ve hızlı destek",
+          "quote": "Toplu alternatif metin oluşturmak için harika bir eklenti; çalışıyor ve geliştirici destekte hızlı, yani bir eklentiden ihtiyacınız olan her şey var."
+        },
+        {
+          "quote": "Muhteşem araçlar."
+        },
+        {
+          "quote": "Ekran okuyucu kullanıyorum ve web geliştirme alanında çalışıyorum. Bu araç yalnızca kendi işimin erişilebilir olmasını sağlamama yardımcı olmakla kalmıyor, incelediğim diğer sitelerin erişilebilirliğini denetlememe ve anlamama da olanak tanıyor. Hayati bir araç."
+        },
+        {
+          "quote": "Web sitem için çok faydalı bir araç. Bazı yapay zekâ önerileri ince ayar gerektiriyor ama genel olarak harika."
+        },
+        {
+          "quote": "Bir UX tasarımcısı olarak, AltVision'ın anlamlı alternatif metin oluşturmak için çevredeki içeriği dikkate almasına bayılıyorum. Standart iş akışımızın bir parçası hâline geldi."
+        },
+        {
+          "quote": "Erişilebilirlik, tasarım ya da ön uç geliştirme ile uğraşan herkes için harika bir araç. Sayfadaki alternatif metni ve aria-labels değerlerini görselleştiriyor; bunlar kodu incelemedikçe benden genelde gizli kalan şeyler. Eksik alternatif metin için yapay zekâ öneri özelliğine bayılıyorum. Gerçekten faydalı. Şiddetle tavsiye ederim!"
+        },
+        {
+          "title": "Hızlı destekli harika eklenti",
+          "quote": "Görsel açıklamalarını WordPress'te yönetmek için Alt Text Manager'ı kullanıyorum – kurulumu son derece kolay ve sorunsuz çalışıyor. Küçük bir sorunla karşılaştım ama geliştirici anında yanıt verdi ve birkaç saat içinde bir düzeltme yayımladı. Bu güvenilir ve kullanıcı dostu çözümü şiddetle tavsiye ederim!"
+        }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Sıkça sorulan sorular",
+      "subtitle": "AltVision hakkında bilmeniz gereken her şey.",
+      "items": [
+        {
+          "q": "Yapay zekânın ürettiği alternatif metin ne kadar doğru?",
+          "a": "AltVision hem görseli hem de çevresindeki içeriği – yakındaki başlıkları, paragrafları ve resim yazılarını – okuyarak yalnızca piksellere değil bağlama uyan açıklamalar yazar. Öneriler bazen küçük bir düzeltme gerektirir, ancak size saniyeler içinde doğru ve erişilebilirliğe hazır bir başlangıç noktası sunar."
+        },
+        {
+          "q": "Hangi görsel biçimleri destekleniyor?",
+          "a": "JPG, PNG, WebP, GIF ve BMP, görsel başına 16 MB'a kadar."
+        },
+        {
+          "q": "AltVision kaç dili destekliyor?",
+          "a": "İngilizce, İspanyolca, Fransızca, Almanca, Arapça, Çince, Hintçe ve Japonca dâhil 31 dil. Alternatif metnin içeriğinizle eşleşmesi için çıktı dilini siz seçersiniz."
+        },
+        {
+          "q": "Kendi SEO anahtar kelimelerimi ekleyebilir miyim?",
+          "a": "Evet. Oluşturmadan önce özel anahtar kelimeler ekleyin; AltVision bunları metni doğal tutarak açıklamaya işler ve görsel aramasındaki görünürlüğü artırır."
+        },
+        {
+          "q": "Erişilebilirlik uyumluluğuna yardımcı oluyor mu?",
+          "a": "Evet. AltVision, alternatif metin için WCAG 2.1 gereksinimlerini karşılayacak şekilde tasarlanmıştır. Chrome uzantısı ayrıca alternatif metni olmayan görselleri vurgular ve mevcut alternatif metni ve aria-labels değerlerini doğrudan sayfada incelemenizi sağlar."
+        },
+        {
+          "q": "AltVision'ı nasıl kurarım?",
+          "a": "WordPress eklentisi diğer eklentiler gibi kurulur ve hem klasik düzenleyici hem de Gutenberg ile doğrudan medya kitaplığında çalışır. Chrome uzantısı Chrome Web Store'dan tek tıkla kurulur."
+        },
+        {
+          "q": "AltVision ücretsiz mi?",
+          "a": "AltVision'ı günlük sınırla ücretsiz deneyebilirsiniz. Sınırsız oluşturma için premium'a geçin."
+        },
+        {
+          "q": "Verilerim nasıl işleniyor?",
+          "a": "Görseller yalnızca açıklamalarını oluşturmak için işlenir ve başka hiçbir amaçla kullanılmaz. Tüm ayrıntılar için gizlilik politikamıza bakın.",
+          "href": "/privacy",
+          "linkText": "Gizlilik Politikası"
+        },
+        {
+          "q": "AltVision açık kaynak mı?",
+          "a": "Evet – WordPress eklentisi açık kaynaktır, bu yüzden nasıl çalıştığını GitHub'da tam olarak inceleyebilirsiniz.",
+          "href": "https://github.com/statecs/AltVision-plugin",
+          "linkText": "GitHub'da görüntüle"
+        }
+      ]
     }
   },
   "footer": {
