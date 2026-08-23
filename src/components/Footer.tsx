@@ -19,7 +19,7 @@ const Footer = () => {
               <a
                 href="https://wordpress.org/plugins/altvision-ai-alt-text-generator/"
                 rel="noopener noreferrer"
-                className="bg-vermilion hover:bg-vermilion-deep text-white px-6 py-3 rounded-md text-sm font-semibold inline-flex items-center gap-2 transition-colors w-fit"
+                className="bg-azure hover:bg-azure-deep text-white px-6 py-3 rounded-md text-sm font-semibold inline-flex items-center gap-2 transition-colors w-fit"
               >
                 {t('footer.downloadWP')}
                 <ArrowRight className="w-4 h-4" />

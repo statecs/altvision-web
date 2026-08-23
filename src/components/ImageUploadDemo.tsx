@@ -193,7 +193,7 @@ const ImageUploadDemo: React.FC = () => {
   };
 
   return (
-    <div className="bg-white border border-ink rounded-lg p-6 space-y-4 shadow-[8px_8px_0_rgba(26,22,19,0.9)]">
+    <div className="bg-white border border-ink rounded-lg p-6 space-y-4 shadow-[8px_8px_0_rgba(19,28,43,0.9)]">
       {/* Output language */}
       <div className="flex items-center justify-between border-b border-ink/10 pb-3 -mx-6 px-6">
         <span className="font-mono text-xs uppercase tracking-[0.15em] text-ink-soft">{t('home.demo.outputLanguage')}</span>
@@ -205,7 +205,7 @@ const ImageUploadDemo: React.FC = () => {
         ref={uploadZoneRef}
         tabIndex={-1}
         className={`border-2 border-dashed rounded-md p-6 text-center cursor-pointer transition-colors outline-none ${
-          uploadRequired ? 'border-red-600 bg-red-50' : isDragging ? 'border-vermilion bg-vermilion/5' : 'border-ink/25 bg-paper/60 hover:border-ink/50'
+          uploadRequired ? 'border-red-600 bg-red-50' : isDragging ? 'border-azure-bright bg-azure-bright/10' : 'border-ink/25 bg-paper/60 hover:border-ink/50'
         }`}
         onClick={() => fileInputRef.current?.click()}
         onDrop={handleDrop}
@@ -230,7 +230,7 @@ const ImageUploadDemo: React.FC = () => {
           <>
             <Upload className="mx-auto mb-3 text-ink/40" size={36} strokeWidth={1.5} />
             <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 mb-1">
-              <span className="bg-vermilion text-white font-mono text-xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded-sm">
+              <span className="bg-azure text-white font-mono text-xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded-sm">
                 {t('home.demo.tryIt')}
               </span>
               <span className="text-ink/80 text-sm text-center">{t('home.demo.dragDrop')}</span>
@@ -269,7 +269,7 @@ const ImageUploadDemo: React.FC = () => {
               aria-checked={keywordsEnabled}
               onClick={() => setKeywordsEnabled((v) => !v)}
               className={`relative w-10 h-5 rounded-full transition-colors ${
-                keywordsEnabled ? 'bg-vermilion' : 'bg-ink/20'
+                keywordsEnabled ? 'bg-azure' : 'bg-ink/20'
               }`}
             >
               <span
@@ -287,7 +287,7 @@ const ImageUploadDemo: React.FC = () => {
             value={keywords}
             onChange={(e) => setKeywords(e.target.value)}
             placeholder="e.g. product photography outdoor"
-            className="w-full bg-paper border border-ink/20 rounded-md px-3 py-2 text-sm text-ink placeholder-ink/40 focus:outline-none focus:border-vermilion"
+            className="w-full bg-paper border border-ink/20 rounded-md px-3 py-2 text-sm text-ink placeholder-ink/40 focus:outline-none focus:border-azure"
           />
         )}
       </div>
@@ -297,7 +297,7 @@ const ImageUploadDemo: React.FC = () => {
         type="button"
         disabled={loading}
         onClick={handleGenerate}
-        className="w-full bg-vermilion hover:bg-vermilion-deep disabled:bg-ink/10 disabled:text-ink/40 text-white font-semibold py-2.5 rounded-md transition-colors flex items-center justify-center gap-2"
+        className="w-full bg-azure hover:bg-azure-deep disabled:bg-ink/10 disabled:text-ink/40 text-white font-semibold py-2.5 rounded-md transition-colors flex items-center justify-center gap-2"
       >
         {loading ? (
           <>
@@ -320,16 +320,16 @@ const ImageUploadDemo: React.FC = () => {
               <button
                 type="button"
                 onClick={() => handleCopy('alt')}
-                className="flex-shrink-0 text-ink-soft hover:text-vermilion transition-colors"
+                className="flex-shrink-0 text-ink-soft hover:text-azure transition-colors"
                 aria-label={copiedField === 'alt' ? t('home.demo.copied') : t('home.demo.copyButton')}
               >
                 {copiedField === 'alt' ? <Check size={16} /> : <Copy size={16} />}
               </button>
             </div>
             <p className="text-ink text-sm leading-relaxed">
-              <span className="font-mono text-vermilion" aria-hidden="true">alt="</span>
+              <span className="font-mono text-azure" aria-hidden="true">alt="</span>
               {altText}
-              <span className="font-mono text-vermilion" aria-hidden="true">"</span>
+              <span className="font-mono text-azure" aria-hidden="true">"</span>
             </p>
           </div>
 
@@ -342,7 +342,7 @@ const ImageUploadDemo: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => handleCopy('tags')}
-                  className="flex-shrink-0 text-ink-soft hover:text-vermilion transition-colors"
+                  className="flex-shrink-0 text-ink-soft hover:text-azure transition-colors"
                   aria-label={copiedField === 'tags' ? t('home.demo.copied') : t('home.demo.copyButton')}
                 >
                   {copiedField === 'tags' ? <Check size={16} /> : <Copy size={16} />}

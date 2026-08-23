@@ -64,11 +64,11 @@
     @apply bg-paper text-ink font-sans antialiased;
   }
   ::selection {
-    background: #d64416;
-    color: #f7f2e9;
+    background: #345A85;
+    color: #F4F7FC;
   }
   :focus-visible {
-    outline: 2px solid #d64416;
+    outline: 2px solid #345A85;
     outline-offset: 2px;
   }
 }
@@ -80,7 +80,7 @@
   inset: 0;
   pointer-events: none;
   z-index: 60;
-  opacity: 0.35;
+  opacity: 0.28;
   mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.06'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }

@@ -44,7 +44,7 @@ const StarRow = ({ rating, label }: { rating: number; label?: string }) => {
           <Star key={i} size={18} strokeWidth={1.5} className="fill-current" />
         ))}
       </div>
-      <div className="absolute inset-0 flex overflow-hidden text-vermilion" style={{ width: `${pct}%` }}>
+      <div className="absolute inset-0 flex overflow-hidden text-azure" style={{ width: `${pct}%` }}>
         {[0, 1, 2, 3, 4].map((i) => (
           <Star key={i} size={18} strokeWidth={1.5} className="fill-current shrink-0" />
         ))}
@@ -81,7 +81,7 @@ const Testimonials = () => {
         {/* Placard header with the aggregate Google rating */}
         <div className="border-b border-ink pb-6 mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
           <div>
-            <span className="font-mono text-xs uppercase tracking-[0.2em] text-vermilion block mb-2">
+            <span className="font-mono text-xs uppercase tracking-[0.2em] text-azure block mb-2">
               {t('home.reviews.label', 'Reviews')}
             </span>
             <h2 id="reviews-heading" className="font-display text-3xl md:text-4xl font-medium tracking-tight">

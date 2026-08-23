@@ -19,7 +19,7 @@ const FAQ = () => {
     <section className="pb-8" aria-labelledby="faq-heading">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-vermilion block mb-3">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-azure block mb-3">
             {t('home.faq.label', 'FAQ')}
           </span>
           <h2 id="faq-heading" className="font-display text-3xl md:text-4xl font-medium tracking-tight">
@@ -38,13 +38,13 @@ const FAQ = () => {
               className="border-b border-ink/15"
             >
               <Accordion.Header>
-                <Accordion.Trigger className="group flex w-full items-center justify-between gap-4 py-5 text-left transition-colors hover:text-vermilion [&[data-state=open]]:text-vermilion">
+                <Accordion.Trigger className="group flex w-full items-center justify-between gap-4 py-5 text-left transition-colors hover:text-azure [&[data-state=open]]:text-azure">
                   <span className="font-display text-lg font-medium tracking-tight">{item.q}</span>
                   <Plus
                     size={20}
                     strokeWidth={1.75}
                     aria-hidden="true"
-                    className="shrink-0 text-ink/40 transition-transform duration-200 group-hover:text-vermilion group-data-[state=open]:rotate-45"
+                    className="shrink-0 text-ink/40 transition-transform duration-200 group-hover:text-azure group-data-[state=open]:rotate-45"
                   />
                 </Accordion.Trigger>
               </Accordion.Header>
@@ -58,7 +58,7 @@ const FAQ = () => {
                         href={item.href}
                         target={item.href.startsWith('http') ? '_blank' : undefined}
                         rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                        className="text-vermilion underline underline-offset-4 hover:text-vermilion-deep transition-colors"
+                        className="text-azure underline underline-offset-4 hover:text-azure-deep transition-colors"
                       >
                         {item.linkText || item.href}
                       </a>

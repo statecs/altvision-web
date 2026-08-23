@@ -120,7 +120,7 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ variant = 'header' 
       )}
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-52 bg-white border border-ink/20 rounded-md shadow-[4px_4px_0_rgba(26,22,19,0.15)] z-50 max-h-96 overflow-y-auto">
+        <div className="absolute right-0 mt-2 w-52 bg-white border border-ink/20 rounded-md shadow-[4px_4px_0_rgba(19,28,43,0.15)] z-50 max-h-96 overflow-y-auto">
           <div className="py-1">
             {languages.map((language) => (
               <button
@@ -128,14 +128,14 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ variant = 'header' 
                 onClick={() => handleLanguageChange(language.code)}
                 className={`w-full text-left px-4 py-2 text-sm hover:bg-paper flex items-center space-x-3 ${
                   currentLanguage.code === language.code
-                    ? 'text-vermilion bg-paper'
+                    ? 'text-azure bg-paper'
                     : 'text-ink/80'
                 }`}
               >
                 <span>{language.flag}</span>
                 <span>{language.name}</span>
                 {currentLanguage.code === language.code && (
-                  <span className="ml-auto text-vermilion">✓</span>
+                  <span className="ml-auto text-azure">✓</span>
                 )}
               </button>
             ))}

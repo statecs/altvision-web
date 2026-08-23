@@ -15,16 +15,17 @@ module.exports = {
   		},
   		colors: {
   			paper: {
-  				DEFAULT: '#F7F2E9',
-  				deep: '#EFE7D8'
+  				DEFAULT: '#F4F7FC',
+  				deep: '#E4ECF8'
   			},
   			ink: {
-  				DEFAULT: '#1A1613',
-  				soft: '#6B6157'
+  				DEFAULT: '#131C2B',
+  				soft: '#5A6B84'
   			},
-  			vermilion: {
-  				DEFAULT: '#D64416',
-  				deep: '#B23610'
+  			azure: {
+  				DEFAULT: '#345A85',
+  				deep: '#22405F',
+  				bright: '#5B8FDC'
   			},
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',

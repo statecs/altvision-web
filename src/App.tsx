@@ -12,16 +12,15 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import { trackEvent } from './analytics';
 
-// Small crop-mark logo: a viewfinder frame around a vermilion dot
+// The AltVision eye — same lockup as the Chrome extension icon
 const Logomark = () => (
-  <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
-    <g stroke="currentColor" strokeWidth="1.5" fill="none">
-      <path d="M1 5V1h4" />
-      <path d="M13 1h4v4" />
-      <path d="M17 13v4h-4" />
-      <path d="M5 17H1v-4" />
-    </g>
-    <circle cx="9" cy="9" r="3" fill="#D64416" />
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="12" r="12" fill="#5B8FDC" />
+    <path
+      d="M0.4 12C4 6.6 8 4.6 12 4.6s8 2 11.6 7.4C20 17.4 16 19.4 12 19.4S4 17.4 0.4 12Z"
+      fill="#FFFFFF"
+    />
+    <circle cx="12" cy="12" r="4.1" fill="#5B8FDC" />
   </svg>
 );
 
@@ -68,9 +67,9 @@ const AltMarquee = () => {
           {altSamples.map(([code, text]) => (
             <span key={`${dup}-${code}`} className="font-mono text-sm text-ink-soft mx-6">
               <span className="text-ink/40 uppercase mr-2">{code}</span>
-              <span className="text-vermilion">alt="</span>
+              <span className="text-azure">alt="</span>
               {text}
-              <span className="text-vermilion">"</span>
+              <span className="text-azure">"</span>
             </span>
           ))}
         </div>
@@ -112,13 +111,13 @@ const HomePage = () => {
             </p>
             <h1 className="font-display text-5xl md:text-6xl font-medium mb-8 leading-[1.05] tracking-tight animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
               {t('home.hero.title')}{' '}
-              <em className="text-vermilion font-normal">{t('home.hero.titleHighlight')}</em>
+              <em className="text-azure font-normal">{t('home.hero.titleHighlight')}</em>
             </h1>
             <div className="flex flex-wrap gap-4 animate-slide-up opacity-0" style={{ animationDelay: '0.4s' }}>
               <a
                 href="https://wordpress.org/plugins/altvision-ai-alt-text-generator/"
                 rel="noopener noreferrer"
-                className="bg-ink text-paper px-6 py-3 rounded-md font-medium shadow-[4px_4px_0_#D64416] hover:shadow-[2px_2px_0_#D64416] hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
+                className="bg-ink text-paper px-6 py-3 rounded-md font-medium shadow-[4px_4px_0_#5B8FDC] hover:shadow-[2px_2px_0_#5B8FDC] hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
                 onClick={() => trackEvent('cta_click', { label: 'wordpress_plugin' })}
               >
                 {t('home.hero.wpButton')}
@@ -152,7 +151,7 @@ const HomePage = () => {
                 {' '}
                 <button
                   onClick={() => setDescExpanded(true)}
-                  className="font-sans text-base text-vermilion underline underline-offset-4 hover:text-vermilion-deep transition-colors cursor-pointer"
+                  className="font-sans text-base text-azure underline underline-offset-4 hover:text-azure-deep transition-colors cursor-pointer"
                 >
                   {t('common.readMore', 'read more')}
                 </button>
@@ -166,7 +165,7 @@ const HomePage = () => {
           {/* WordPress column */}
           <div className="animate-slide-up opacity-0" style={{ animationDelay: '0.8s' }}>
             <div className="border-b border-ink pb-4 mb-2">
-              <span className="font-mono text-xs uppercase tracking-[0.2em] text-vermilion block mb-2">
+              <span className="font-mono text-xs uppercase tracking-[0.2em] text-azure block mb-2">
                 {t('nav.wordpressPlugin')}
               </span>
               <h2 className="font-display text-3xl font-medium tracking-tight">{t('home.wordpress.title')}</h2>
@@ -174,7 +173,7 @@ const HomePage = () => {
             <ul>
               {wpFeatures.map(({ icon: Icon, key }, i) => (
                 <li key={key} className="group flex items-start gap-5 py-5 border-b border-ink/10 hover:bg-paper-deep/50 hover:px-3 transition-all">
-                  <span className="font-mono text-xs text-ink/40 pt-1 group-hover:text-vermilion transition-colors">
+                  <span className="font-mono text-xs text-ink/40 pt-1 group-hover:text-azure transition-colors">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <Icon size={20} strokeWidth={1.75} className="shrink-0 mt-0.5 text-ink" aria-hidden="true" />
@@ -187,7 +186,7 @@ const HomePage = () => {
           {/* Chrome column */}
           <div className="animate-slide-up opacity-0" style={{ animationDelay: '1s' }}>
             <div className="border-b border-ink pb-4 mb-2">
-              <span className="font-mono text-xs uppercase tracking-[0.2em] text-vermilion block mb-2">
+              <span className="font-mono text-xs uppercase tracking-[0.2em] text-azure block mb-2">
                 {t('nav.chromeExtension')}
               </span>
               <h2 className="font-display text-3xl font-medium tracking-tight">{t('home.chrome.title')}</h2>
@@ -195,7 +194,7 @@ const HomePage = () => {
             <ul>
               {chromeFeatures.map(({ icon: Icon, key }, i) => (
                 <li key={key} className="group flex items-start gap-5 py-5 border-b border-ink/10 hover:bg-paper-deep/50 hover:px-3 transition-all">
-                  <span className="font-mono text-xs text-ink/40 pt-1 group-hover:text-vermilion transition-colors">
+                  <span className="font-mono text-xs text-ink/40 pt-1 group-hover:text-azure transition-colors">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <Icon size={20} strokeWidth={1.75} className="shrink-0 mt-0.5 text-ink" aria-hidden="true" />
