@@ -9,7 +9,8 @@
       "titleHighlight": "עם טקסט חלופי מבוסס בינה מלאכותית",
       "wpButton": "תוסף וורדפרס",
       "chromeButton": "הרחבת כרום",
-      "imageAlt": "צילום מסך של אפליקציית AltVision"
+      "imageAlt": "צילום מסך של אפליקציית AltVision",
+      "firefoxButton": "הרחבת פיירפוקס"
     },
     "description": "AltVision מייצר אוטומטית טקסט חלופי מדויק לתמונות שלך על ידי ניתוח הן התמונה והן ההקשר הסובב אותה. התוסף מתחשב בכותרות, פסקאות וכיתובים הסמוכים לתמונה כדי ליצור תיאורים רלוונטיים ביותר. הפסק לבזבז שעות על כתיבת תיאורים ידניים – תן לבינה המלאכותית לעשות את העבודה הקשה!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "איך מתקינים את AltVision?",
-          "a": "תוסף ה-WordPress מותקן כמו כל תוסף אחר ופועל גם עם העורך הקלאסי וגם עם Gutenberg, ישירות בספריית המדיה. תוסף Chrome מותקן בלחיצה אחת מ-Chrome Web Store."
+          "a": "תוסף ה-WordPress מותקן כמו כל תוסף אחר ופועל גם עם העורך הקלאסי וגם עם Gutenberg, ישירות בספריית המדיה. תוסף הדפדפן מותקן בלחיצה אחת מ-Chrome Web Store או מ-Firefox Add-ons."
         },
         {
           "q": "האם AltVision חינמי לשימוש?",
@@ -137,7 +138,8 @@
     "termsOfUse": "תנאי שימוש",
     "privacyPolicy": "מדיניות פרטיות",
     "openSource": "קוד פתוח",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "הורד הרחבת פיירפוקס"
   },
   "privacy": {
     "title": "מדיניות פרטיות",

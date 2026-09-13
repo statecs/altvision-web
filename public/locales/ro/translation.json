@@ -9,7 +9,8 @@
       "titleHighlight": "cu text alternativ alimentat de IA",
       "wpButton": "Plugin WordPress",
       "chromeButton": "Extensie Chrome",
-      "imageAlt": "Captură de ecran AltVision"
+      "imageAlt": "Captură de ecran AltVision",
+      "firefoxButton": "Extensie Firefox"
     },
     "description": "AltVision generează automat text alternativ precis pentru imaginile dvs. analizând atât imaginea, cât și contextul înconjurător. Plugin-ul ia în considerare titlurile, paragrafele și legendele din apropierea imaginii pentru a crea descrieri foarte relevante. Nu mai pierdeți ore scriind descrieri manuale – lăsați IA să facă munca grea!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "Cum instalez AltVision?",
-          "a": "Pluginul WordPress se instalează ca orice alt plugin și funcționează atât cu editorul clasic, cât și cu Gutenberg, direct în biblioteca media. Extensia Chrome se instalează cu un clic din Chrome Web Store."
+          "a": "Pluginul WordPress se instalează ca orice alt plugin și funcționează atât cu editorul clasic, cât și cu Gutenberg, direct în biblioteca media. Extensia de browser se instalează cu un clic din Chrome Web Store sau Firefox Add-ons."
         },
         {
           "q": "AltVision este gratuit?",
@@ -137,7 +138,8 @@
     "termsOfUse": "Termeni de utilizare",
     "privacyPolicy": "Politica de confidențialitate",
     "openSource": "Open source",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Descărcați Extensia Firefox"
   },
   "privacy": {
     "title": "Politica de Confidențialitate",

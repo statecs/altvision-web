@@ -9,7 +9,8 @@
       "titleHighlight": "AI-alapú alt szöveggel",
       "wpButton": "WordPress Plugin",
       "chromeButton": "Chrome Bővítmény",
-      "imageAlt": "AltVision alkalmazás képernyőkép"
+      "imageAlt": "AltVision alkalmazás képernyőkép",
+      "firefoxButton": "Firefox Bővítmény"
     },
     "description": "Az AltVision automatikusan pontos alt szöveget generál a képeidhez, elemezve mind a képet, mind annak környező kontextusát. A plugin figyelembe veszi a kép közelében lévő fejléceket, bekezdéseket és feliratokat, hogy rendkívül releváns leírásokat hozzon létre. Hagyj fel a manuális leírások írásával töltött órákkal – engedd az AI-t elvégezni a nehéz munkát!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "Hogyan telepítem az AltVisiont?",
-          "a": "A WordPress-bővítmény ugyanúgy települ, mint bármely más bővítmény, és a klasszikus szerkesztővel és a Gutenberggel is működik, közvetlenül a médiatárban. A Chrome-bővítmény egyetlen kattintással telepíthető a Chrome Web Store-ból."
+          "a": "A WordPress-bővítmény ugyanúgy települ, mint bármely más bővítmény, és a klasszikus szerkesztővel és a Gutenberggel is működik, közvetlenül a médiatárban. A böngészőbővítmény egyetlen kattintással telepíthető a Chrome Web Store-ból vagy a Firefox Add-ons oldalról."
         },
         {
           "q": "Ingyenes az AltVision használata?",
@@ -137,7 +138,8 @@
     "termsOfUse": "Felhasználási feltételek",
     "privacyPolicy": "Adatvédelmi irányelvek",
     "openSource": "Nyílt forráskód",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Firefox Bővítmény letöltése"
   },
   "privacy": {
     "title": "Adatvédelmi Irányelvek",

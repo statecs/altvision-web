@@ -9,7 +9,8 @@
       "titleHighlight": "con texto alternativo impulsado por IA",
       "wpButton": "Plugin de WordPress",
       "chromeButton": "Extensión de Chrome",
-      "imageAlt": "Captura de pantalla de AltVision"
+      "imageAlt": "Captura de pantalla de AltVision",
+      "firefoxButton": "Extensión de Firefox"
     },
     "description": "AltVision genera automáticamente texto alternativo preciso para tus imágenes analizando tanto la imagen como su contexto circundante. El plugin considera encabezados, párrafos y pies de foto cercanos a la imagen para crear descripciones altamente relevantes. ¡Deja de pasar horas escribiendo descripciones manuales y deja que la IA haga el trabajo pesado!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "¿Cómo instalo AltVision?",
-          "a": "El plugin de WordPress se instala como cualquier otro y funciona con el editor clásico y con Gutenberg, dentro de la biblioteca de medios. La extensión de Chrome se instala con un clic desde Chrome Web Store."
+          "a": "El plugin de WordPress se instala como cualquier otro y funciona con el editor clásico y con Gutenberg, dentro de la biblioteca de medios. La extensión del navegador se instala con un clic desde Chrome Web Store o Firefox Add-ons."
         },
         {
           "q": "¿AltVision es gratis?",
@@ -137,7 +138,8 @@
     "termsOfUse": "Términos de uso",
     "privacyPolicy": "Política de privacidad",
     "openSource": "Código abierto",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Descargar Extensión de Firefox"
   },
   "privacy": {
     "title": "Política de Privacidad",

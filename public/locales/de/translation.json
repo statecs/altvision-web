@@ -9,7 +9,8 @@
       "titleHighlight": "mit KI-getriebenem Alt-Text",
       "wpButton": "WordPress-Plugin",
       "chromeButton": "Chrome-Erweiterung",
-      "imageAlt": "AltVision App Screenshot"
+      "imageAlt": "AltVision App Screenshot",
+      "firefoxButton": "Firefox-Erweiterung"
     },
     "description": "AltVision generiert automatisch präzisen Alt-Text für Ihre Bilder, indem es sowohl das Bild als auch seinen umgebenden Kontext analysiert. Das Plugin berücksichtigt Überschriften, Absätze und Bildunterschriften in der Nähe des Bildes, um hochrelevante Beschreibungen zu erstellen. Hören Sie auf, Stunden damit zu verbringen, manuelle Beschreibungen zu schreiben – lassen Sie die KI die schwere Arbeit erledigen!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "Wie installiere ich AltVision?",
-          "a": "Das WordPress-Plugin wird wie jedes andere Plugin installiert und funktioniert direkt in der Mediathek mit dem klassischen Editor und mit Gutenberg. Die Chrome-Erweiterung installierst du mit einem Klick aus dem Chrome Web Store."
+          "a": "Das WordPress-Plugin wird wie jedes andere Plugin installiert und funktioniert direkt in der Mediathek mit dem klassischen Editor und mit Gutenberg. Die Browser-Erweiterung installierst du mit einem Klick aus dem Chrome Web Store oder von Firefox Add-ons."
         },
         {
           "q": "Ist AltVision kostenlos nutzbar?",
@@ -137,7 +138,8 @@
     "termsOfUse": "Nutzungsbedingungen",
     "privacyPolicy": "Datenschutzrichtlinie",
     "openSource": "Open Source",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Firefox-Erweiterung herunterladen"
   },
   "privacy": {
     "title": "Datenschutzrichtlinie",

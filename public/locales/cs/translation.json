@@ -9,7 +9,8 @@
       "titleHighlight": "s AI-generovaným alternativním textem",
       "wpButton": "WordPress Plugin",
       "chromeButton": "Rozšíření pro Chrome",
-      "imageAlt": "Screenshot aplikace AltVision"
+      "imageAlt": "Screenshot aplikace AltVision",
+      "firefoxButton": "Rozšíření pro Firefox"
     },
     "description": "AltVision automaticky generuje přesný alternativní text pro vaše obrázky analýzou samotného obrázku i jeho okolního kontextu. Plugin bere v úvahu nadpisy, odstavce a popisky v blízkosti obrázku, aby vytvořil vysoce relevantní popisy. Přestaňte trávit hodiny ručním psaním popisů – nechte AI dělat tu těžkou práci!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "Jak nainstaluji AltVision?",
-          "a": "Plugin pro WordPress se instaluje jako kterýkoli jiný a funguje s klasickým editorem i s Gutenbergem přímo v knihovně médií. Rozšíření pro Chrome se instaluje jedním kliknutím z Chrome Web Store."
+          "a": "Plugin pro WordPress se instaluje jako kterýkoli jiný a funguje s klasickým editorem i s Gutenbergem přímo v knihovně médií. Rozšíření pro prohlížeč se instaluje jedním kliknutím z Chrome Web Store nebo Firefox Add-ons."
         },
         {
           "q": "Je AltVision zdarma?",
@@ -137,7 +138,8 @@
     "termsOfUse": "Podmínky použití",
     "privacyPolicy": "Zásady ochrany osobních údajů",
     "openSource": "Open source",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Stáhnout Rozšíření pro Firefox"
   },
   "privacy": {
     "title": "Zásady Ochrany Osobních Údajů",

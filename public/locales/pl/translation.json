@@ -9,7 +9,8 @@
       "titleHighlight": "dzięki tekstowi alt opartemu na AI",
       "wpButton": "Wtyczka WordPress",
       "chromeButton": "Rozszerzenie Chrome",
-      "imageAlt": "Zrzut ekranu aplikacji AltVision"
+      "imageAlt": "Zrzut ekranu aplikacji AltVision",
+      "firefoxButton": "Rozszerzenie Firefox"
     },
     "description": "AltVision automatycznie generuje precyzyjny tekst alternatywny dla Twoich obrazów, analizując zarówno obraz, jak i jego otaczający kontekst. Wtyczka bierze pod uwagę nagłówki, akapity i podpisy w pobliżu obrazu, aby tworzyć wysoce trafne opisy. Przestań spędzać godziny na pisaniu opisów ręcznie – pozwól AI wykonać ciężką pracę!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "Jak zainstalować AltVision?",
-          "a": "Wtyczkę WordPress instaluje się jak każdą inną i działa zarówno z klasycznym edytorem, jak i z Gutenbergiem, bezpośrednio w bibliotece mediów. Rozszerzenie Chrome instaluje się jednym kliknięciem z Chrome Web Store."
+          "a": "Wtyczkę WordPress instaluje się jak każdą inną i działa zarówno z klasycznym edytorem, jak i z Gutenbergiem, bezpośrednio w bibliotece mediów. Rozszerzenie przeglądarki instaluje się jednym kliknięciem z Chrome Web Store lub Firefox Add-ons."
         },
         {
           "q": "Czy AltVision jest darmowy?",
@@ -137,7 +138,8 @@
     "termsOfUse": "Warunki użytkowania",
     "privacyPolicy": "Polityka prywatności",
     "openSource": "Open source",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Pobierz Rozszerzenie Firefox"
   },
   "privacy": {
     "title": "Polityka Prywatności",

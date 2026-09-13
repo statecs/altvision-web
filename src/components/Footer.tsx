@@ -32,6 +32,14 @@ const Footer = () => {
                 {t('footer.downloadChrome')}
                 <ArrowRight className="w-4 h-4" />
               </a>
+              <a
+                href="https://addons.mozilla.org/firefox/addon/alt-vision/"
+                rel="noopener noreferrer"
+                className="border border-paper/30 text-paper hover:border-paper hover:bg-paper/10 px-6 py-3 rounded-md text-sm font-medium inline-flex items-center gap-2 transition-all w-fit"
+              >
+                {t('footer.downloadFirefox')}
+                <ArrowRight className="w-4 h-4" />
+              </a>
             </div>
           </div>
 

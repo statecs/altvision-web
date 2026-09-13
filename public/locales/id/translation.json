@@ -9,7 +9,8 @@
       "titleHighlight": "dengan teks alt bertenaga AI",
       "wpButton": "Plugin WordPress",
       "chromeButton": "Ekstensi Chrome",
-      "imageAlt": "Tangkapan layar Aplikasi AltVision"
+      "imageAlt": "Tangkapan layar Aplikasi AltVision",
+      "firefoxButton": "Ekstensi Firefox"
     },
     "description": "AltVision secara otomatis menghasilkan teks alt yang tepat untuk gambar Anda dengan menganalisis gambar dan konteks sekitarnya. Plugin mempertimbangkan judul, paragraf, dan keterangan gambar yang dekat dengan gambar untuk membuat deskripsi yang sangat relevan. Hentikan penghabisan waktu berjam-jam menulis deskripsi manual – biarkan AI melakukan pekerjaan berat!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "Bagaimana cara memasang AltVision?",
-          "a": "Plugin WordPress dipasang seperti plugin lainnya dan bekerja dengan editor klasik maupun Gutenberg, langsung di pustaka media. Ekstensi Chrome dipasang dengan satu klik dari Chrome Web Store."
+          "a": "Plugin WordPress dipasang seperti plugin lainnya dan bekerja dengan editor klasik maupun Gutenberg, langsung di pustaka media. Ekstensi browser dipasang dengan satu klik dari Chrome Web Store atau Firefox Add-ons."
         },
         {
           "q": "Apakah AltVision gratis digunakan?",
@@ -137,7 +138,8 @@
     "termsOfUse": "Syarat Penggunaan",
     "privacyPolicy": "Kebijakan Privasi",
     "openSource": "Open Source",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Unduh Ekstensi Firefox"
   },
   "privacy": {
     "title": "Kebijakan Privasi",

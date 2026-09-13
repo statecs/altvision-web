@@ -9,7 +9,8 @@
       "titleHighlight": "met AI-aangedreven alt-tekst",
       "wpButton": "WordPress-plugin",
       "chromeButton": "Chrome-extensie",
-      "imageAlt": "AltVision App-screenshot"
+      "imageAlt": "AltVision App-screenshot",
+      "firefoxButton": "Firefox-extensie"
     },
     "description": "AltVision genereert automatisch nauwkeurige alt-tekst voor uw afbeeldingen door zowel de afbeelding als de omringende context te analyseren. De plugin houdt rekening met koppen, alinea's en bijschriften in de buurt van de afbeelding om zeer relevante beschrijvingen te maken. Stop met uren besteden aan het handmatig schrijven van beschrijvingen – laat AI het zware werk doen!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "Hoe installeer ik AltVision?",
-          "a": "De WordPress-plugin installeer je zoals elke andere plugin en werkt met zowel de klassieke editor als Gutenberg, direct in de mediabibliotheek. De Chrome-extensie installeer je met één klik vanuit de Chrome Web Store."
+          "a": "De WordPress-plugin installeer je zoals elke andere plugin en werkt met zowel de klassieke editor als Gutenberg, direct in de mediabibliotheek. De browserextensie installeer je met één klik vanuit de Chrome Web Store of Firefox Add-ons."
         },
         {
           "q": "Is AltVision gratis te gebruiken?",
@@ -137,7 +138,8 @@
     "termsOfUse": "Gebruiksvoorwaarden",
     "privacyPolicy": "Privacybeleid",
     "openSource": "Open source",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Firefox-extensie downloaden"
   },
   "privacy": {
     "title": "Privacybeleid",

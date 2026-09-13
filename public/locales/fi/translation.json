@@ -9,7 +9,8 @@
       "titleHighlight": "tekoälypohjaisella vaihtoehtoistekstillä",
       "wpButton": "WordPress-laajennus",
       "chromeButton": "Chrome-laajennus",
-      "imageAlt": "AltVision-sovelluksen kuvakaappaus"
+      "imageAlt": "AltVision-sovelluksen kuvakaappaus",
+      "firefoxButton": "Firefox-laajennus"
     },
     "description": "AltVision luo automaattisesti tarkan vaihtoehtoistekstin kuvillesi analysoimalla sekä kuvan että sen ympäristön kontekstin. Laajennus ottaa huomioon kuvan lähellä olevat otsikot, kappaleet ja kuvatekstit luodakseen erittäin relevantteja kuvauksia. Lopeta tuntien käyttäminen manuaalisten kuvausten kirjoittamiseen – anna tekoälyn tehdä raskaat työt!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "Miten asennan AltVisionin?",
-          "a": "WordPress-lisäosa asennetaan kuten mikä tahansa muu lisäosa, ja se toimii sekä klassisen editorin että Gutenbergin kanssa suoraan mediakirjastossa. Chrome-laajennus asennetaan yhdellä klikkauksella Chrome Web Storesta."
+          "a": "WordPress-lisäosa asennetaan kuten mikä tahansa muu lisäosa, ja se toimii sekä klassisen editorin että Gutenbergin kanssa suoraan mediakirjastossa. Selainlaajennus asennetaan yhdellä klikkauksella Chrome Web Storesta tai Firefox Add-onsista."
         },
         {
           "q": "Onko AltVision ilmainen käyttää?",
@@ -137,7 +138,8 @@
     "termsOfUse": "Käyttöehdot",
     "privacyPolicy": "Tietosuojakäytäntö",
     "openSource": "Avoin lähdekoodi",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Lataa Firefox-laajennus"
   },
   "privacy": {
     "title": "Tietosuojakäytäntö",

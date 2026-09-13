@@ -9,7 +9,8 @@
       "titleHighlight": "với văn bản thay thế được hỗ trợ bởi AI",
       "wpButton": "Plugin WordPress",
       "chromeButton": "Tiện ích Chrome",
-      "imageAlt": "Ảnh chụp màn hình ứng dụng AltVision"
+      "imageAlt": "Ảnh chụp màn hình ứng dụng AltVision",
+      "firefoxButton": "Tiện ích Firefox"
     },
     "description": "AltVision tự động tạo văn bản thay thế chính xác cho hình ảnh của bạn bằng cách phân tích cả hình ảnh và ngữ cảnh xung quanh nó. Plugin xem xét các tiêu đề, đoạn văn và chú thích gần hình ảnh để tạo ra các mô tả có liên quan cao. Hãy ngừng dành hàng giờ viết mô tả thủ công – hãy để AI làm phần việc nặng nhọc!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "Tôi cài đặt AltVision như thế nào?",
-          "a": "Plugin WordPress được cài đặt như bất kỳ plugin nào khác và hoạt động với cả trình soạn thảo cổ điển lẫn Gutenberg, ngay trong thư viện phương tiện. Tiện ích Chrome được cài đặt chỉ bằng một cú nhấp từ Chrome Web Store."
+          "a": "Plugin WordPress được cài đặt như bất kỳ plugin nào khác và hoạt động với cả trình soạn thảo cổ điển lẫn Gutenberg, ngay trong thư viện phương tiện. Tiện ích trình duyệt được cài đặt chỉ bằng một cú nhấp từ Chrome Web Store hoặc Firefox Add-ons."
         },
         {
           "q": "AltVision có miễn phí không?",
@@ -137,7 +138,8 @@
     "termsOfUse": "Điều khoản sử dụng",
     "privacyPolicy": "Chính sách bảo mật",
     "openSource": "Mã nguồn mở",
-    "copyright": "© Bản quyền 2025 Christopher State"
+    "copyright": "© Bản quyền 2025 Christopher State",
+    "downloadFirefox": "Tải xuống Tiện ích Firefox"
   },
   "privacy": {
     "title": "Chính Sách Bảo Mật",

@@ -9,7 +9,8 @@
       "titleHighlight": "AI 기반 대체 텍스트로",
       "wpButton": "WordPress 플러그인",
       "chromeButton": "Chrome 확장 프로그램",
-      "imageAlt": "AltVision 앱 스크린샷"
+      "imageAlt": "AltVision 앱 스크린샷",
+      "firefoxButton": "Firefox 확장 프로그램"
     },
     "description": "AltVision은 이미지와 주변 컨텍스트를 분석하여 이미지에 대한 정확한 대체 텍스트를 자동으로 생성합니다. 플러그인은 이미지 근처의 제목, 단락, 캡션을 고려하여 매우 관련성 높은 설명을 만듭니다. 수동으로 설명을 작성하는 데 시간을 낭비하지 마세요 – AI가 힘든 일을 하도록 하세요!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "AltVision은 어떻게 설치하나요?",
-          "a": "WordPress 플러그인은 다른 플러그인과 동일하게 설치되며, 클래식 편집기와 Gutenberg 모두에서 미디어 라이브러리 안에서 바로 작동합니다. Chrome 확장 프로그램은 Chrome 웹 스토어에서 한 번의 클릭으로 설치합니다."
+          "a": "WordPress 플러그인은 다른 플러그인과 동일하게 설치되며, 클래식 편집기와 Gutenberg 모두에서 미디어 라이브러리 안에서 바로 작동합니다. 브라우저 확장 프로그램은 Chrome 웹 스토어 또는 Firefox Add-ons에서 한 번의 클릭으로 설치합니다."
         },
         {
           "q": "AltVision은 무료로 사용할 수 있나요?",
@@ -137,7 +138,8 @@
     "termsOfUse": "이용 약관",
     "privacyPolicy": "개인정보 처리방침",
     "openSource": "오픈 소스",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Firefox 확장 프로그램 다운로드"
   },
   "privacy": {
     "title": "개인정보 처리방침",

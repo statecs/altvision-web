@@ -9,7 +9,8 @@
       "titleHighlight": "with AI-powered alt text",
       "wpButton": "WordPress Plugin",
       "chromeButton": "Chrome Extension",
-      "imageAlt": "AltVision App Screenshot"
+      "imageAlt": "AltVision App Screenshot",
+      "firefoxButton": "Firefox Extension"
     },
     "description": "AltVision automatically generates precise alt text for your images by analyzing both the image and its surrounding context. The plugin considers headings, paragraphs, and captions near the image to create highly relevant descriptions. Stop spending hours writing manual descriptions – let AI do the heavy lifting!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "How do I install AltVision?",
-          "a": "The WordPress plugin installs like any other plugin and works with both the classic editor and Gutenberg, right inside the media library. The Chrome extension installs from the Chrome Web Store in one click."
+          "a": "The WordPress plugin installs like any other plugin and works with both the classic editor and Gutenberg, right inside the media library. The browser extension installs in one click from the Chrome Web Store or Firefox Add-ons."
         },
         {
           "q": "Is AltVision free to use?",
@@ -137,7 +138,8 @@
     "termsOfUse": "Terms of use",
     "privacyPolicy": "Privacy Policy",
     "openSource": "Open Source",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Download Firefox Extension"
   },
   "privacy": {
     "title": "Privacy Policy",

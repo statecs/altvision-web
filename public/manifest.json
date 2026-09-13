@@ -22,5 +22,5 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "description": "AI-powered alt text generator for WordPress and Chrome. Make your website accessible with automated image descriptions."
+  "description": "AI-powered alt text generator for WordPress, Chrome and Firefox. Make your website accessible with automated image descriptions."
 }

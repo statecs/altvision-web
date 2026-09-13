@@ -130,6 +130,14 @@ const HomePage = () => {
               >
                 {t('home.hero.chromeButton')}
               </a>
+              <a
+                href="https://addons.mozilla.org/firefox/addon/alt-vision/"
+                rel="noopener noreferrer"
+                className="border border-ink/30 text-ink px-6 py-3 rounded-md font-medium hover:border-ink hover:bg-ink/5 transition-all"
+                onClick={() => trackEvent('cta_click', { label: 'firefox_extension' })}
+              >
+                {t('home.hero.firefoxButton')}
+              </a>
             </div>
           </div>
 
@@ -183,7 +191,7 @@ const HomePage = () => {
             </ul>
           </div>
 
-          {/* Chrome column */}
+          {/* Browser extension column */}
           <div className="animate-slide-up opacity-0" style={{ animationDelay: '1s' }}>
             <div className="border-b border-ink pb-4 mb-2">
               <span className="font-mono text-xs uppercase tracking-[0.2em] text-azure block mb-2">
@@ -202,6 +210,24 @@ const HomePage = () => {
                 </li>
               ))}
             </ul>
+            <div className="flex flex-wrap gap-x-6 gap-y-2 pt-5 font-mono text-sm">
+              <a
+                href="https://chromewebstore.google.com/detail/altvision/iogpbgncdhijknmmhkllijfaioecfcoa"
+                rel="noopener noreferrer"
+                className="text-azure hover:text-azure-deep underline underline-offset-4 transition-colors"
+                onClick={() => trackEvent('cta_click', { label: 'chrome_extension' })}
+              >
+                {t('home.hero.chromeButton')} →
+              </a>
+              <a
+                href="https://addons.mozilla.org/firefox/addon/alt-vision/"
+                rel="noopener noreferrer"
+                className="text-azure hover:text-azure-deep underline underline-offset-4 transition-colors"
+                onClick={() => trackEvent('cta_click', { label: 'firefox_extension' })}
+              >
+                {t('home.hero.firefoxButton')} →
+              </a>
+            </div>
           </div>
         </div>
       </section>

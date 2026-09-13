@@ -9,7 +9,8 @@
       "titleHighlight": "med AI-drevet alternativ tekst",
       "wpButton": "WordPress-plugin",
       "chromeButton": "Chrome-utvidelse",
-      "imageAlt": "Skjermbilde av AltVision-appen"
+      "imageAlt": "Skjermbilde av AltVision-appen",
+      "firefoxButton": "Firefox-utvidelse"
     },
     "description": "AltVision genererer automatisk presis alternativ tekst for bildene dine ved å analysere både bildet og dets omgivende kontekst. Plugin-en tar hensyn til overskrifter, avsnitt og bildetekster i nærheten av bildet for å lage svært relevante beskrivelser. Slutt å bruke timer på å skrive manuelle beskrivelser – la AI gjøre det tunge løftet!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "Hvordan installerer jeg AltVision?",
-          "a": "WordPress-tillegget installeres som et hvilket som helst annet tillegg og fungerer med både den klassiske editoren og Gutenberg, rett i mediebiblioteket. Chrome-utvidelsen installeres med ett klikk fra Chrome Web Store."
+          "a": "WordPress-tillegget installeres som et hvilket som helst annet tillegg og fungerer med både den klassiske editoren og Gutenberg, rett i mediebiblioteket. Nettleserutvidelsen installeres med ett klikk fra Chrome Web Store eller Firefox Add-ons."
         },
         {
           "q": "Er AltVision gratis å bruke?",
@@ -137,7 +138,8 @@
     "termsOfUse": "Bruksvilkår",
     "privacyPolicy": "Personvernpolicy",
     "openSource": "Åpen kildekode",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Last ned Firefox-utvidelse"
   },
   "privacy": {
     "title": "Personvernpolicy",

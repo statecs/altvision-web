@@ -9,7 +9,8 @@
       "titleHighlight": "AIによる自動代替テキストで",
       "wpButton": "WordPressプラグイン",
       "chromeButton": "Chrome拡張機能",
-      "imageAlt": "AltVisionアプリのスクリーンショット"
+      "imageAlt": "AltVisionアプリのスクリーンショット",
+      "firefoxButton": "Firefox拡張機能"
     },
     "description": "AltVisionは、画像とその周辺のコンテキストを分析することで、画像の正確な代替テキストを自動生成します。プラグインは画像の近くにある見出し、段落、キャプションを考慮して、非常に関連性の高い説明を作成します。手動で説明を書く時間を費やすのをやめましょう – AIに重労働を任せてください！",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "AltVision はどうやってインストールしますか？",
-          "a": "WordPress プラグインは他のプラグインと同じようにインストールでき、クラシックエディターと Gutenberg のどちらでもメディアライブラリ内でそのまま動作します。Chrome 拡張機能は Chrome ウェブストアからワンクリックでインストールできます。"
+          "a": "WordPress プラグインは他のプラグインと同じようにインストールでき、クラシックエディターと Gutenberg のどちらでもメディアライブラリ内でそのまま動作します。ブラウザー拡張機能は Chrome ウェブストアまたは Firefox Add-ons からワンクリックでインストールできます。"
         },
         {
           "q": "AltVision は無料で使えますか？",
@@ -137,7 +138,8 @@
     "termsOfUse": "利用規約",
     "privacyPolicy": "プライバシーポリシー",
     "openSource": "オープンソース",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Firefox拡張機能をダウンロード"
   },
   "privacy": {
     "title": "プライバシーポリシー",

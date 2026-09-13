@@ -9,7 +9,8 @@
       "titleHighlight": "AI destekli alt metin ile",
       "wpButton": "WordPress Eklentisi",
       "chromeButton": "Chrome Uzantısı",
-      "imageAlt": "AltVision Uygulama Ekran Görüntüsü"
+      "imageAlt": "AltVision Uygulama Ekran Görüntüsü",
+      "firefoxButton": "Firefox Uzantısı"
     },
     "description": "AltVision, hem görüntüyü hem de çevresindeki bağlamı analiz ederek görüntüleriniz için otomatik olarak hassas alt metin oluşturur. Eklenti, son derece ilgili açıklamalar oluşturmak için görüntünün yakınındaki başlıkları, paragrafları ve açıklamaları dikkate alır. Manuel açıklamalar yazmak için saatler harcamayı bırakın – AI'nın ağır işi yapmasına izin verin!",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "AltVision'ı nasıl kurarım?",
-          "a": "WordPress eklentisi diğer eklentiler gibi kurulur ve hem klasik düzenleyici hem de Gutenberg ile doğrudan medya kitaplığında çalışır. Chrome uzantısı Chrome Web Store'dan tek tıkla kurulur."
+          "a": "WordPress eklentisi diğer eklentiler gibi kurulur ve hem klasik düzenleyici hem de Gutenberg ile doğrudan medya kitaplığında çalışır. Tarayıcı uzantısı Chrome Web Store veya Firefox Add-ons'tan tek tıkla kurulur."
         },
         {
           "q": "AltVision ücretsiz mi?",
@@ -137,7 +138,8 @@
     "termsOfUse": "Kullanım Şartları",
     "privacyPolicy": "Gizlilik Politikası",
     "openSource": "Açık Kaynak",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "Firefox Uzantısını İndir"
   },
   "privacy": {
     "title": "Gizlilik Politikası",

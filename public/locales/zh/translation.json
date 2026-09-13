@@ -9,7 +9,8 @@
       "titleHighlight": "借助AI驱动的替代文本",
       "wpButton": "WordPress插件",
       "chromeButton": "Chrome扩展程序",
-      "imageAlt": "AltVision应用截图"
+      "imageAlt": "AltVision应用截图",
+      "firefoxButton": "Firefox扩展程序"
     },
     "description": "AltVision通过分析图像及其周围背景，自动为您的图像生成精确的替代文本。该插件考虑图像附近的标题、段落和说明文字，以创建高度相关的描述。停止花费数小时手动编写描述——让AI来完成繁重的工作！",
     "wordpress": {
@@ -109,7 +110,7 @@
         },
         {
           "q": "如何安装 AltVision？",
-          "a": "WordPress 插件的安装方式与其他插件相同，可在媒体库中直接与经典编辑器和 Gutenberg 配合使用。Chrome 扩展可从 Chrome 应用商店一键安装。"
+          "a": "WordPress 插件的安装方式与其他插件相同，可在媒体库中直接与经典编辑器和 Gutenberg 配合使用。浏览器扩展可从 Chrome 应用商店或 Firefox Add-ons 一键安装。"
         },
         {
           "q": "AltVision 免费使用吗？",
@@ -137,7 +138,8 @@
     "termsOfUse": "使用条款",
     "privacyPolicy": "隐私政策",
     "openSource": "开源",
-    "copyright": "© Copyright 2025 Christopher State"
+    "copyright": "© Copyright 2025 Christopher State",
+    "downloadFirefox": "下载Firefox扩展程序"
   },
   "privacy": {
     "title": "隐私政策",
