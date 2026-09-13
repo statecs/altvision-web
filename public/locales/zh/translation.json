@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "WordPress插件",
-    "chromeExtension": "Chrome扩展程序"
+    "browserExtension": "浏览器扩展"
   },
   "home": {
     "hero": {
       "title": "让网络对所有人无障碍",
       "titleHighlight": "借助AI驱动的替代文本",
       "wpButton": "WordPress插件",
-      "chromeButton": "Chrome扩展程序",
+      "chromeButton": "添加至 Chrome",
       "imageAlt": "AltVision应用截图",
-      "firefoxButton": "Firefox扩展程序"
+      "firefoxButton": "添加至 Firefox"
     },
     "description": "AltVision通过分析图像及其周围背景，自动为您的图像生成精确的替代文本。该插件考虑图像附近的标题、段落和说明文字，以创建高度相关的描述。停止花费数小时手动编写描述——让AI来完成繁重的工作！",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "无障碍优先：支持WCAG 2.1合规性"
     },
     "chrome": {
-      "title": "Chrome扩展程序功能",
+      "title": "浏览器扩展功能",
       "altTextDetection": "替代文本检测：查找并突出显示需要关注的图像",
       "contextAware": "上下文感知：使用最先进的AI创建描述性和准确的替代文本",
       "multipleLanguages": "我们支持31种语言，包括英语、西班牙语、法语、德语、阿拉伯语、中文、印地语等更多语言。"
@@ -106,7 +106,7 @@
         },
         {
           "q": "它有助于满足无障碍合规吗？",
-          "a": "是的。AltVision 旨在满足 WCAG 2.1 对替代文本的要求。Chrome 扩展还会突出显示缺少替代文本的图片，并让你直接在页面上检查现有的替代文本和 aria-labels。"
+          "a": "是的。AltVision 旨在满足 WCAG 2.1 对替代文本的要求。浏览器扩展还会突出显示缺少替代文本的图片，并让你直接在页面上检查现有的替代文本和 aria-labels。"
         },
         {
           "q": "如何安装 AltVision？",

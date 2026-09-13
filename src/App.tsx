@@ -11,6 +11,7 @@ import ImageUploadDemo from './components/ImageUploadDemo';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import { trackEvent } from './analytics';
+import { BROWSER_STORES, WORDPRESS_PLUGIN_URL } from './lib/stores';
 
 // The AltVision eye — same lockup as the Chrome extension icon
 const Logomark = () => (
@@ -107,7 +108,7 @@ const HomePage = () => {
           {/* Left column: headline + CTAs */}
           <div className="order-1">
             <p className="font-mono text-xs uppercase tracking-[0.25em] text-ink-soft mb-6 animate-slide-up opacity-0" style={{ animationDelay: '0.1s' }}>
-              {t('nav.wordpressPlugin')} · {t('nav.chromeExtension')}
+              {t('nav.wordpressPlugin')} · {t('nav.browserExtension')}
             </p>
             <h1 className="font-display text-5xl md:text-6xl font-medium mb-8 leading-[1.05] tracking-tight animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
               {t('home.hero.title')}{' '}
@@ -115,29 +116,24 @@ const HomePage = () => {
             </h1>
             <div className="flex flex-wrap gap-4 animate-slide-up opacity-0" style={{ animationDelay: '0.4s' }}>
               <a
-                href="https://wordpress.org/plugins/altvision-ai-alt-text-generator/"
+                href={WORDPRESS_PLUGIN_URL}
                 rel="noopener noreferrer"
                 className="bg-ink text-paper px-6 py-3 rounded-md font-medium shadow-[4px_4px_0_#5B8FDC] hover:shadow-[2px_2px_0_#5B8FDC] hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
                 onClick={() => trackEvent('cta_click', { label: 'wordpress_plugin' })}
               >
                 {t('home.hero.wpButton')}
               </a>
-              <a
-                href="https://chromewebstore.google.com/detail/altvision/iogpbgncdhijknmmhkllijfaioecfcoa"
-                rel="noopener noreferrer"
-                className="border border-ink/30 text-ink px-6 py-3 rounded-md font-medium hover:border-ink hover:bg-ink/5 transition-all"
-                onClick={() => trackEvent('cta_click', { label: 'chrome_extension' })}
-              >
-                {t('home.hero.chromeButton')}
-              </a>
-              <a
-                href="https://addons.mozilla.org/firefox/addon/alt-vision/"
-                rel="noopener noreferrer"
-                className="border border-ink/30 text-ink px-6 py-3 rounded-md font-medium hover:border-ink hover:bg-ink/5 transition-all"
-                onClick={() => trackEvent('cta_click', { label: 'firefox_extension' })}
-              >
-                {t('home.hero.firefoxButton')}
-              </a>
+              {BROWSER_STORES.map((store) => (
+                <a
+                  key={store.id}
+                  href={store.url}
+                  rel="noopener noreferrer"
+                  className="border border-ink/30 text-ink px-6 py-3 rounded-md font-medium hover:border-ink hover:bg-ink/5 transition-all"
+                  onClick={() => trackEvent('cta_click', { label: store.trackLabel })}
+                >
+                  {t(store.labelKey)}
+                </a>
+              ))}
             </div>
           </div>
 
@@ -195,7 +191,7 @@ const HomePage = () => {
           <div className="animate-slide-up opacity-0" style={{ animationDelay: '1s' }}>
             <div className="border-b border-ink pb-4 mb-2">
               <span className="font-mono text-xs uppercase tracking-[0.2em] text-azure block mb-2">
-                {t('nav.chromeExtension')}
+                {t('nav.browserExtension')}
               </span>
               <h2 className="font-display text-3xl font-medium tracking-tight">{t('home.chrome.title')}</h2>
             </div>
@@ -211,22 +207,17 @@ const HomePage = () => {
               ))}
             </ul>
             <div className="flex flex-wrap gap-x-6 gap-y-2 pt-5 font-mono text-sm">
-              <a
-                href="https://chromewebstore.google.com/detail/altvision/iogpbgncdhijknmmhkllijfaioecfcoa"
-                rel="noopener noreferrer"
-                className="text-azure hover:text-azure-deep underline underline-offset-4 transition-colors"
-                onClick={() => trackEvent('cta_click', { label: 'chrome_extension' })}
-              >
-                {t('home.hero.chromeButton')} →
-              </a>
-              <a
-                href="https://addons.mozilla.org/firefox/addon/alt-vision/"
-                rel="noopener noreferrer"
-                className="text-azure hover:text-azure-deep underline underline-offset-4 transition-colors"
-                onClick={() => trackEvent('cta_click', { label: 'firefox_extension' })}
-              >
-                {t('home.hero.firefoxButton')} →
-              </a>
+              {BROWSER_STORES.map((store) => (
+                <a
+                  key={store.id}
+                  href={store.url}
+                  rel="noopener noreferrer"
+                  className="text-azure hover:text-azure-deep underline underline-offset-4 transition-colors"
+                  onClick={() => trackEvent('cta_click', { label: store.trackLabel })}
+                >
+                  {t(store.labelKey)} →
+                </a>
+              ))}
             </div>
           </div>
         </div>

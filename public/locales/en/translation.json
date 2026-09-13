@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "WordPress Plugin",
-    "chromeExtension": "Chrome Extension"
+    "browserExtension": "Browser Extension"
   },
   "home": {
     "hero": {
       "title": "Make the web accessible",
       "titleHighlight": "with AI-powered alt text",
       "wpButton": "WordPress Plugin",
-      "chromeButton": "Chrome Extension",
+      "chromeButton": "Add to Chrome",
       "imageAlt": "AltVision App Screenshot",
-      "firefoxButton": "Firefox Extension"
+      "firefoxButton": "Add to Firefox"
     },
     "description": "AltVision automatically generates precise alt text for your images by analyzing both the image and its surrounding context. The plugin considers headings, paragraphs, and captions near the image to create highly relevant descriptions. Stop spending hours writing manual descriptions – let AI do the heavy lifting!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Accessibility First: WCAG 2.1 compliance support"
     },
     "chrome": {
-      "title": "Chrome Extension Features",
+      "title": "Browser Extension Features",
       "altTextDetection": "Alt Text Detection: Find and highlight images that need attention",
       "contextAware": "Context-Aware: Create descriptive and accurate alternative texts using state-of-the-art AI",
       "multipleLanguages": "We support 31 languages including English, Spanish, French, German, Arabic, Chinese, Hindi, and many more."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Does it help with accessibility compliance?",
-          "a": "Yes. AltVision is built to support WCAG 2.1 alt-text requirements. The Chrome extension also highlights images missing alt text and lets you inspect existing alt text and aria-labels directly on the page."
+          "a": "Yes. AltVision is built to support WCAG 2.1 alt-text requirements. The browser extension also highlights images missing alt text and lets you inspect existing alt text and aria-labels directly on the page."
         },
         {
           "q": "How do I install AltVision?",

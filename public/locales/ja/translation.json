@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "WordPressプラグイン",
-    "chromeExtension": "Chrome拡張機能"
+    "browserExtension": "ブラウザー拡張機能"
   },
   "home": {
     "hero": {
       "title": "ウェブをアクセシブルにする",
       "titleHighlight": "AIによる自動代替テキストで",
       "wpButton": "WordPressプラグイン",
-      "chromeButton": "Chrome拡張機能",
+      "chromeButton": "Chrome に追加",
       "imageAlt": "AltVisionアプリのスクリーンショット",
-      "firefoxButton": "Firefox拡張機能"
+      "firefoxButton": "Firefox に追加"
     },
     "description": "AltVisionは、画像とその周辺のコンテキストを分析することで、画像の正確な代替テキストを自動生成します。プラグインは画像の近くにある見出し、段落、キャプションを考慮して、非常に関連性の高い説明を作成します。手動で説明を書く時間を費やすのをやめましょう – AIに重労働を任せてください！",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "アクセシビリティ優先：WCAG 2.1準拠のサポート"
     },
     "chrome": {
-      "title": "Chrome拡張機能の機能",
+      "title": "ブラウザー拡張機能の機能",
       "altTextDetection": "代替テキスト検出：注意が必要な画像を見つけてハイライト",
       "contextAware": "コンテキスト対応：最先端のAIを使用して記述的かつ正確な代替テキストを作成",
       "multipleLanguages": "英語、スペイン語、フランス語、ドイツ語、アラビア語、中国語、ヒンディー語など、31の言語に対応しています。"
@@ -106,7 +106,7 @@
         },
         {
           "q": "アクセシビリティ準拠に役立ちますか？",
-          "a": "はい。AltVision は代替テキストに関する WCAG 2.1 の要件を満たすように作られています。Chrome 拡張機能は代替テキストのない画像を強調表示し、既存の代替テキストや aria-labels をページ上で直接確認できます。"
+          "a": "はい。AltVision は代替テキストに関する WCAG 2.1 の要件を満たすように作られています。ブラウザー拡張機能は代替テキストのない画像を強調表示し、既存の代替テキストや aria-labels をページ上で直接確認できます。"
         },
         {
           "q": "AltVision はどうやってインストールしますか？",

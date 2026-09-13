@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "WordPress-laajennus",
-    "chromeExtension": "Chrome-laajennus"
+    "browserExtension": "Selainlaajennus"
   },
   "home": {
     "hero": {
       "title": "Tee verkosta saavutettava",
       "titleHighlight": "tekoälypohjaisella vaihtoehtoistekstillä",
       "wpButton": "WordPress-laajennus",
-      "chromeButton": "Chrome-laajennus",
+      "chromeButton": "Lisää Chromeen",
       "imageAlt": "AltVision-sovelluksen kuvakaappaus",
-      "firefoxButton": "Firefox-laajennus"
+      "firefoxButton": "Lisää Firefoxiin"
     },
     "description": "AltVision luo automaattisesti tarkan vaihtoehtoistekstin kuvillesi analysoimalla sekä kuvan että sen ympäristön kontekstin. Laajennus ottaa huomioon kuvan lähellä olevat otsikot, kappaleet ja kuvatekstit luodakseen erittäin relevantteja kuvauksia. Lopeta tuntien käyttäminen manuaalisten kuvausten kirjoittamiseen – anna tekoälyn tehdä raskaat työt!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Saavutettavuus ensin: WCAG 2.1 -vaatimustenmukaisuustuki"
     },
     "chrome": {
-      "title": "Chrome-laajennuksen Ominaisuudet",
+      "title": "Selainlaajennuksen ominaisuudet",
       "altTextDetection": "Vaihtoehtoistekstin tunnistus: Löydä ja korosta kuvia, jotka tarvitsevat huomiota",
       "contextAware": "Kontekstiherkkä: Luo kuvaavia ja tarkkoja vaihtoehtoistekstejä huippuluokan tekoälyn avulla",
       "multipleLanguages": "Tuemme 31 kieltä, mukaan lukien englanti, espanja, ranska, saksa, arabia, kiina, hindi ja monet muut."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Auttaako se saavutettavuusvaatimusten täyttämisessä?",
-          "a": "Kyllä. AltVision on suunniteltu täyttämään WCAG 2.1 -vaatimukset alt-tekstille. Chrome-laajennus korostaa myös kuvat, joista alt-teksti puuttuu, ja antaa sinun tarkastella olemassa olevaa alt-tekstiä ja aria-labeleita suoraan sivulla."
+          "a": "Kyllä. AltVision on suunniteltu täyttämään WCAG 2.1 -vaatimukset alt-tekstille. Selainlaajennus korostaa myös kuvat, joista alt-teksti puuttuu, ja antaa sinun tarkastella olemassa olevaa alt-tekstiä ja aria-labeleita suoraan sivulla."
         },
         {
           "q": "Miten asennan AltVisionin?",

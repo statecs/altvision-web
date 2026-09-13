@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "WordPress Plugin",
-    "chromeExtension": "Rozšíření pro Chrome"
+    "browserExtension": "Rozšíření pro prohlížeč"
   },
   "home": {
     "hero": {
       "title": "Zpřístupněte web všem",
       "titleHighlight": "s AI-generovaným alternativním textem",
       "wpButton": "WordPress Plugin",
-      "chromeButton": "Rozšíření pro Chrome",
+      "chromeButton": "Přidat do Chromu",
       "imageAlt": "Screenshot aplikace AltVision",
-      "firefoxButton": "Rozšíření pro Firefox"
+      "firefoxButton": "Přidat do Firefoxu"
     },
     "description": "AltVision automaticky generuje přesný alternativní text pro vaše obrázky analýzou samotného obrázku i jeho okolního kontextu. Plugin bere v úvahu nadpisy, odstavce a popisky v blízkosti obrázku, aby vytvořil vysoce relevantní popisy. Přestaňte trávit hodiny ručním psaním popisů – nechte AI dělat tu těžkou práci!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Přístupnost na prvním místě: Podpora shody s WCAG 2.1"
     },
     "chrome": {
-      "title": "Funkce Rozšíření pro Chrome",
+      "title": "Funkce rozšíření pro prohlížeč",
       "altTextDetection": "Detekce alternativního textu: Najděte a zvýrazněte obrázky, které potřebují pozornost",
       "contextAware": "Kontextově citlivé: Vytvářejte popisné a přesné alternativní texty pomocí nejmodernější AI",
       "multipleLanguages": "Podporujeme 31 jazyků včetně angličtiny, španělštiny, francouzštiny, němčiny, arabštiny, čínštiny, hindštiny a mnoha dalších."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Pomáhá s dodržováním přístupnosti?",
-          "a": "Ano. AltVision je vytvořen tak, aby splňoval požadavky WCAG 2.1 na alternativní text. Rozšíření pro Chrome navíc zvýrazňuje obrázky bez alternativního textu a umožňuje kontrolovat stávající alternativní text a aria-labels přímo na stránce."
+          "a": "Ano. AltVision je vytvořen tak, aby splňoval požadavky WCAG 2.1 na alternativní text. Rozšíření pro prohlížeč navíc zvýrazňuje obrázky bez alternativního textu a umožňuje kontrolovat stávající alternativní text a aria-labels přímo na stránce."
         },
         {
           "q": "Jak nainstaluji AltVision?",

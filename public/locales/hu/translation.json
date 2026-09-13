@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "WordPress Plugin",
-    "chromeExtension": "Chrome Bővítmény"
+    "browserExtension": "Böngészőbővítmény"
   },
   "home": {
     "hero": {
       "title": "Tedd elérhetővé a webet",
       "titleHighlight": "AI-alapú alt szöveggel",
       "wpButton": "WordPress Plugin",
-      "chromeButton": "Chrome Bővítmény",
+      "chromeButton": "Hozzáadás a Chrome-hoz",
       "imageAlt": "AltVision alkalmazás képernyőkép",
-      "firefoxButton": "Firefox Bővítmény"
+      "firefoxButton": "Hozzáadás a Firefoxhoz"
     },
     "description": "Az AltVision automatikusan pontos alt szöveget generál a képeidhez, elemezve mind a képet, mind annak környező kontextusát. A plugin figyelembe veszi a kép közelében lévő fejléceket, bekezdéseket és feliratokat, hogy rendkívül releváns leírásokat hozzon létre. Hagyj fel a manuális leírások írásával töltött órákkal – engedd az AI-t elvégezni a nehéz munkát!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Az akadálymentesség az első: WCAG 2.1 megfelelőségi támogatás"
     },
     "chrome": {
-      "title": "Chrome Bővítmény Funkciók",
+      "title": "A böngészőbővítmény funkciói",
       "altTextDetection": "Alt szöveg felismerés: Keresd meg és emeld ki a figyelmet igénylő képeket",
       "contextAware": "Kontextusérzékeny: Készíts leíró és pontos alternatív szövegeket élvonalbeli AI segítségével",
       "multipleLanguages": "31 nyelvet támogatunk, köztük az angolt, a spanyolt, a franciát, a németet, az arabot, a kínait, a hindit és még sok mást."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Segít az akadálymentességi megfelelésben?",
-          "a": "Igen. Az AltVision úgy készült, hogy megfeleljen a WCAG 2.1 alternatív szövegre vonatkozó követelményeinek. A Chrome-bővítmény kiemeli az alternatív szöveg nélküli képeket is, és lehetővé teszi a meglévő alternatív szöveg és aria-labels vizsgálatát közvetlenül az oldalon."
+          "a": "Igen. Az AltVision úgy készült, hogy megfeleljen a WCAG 2.1 alternatív szövegre vonatkozó követelményeinek. A böngészőbővítmény kiemeli az alternatív szöveg nélküli képeket is, és lehetővé teszi a meglévő alternatív szöveg és aria-labels vizsgálatát közvetlenül az oldalon."
         },
         {
           "q": "Hogyan telepítem az AltVisiont?",

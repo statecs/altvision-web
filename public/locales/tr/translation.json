@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "WordPress Eklentisi",
-    "chromeExtension": "Chrome Uzantısı"
+    "browserExtension": "Tarayıcı Uzantısı"
   },
   "home": {
     "hero": {
       "title": "Web'i erişilebilir kılın",
       "titleHighlight": "AI destekli alt metin ile",
       "wpButton": "WordPress Eklentisi",
-      "chromeButton": "Chrome Uzantısı",
+      "chromeButton": "Chrome'a Ekle",
       "imageAlt": "AltVision Uygulama Ekran Görüntüsü",
-      "firefoxButton": "Firefox Uzantısı"
+      "firefoxButton": "Firefox'a Ekle"
     },
     "description": "AltVision, hem görüntüyü hem de çevresindeki bağlamı analiz ederek görüntüleriniz için otomatik olarak hassas alt metin oluşturur. Eklenti, son derece ilgili açıklamalar oluşturmak için görüntünün yakınındaki başlıkları, paragrafları ve açıklamaları dikkate alır. Manuel açıklamalar yazmak için saatler harcamayı bırakın – AI'nın ağır işi yapmasına izin verin!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Erişilebilirlik Önce: WCAG 2.1 uyumluluk desteği"
     },
     "chrome": {
-      "title": "Chrome Uzantısı Özellikleri",
+      "title": "Tarayıcı Uzantısı Özellikleri",
       "altTextDetection": "Alt Metin Algılama: Dikkat gerektiren görüntüleri bulun ve vurgulayın",
       "contextAware": "Bağlam Duyarlı: Son teknoloji AI kullanarak açıklayıcı ve doğru alternatif metinler oluşturun",
       "multipleLanguages": "İngilizce, İspanyolca, Fransızca, Almanca, Arapça, Çince, Hintçe ve daha pek çok dil dahil 31 dili destekliyoruz."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Erişilebilirlik uyumluluğuna yardımcı oluyor mu?",
-          "a": "Evet. AltVision, alternatif metin için WCAG 2.1 gereksinimlerini karşılayacak şekilde tasarlanmıştır. Chrome uzantısı ayrıca alternatif metni olmayan görselleri vurgular ve mevcut alternatif metni ve aria-labels değerlerini doğrudan sayfada incelemenizi sağlar."
+          "a": "Evet. AltVision, alternatif metin için WCAG 2.1 gereksinimlerini karşılayacak şekilde tasarlanmıştır. Tarayıcı uzantısı ayrıca alternatif metni olmayan görselleri vurgular ve mevcut alternatif metni ve aria-labels değerlerini doğrudan sayfada incelemenizi sağlar."
         },
         {
           "q": "AltVision'ı nasıl kurarım?",

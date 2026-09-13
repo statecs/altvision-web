@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "WordPress-plugin",
-    "chromeExtension": "Chrome-udvidelse"
+    "browserExtension": "Browserudvidelse"
   },
   "home": {
     "hero": {
       "title": "Gør nettet tilgængeligt",
       "titleHighlight": "med AI-drevet alternativ tekst",
       "wpButton": "WordPress-plugin",
-      "chromeButton": "Chrome-udvidelse",
+      "chromeButton": "Føj til Chrome",
       "imageAlt": "Skærmbillede af AltVision",
-      "firefoxButton": "Firefox-udvidelse"
+      "firefoxButton": "Føj til Firefox"
     },
     "description": "AltVision genererer automatisk præcis alternativ tekst til dine billeder ved at analysere både billedet og dets omgivende kontekst. Pluginet tager hensyn til overskrifter, afsnit og billedtekster i nærheden af billedet for at skabe meget relevante beskrivelser. Stop med at bruge timer på at skrive manuelle beskrivelser – lad AI gøre det tunge løft!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Tilgængelighed først: Understøttelse af WCAG 2.1-overholdelse"
     },
     "chrome": {
-      "title": "Chrome-udvidelse Funktioner",
+      "title": "Browserudvidelsens funktioner",
       "altTextDetection": "Alternativ tekstdetektering: Find og fremhæv billeder, der kræver opmærksomhed",
       "contextAware": "Kontekstbevidst: Opret beskrivende og præcise alternativtekster ved hjælp af avanceret AI",
       "multipleLanguages": "Vi understøtter 31 sprog, herunder engelsk, spansk, fransk, tysk, arabisk, kinesisk, hindi og mange flere."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Hjælper det med tilgængelighedskrav?",
-          "a": "Ja. AltVision er bygget til at opfylde WCAG 2.1-kravene til alt-tekst. Chrome-udvidelsen fremhæver desuden billeder uden alt-tekst og lader dig inspicere eksisterende alt-tekst og aria-labels direkte på siden."
+          "a": "Ja. AltVision er bygget til at opfylde WCAG 2.1-kravene til alt-tekst. Browserudvidelsen fremhæver desuden billeder uden alt-tekst og lader dig inspicere eksisterende alt-tekst og aria-labels direkte på siden."
         },
         {
           "q": "Hvordan installerer jeg AltVision?",

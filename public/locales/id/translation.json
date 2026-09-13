@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "Plugin WordPress",
-    "chromeExtension": "Ekstensi Chrome"
+    "browserExtension": "Ekstensi Browser"
   },
   "home": {
     "hero": {
       "title": "Jadikan web dapat diakses",
       "titleHighlight": "dengan teks alt bertenaga AI",
       "wpButton": "Plugin WordPress",
-      "chromeButton": "Ekstensi Chrome",
+      "chromeButton": "Tambahkan ke Chrome",
       "imageAlt": "Tangkapan layar Aplikasi AltVision",
-      "firefoxButton": "Ekstensi Firefox"
+      "firefoxButton": "Tambahkan ke Firefox"
     },
     "description": "AltVision secara otomatis menghasilkan teks alt yang tepat untuk gambar Anda dengan menganalisis gambar dan konteks sekitarnya. Plugin mempertimbangkan judul, paragraf, dan keterangan gambar yang dekat dengan gambar untuk membuat deskripsi yang sangat relevan. Hentikan penghabisan waktu berjam-jam menulis deskripsi manual – biarkan AI melakukan pekerjaan berat!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Aksesibilitas Utama: Dukungan kepatuhan WCAG 2.1"
     },
     "chrome": {
-      "title": "Fitur Ekstensi Chrome",
+      "title": "Fitur Ekstensi Browser",
       "altTextDetection": "Deteksi Teks Alt: Temukan dan sorot gambar yang membutuhkan perhatian",
       "contextAware": "Sadar Konteks: Buat teks alternatif yang deskriptif dan akurat menggunakan AI mutakhir",
       "multipleLanguages": "Kami mendukung 31 bahasa termasuk Inggris, Spanyol, Prancis, Jerman, Arab, Cina, Hindi, dan masih banyak lagi."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Apakah ini membantu kepatuhan aksesibilitas?",
-          "a": "Ya. AltVision dibuat untuk memenuhi persyaratan teks alternatif WCAG 2.1. Ekstensi Chrome juga menyoroti gambar yang tidak memiliki teks alternatif dan memungkinkan Anda memeriksa teks alternatif serta aria-labels yang ada langsung di halaman."
+          "a": "Ya. AltVision dibuat untuk memenuhi persyaratan teks alternatif WCAG 2.1. Ekstensi browser juga menyoroti gambar yang tidak memiliki teks alternatif dan memungkinkan Anda memeriksa teks alternatif serta aria-labels yang ada langsung di halaman."
         },
         {
           "q": "Bagaimana cara memasang AltVision?",

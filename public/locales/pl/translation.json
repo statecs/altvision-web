@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "Wtyczka WordPress",
-    "chromeExtension": "Rozszerzenie Chrome"
+    "browserExtension": "Rozszerzenie przeglądarki"
   },
   "home": {
     "hero": {
       "title": "Spraw, by internet był dostępny",
       "titleHighlight": "dzięki tekstowi alt opartemu na AI",
       "wpButton": "Wtyczka WordPress",
-      "chromeButton": "Rozszerzenie Chrome",
+      "chromeButton": "Dodaj do Chrome",
       "imageAlt": "Zrzut ekranu aplikacji AltVision",
-      "firefoxButton": "Rozszerzenie Firefox"
+      "firefoxButton": "Dodaj do Firefoksa"
     },
     "description": "AltVision automatycznie generuje precyzyjny tekst alternatywny dla Twoich obrazów, analizując zarówno obraz, jak i jego otaczający kontekst. Wtyczka bierze pod uwagę nagłówki, akapity i podpisy w pobliżu obrazu, aby tworzyć wysoce trafne opisy. Przestań spędzać godziny na pisaniu opisów ręcznie – pozwól AI wykonać ciężką pracę!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Dostępność na pierwszym miejscu: Wsparcie zgodności z WCAG 2.1"
     },
     "chrome": {
-      "title": "Funkcje Rozszerzenia Chrome",
+      "title": "Funkcje rozszerzenia przeglądarki",
       "altTextDetection": "Wykrywanie tekstu alt: Znajdź i wyróżnij obrazy wymagające uwagi",
       "contextAware": "Świadomy kontekstu: Twórz opisowe i precyzyjne teksty alternatywne przy użyciu najnowocześniejszej AI",
       "multipleLanguages": "Obsługujemy 31 języków, w tym angielski, hiszpański, francuski, niemiecki, arabski, chiński, hindi i wiele innych."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Czy pomaga w zgodności z dostępnością?",
-          "a": "Tak. AltVision został zbudowany z myślą o wymaganiach WCAG 2.1 dotyczących tekstu alternatywnego. Rozszerzenie Chrome dodatkowo wyróżnia obrazy bez tekstu alternatywnego i pozwala sprawdzać istniejący tekst alternatywny oraz aria-labels bezpośrednio na stronie."
+          "a": "Tak. AltVision został zbudowany z myślą o wymaganiach WCAG 2.1 dotyczących tekstu alternatywnego. Rozszerzenie przeglądarki dodatkowo wyróżnia obrazy bez tekstu alternatywnego i pozwala sprawdzać istniejący tekst alternatywny oraz aria-labels bezpośrednio na stronie."
         },
         {
           "q": "Jak zainstalować AltVision?",

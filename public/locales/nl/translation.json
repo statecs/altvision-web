@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "WordPress-plugin",
-    "chromeExtension": "Chrome-extensie"
+    "browserExtension": "Browserextensie"
   },
   "home": {
     "hero": {
       "title": "Maak het web toegankelijk",
       "titleHighlight": "met AI-aangedreven alt-tekst",
       "wpButton": "WordPress-plugin",
-      "chromeButton": "Chrome-extensie",
+      "chromeButton": "Toevoegen aan Chrome",
       "imageAlt": "AltVision App-screenshot",
-      "firefoxButton": "Firefox-extensie"
+      "firefoxButton": "Toevoegen aan Firefox"
     },
     "description": "AltVision genereert automatisch nauwkeurige alt-tekst voor uw afbeeldingen door zowel de afbeelding als de omringende context te analyseren. De plugin houdt rekening met koppen, alinea's en bijschriften in de buurt van de afbeelding om zeer relevante beschrijvingen te maken. Stop met uren besteden aan het handmatig schrijven van beschrijvingen – laat AI het zware werk doen!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Toegankelijkheid voorop: Ondersteuning voor WCAG 2.1-naleving"
     },
     "chrome": {
-      "title": "Chrome-extensie Functies",
+      "title": "Functies van de browserextensie",
       "altTextDetection": "Alt-tekstdetectie: Vind en markeer afbeeldingen die aandacht nodig hebben",
       "contextAware": "Contextbewust: Maak beschrijvende en nauwkeurige alternatieve teksten met behulp van geavanceerde AI",
       "multipleLanguages": "We ondersteunen 31 talen, waaronder Engels, Spaans, Frans, Duits, Arabisch, Chinees, Hindi en nog veel meer."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Helpt het bij toegankelijkheidsnaleving?",
-          "a": "Ja. AltVision is gebouwd om te voldoen aan de WCAG 2.1-eisen voor alt-tekst. De Chrome-extensie markeert bovendien afbeeldingen zonder alt-tekst en laat je bestaande alt-tekst en aria-labels rechtstreeks op de pagina inspecteren."
+          "a": "Ja. AltVision is gebouwd om te voldoen aan de WCAG 2.1-eisen voor alt-tekst. De browserextensie markeert bovendien afbeeldingen zonder alt-tekst en laat je bestaande alt-tekst en aria-labels rechtstreeks op de pagina inspecteren."
         },
         {
           "q": "Hoe installeer ik AltVision?",

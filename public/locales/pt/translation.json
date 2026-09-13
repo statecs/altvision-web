@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "Plugin WordPress",
-    "chromeExtension": "Extensão Chrome"
+    "browserExtension": "Extensão de navegador"
   },
   "home": {
     "hero": {
       "title": "Torne a web acessível",
       "titleHighlight": "com texto alternativo alimentado por IA",
       "wpButton": "Plugin WordPress",
-      "chromeButton": "Extensão Chrome",
+      "chromeButton": "Adicionar ao Chrome",
       "imageAlt": "Captura de tela do AltVision",
-      "firefoxButton": "Extensão Firefox"
+      "firefoxButton": "Adicionar ao Firefox"
     },
     "description": "O AltVision gera automaticamente texto alternativo preciso para suas imagens analisando tanto a imagem quanto seu contexto circundante. O plugin considera títulos, parágrafos e legendas próximas à imagem para criar descrições altamente relevantes. Pare de passar horas escrevendo descrições manuais – deixe a IA fazer o trabalho pesado!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Acessibilidade em primeiro lugar: Suporte à conformidade com WCAG 2.1"
     },
     "chrome": {
-      "title": "Recursos da Extensão Chrome",
+      "title": "Recursos da extensão de navegador",
       "altTextDetection": "Detecção de texto alternativo: Encontre e destaque imagens que precisam de atenção",
       "contextAware": "Sensível ao contexto: Crie textos alternativos descritivos e precisos usando IA de ponta",
       "multipleLanguages": "Suportamos 31 idiomas, incluindo inglês, espanhol, francês, alemão, árabe, chinês, hindi e muito mais."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Ajuda na conformidade com a acessibilidade?",
-          "a": "Sim. O AltVision foi desenvolvido para cumprir os requisitos de texto alternativo da WCAG 2.1. A extensão do Chrome também realça as imagens sem texto alternativo e permite inspecionar o texto alternativo e os aria-labels existentes diretamente na página."
+          "a": "Sim. O AltVision foi desenvolvido para cumprir os requisitos de texto alternativo da WCAG 2.1. A extensão do navegador também realça as imagens sem texto alternativo e permite inspecionar o texto alternativo e os aria-labels existentes diretamente na página."
         },
         {
           "q": "Como instalo o AltVision?",

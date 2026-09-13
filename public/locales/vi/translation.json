@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "Plugin WordPress",
-    "chromeExtension": "Tiện ích Chrome"
+    "browserExtension": "Tiện ích trình duyệt"
   },
   "home": {
     "hero": {
       "title": "Làm cho web dễ tiếp cận",
       "titleHighlight": "với văn bản thay thế được hỗ trợ bởi AI",
       "wpButton": "Plugin WordPress",
-      "chromeButton": "Tiện ích Chrome",
+      "chromeButton": "Thêm vào Chrome",
       "imageAlt": "Ảnh chụp màn hình ứng dụng AltVision",
-      "firefoxButton": "Tiện ích Firefox"
+      "firefoxButton": "Thêm vào Firefox"
     },
     "description": "AltVision tự động tạo văn bản thay thế chính xác cho hình ảnh của bạn bằng cách phân tích cả hình ảnh và ngữ cảnh xung quanh nó. Plugin xem xét các tiêu đề, đoạn văn và chú thích gần hình ảnh để tạo ra các mô tả có liên quan cao. Hãy ngừng dành hàng giờ viết mô tả thủ công – hãy để AI làm phần việc nặng nhọc!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Ưu tiên khả năng tiếp cận: Hỗ trợ tuân thủ WCAG 2.1"
     },
     "chrome": {
-      "title": "Tính năng Tiện ích Chrome",
+      "title": "Tính năng tiện ích trình duyệt",
       "altTextDetection": "Phát hiện văn bản thay thế: Tìm và làm nổi bật các hình ảnh cần chú ý",
       "contextAware": "Nhận thức ngữ cảnh: Tạo văn bản thay thế mô tả và chính xác bằng AI tiên tiến",
       "multipleLanguages": "Chúng tôi hỗ trợ 31 ngôn ngữ bao gồm tiếng Anh, Tây Ban Nha, Pháp, Đức, Ả Rập, Trung Quốc, Hindi và nhiều ngôn ngữ khác."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Nó có giúp tuân thủ khả năng truy cập không?",
-          "a": "Có. AltVision được xây dựng để đáp ứng các yêu cầu về văn bản thay thế của WCAG 2.1. Tiện ích Chrome còn làm nổi bật những hình ảnh thiếu văn bản thay thế và cho phép bạn kiểm tra văn bản thay thế và aria-labels hiện có ngay trên trang."
+          "a": "Có. AltVision được xây dựng để đáp ứng các yêu cầu về văn bản thay thế của WCAG 2.1. Tiện ích trình duyệt còn làm nổi bật những hình ảnh thiếu văn bản thay thế và cho phép bạn kiểm tra văn bản thay thế và aria-labels hiện có ngay trên trang."
         },
         {
           "q": "Tôi cài đặt AltVision như thế nào?",

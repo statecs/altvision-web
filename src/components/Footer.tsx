@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Github } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { BROWSER_STORES, WORDPRESS_PLUGIN_URL } from '../lib/stores';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -17,29 +18,26 @@ const Footer = () => {
             </h2>
             <div className="flex flex-col gap-4 items-start">
               <a
-                href="https://wordpress.org/plugins/altvision-ai-alt-text-generator/"
+                href={WORDPRESS_PLUGIN_URL}
                 rel="noopener noreferrer"
                 className="bg-azure hover:bg-azure-deep text-white px-6 py-3 rounded-md text-sm font-semibold inline-flex items-center gap-2 transition-colors w-fit"
               >
                 {t('footer.downloadWP')}
                 <ArrowRight className="w-4 h-4" />
               </a>
-              <a
-                href="https://chromewebstore.google.com/detail/altvision/iogpbgncdhijknmmhkllijfaioecfcoa"
-                rel="noopener noreferrer"
-                className="border border-paper/30 text-paper hover:border-paper hover:bg-paper/10 px-6 py-3 rounded-md text-sm font-medium inline-flex items-center gap-2 transition-all w-fit"
-              >
-                {t('footer.downloadChrome')}
-                <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
-                href="https://addons.mozilla.org/firefox/addon/alt-vision/"
-                rel="noopener noreferrer"
-                className="border border-paper/30 text-paper hover:border-paper hover:bg-paper/10 px-6 py-3 rounded-md text-sm font-medium inline-flex items-center gap-2 transition-all w-fit"
-              >
-                {t('footer.downloadFirefox')}
-                <ArrowRight className="w-4 h-4" />
-              </a>
+              <div className="flex flex-wrap gap-3">
+                {BROWSER_STORES.map((store) => (
+                  <a
+                    key={store.id}
+                    href={store.url}
+                    rel="noopener noreferrer"
+                    className="border border-paper/30 text-paper hover:border-paper hover:bg-paper/10 px-6 py-3 rounded-md text-sm font-medium inline-flex items-center gap-2 transition-all w-fit"
+                  >
+                    {t(store.id === 'chrome' ? 'footer.downloadChrome' : 'footer.downloadFirefox')}
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 

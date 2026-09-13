@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "WordPress-plugin",
-    "chromeExtension": "Chrome-tillägg"
+    "browserExtension": "Webbläsartillägg"
   },
   "home": {
     "hero": {
       "title": "Gör webben tillgänglig",
       "titleHighlight": "med AI-driven alternativtext",
       "wpButton": "WordPress-plugin",
-      "chromeButton": "Chrome-tillägg",
+      "chromeButton": "Lägg till i Chrome",
       "imageAlt": "Skärmdump av AltVision",
-      "firefoxButton": "Firefox-tillägg"
+      "firefoxButton": "Lägg till i Firefox"
     },
     "description": "AltVision genererar automatiskt exakt alternativtext för dina bilder genom att analysera både bilden och dess omgivande kontext. Pluginet tar hänsyn till rubriker, stycken och bildtexter nära bilden för att skapa mycket relevanta beskrivningar. Sluta lägga timmar på att skriva manuella beskrivningar – låt AI göra det tunga arbetet!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Tillgänglighet i fokus: Stöd för WCAG 2.1-efterlevnad"
     },
     "chrome": {
-      "title": "Chrome-tilläggsfunktioner",
+      "title": "Webbläsartilläggets funktioner",
       "altTextDetection": "Alternativtextdetektering: Hitta och markera bilder som behöver uppmärksamhet",
       "contextAware": "Kontextmedveten: Skapa beskrivande och exakta alternativtexter med hjälp av banbrytande AI",
       "multipleLanguages": "Vi stöder 31 språk inklusive engelska, spanska, franska, tyska, arabiska, kinesiska, hindi och många fler."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Hjälper den till med tillgänglighetskrav?",
-          "a": "Ja. AltVision är byggt för att stödja WCAG 2.1-kraven för alt-text. Chrome-tillägget markerar dessutom bilder som saknar alt-text och låter dig granska befintlig alt-text och aria-labels direkt på sidan."
+          "a": "Ja. AltVision är byggt för att stödja WCAG 2.1-kraven för alt-text. Webbläsartillägget markerar dessutom bilder som saknar alt-text och låter dig granska befintlig alt-text och aria-labels direkt på sidan."
         },
         {
           "q": "Hur installerar jag AltVision?",

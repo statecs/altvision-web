@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "WordPress-Plugin",
-    "chromeExtension": "Chrome-Erweiterung"
+    "browserExtension": "Browser-Erweiterung"
   },
   "home": {
     "hero": {
       "title": "Das Web zugänglich machen",
       "titleHighlight": "mit KI-getriebenem Alt-Text",
       "wpButton": "WordPress-Plugin",
-      "chromeButton": "Chrome-Erweiterung",
+      "chromeButton": "Zu Chrome hinzufügen",
       "imageAlt": "AltVision App Screenshot",
-      "firefoxButton": "Firefox-Erweiterung"
+      "firefoxButton": "Zu Firefox hinzufügen"
     },
     "description": "AltVision generiert automatisch präzisen Alt-Text für Ihre Bilder, indem es sowohl das Bild als auch seinen umgebenden Kontext analysiert. Das Plugin berücksichtigt Überschriften, Absätze und Bildunterschriften in der Nähe des Bildes, um hochrelevante Beschreibungen zu erstellen. Hören Sie auf, Stunden damit zu verbringen, manuelle Beschreibungen zu schreiben – lassen Sie die KI die schwere Arbeit erledigen!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Barrierefreiheit zuerst: Unterstützung der WCAG 2.1-Konformität"
     },
     "chrome": {
-      "title": "Chrome-Erweiterungs-Funktionen",
+      "title": "Funktionen der Browser-Erweiterung",
       "altTextDetection": "Alt-Text-Erkennung: Finden und markieren Sie Bilder, die Aufmerksamkeit benötigen",
       "contextAware": "Kontextbewusst: Erstellen Sie beschreibende und genaue Alternativtexte mit modernster KI",
       "multipleLanguages": "Wir unterstützen 31 Sprachen, darunter Englisch, Spanisch, Französisch, Deutsch, Arabisch, Chinesisch, Hindi und viele mehr."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Hilft es bei der Barrierefreiheit-Konformität?",
-          "a": "Ja. AltVision ist darauf ausgelegt, die WCAG-2.1-Anforderungen an Alternativtexte zu unterstützen. Die Chrome-Erweiterung hebt außerdem Bilder ohne Alternativtext hervor und lässt dich vorhandenen Alternativtext und aria-labels direkt auf der Seite prüfen."
+          "a": "Ja. AltVision ist darauf ausgelegt, die WCAG-2.1-Anforderungen an Alternativtexte zu unterstützen. Die Browser-Erweiterung hebt außerdem Bilder ohne Alternativtext hervor und lässt dich vorhandenen Alternativtext und aria-labels direkt auf der Seite prüfen."
         },
         {
           "q": "Wie installiere ich AltVision?",

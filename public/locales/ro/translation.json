@@ -1,16 +1,16 @@
 {
   "nav": {
     "wordpressPlugin": "Plugin WordPress",
-    "chromeExtension": "Extensie Chrome"
+    "browserExtension": "Extensie de browser"
   },
   "home": {
     "hero": {
       "title": "Faceți web-ul accesibil",
       "titleHighlight": "cu text alternativ alimentat de IA",
       "wpButton": "Plugin WordPress",
-      "chromeButton": "Extensie Chrome",
+      "chromeButton": "Adaugă în Chrome",
       "imageAlt": "Captură de ecran AltVision",
-      "firefoxButton": "Extensie Firefox"
+      "firefoxButton": "Adaugă în Firefox"
     },
     "description": "AltVision generează automat text alternativ precis pentru imaginile dvs. analizând atât imaginea, cât și contextul înconjurător. Plugin-ul ia în considerare titlurile, paragrafele și legendele din apropierea imaginii pentru a crea descrieri foarte relevante. Nu mai pierdeți ore scriind descrieri manuale – lăsați IA să facă munca grea!",
     "wordpress": {
@@ -21,7 +21,7 @@
       "accessibility": "Accesibilitate pe primul loc: Suport pentru conformitatea WCAG 2.1"
     },
     "chrome": {
-      "title": "Caracteristici Extensie Chrome",
+      "title": "Caracteristicile extensiei de browser",
       "altTextDetection": "Detectarea textului alternativ: Găsiți și evidențiați imaginile care necesită atenție",
       "contextAware": "Conștient de context: Creați texte alternative descriptive și precise folosind IA de ultimă generație",
       "multipleLanguages": "Suportăm 31 de limbi, inclusiv engleză, spaniolă, franceză, germană, arabă, chineză, hindi și multe altele."
@@ -106,7 +106,7 @@
         },
         {
           "q": "Ajută la conformitatea cu accesibilitatea?",
-          "a": "Da. AltVision este construit pentru a respecta cerințele WCAG 2.1 privind textul alternativ. Extensia Chrome evidențiază, de asemenea, imaginile fără text alternativ și îți permite să inspectezi textul alternativ și aria-labels existente direct în pagină."
+          "a": "Da. AltVision este construit pentru a respecta cerințele WCAG 2.1 privind textul alternativ. Extensia de browser evidențiază, de asemenea, imaginile fără text alternativ și îți permite să inspectezi textul alternativ și aria-labels existente direct în pagină."
         },
         {
           "q": "Cum instalez AltVision?",
