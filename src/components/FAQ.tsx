@@ -44,7 +44,7 @@ const FAQ = () => {
                     size={20}
                     strokeWidth={1.75}
                     aria-hidden="true"
-                    className="shrink-0 text-ink/40 transition-transform duration-200 group-hover:text-azure group-data-[state=open]:rotate-45"
+                    className="shrink-0 text-ink/40 transition-[transform,color] duration-200 ease-in-out-strong group-hover:text-azure group-data-[state=open]:rotate-45"
                   />
                 </Accordion.Trigger>
               </Accordion.Header>

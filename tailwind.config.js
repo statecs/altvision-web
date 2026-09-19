@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
+  // Only emit hover: styles on devices that can actually hover, so a tap on
+  // touch screens doesn't leave buttons stuck in their hover state.
+  future: { hoverOnlyWhenSupported: true },
   content: [
     "app/**/*.{ts,tsx}",
     "components/**/*.{ts,tsx}",
@@ -68,26 +71,37 @@ module.exports = {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+  		// Strong curves — the built-in CSS easings are too weak to feel intentional.
+  		transitionTimingFunction: {
+  			'out-strong': 'cubic-bezier(0.23, 1, 0.32, 1)',
+  			'in-out-strong': 'cubic-bezier(0.77, 0, 0.175, 1)'
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		keyframes: {
+  			// Height is tolerated here (no transform equivalent for accordions);
+  			// the opacity ramp masks the reflow.
   			'accordion-down': {
   				from: {
-  					height: '0'
+  					height: '0',
+  					opacity: '0'
   				},
   				to: {
-  					height: 'var(--radix-accordion-content-height)'
+  					height: 'var(--radix-accordion-content-height)',
+  					opacity: '1'
   				}
   			},
   			'accordion-up': {
   				from: {
-  					height: 'var(--radix-accordion-content-height)'
+  					height: 'var(--radix-accordion-content-height)',
+  					opacity: '1'
   				},
   				to: {
-  					height: '0'
+  					height: '0',
+  					opacity: '0'
   				}
   			},
         'slide-up': {
@@ -106,9 +120,9 @@ module.exports = {
       },
   		},
   		animation: {
-  			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out',
-        'slide-up': 'slide-up 0.5s ease-out forwards',
+  			'accordion-down': 'accordion-down 200ms cubic-bezier(0.23, 1, 0.32, 1)',
+  			'accordion-up': 'accordion-up 200ms cubic-bezier(0.23, 1, 0.32, 1)',
+        'slide-up': 'slide-up 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards',
         marquee: 'marquee 55s linear infinite',
   		}
   	}

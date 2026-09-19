@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Globe } from 'lucide-react';
@@ -55,6 +55,14 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ variant = 'header' 
 
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
 
+  // Escape closes the menu, like any native select
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setIsOpen(false); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [isOpen]);
+
   const handleLanguageChange = (languageCode: string) => {
     // Update the URL to reflect the new language
     const currentPath = location.pathname;
@@ -88,12 +96,14 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ variant = 'header' 
       {variant === 'header' ? (
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center space-x-2 text-ink-soft hover:text-ink transition-colors px-2 py-1 rounded-md hover:bg-ink/5"
+          aria-haspopup="listbox"
+          aria-expanded={isOpen}
+          className="flex items-center space-x-2 text-ink-soft hover:text-ink active:scale-[0.97] transition-[color,background-color,transform] duration-150 ease-out-strong px-2 py-1 rounded-md hover:bg-ink/5"
         >
           <Globe size={16} />
           <span className="text-sm">{currentLanguage.flag}</span>
           <svg
-            className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+            className={`w-4 h-4 transition-transform duration-200 ease-in-out-strong ${isOpen ? 'rotate-180' : ''}`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -104,12 +114,14 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ variant = 'header' 
       ) : (
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex items-center gap-1.5 bg-paper border border-ink/20 hover:border-ink/50 text-ink-soft hover:text-ink text-xs px-2.5 py-1 rounded-full transition-colors"
+          aria-haspopup="listbox"
+          aria-expanded={isOpen}
+          className="inline-flex items-center gap-1.5 bg-paper border border-ink/20 hover:border-ink/50 text-ink-soft hover:text-ink text-xs px-2.5 py-1 rounded-full active:scale-[0.97] transition-[color,border-color,transform] duration-150 ease-out-strong"
         >
           <span>{currentLanguage.flag}</span>
           <span>{currentLanguage.name}</span>
           <svg
-            className={`w-3 h-3 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+            className={`w-3 h-3 transition-transform duration-200 ease-in-out-strong ${isOpen ? 'rotate-180' : ''}`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -120,7 +132,10 @@ const LanguageDropdown: React.FC<LanguageDropdownProps> = ({ variant = 'header' 
       )}
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-52 bg-white border border-ink/20 rounded-md shadow-[4px_4px_0_rgba(19,28,43,0.15)] z-50 max-h-96 overflow-y-auto">
+        <div
+          role="listbox"
+          className="absolute right-0 mt-2 w-52 bg-white border border-ink/20 rounded-md shadow-[4px_4px_0_rgba(19,28,43,0.15)] z-50 max-h-96 overflow-y-auto enter-pop origin-top-right"
+        >
           <div className="py-1">
             {languages.map((language) => (
               <button

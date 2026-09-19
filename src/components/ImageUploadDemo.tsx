@@ -224,7 +224,7 @@ const ImageUploadDemo: React.FC = () => {
           <img
             src={preview}
             alt="Preview"
-            className="mx-auto max-h-48 rounded-lg object-contain"
+            className="mx-auto max-h-48 rounded-lg object-contain enter-rise"
           />
         ) : (
           <>
@@ -241,7 +241,7 @@ const ImageUploadDemo: React.FC = () => {
 
         <button
           type="button"
-          className={`mt-3 text-sm px-4 py-1.5 rounded-md transition-colors ${
+          className={`mt-3 text-sm px-4 py-1.5 rounded-md active:scale-[0.97] transition-[background-color,color,border-color,transform] duration-150 ease-out-strong ${
             preview
               ? 'border border-dashed border-ink/30 text-ink-soft hover:text-ink hover:border-ink/60 bg-transparent'
               : 'bg-ink text-paper hover:bg-ink/80'
@@ -254,7 +254,7 @@ const ImageUploadDemo: React.FC = () => {
 
       {/* Error */}
       {error && (
-        <p className="text-red-600 text-sm">{error}</p>
+        <p role="alert" className="text-red-600 text-sm enter-drop">{error}</p>
       )}
 
       {/* Keywords toggle */}
@@ -273,7 +273,7 @@ const ImageUploadDemo: React.FC = () => {
               }`}
             >
               <span
-                className={`absolute top-0.5 left-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform ${
+                className={`absolute top-0.5 left-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform duration-150 ease-out-strong ${
                   keywordsEnabled ? 'translate-x-5' : 'translate-x-0'
                 }`}
               />
@@ -287,7 +287,7 @@ const ImageUploadDemo: React.FC = () => {
             value={keywords}
             onChange={(e) => setKeywords(e.target.value)}
             placeholder="e.g. product photography outdoor"
-            className="w-full bg-paper border border-ink/20 rounded-md px-3 py-2 text-sm text-ink placeholder-ink/40 focus:outline-none focus:border-azure"
+            className="w-full bg-paper border border-ink/20 rounded-md px-3 py-2 text-sm text-ink placeholder-ink/40 focus:outline-none focus:border-azure enter-drop"
           />
         )}
       </div>
@@ -297,11 +297,11 @@ const ImageUploadDemo: React.FC = () => {
         type="button"
         disabled={loading}
         onClick={handleGenerate}
-        className="w-full bg-azure hover:bg-azure-deep disabled:bg-ink/10 disabled:text-ink/40 text-white font-semibold py-2.5 rounded-md transition-colors flex items-center justify-center gap-2"
+        className="w-full bg-azure hover:bg-azure-deep disabled:bg-ink/10 disabled:text-ink/40 text-white font-semibold py-2.5 rounded-md active:scale-[0.98] disabled:active:scale-100 transition-[background-color,color,transform] duration-150 ease-out-strong flex items-center justify-center gap-2"
       >
         {loading ? (
           <>
-            <Loader2 size={16} className="animate-spin" />
+            <Loader2 size={16} className="animate-spin [animation-duration:0.7s]" />
             {t('home.demo.generating')}
           </>
         ) : (
@@ -311,7 +311,7 @@ const ImageUploadDemo: React.FC = () => {
 
       {/* Results */}
       {altText && (
-        <div className="space-y-3">
+        <div className="space-y-3 enter-rise">
           <div className="bg-paper border border-ink/15 rounded-md p-4">
             <div className="flex items-center justify-between mb-2">
               <span className="font-mono text-xs font-medium text-ink-soft uppercase tracking-[0.15em]">
@@ -320,10 +320,10 @@ const ImageUploadDemo: React.FC = () => {
               <button
                 type="button"
                 onClick={() => handleCopy('alt')}
-                className="flex-shrink-0 text-ink-soft hover:text-azure transition-colors"
+                className="flex-shrink-0 text-ink-soft hover:text-azure active:scale-90 transition-[color,transform] duration-150 ease-out-strong"
                 aria-label={copiedField === 'alt' ? t('home.demo.copied') : t('home.demo.copyButton')}
               >
-                {copiedField === 'alt' ? <Check size={16} /> : <Copy size={16} />}
+                {copiedField === 'alt' ? <Check size={16} className="enter-pop" /> : <Copy size={16} />}
               </button>
             </div>
             <p className="text-ink text-sm leading-relaxed">
@@ -342,15 +342,19 @@ const ImageUploadDemo: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => handleCopy('tags')}
-                  className="flex-shrink-0 text-ink-soft hover:text-azure transition-colors"
+                  className="flex-shrink-0 text-ink-soft hover:text-azure active:scale-90 transition-[color,transform] duration-150 ease-out-strong"
                   aria-label={copiedField === 'tags' ? t('home.demo.copied') : t('home.demo.copyButton')}
                 >
-                  {copiedField === 'tags' ? <Check size={16} /> : <Copy size={16} />}
+                  {copiedField === 'tags' ? <Check size={16} className="enter-pop" /> : <Copy size={16} />}
                 </button>
               </div>
               <div className="flex flex-wrap gap-1.5">
-                {tags.map((tag) => (
-                  <span key={tag} className="font-mono text-xs text-ink bg-paper-deep border border-ink/15 rounded-sm px-2 py-0.5">
+                {tags.map((tag, i) => (
+                  <span
+                    key={tag}
+                    className="font-mono text-xs text-ink bg-paper-deep border border-ink/15 rounded-sm px-2 py-0.5 enter-rise"
+                    style={{ animationDelay: `${i * 40}ms` }}
+                  >
                     {tag}
                   </span>
                 ))}

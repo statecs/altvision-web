@@ -20,7 +20,7 @@ const Footer = () => {
               <a
                 href={WORDPRESS_PLUGIN_URL}
                 rel="noopener noreferrer"
-                className="bg-azure hover:bg-azure-deep text-white px-6 py-3 rounded-md text-sm font-semibold inline-flex items-center gap-2 transition-colors w-fit"
+                className="bg-azure hover:bg-azure-deep text-white px-6 py-3 rounded-md text-sm font-semibold inline-flex items-center gap-2 active:scale-[0.97] transition-[background-color,transform] duration-150 ease-out-strong w-fit"
               >
                 {t('footer.downloadWP')}
                 <ArrowRight className="w-4 h-4" />
@@ -31,7 +31,7 @@ const Footer = () => {
                     key={store.id}
                     href={store.url}
                     rel="noopener noreferrer"
-                    className="border border-paper/30 text-paper hover:border-paper hover:bg-paper/10 px-6 py-3 rounded-md text-sm font-medium inline-flex items-center gap-2 transition-all w-fit"
+                    className="border border-paper/30 text-paper hover:border-paper hover:bg-paper/10 px-6 py-3 rounded-md text-sm font-medium inline-flex items-center gap-2 active:scale-[0.97] transition-[border-color,background-color,transform] duration-150 ease-out-strong w-fit"
                   >
                     {t(store.id === 'chrome' ? 'footer.downloadChrome' : 'footer.downloadFirefox')}
                     <ArrowRight className="w-4 h-4" />

@@ -107,18 +107,18 @@ const HomePage = () => {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
           {/* Left column: headline + CTAs */}
           <div className="order-1">
-            <p className="font-mono text-xs uppercase tracking-[0.25em] text-ink-soft mb-6 animate-slide-up opacity-0" style={{ animationDelay: '0.1s' }}>
+            <p className="font-mono text-xs uppercase tracking-[0.25em] text-ink-soft mb-6 animate-slide-up opacity-0" style={{ animationDelay: '0s' }}>
               {t('nav.wordpressPlugin')} · {t('nav.browserExtension')}
             </p>
-            <h1 className="font-display text-5xl md:text-6xl font-medium mb-8 leading-[1.05] tracking-tight animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
+            <h1 className="font-display text-5xl md:text-6xl font-medium mb-8 leading-[1.05] tracking-tight animate-slide-up opacity-0" style={{ animationDelay: '0.08s' }}>
               {t('home.hero.title')}{' '}
               <em className="text-azure font-normal">{t('home.hero.titleHighlight')}</em>
             </h1>
-            <div className="flex flex-wrap gap-4 animate-slide-up opacity-0" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-wrap gap-4 animate-slide-up opacity-0" style={{ animationDelay: '0.16s' }}>
               <a
                 href={WORDPRESS_PLUGIN_URL}
                 rel="noopener noreferrer"
-                className="bg-ink text-paper px-6 py-3 rounded-md font-medium shadow-[4px_4px_0_#5B8FDC] hover:shadow-[2px_2px_0_#5B8FDC] hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
+                className="bg-ink text-paper px-6 py-3 rounded-md font-medium shadow-[4px_4px_0_#5B8FDC] hover:shadow-[2px_2px_0_#5B8FDC] hover:translate-x-[2px] hover:translate-y-[2px] active:scale-[0.97] transition-[transform,box-shadow] duration-150 ease-out-strong"
                 onClick={() => trackEvent('cta_click', { label: 'wordpress_plugin' })}
               >
                 {t('home.hero.wpButton')}
@@ -128,7 +128,7 @@ const HomePage = () => {
                   key={store.id}
                   href={store.url}
                   rel="noopener noreferrer"
-                  className="border border-ink/30 text-ink px-6 py-3 rounded-md font-medium hover:border-ink hover:bg-ink/5 transition-all"
+                  className="border border-ink/30 text-ink px-6 py-3 rounded-md font-medium hover:border-ink hover:bg-ink/5 active:scale-[0.97] transition-[border-color,background-color,transform] duration-150 ease-out-strong"
                   onClick={() => trackEvent('cta_click', { label: store.trackLabel })}
                 >
                   {t(store.labelKey)}
@@ -138,7 +138,7 @@ const HomePage = () => {
           </div>
 
           {/* Right column: demo widget */}
-          <div className="order-2 animate-slide-up opacity-0" style={{ animationDelay: '0.6s' }}>
+          <div className="order-2 animate-slide-up opacity-0" style={{ animationDelay: '0.28s' }}>
             <ImageUploadDemo />
           </div>
         </div>
@@ -148,7 +148,7 @@ const HomePage = () => {
 
       <section className="pb-16">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="font-display text-xl md:text-2xl leading-relaxed text-ink/80 mb-8 animate-slide-up opacity-0" style={{ animationDelay: '0.6s' }}>
+          <p className="font-display text-xl md:text-2xl leading-relaxed text-ink/80 mb-8 animate-slide-up opacity-0" style={{ animationDelay: '0.4s' }}>
             {preview}
             {!descExpanded && remainder && (
               <>
@@ -167,7 +167,7 @@ const HomePage = () => {
 
         <div className="grid md:grid-cols-2 gap-x-16 gap-y-14 max-w-6xl mx-auto mt-16">
           {/* WordPress column */}
-          <div className="animate-slide-up opacity-0" style={{ animationDelay: '0.8s' }}>
+          <div className="animate-slide-up opacity-0" style={{ animationDelay: '0.5s' }}>
             <div className="border-b border-ink pb-4 mb-2">
               <span className="font-mono text-xs uppercase tracking-[0.2em] text-azure block mb-2">
                 {t('nav.wordpressPlugin')}
@@ -176,19 +176,19 @@ const HomePage = () => {
             </div>
             <ul>
               {wpFeatures.map(({ icon: Icon, key }, i) => (
-                <li key={key} className="group flex items-start gap-5 py-5 border-b border-ink/10 hover:bg-paper-deep/50 hover:px-3 transition-all">
+                <li key={key} className="group flex items-start gap-5 py-5 px-3 -mx-3 rounded-md border-b border-ink/10 hover:bg-paper-deep/50 transition-colors">
                   <span className="font-mono text-xs text-ink/40 pt-1 group-hover:text-azure transition-colors">
                     {String(i + 1).padStart(2, '0')}
                   </span>
-                  <Icon size={20} strokeWidth={1.75} className="shrink-0 mt-0.5 text-ink" aria-hidden="true" />
-                  <span className="text-ink/80 text-[15px] leading-relaxed">{t(key)}</span>
+                  <Icon size={20} strokeWidth={1.75} className="shrink-0 mt-0.5 text-ink group-hover:translate-x-1 transition-transform duration-200 ease-out-strong" aria-hidden="true" />
+                  <span className="text-ink/80 text-[15px] leading-relaxed group-hover:translate-x-1 transition-transform duration-200 ease-out-strong">{t(key)}</span>
                 </li>
               ))}
             </ul>
           </div>
 
           {/* Browser extension column */}
-          <div className="animate-slide-up opacity-0" style={{ animationDelay: '1s' }}>
+          <div className="animate-slide-up opacity-0" style={{ animationDelay: '0.6s' }}>
             <div className="border-b border-ink pb-4 mb-2">
               <span className="font-mono text-xs uppercase tracking-[0.2em] text-azure block mb-2">
                 {t('nav.browserExtension')}
@@ -197,12 +197,12 @@ const HomePage = () => {
             </div>
             <ul>
               {chromeFeatures.map(({ icon: Icon, key }, i) => (
-                <li key={key} className="group flex items-start gap-5 py-5 border-b border-ink/10 hover:bg-paper-deep/50 hover:px-3 transition-all">
+                <li key={key} className="group flex items-start gap-5 py-5 px-3 -mx-3 rounded-md border-b border-ink/10 hover:bg-paper-deep/50 transition-colors">
                   <span className="font-mono text-xs text-ink/40 pt-1 group-hover:text-azure transition-colors">
                     {String(i + 1).padStart(2, '0')}
                   </span>
-                  <Icon size={20} strokeWidth={1.75} className="shrink-0 mt-0.5 text-ink" aria-hidden="true" />
-                  <span className="text-ink/80 text-[15px] leading-relaxed">{t(key)}</span>
+                  <Icon size={20} strokeWidth={1.75} className="shrink-0 mt-0.5 text-ink group-hover:translate-x-1 transition-transform duration-200 ease-out-strong" aria-hidden="true" />
+                  <span className="text-ink/80 text-[15px] leading-relaxed group-hover:translate-x-1 transition-transform duration-200 ease-out-strong">{t(key)}</span>
                 </li>
               ))}
             </ul>

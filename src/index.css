@@ -71,6 +71,31 @@
     outline: 2px solid #345A85;
     outline-offset: 2px;
   }
+
+  /* Every pressable has its own :active feedback, so drop the OS tap flash */
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  /* Controls: fire click on touch without the double-tap-zoom wait, and
+     don't let a long press select the label. Prose links stay selectable. */
+  button,
+  [role="button"],
+  [role="switch"] {
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  a {
+    touch-action: manipulation;
+  }
+  /* iOS zooms into inputs under 16px and never zooms back out */
+  @media (pointer: coarse) {
+    input,
+    textarea,
+    select {
+      font-size: 16px;
+    }
+  }
 }
 
 /* Fine grain over the whole page, like paper stock */
@@ -85,11 +110,49 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.06'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
+/* Motion tokens — the same curves as tailwind.config.js, for raw CSS below */
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/*
+ * Entrances for content that mounts conditionally, so state changes don't
+ * teleport. Keyframes are fine here: these run once on mount, they are never
+ * retargeted mid-flight. `both` keeps the `from` frame during any delay.
+ */
+@keyframes enter-fade {
+  from { opacity: 0; }
+}
+@keyframes enter-rise {
+  from { opacity: 0; transform: translateY(8px); }
+}
+@keyframes enter-drop {
+  from { opacity: 0; transform: translateY(-4px); }
+}
+@keyframes enter-pop {
+  from { opacity: 0; transform: scale(0.97); }
+}
+
+/* Results, images, anything arriving from below */
+.enter-rise { animation: enter-rise 300ms var(--ease-out) both; }
+/* Inline fields and messages revealed under a control */
+.enter-drop { animation: enter-drop 150ms var(--ease-out) both; }
+/* Popovers — pair with a transform-origin at the trigger */
+.enter-pop  { animation: enter-pop 150ms var(--ease-out) both; }
+
+/* Reduced motion means gentler, not none: keep the fades, drop the movement */
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee {
     animation: none;
   }
   .animate-slide-up {
-    animation-duration: 0.01ms;
+    animation-name: enter-fade;
+    animation-duration: 300ms;
+  }
+  .enter-rise,
+  .enter-drop,
+  .enter-pop {
+    animation-name: enter-fade;
   }
 }
