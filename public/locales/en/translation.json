@@ -18,13 +18,15 @@
       "oneClick": "One-click Generation: Generate intelligent alt text instantly",
       "wpReady": "WordPress Ready: Seamless WordPress and Gutenberg integration",
       "formatSupport": "Format Support: Works with JPG, PNG, WebP, and more",
-      "accessibility": "Accessibility First: WCAG 2.1 compliance support"
+      "accessibility": "Accessibility First: WCAG 2.1 compliance support",
+      "imageAlt": "The Alt Text Manager in the WordPress admin: cards showing 26 assets, 8 with alt text and 18 missing it, above a searchable table of images with their current and proposed alt text."
     },
     "chrome": {
       "title": "Browser Extension Features",
       "altTextDetection": "Alt Text Detection: Find and highlight images that need attention",
       "contextAware": "Context-Aware: Create descriptive and accurate alternative texts using state-of-the-art AI",
-      "multipleLanguages": "We support 31 languages including English, Spanish, French, German, Arabic, Chinese, Hindi, and many more."
+      "multipleLanguages": "We support 31 languages including English, Spanish, French, German, Arabic, Chinese, Hindi, and many more.",
+      "imageAlt": "A web page where the extension shows a tooltip with generated alt text above an illustration of a green car, next to the extension popup listing its tools: alt text tooltips, ARIA attributes, batch alt text, focus finder, tab order, header highlighting, vision simulator and contrast checker."
     },
     "demo": {
       "dragDrop": "Click to select or drag and drop",

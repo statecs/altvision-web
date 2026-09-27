@@ -12,6 +12,8 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import { trackEvent } from './analytics';
 import { BROWSER_STORES, WORDPRESS_PLUGIN_URL } from './lib/stores';
+import wordpressShot from './images/wordpress-alt-text-manager.webp';
+import extensionShot from './images/browser-extension.webp';
 
 // The AltVision eye — same lockup as the Chrome extension icon
 const Logomark = () => (
@@ -174,6 +176,14 @@ const HomePage = () => {
               </span>
               <h2 className="font-display text-3xl font-medium tracking-tight">{t('home.wordpress.title')}</h2>
             </div>
+            <img
+              src={wordpressShot}
+              alt={t('home.wordpress.imageAlt')}
+              width={1100}
+              height={653}
+              loading="lazy"
+              className="w-full rounded-lg border border-ink/10 shadow-[0_18px_40px_rgba(19,28,43,0.12)] my-6"
+            />
             <ul>
               {wpFeatures.map(({ icon: Icon, key }, i) => (
                 <li key={key} className="group flex items-start gap-5 py-5 px-3 -mx-3 rounded-md border-b border-ink/10 hover:bg-paper-deep/50 transition-colors">
@@ -195,6 +205,14 @@ const HomePage = () => {
               </span>
               <h2 className="font-display text-3xl font-medium tracking-tight">{t('home.chrome.title')}</h2>
             </div>
+            <img
+              src={extensionShot}
+              alt={t('home.chrome.imageAlt')}
+              width={1120}
+              height={860}
+              loading="lazy"
+              className="w-full my-6"
+            />
             <ul>
               {chromeFeatures.map(({ icon: Icon, key }, i) => (
                 <li key={key} className="group flex items-start gap-5 py-5 px-3 -mx-3 rounded-md border-b border-ink/10 hover:bg-paper-deep/50 transition-colors">

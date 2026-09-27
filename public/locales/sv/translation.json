@@ -18,13 +18,15 @@
       "oneClick": "Generering med ett klick: Generera intelligent alternativtext direkt",
       "wpReady": "WordPress-redo: Sömlös integration med WordPress och Gutenberg",
       "formatSupport": "Formatstöd: Fungerar med JPG, PNG, WebP och mer",
-      "accessibility": "Tillgänglighet i fokus: Stöd för WCAG 2.1-efterlevnad"
+      "accessibility": "Tillgänglighet i fokus: Stöd för WCAG 2.1-efterlevnad",
+      "imageAlt": "Alt Text Manager i WordPress-adminpanelen: kort som visar 26 bilder, 8 med alternativtext och 18 utan, ovanför en sökbar tabell med bilder och deras nuvarande och föreslagna alternativtext."
     },
     "chrome": {
       "title": "Webbläsartilläggets funktioner",
       "altTextDetection": "Alternativtextdetektering: Hitta och markera bilder som behöver uppmärksamhet",
       "contextAware": "Kontextmedveten: Skapa beskrivande och exakta alternativtexter med hjälp av banbrytande AI",
-      "multipleLanguages": "Vi stöder 31 språk inklusive engelska, spanska, franska, tyska, arabiska, kinesiska, hindi och många fler."
+      "multipleLanguages": "Vi stöder 31 språk inklusive engelska, spanska, franska, tyska, arabiska, kinesiska, hindi och många fler.",
+      "imageAlt": "En webbsida där tillägget visar en ruta med genererad alternativtext ovanför en illustration av en grön bil, bredvid tilläggets popup med dess verktyg: alternativtext, ARIA-attribut, batchgenerering, fokussökare, tabbordning, rubrikmarkering, synsimulator och kontrastkontroll."
     },
     "demo": {
       "tryIt": "Prova det!",
