@@ -24,7 +24,8 @@
       "title": "Fitur Ekstensi Browser",
       "altTextDetection": "Deteksi Teks Alt: Temukan dan sorot gambar yang membutuhkan perhatian",
       "contextAware": "Sadar Konteks: Buat teks alternatif yang deskriptif dan akurat menggunakan AI mutakhir",
-      "multipleLanguages": "Kami mendukung 31 bahasa termasuk Inggris, Spanyol, Prancis, Jerman, Arab, Cina, Hindi, dan masih banyak lagi."
+      "multipleLanguages": "Kami mendukung 31 bahasa termasuk Inggris, Spanyol, Prancis, Jerman, Arab, Cina, Hindi, dan masih banyak lagi.",
+      "visualTools": "Alat Aksesibilitas Visual: Simulasikan buta warna, penglihatan kabur dan gangguan penglihatan, serta periksa kontras warna sesuai WCAG"
     },
     "demo": {
       "tryIt": "Coba sekarang!",

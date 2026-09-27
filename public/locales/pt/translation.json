@@ -24,7 +24,8 @@
       "title": "Recursos da extensão de navegador",
       "altTextDetection": "Detecção de texto alternativo: Encontre e destaque imagens que precisam de atenção",
       "contextAware": "Sensível ao contexto: Crie textos alternativos descritivos e precisos usando IA de ponta",
-      "multipleLanguages": "Suportamos 31 idiomas, incluindo inglês, espanhol, francês, alemão, árabe, chinês, hindi e muito mais."
+      "multipleLanguages": "Suportamos 31 idiomas, incluindo inglês, espanhol, francês, alemão, árabe, chinês, hindi e muito mais.",
+      "visualTools": "Ferramentas de acessibilidade visual: Simule daltonismo, visão embaçada e baixa visão, e verifique o contraste de cores conforme as WCAG"
     },
     "demo": {
       "tryIt": "Experimente!",

@@ -24,7 +24,8 @@
       "title": "Funkcje rozszerzenia przeglądarki",
       "altTextDetection": "Wykrywanie tekstu alt: Znajdź i wyróżnij obrazy wymagające uwagi",
       "contextAware": "Świadomy kontekstu: Twórz opisowe i precyzyjne teksty alternatywne przy użyciu najnowocześniejszej AI",
-      "multipleLanguages": "Obsługujemy 31 języków, w tym angielski, hiszpański, francuski, niemiecki, arabski, chiński, hindi i wiele innych."
+      "multipleLanguages": "Obsługujemy 31 języków, w tym angielski, hiszpański, francuski, niemiecki, arabski, chiński, hindi i wiele innych.",
+      "visualTools": "Narzędzia dostępności wizualnej: Symuluj daltonizm, rozmyte widzenie i słabowzroczność oraz sprawdzaj kontrast kolorów według WCAG"
     },
     "demo": {
       "tryIt": "Wypróbuj!",

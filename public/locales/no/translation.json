@@ -24,7 +24,8 @@
       "title": "Nettleserutvidelsens funksjoner",
       "altTextDetection": "Alternativ tekstdeteksjon: Finn og fremhev bilder som trenger oppmerksomhet",
       "contextAware": "Kontekstbevisst: Lag beskrivende og nøyaktige alternativtekster ved hjelp av banebrytende AI",
-      "multipleLanguages": "Vi støtter 31 språk, inkludert engelsk, spansk, fransk, tysk, arabisk, kinesisk, hindi og mange flere."
+      "multipleLanguages": "Vi støtter 31 språk, inkludert engelsk, spansk, fransk, tysk, arabisk, kinesisk, hindi og mange flere.",
+      "visualTools": "Verktøy for visuell tilgjengelighet: Simuler fargeblindhet, uskarpt syn og nedsatt syn, og sjekk fargekontrast mot WCAG"
     },
     "demo": {
       "tryIt": "Prøv det!",

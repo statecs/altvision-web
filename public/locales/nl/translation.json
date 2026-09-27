@@ -24,7 +24,8 @@
       "title": "Functies van de browserextensie",
       "altTextDetection": "Alt-tekstdetectie: Vind en markeer afbeeldingen die aandacht nodig hebben",
       "contextAware": "Contextbewust: Maak beschrijvende en nauwkeurige alternatieve teksten met behulp van geavanceerde AI",
-      "multipleLanguages": "We ondersteunen 31 talen, waaronder Engels, Spaans, Frans, Duits, Arabisch, Chinees, Hindi en nog veel meer."
+      "multipleLanguages": "We ondersteunen 31 talen, waaronder Engels, Spaans, Frans, Duits, Arabisch, Chinees, Hindi en nog veel meer.",
+      "visualTools": "Visuele toegankelijkheidstools: Simuleer kleurenblindheid, wazig zicht en slechtziendheid, en controleer kleurcontrast volgens WCAG"
     },
     "demo": {
       "tryIt": "Probeer het!",

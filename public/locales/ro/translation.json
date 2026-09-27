@@ -24,7 +24,8 @@
       "title": "Caracteristicile extensiei de browser",
       "altTextDetection": "Detectarea textului alternativ: Găsiți și evidențiați imaginile care necesită atenție",
       "contextAware": "Conștient de context: Creați texte alternative descriptive și precise folosind IA de ultimă generație",
-      "multipleLanguages": "Suportăm 31 de limbi, inclusiv engleză, spaniolă, franceză, germană, arabă, chineză, hindi și multe altele."
+      "multipleLanguages": "Suportăm 31 de limbi, inclusiv engleză, spaniolă, franceză, germană, arabă, chineză, hindi și multe altele.",
+      "visualTools": "Instrumente de accesibilitate vizuală: Simulați daltonismul, vederea încețoșată și vederea slabă și verificați contrastul culorilor conform WCAG"
     },
     "demo": {
       "tryIt": "Încearcă!",

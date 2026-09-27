@@ -24,7 +24,8 @@
       "title": "Browserudvidelsens funktioner",
       "altTextDetection": "Alternativ tekstdetektering: Find og fremhæv billeder, der kræver opmærksomhed",
       "contextAware": "Kontekstbevidst: Opret beskrivende og præcise alternativtekster ved hjælp af avanceret AI",
-      "multipleLanguages": "Vi understøtter 31 sprog, herunder engelsk, spansk, fransk, tysk, arabisk, kinesisk, hindi og mange flere."
+      "multipleLanguages": "Vi understøtter 31 sprog, herunder engelsk, spansk, fransk, tysk, arabisk, kinesisk, hindi og mange flere.",
+      "visualTools": "Visuelle tilgængelighedsværktøjer: Simulér farveblindhed, sløret syn og nedsat syn, og tjek farvekontrast mod WCAG"
     },
     "demo": {
       "tryIt": "Prøv det!",

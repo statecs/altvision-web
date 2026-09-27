@@ -24,7 +24,8 @@
       "title": "Tarayıcı Uzantısı Özellikleri",
       "altTextDetection": "Alt Metin Algılama: Dikkat gerektiren görüntüleri bulun ve vurgulayın",
       "contextAware": "Bağlam Duyarlı: Son teknoloji AI kullanarak açıklayıcı ve doğru alternatif metinler oluşturun",
-      "multipleLanguages": "İngilizce, İspanyolca, Fransızca, Almanca, Arapça, Çince, Hintçe ve daha pek çok dil dahil 31 dili destekliyoruz."
+      "multipleLanguages": "İngilizce, İspanyolca, Fransızca, Almanca, Arapça, Çince, Hintçe ve daha pek çok dil dahil 31 dili destekliyoruz.",
+      "visualTools": "Görsel Erişilebilirlik Araçları: Renk körlüğü, bulanık görme ve az görmeyi simüle edin ve renk kontrastını WCAG'a göre kontrol edin"
     },
     "demo": {
       "tryIt": "Deneyin!",

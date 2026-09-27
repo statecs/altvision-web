@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Zap, Plug, FileImage, Accessibility, ScanSearch, Brain, Languages } from 'lucide-react';
+import { Zap, Plug, FileImage, Accessibility, ScanSearch, Brain, Languages, Eye } from 'lucide-react';
 import Footer from './components/Footer';
 import TermsOfUse from './components/TermsOfUse';
 import PrivacyPolicy from './components/PrivacyPolicy';
@@ -101,6 +101,7 @@ const HomePage = () => {
     { icon: ScanSearch, key: 'home.chrome.altTextDetection' },
     { icon: Brain, key: 'home.chrome.contextAware' },
     { icon: Languages, key: 'home.chrome.multipleLanguages' },
+    { icon: Eye, key: 'home.chrome.visualTools' },
   ];
 
   return (

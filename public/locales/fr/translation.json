@@ -24,7 +24,8 @@
       "title": "Fonctionnalités de l’extension de navigateur",
       "altTextDetection": "Détection de texte alternatif : Trouvez et mettez en évidence les images qui nécessitent attention",
       "contextAware": "Sensible au contexte : Créez des textes alternatifs descriptifs et précis grâce à une IA de pointe",
-      "multipleLanguages": "Nous prenons en charge 31 langues, dont l'anglais, l'espagnol, le français, l'allemand, l'arabe, le chinois, l'hindi et bien d'autres."
+      "multipleLanguages": "Nous prenons en charge 31 langues, dont l'anglais, l'espagnol, le français, l'allemand, l'arabe, le chinois, l'hindi et bien d'autres.",
+      "visualTools": "Outils d'accessibilité visuelle : Simulez le daltonisme, la vision floue et la basse vision, et vérifiez le contraste des couleurs selon les WCAG"
     },
     "demo": {
       "tryIt": "Essayez-le !",

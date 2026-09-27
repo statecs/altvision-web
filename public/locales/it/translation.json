@@ -24,7 +24,8 @@
       "title": "Funzionalità dell’estensione per browser",
       "altTextDetection": "Rilevamento testo alternativo: Trova ed evidenzia le immagini che richiedono attenzione",
       "contextAware": "Consapevole del contesto: Crea testi alternativi descrittivi e accurati usando AI all'avanguardia",
-      "multipleLanguages": "Supportiamo 31 lingue tra cui inglese, spagnolo, francese, tedesco, arabo, cinese, hindi e molte altre."
+      "multipleLanguages": "Supportiamo 31 lingue tra cui inglese, spagnolo, francese, tedesco, arabo, cinese, hindi e molte altre.",
+      "visualTools": "Strumenti di accessibilità visiva: Simula daltonismo, visione offuscata e ipovisione e verifica il contrasto dei colori secondo le WCAG"
     },
     "demo": {
       "tryIt": "Provalo!",

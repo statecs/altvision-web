@@ -24,7 +24,8 @@
       "title": "Selainlaajennuksen ominaisuudet",
       "altTextDetection": "Vaihtoehtoistekstin tunnistus: Löydä ja korosta kuvia, jotka tarvitsevat huomiota",
       "contextAware": "Kontekstiherkkä: Luo kuvaavia ja tarkkoja vaihtoehtoistekstejä huippuluokan tekoälyn avulla",
-      "multipleLanguages": "Tuemme 31 kieltä, mukaan lukien englanti, espanja, ranska, saksa, arabia, kiina, hindi ja monet muut."
+      "multipleLanguages": "Tuemme 31 kieltä, mukaan lukien englanti, espanja, ranska, saksa, arabia, kiina, hindi ja monet muut.",
+      "visualTools": "Visuaalisen saavutettavuuden työkalut: Simuloi värisokeutta, sumeaa näköä ja heikkonäköisyyttä ja tarkista värikontrasti WCAG:n mukaan"
     },
     "demo": {
       "tryIt": "Kokeile!",

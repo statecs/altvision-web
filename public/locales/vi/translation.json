@@ -24,7 +24,8 @@
       "title": "Tính năng tiện ích trình duyệt",
       "altTextDetection": "Phát hiện văn bản thay thế: Tìm và làm nổi bật các hình ảnh cần chú ý",
       "contextAware": "Nhận thức ngữ cảnh: Tạo văn bản thay thế mô tả và chính xác bằng AI tiên tiến",
-      "multipleLanguages": "Chúng tôi hỗ trợ 31 ngôn ngữ bao gồm tiếng Anh, Tây Ban Nha, Pháp, Đức, Ả Rập, Trung Quốc, Hindi và nhiều ngôn ngữ khác."
+      "multipleLanguages": "Chúng tôi hỗ trợ 31 ngôn ngữ bao gồm tiếng Anh, Tây Ban Nha, Pháp, Đức, Ả Rập, Trung Quốc, Hindi và nhiều ngôn ngữ khác.",
+      "visualTools": "Công cụ hỗ trợ tiếp cận thị giác: Mô phỏng mù màu, mờ mắt và thị lực kém, đồng thời kiểm tra độ tương phản màu theo WCAG"
     },
     "demo": {
       "tryIt": "Thử ngay!",

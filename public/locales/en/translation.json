@@ -26,6 +26,7 @@
       "altTextDetection": "Alt Text Detection: Find and highlight images that need attention",
       "contextAware": "Context-Aware: Create descriptive and accurate alternative texts using state-of-the-art AI",
       "multipleLanguages": "We support 31 languages including English, Spanish, French, German, Arabic, Chinese, Hindi, and many more.",
+      "visualTools": "Visual Accessibility Tools: Simulate color blindness, blurred and low vision, and check color contrast against WCAG",
       "imageAlt": "A web page where the extension shows a tooltip with generated alt text above an illustration of a green car, next to the extension popup listing its tools: alt text tooltips, ARIA attributes, batch alt text, focus finder, tab order, header highlighting, vision simulator and contrast checker."
     },
     "demo": {

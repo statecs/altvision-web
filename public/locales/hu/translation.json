@@ -24,7 +24,8 @@
       "title": "A böngészőbővítmény funkciói",
       "altTextDetection": "Alt szöveg felismerés: Keresd meg és emeld ki a figyelmet igénylő képeket",
       "contextAware": "Kontextusérzékeny: Készíts leíró és pontos alternatív szövegeket élvonalbeli AI segítségével",
-      "multipleLanguages": "31 nyelvet támogatunk, köztük az angolt, a spanyolt, a franciát, a németet, az arabot, a kínait, a hindit és még sok mást."
+      "multipleLanguages": "31 nyelvet támogatunk, köztük az angolt, a spanyolt, a franciát, a németet, az arabot, a kínait, a hindit és még sok mást.",
+      "visualTools": "Vizuális akadálymentességi eszközök: Színvakság, homályos látás és gyengénlátás szimulálása, valamint színkontraszt ellenőrzése a WCAG szerint"
     },
     "demo": {
       "tryIt": "Próbálja ki!",

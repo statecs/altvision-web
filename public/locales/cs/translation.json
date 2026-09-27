@@ -24,7 +24,8 @@
       "title": "Funkce rozšíření pro prohlížeč",
       "altTextDetection": "Detekce alternativního textu: Najděte a zvýrazněte obrázky, které potřebují pozornost",
       "contextAware": "Kontextově citlivé: Vytvářejte popisné a přesné alternativní texty pomocí nejmodernější AI",
-      "multipleLanguages": "Podporujeme 31 jazyků včetně angličtiny, španělštiny, francouzštiny, němčiny, arabštiny, čínštiny, hindštiny a mnoha dalších."
+      "multipleLanguages": "Podporujeme 31 jazyků včetně angličtiny, španělštiny, francouzštiny, němčiny, arabštiny, čínštiny, hindštiny a mnoha dalších.",
+      "visualTools": "Nástroje vizuální přístupnosti: Simulujte barvoslepost, rozmazané vidění a slabozrakost a kontrolujte barevný kontrast podle WCAG"
     },
     "demo": {
       "tryIt": "Vyzkoušejte!",

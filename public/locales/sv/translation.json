@@ -26,6 +26,7 @@
       "altTextDetection": "Alternativtextdetektering: Hitta och markera bilder som behöver uppmärksamhet",
       "contextAware": "Kontextmedveten: Skapa beskrivande och exakta alternativtexter med hjälp av banbrytande AI",
       "multipleLanguages": "Vi stöder 31 språk inklusive engelska, spanska, franska, tyska, arabiska, kinesiska, hindi och många fler.",
+      "visualTools": "Verktyg för visuell tillgänglighet: Simulera färgblindhet, suddig syn och nedsatt syn, och kontrollera färgkontrast mot WCAG",
       "imageAlt": "En webbsida där tillägget visar en ruta med genererad alternativtext ovanför en illustration av en grön bil, bredvid tilläggets popup med dess verktyg: alternativtext, ARIA-attribut, batchgenerering, fokussökare, tabbordning, rubrikmarkering, synsimulator och kontrastkontroll."
     },
     "demo": {
