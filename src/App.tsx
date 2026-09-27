@@ -195,6 +195,16 @@ const HomePage = () => {
                 </li>
               ))}
             </ul>
+            <div className="flex flex-wrap gap-x-6 gap-y-2 pt-5 font-mono text-sm">
+              <a
+                href={WORDPRESS_PLUGIN_URL}
+                rel="noopener noreferrer"
+                className="text-azure hover:text-azure-deep underline underline-offset-4 transition-colors"
+                onClick={() => trackEvent('cta_click', { label: 'wordpress_plugin' })}
+              >
+                {t('footer.downloadWP')} →
+              </a>
+            </div>
           </div>
 
           {/* Browser extension column */}
