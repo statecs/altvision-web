@@ -1,0 +1,261 @@
+[
+  {
+    "slug": "how-to-add-alt-text-in-wordpress",
+    "title": "How to add alt text to images in WordPress",
+    "description": "Add alt text in the WordPress media library and block editor by hand, or generate it automatically for new and existing images with the AltVision plugin.",
+    "published": "2026-10-03",
+    "updated": "2026-10-03",
+    "summary": "In WordPress, alt text is set in the Alternative Text field of an image — in the media library or in the Image block's sidebar. The free AltVision plugin adds a Generate Alt Text button to both, writes descriptions from the image and the text around it, and lists every image missing alt text in one place.",
+    "sections": [
+      {
+        "heading": "Add alt text by hand",
+        "blocks": [
+          { "p": "WordPress stores alt text on each image. There are two places to set it:" },
+          { "ol": [
+            "**Media library:** go to Media → Library, click an image, and fill in the Alternative Text field in the attachment details. This becomes the default whenever the image is inserted.",
+            "**Block editor:** select an Image block, open the block settings sidebar, and edit the Alternative text field. This applies to that one placement of the image."
+          ] },
+          { "p": "The two are separate: an Image block keeps the alt text it had when the image was inserted. If you update an image in the media library later, check the posts that already use it." },
+          { "p": "Leave the field empty only for purely decorative images — WordPress then outputs `alt=\"\"` and screen readers skip the image. See [WCAG alt text requirements](/en/guides/wcag-alt-text-requirements) for when that is correct." }
+        ]
+      },
+      {
+        "heading": "Generate alt text with the AltVision plugin",
+        "blocks": [
+          { "p": "[AltVision – AI Alt Text Generator](https://wordpress.org/plugins/altvision-ai-alt-text-generator/) is a free plugin from the WordPress.org directory. It looks at the image and at the headings, paragraphs and captions near it on the page, so the description fits what the image is doing in the content." },
+          { "ol": [
+            "In your dashboard, go to Plugins → Add New, search for **AltVision**, then install and activate it. No API key is needed for the free version.",
+            "Open **Settings → AltVision** to choose the default language for generated alt text (31 languages are supported) and whether surrounding page text is used as context.",
+            "In the media library, open an image and click **Generate Alt Text**. In the block editor, select an Image block and use **Generate alternative text** in the Alt Text Generator panel of the sidebar.",
+            "Read the suggestion and edit it if needed — it is saved to the image's Alternative Text field like any alt text you type yourself."
+          ] },
+          { "p": "The plugin also works in the Elementor editor and with images served from a CDN, as long as the image URL is publicly accessible. It supports JPG, PNG, WebP, GIF and AVIF." }
+        ]
+      },
+      {
+        "heading": "Fix alt text across the whole media library",
+        "blocks": [
+          { "p": "AltVision adds an **Alt Text Manager** item to the admin menu. It lists every image with its current alt text and a proposed one, with counts for all assets, those with alt text and those missing it." },
+          { "ul": [
+            "Click **No Alt Text** to see exactly which images need work.",
+            "Select images, generate proposed alt text, review it in the table, and apply the ones you accept.",
+            "Premium plans process many images at once, including the whole library, and can generate alt text automatically when an image is uploaded."
+          ] }
+        ]
+      },
+      {
+        "heading": "Free and premium limits",
+        "blocks": [
+          { "p": "The free plugin generates alt text for 10 images per day, one at a time. Premium raises that to 500 images per day and adds bulk processing, generation on upload and a custom output style. You can also buy credits without a subscription." }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Where is the alt text field in WordPress?",
+        "a": "In the media library, open an image and use the Alternative Text field in the attachment details. In the block editor, select the Image block and find Alternative text in the block settings sidebar."
+      },
+      {
+        "q": "Does changing alt text in the media library update existing posts?",
+        "a": "No. An Image block keeps the alt text it had when the image was inserted. Update the block in each post, or re-insert the image."
+      },
+      {
+        "q": "Can WordPress generate alt text automatically?",
+        "a": "Not on its own. A plugin such as AltVision generates alt text from the image and its surrounding content, either per image or, on premium plans, automatically on upload and in bulk."
+      }
+    ]
+  },
+  {
+    "slug": "wcag-alt-text-requirements",
+    "title": "WCAG alt text requirements, explained",
+    "description": "What WCAG success criterion 1.1.1 requires for image alt text: informative, decorative, functional, text and complex images, with examples and common failures.",
+    "published": "2026-10-03",
+    "updated": "2026-10-03",
+    "summary": "WCAG success criterion 1.1.1 Non-text Content (Level A) requires every image that conveys information to have a text alternative that serves the same purpose. Decorative images must be hidden from assistive technology with an empty alt attribute (alt=\"\"). The rule is the same in WCAG 2.1 and 2.2.",
+    "sections": [
+      {
+        "heading": "What success criterion 1.1.1 says",
+        "blocks": [
+          { "p": "1.1.1 Non-text Content is a Level A criterion, the most basic level of WCAG conformance. All non-text content presented to the user needs a text alternative that serves the equivalent purpose, with a few exceptions such as decoration, CAPTCHAs and tests. For images on the web, the text alternative is almost always the `alt` attribute." },
+          { "p": "Accessibility laws and standards that reference WCAG 2.1 or 2.2 Level AA — such as EN 301 549 under the European Accessibility Act, and the U.S. Department of Justice's ADA Title II rule — include 1.1.1, because Level AA includes every Level A criterion." }
+        ]
+      },
+      {
+        "heading": "What to write for each kind of image",
+        "blocks": [
+          { "ul": [
+            "**Informative images** (photos, illustrations that add meaning): describe what the image communicates in context. `alt=\"Volunteers planting trees along the river bank\"`",
+            "**Decorative images** (dividers, background flourishes, images whose content is already in the text next to them): use an empty alt, `alt=\"\"`. Do not leave the attribute out.",
+            "**Functional images** (an image that is a link or a button): describe the action or destination, not the picture. A magnifying-glass button gets `alt=\"Search\"`; a logo linking home gets `alt=\"AltVision home\"`.",
+            "**Images of text**: the alt text contains the same words. Prefer real text where you can — 1.4.5 Images of Text (AA) asks you to.",
+            "**Complex images** (charts, diagrams, maps): give a short alt that says what the image is and its key point, and put the full data or explanation in nearby text or a table."
+          ] }
+        ]
+      },
+      {
+        "heading": "Common failures",
+        "blocks": [
+          { "ul": [
+            "**Missing alt attribute.** Screen readers often fall back to reading the file name, such as \"IMG underscore 4021 dot JPEG\".",
+            "**Alt text that doesn't match the purpose,** like describing a logo's colours instead of naming the company it links to.",
+            "**File names or keywords as alt text**, such as `alt=\"hero-banner-final-v2\"` or a list of SEO terms.",
+            "**Redundant phrasing** like \"image of\" or \"picture of\" — screen readers already announce that it is an image.",
+            "**Repeating the caption** word for word in the alt, so screen reader users hear it twice."
+          ] },
+          { "p": "WCAG does not set a maximum length. Keep alt text to the point — usually a sentence — and move longer explanations into the page." }
+        ]
+      },
+      {
+        "heading": "How to check a page against 1.1.1",
+        "blocks": [
+          { "p": "Automated checkers can find images with no alt attribute, but only a person can judge whether alt text serves the same purpose as the image. A practical workflow is to find the missing ones automatically, then review each image in context. [How to find missing alt text on a website](/en/guides/find-missing-alt-text) walks through both." }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is alt text required by WCAG?",
+        "a": "Yes. Success criterion 1.1.1 Non-text Content (Level A) requires a text alternative for every image that conveys information, and an empty alt (alt=\"\") for decorative images."
+      },
+      {
+        "q": "Should decorative images have alt text?",
+        "a": "They should have an empty alt attribute, alt=\"\", so screen readers skip them. Leaving the attribute out entirely is a failure, because many screen readers then read the file name."
+      },
+      {
+        "q": "How long should alt text be under WCAG?",
+        "a": "WCAG sets no character limit. Write the shortest text that serves the same purpose as the image, typically one sentence, and put longer descriptions of complex images in the page itself."
+      },
+      {
+        "q": "Did WCAG 2.2 change the alt text rules?",
+        "a": "No. Success criterion 1.1.1 is unchanged between WCAG 2.0, 2.1 and 2.2."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-write-good-alt-text",
+    "title": "How to write good alt text, with examples",
+    "description": "Practical rules for writing alt text that helps screen reader users and image search: lead with what matters, use context, skip 'image of', with before-and-after examples.",
+    "published": "2026-10-03",
+    "updated": "2026-10-03",
+    "summary": "Good alt text says what the image means on that page, not everything in it. Lead with the important detail, keep it to about a sentence, use the surrounding content to decide what matters, and leave out \"image of\". The same photo can need different alt text on different pages.",
+    "sections": [
+      {
+        "heading": "Six rules that cover most images",
+        "blocks": [
+          { "ol": [
+            "**Describe the purpose, not the pixels.** Ask: if the image disappeared, what would the reader miss?",
+            "**Use the context.** A photo of a red sofa needs different alt text on a furniture product page than in an article about interior lighting.",
+            "**Lead with what matters.** Screen reader users can't skim, so put the key subject first.",
+            "**Keep it short.** Usually one sentence. Put long explanations in the page.",
+            "**Skip \"image of\" and \"photo of\".** Say \"Screenshot\", \"Illustration\" or \"Chart\" only when the format itself matters.",
+            "**Write text that's in the image.** If the image contains words people need, put them in the alt."
+          ] }
+        ]
+      },
+      {
+        "heading": "Before and after",
+        "blocks": [
+          { "examples": [
+            { "context": "Product page for a rain jacket", "bad": "IMG_4021.jpg", "good": "Navy rain jacket with hood up, shown from the side to show the sealed zip" },
+            { "context": "News article about a city marathon", "bad": "Image of people running", "good": "Runners crossing the Västerbron bridge during the Stockholm Marathon" },
+            { "context": "Logo in the header, linking to the home page", "bad": "Blue circle logo", "good": "AltVision home" },
+            { "context": "Bar chart in a quarterly report", "bad": "Chart", "good": "Bar chart: sign-ups grew each month in Q3, from 1,200 in July to 2,050 in September" },
+            { "context": "Decorative wave divider between sections", "bad": "Blue wave graphic", "good": "(empty) alt=\"\"" }
+          ] }
+        ]
+      },
+      {
+        "heading": "Alt text and SEO",
+        "blocks": [
+          { "p": "Search engines use alt text to understand images, so accurate alt text also helps image search. Describe the image naturally and include a relevant term when it truly fits — keyword lists hurt screen reader users and don't help ranking." },
+          { "p": "AltVision lets you add custom SEO keywords before generating, and works them into the description only where they read naturally." }
+        ]
+      },
+      {
+        "heading": "Writing alt text at scale",
+        "blocks": [
+          { "p": "The hard part on a real site is volume. AltVision reads each image together with the headings, paragraphs and captions around it, which is the same context these rules ask you to use, and writes a first draft in any of 31 languages. Review the suggestions — the goal is a good first draft in seconds, with a person deciding what ships." },
+          { "p": "See [how to add alt text in WordPress](/en/guides/how-to-add-alt-text-in-wordpress), or try the generator on the [AltVision home page](/en/)." }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "What makes alt text good?",
+        "a": "It conveys what the image means on that page, leads with the most important detail, is about a sentence long, and doesn't start with \"image of\"."
+      },
+      {
+        "q": "Should alt text include keywords for SEO?",
+        "a": "Only when a keyword naturally describes the image. Alt text is for people first; stuffing keywords makes it worse for screen reader users and doesn't help search."
+      },
+      {
+        "q": "Can AI write alt text?",
+        "a": "Yes. Tools like AltVision analyse the image and its surrounding text to draft context-aware alt text. A person should still review it, especially for images where the purpose isn't obvious."
+      }
+    ]
+  },
+  {
+    "slug": "find-missing-alt-text",
+    "title": "How to find missing alt text on a website",
+    "description": "Find images without alt text on any web page with a free browser extension or a one-line console check, then generate and review replacements.",
+    "published": "2026-10-03",
+    "updated": "2026-10-03",
+    "summary": "To find images missing alt text, run a quick check in the browser console, or install the free AltVision extension for Chrome or Firefox. It marks every image on the page with its alt text and flags the ones that have none. Clicking a flagged image generates a suggested description.",
+    "sections": [
+      {
+        "heading": "Quick check in the browser console",
+        "blocks": [
+          { "p": "Open the page, press F12 (or Cmd+Option+I on a Mac) to open developer tools, and run this in the Console:" },
+          { "code": "document.querySelectorAll('img:not([alt])')" },
+          { "p": "It lists every `<img>` with no alt attribute. Images with `alt=\"\"` are not listed, because an empty alt is correct for decorative images — check those by eye." }
+        ]
+      },
+      {
+        "heading": "Check any page with the AltVision extension",
+        "blocks": [
+          { "ol": [
+            "Install AltVision from the [Chrome Web Store](https://chromewebstore.google.com/detail/altvision/iogpbgncdhijknmmhkllijfaioecfcoa) or [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/alt-vision/).",
+            "Open the page you want to check and click the AltVision button in the toolbar.",
+            "Turn on **Enable alt text tooltips**. Each image shows its alt text; images without it show **No alt text – click to generate**.",
+            "Click a flagged image to generate a suggestion from the image and the text next to it, then copy it into your CMS. Generating needs a premium licence, credits, or your own OpenAI or Claude API key; the checks themselves are free."
+          ] },
+          { "p": "The extension only changes what you see in your own browser; the site itself is untouched. Nothing is sent anywhere until you click to generate alt text for an image." },
+          { "p": "The **Batch Alt Text Manager** lists the images on the page so you can select them, generate alt text together, and review the results side by side. The free version shows the first five images; premium shows them all." }
+        ]
+      },
+      {
+        "heading": "Check the rest while you're there",
+        "blocks": [
+          { "p": "Missing alt text rarely comes alone. The same extension includes tools for the other common checks:" },
+          { "ul": [
+            "**Show ARIA attributes** to see the labels screen readers announce for buttons and links.",
+            "**Highlight Headers** to check that the heading structure makes sense.",
+            "**Focus Finder** and **Tab order** to follow keyboard navigation through the page.",
+            "**Vision Simulator** to preview the page with protanopia, deuteranopia, tritanopia, achromatopsia, blurred or low vision.",
+            "**Contrast Ratio Checker** with an eyedropper, rated against WCAG AA and AAA for normal and large text."
+          ] }
+        ]
+      },
+      {
+        "heading": "Fixing it at the source",
+        "blocks": [
+          { "p": "If the site runs on WordPress, fix alt text where it's stored instead of page by page — see [how to add alt text in WordPress](/en/guides/how-to-add-alt-text-in-wordpress). For what each image should say, see [how to write good alt text](/en/guides/how-to-write-good-alt-text)." }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "How do I find images without alt text?",
+        "a": "Run document.querySelectorAll('img:not([alt])') in the browser console, or install the AltVision extension and turn on alt text tooltips, which flag every image that has none."
+      },
+      {
+        "q": "Is an empty alt attribute the same as missing alt text?",
+        "a": "No. alt=\"\" deliberately marks an image as decorative so screen readers skip it. A missing alt attribute is an error, and screen readers may read the file name instead."
+      },
+      {
+        "q": "Is the AltVision extension free?",
+        "a": "Yes, the checking tools — alt text tooltips, ARIA attributes, headings, focus and tab order, vision simulator and contrast checker — are free. Generating alt text uses a premium licence, prepaid credits, or your own OpenAI or Claude API key."
+      }
+    ]
+  }
+]

@@ -43,6 +43,9 @@ const Footer = () => {
 
           {/* Right side - Links */}
           <div className="flex flex-col items-start md:items-end md:justify-end gap-4">
+            <a href="/en/guides" className="font-mono text-sm text-paper/60 hover:text-paper transition-colors">
+              {t('footer.guides', 'Alt text guides')}
+            </a>
             <a href="/terms" className="font-mono text-sm text-paper/60 hover:text-paper transition-colors">
               {t('footer.termsOfUse')}
             </a>

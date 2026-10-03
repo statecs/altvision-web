@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+const supportedLocales = ['ar','bn','cs','da','de','el','en','es','fi','fr','he','hi','hu','id','it','ja','ko','nl','no','pl','pt','ro','ru','sv','ta','th','tr','uk','ur','vi','zh'];
+
 interface LocaleRouterProps {
   children: React.ReactNode;
 }
@@ -12,8 +14,6 @@ const LocaleRouter: React.FC<LocaleRouterProps> = ({ children }) => {
   const location = useLocation();
   const { t, i18n } = useTranslation();
   const [isInitialized, setIsInitialized] = React.useState(false);
-
-  const supportedLocales = ['ar','bn','cs','da','de','el','en','es','fi','fr','he','hi','hu','id','it','ja','ko','nl','no','pl','pt','ro','ru','sv','ta','th','tr','uk','ur','vi','zh'];
 
   useEffect(() => {
     let shouldRender = true;
@@ -46,7 +46,7 @@ const LocaleRouter: React.FC<LocaleRouterProps> = ({ children }) => {
 
     // Mark as initialized after processing
     setIsInitialized(true);
-  }, [locale, i18n, navigate, location, supportedLocales]);
+  }, [locale, i18n, navigate, location]);
 
   // Keep <html lang> and the title in step with in-app language switches;
   // the prerendered HTML sets them for the first load
@@ -56,7 +56,7 @@ const LocaleRouter: React.FC<LocaleRouterProps> = ({ children }) => {
     if (/^\/[a-z]{2}\/?$/.test(location.pathname) && i18n.exists('home.hero.title')) {
       document.title = `AltVision – ${t('home.hero.title')} ${t('home.hero.titleHighlight')}`;
     }
-  }, [locale, location.pathname, t, i18n, supportedLocales]);
+  }, [locale, location.pathname, t, i18n]);
 
   // Don't render children until we've handled the locale routing
   // Always render if we have a valid locale

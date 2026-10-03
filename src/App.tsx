@@ -10,6 +10,7 @@ import LanguageSelector from './components/LanguageSelector';
 import ImageUploadDemo from './components/ImageUploadDemo';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
+import { GuidesIndex, GuidePage } from './components/Guides';
 import { trackEvent } from './analytics';
 import { BROWSER_STORES, WORDPRESS_PLUGIN_URL } from './lib/stores';
 import wordpressShot from './images/wordpress-alt-text-manager.webp';
@@ -282,6 +283,8 @@ const App = () => {
           <Route path="/:locale" element={<LocaleRouter><HomePage /></LocaleRouter>} />
           <Route path="/:locale/terms" element={<LocaleRouter><TermsPage /></LocaleRouter>} />
           <Route path="/:locale/privacy" element={<LocaleRouter><PrivacyPage /></LocaleRouter>} />
+          <Route path="/:locale/guides" element={<LocaleRouter><GuidesIndex /></LocaleRouter>} />
+          <Route path="/:locale/guides/:slug" element={<LocaleRouter><GuidePage /></LocaleRouter>} />
           {/* Backward compat / redirects */}
           <Route path="/" element={<LocaleRouter><HomePage /></LocaleRouter>} />
           <Route path="/terms" element={<TermsPage />} />
