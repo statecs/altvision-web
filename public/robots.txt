@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Allow: /terms
-Allow: /privacy
 
 Sitemap: https://altvision.se/sitemap.xml
