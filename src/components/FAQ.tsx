@@ -55,7 +55,7 @@ const FAQ = () => {
                     <>
                       {' '}
                       <a
-                        href={item.href}
+                        href={item.href.startsWith('/') ? `/en${item.href}/` : item.href}
                         target={item.href.startsWith('http') ? '_blank' : undefined}
                         rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                         className="text-azure underline underline-offset-4 hover:text-azure-deep transition-colors"

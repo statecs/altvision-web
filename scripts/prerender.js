@@ -22,8 +22,8 @@ const CHROME_URL = storesSrc.match(/id: 'chrome',\s*url: '([^']+)'/)[1];
 const FIREFOX_URL = storesSrc.match(/id: 'firefox',\s*url: '([^']+)'/)[1];
 const GITHUB_URL = 'https://github.com/statecs/AltVision-plugin';
 const GUIDES = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/content/guides.json'), 'utf8'));
-const guideUrl = (slug) => `${SITE}/${DEFAULT_LOCALE}/guides/${slug}`;
-const GUIDES_URL = `${SITE}/${DEFAULT_LOCALE}/guides`;
+const guideUrl = (slug) => `${SITE}/${DEFAULT_LOCALE}/guides/${slug}/`;
+const GUIDES_URL = `${SITE}/${DEFAULT_LOCALE}/guides/`;
 
 const dropdownSrc = fs.readFileSync(path.join(ROOT, 'src/components/LanguageDropdown.tsx'), 'utf8');
 const LANGUAGES = [...dropdownSrc.matchAll(/code: '([a-z]+)', name: '([^']+)'/g)].map(([, code, name]) => ({ code, name }));
@@ -151,7 +151,7 @@ const structuredData = (locale, t, copy) => {
 const staticBody = (locale, t, copy) => {
   const h = t.home;
   const list = (items) => `<ul>${items.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>`;
-  const faqHref = (href) => (href.startsWith('/') ? `/${locale}${href}` : href);
+  const faqHref = (href) => (href.startsWith('/') ? `/en${href}/` : href);
   const reviews = (Array.isArray(h.reviews.items) ? h.reviews.items : [])
     .map((r) => `<blockquote>${r.title ? `<p><strong>${esc(r.title)}</strong></p>` : ''}<p>${esc(r.quote)}</p></blockquote>`)
     .join('');
@@ -171,9 +171,9 @@ const staticBody = (locale, t, copy) => {
     )
     .join('')}</section>
 </main>
-<section><h2>Alt text guides</h2><ul lang="en">${GUIDES.map((g) => `<li><a href="/en/guides/${g.slug}">${esc(g.title)}</a></li>`).join('')}</ul></section>
+<section><h2>Alt text guides</h2><ul lang="en">${GUIDES.map((g) => `<li><a href="/en/guides/${g.slug}/">${esc(g.title)}</a></li>`).join('')}</ul></section>
 <footer>
-<p><a href="/${locale}/terms">${esc(t.footer.termsOfUse)}</a> · <a href="/${locale}/privacy">${esc(t.footer.privacyPolicy)}</a> · <a href="${GITHUB_URL}">${esc(t.footer.openSource)}</a></p>
+<p><a href="/en/terms/">${esc(t.footer.termsOfUse)}</a> · <a href="/en/privacy/">${esc(t.footer.privacyPolicy)}</a> · <a href="${GITHUB_URL}">${esc(t.footer.openSource)}</a></p>
 <nav aria-label="Languages"><ul>${LANGUAGES.map((l) => `<li><a href="/${l.code}/" hreflang="${l.code}" lang="${l.code}">${esc(l.name)}</a></li>`).join('')}</ul></nav>
 </footer>
 </div>`;
@@ -201,7 +201,7 @@ const blockHtml = (b) => {
 
 const guideBody = (g) => `<div class="prerender">
 <header><a href="/en/"><strong>AltVision</strong></a></header>
-<nav aria-label="Breadcrumb"><a href="/en/">AltVision</a> / <a href="/en/guides">Guides</a></nav>
+<nav aria-label="Breadcrumb"><a href="/en/">AltVision</a> / <a href="/en/guides/">Guides</a></nav>
 <article>
 <h1>${esc(g.title)}</h1>
 <p>Updated <time datetime="${g.updated}">${g.updated}</time></p>
@@ -209,14 +209,14 @@ const guideBody = (g) => `<div class="prerender">
 ${g.sections.map((s) => `<section><h2>${esc(s.heading)}</h2>${s.blocks.map(blockHtml).join('')}</section>`).join('\n')}
 ${g.faq.length ? `<section><h2>Questions</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>` : ''}
 </article>
-<aside><h2>More guides</h2><ul>${GUIDES.filter((o) => o.slug !== g.slug).map((o) => `<li><a href="/en/guides/${o.slug}">${esc(o.title)}</a></li>`).join('')}</ul></aside>
+<aside><h2>More guides</h2><ul>${GUIDES.filter((o) => o.slug !== g.slug).map((o) => `<li><a href="/en/guides/${o.slug}/">${esc(o.title)}</a></li>`).join('')}</ul></aside>
 <footer><p><a href="${WORDPRESS_URL}">AltVision for WordPress</a> · <a href="${CHROME_URL}">Chrome</a> · <a href="${FIREFOX_URL}">Firefox</a></p></footer>
 </div>`;
 
 const guideIndexBody = () => `<div class="prerender">
 <header><a href="/en/"><strong>AltVision</strong></a></header>
 <main><h1>Alt text guides</h1><p>Practical guides to writing, checking and generating alt text — for WordPress sites, WCAG compliance and everyday web work.</p>
-<ul>${GUIDES.map((g) => `<li><h2><a href="/en/guides/${g.slug}">${esc(g.title)}</a></h2><p>${esc(g.description)}</p></li>`).join('')}</ul></main>
+<ul>${GUIDES.map((g) => `<li><h2><a href="/en/guides/${g.slug}/">${esc(g.title)}</a></h2><p>${esc(g.description)}</p></li>`).join('')}</ul></main>
 </div>`;
 
 const breadcrumbs = (items) => ({
@@ -324,7 +324,7 @@ for (const locale of LOCALES) {
         locale: DEFAULT_LOCALE,
         title: `${en[page].title} – AltVision`,
         description: `${en[page].title} for AltVision, the AI alt text generator for WordPress, Chrome and Firefox.`,
-        canonical: `${SITE}/${DEFAULT_LOCALE}/${page}`,
+        canonical: `${SITE}/${DEFAULT_LOCALE}/${page}/`,
       })
     );
   }
@@ -397,8 +397,8 @@ const urls = [
   ),
   `  <url>\n    <loc>${GUIDES_URL}</loc>\n    <lastmod>${GUIDES.map((g) => g.updated).sort().pop()}</lastmod>\n  </url>`,
   ...GUIDES.map((g) => `  <url>\n    <loc>${guideUrl(g.slug)}</loc>\n    <lastmod>${g.updated}</lastmod>\n  </url>`),
-  `  <url>\n    <loc>${SITE}/en/terms</loc>\n    <lastmod>${lastmod('src/components/TermsOfUse.tsx')}</lastmod>\n  </url>`,
-  `  <url>\n    <loc>${SITE}/en/privacy</loc>\n    <lastmod>${lastmod('src/components/PrivacyPolicy.tsx')}</lastmod>\n  </url>`,
+  `  <url>\n    <loc>${SITE}/en/terms/</loc>\n    <lastmod>${lastmod('src/components/TermsOfUse.tsx')}</lastmod>\n  </url>`,
+  `  <url>\n    <loc>${SITE}/en/privacy/</loc>\n    <lastmod>${lastmod('src/components/PrivacyPolicy.tsx')}</lastmod>\n  </url>`,
 ];
 fs.writeFileSync(
   path.join(BUILD, 'sitemap.xml'),
@@ -445,8 +445,8 @@ ${GUIDES.map((g) => `- [${g.title}](${guideUrl(g.slug)}): ${inlineText(g.summary
 ## Pages
 
 - [Home (English)](${homeUrl('en')})
-- [Terms of use](${SITE}/en/terms)
-- [Privacy policy](${SITE}/en/privacy)
+- [Terms of use](${SITE}/en/terms/)
+- [Privacy policy](${SITE}/en/privacy/)
 
 ## Languages
 

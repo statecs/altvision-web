@@ -16,7 +16,7 @@
             "**Block editor:** select an Image block, open the block settings sidebar, and edit the Alternative text field. This applies to that one placement of the image."
           ] },
           { "p": "The two are separate: an Image block keeps the alt text it had when the image was inserted. If you update an image in the media library later, check the posts that already use it." },
-          { "p": "Leave the field empty only for purely decorative images — WordPress then outputs `alt=\"\"` and screen readers skip the image. See [WCAG alt text requirements](/en/guides/wcag-alt-text-requirements) for when that is correct." }
+          { "p": "Leave the field empty only for purely decorative images — WordPress then outputs `alt=\"\"` and screen readers skip the image. See [WCAG alt text requirements](/en/guides/wcag-alt-text-requirements/) for when that is correct." }
         ]
       },
       {
@@ -108,7 +108,7 @@
       {
         "heading": "How to check a page against 1.1.1",
         "blocks": [
-          { "p": "Automated checkers can find images with no alt attribute, but only a person can judge whether alt text serves the same purpose as the image. A practical workflow is to find the missing ones automatically, then review each image in context. [How to find missing alt text on a website](/en/guides/find-missing-alt-text) walks through both." }
+          { "p": "Automated checkers can find images with no alt attribute, but only a person can judge whether alt text serves the same purpose as the image. A practical workflow is to find the missing ones automatically, then review each image in context. [How to find missing alt text on a website](/en/guides/find-missing-alt-text/) walks through both." }
         ]
       }
     ],
@@ -175,7 +175,7 @@
         "heading": "Writing alt text at scale",
         "blocks": [
           { "p": "The hard part on a real site is volume. AltVision reads each image together with the headings, paragraphs and captions around it, which is the same context these rules ask you to use, and writes a first draft in any of 31 languages. Review the suggestions — the goal is a good first draft in seconds, with a person deciding what ships." },
-          { "p": "See [how to add alt text in WordPress](/en/guides/how-to-add-alt-text-in-wordpress), or try the generator on the [AltVision home page](/en/)." }
+          { "p": "See [how to add alt text in WordPress](/en/guides/how-to-add-alt-text-in-wordpress/), or try the generator on the [AltVision home page](/en/)." }
         ]
       }
     ],
@@ -239,7 +239,7 @@
       {
         "heading": "Fixing it at the source",
         "blocks": [
-          { "p": "If the site runs on WordPress, fix alt text where it's stored instead of page by page — see [how to add alt text in WordPress](/en/guides/how-to-add-alt-text-in-wordpress). For what each image should say, see [how to write good alt text](/en/guides/how-to-write-good-alt-text)." }
+          { "p": "If the site runs on WordPress, fix alt text where it's stored instead of page by page — see [how to add alt text in WordPress](/en/guides/how-to-add-alt-text-in-wordpress/). For what each image should say, see [how to write good alt text](/en/guides/how-to-write-good-alt-text/)." }
         ]
       }
     ],

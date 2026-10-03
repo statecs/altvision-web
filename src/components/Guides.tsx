@@ -93,7 +93,7 @@ const GuideCard = ({ guide, level = 2 }: { guide: Guide; level?: 2 | 3 }) => {
   const Heading = level === 2 ? 'h2' : 'h3';
   return (
   <li className="border-b border-ink/15">
-    <Link to={`/en/guides/${guide.slug}`} className="group block py-6">
+    <Link to={`/en/guides/${guide.slug}/`} className="group block py-6">
       <Heading className="font-display text-2xl font-medium tracking-tight group-hover:text-azure transition-colors">{guide.title}</Heading>
       <p className="text-ink/70 mt-2 leading-relaxed">{guide.description}</p>
     </Link>
@@ -130,7 +130,7 @@ export const GuidePage = () => {
       <div className="container mx-auto px-6">
         <main className="max-w-3xl mx-auto pt-16 md:pt-24" lang="en">
           <h1 className="font-display text-4xl font-medium tracking-tight mb-6">Guide not found</h1>
-          <Link to="/en/guides" className="text-azure underline underline-offset-4">See all guides</Link>
+          <Link to="/en/guides/" className="text-azure underline underline-offset-4">See all guides</Link>
         </main>
         <Footer />
       </div>
@@ -145,7 +145,7 @@ export const GuidePage = () => {
         <nav aria-label="Breadcrumb" className="font-mono text-xs uppercase tracking-[0.15em] text-ink/50 mb-8">
           <Link to="/en/" className="hover:text-azure transition-colors">AltVision</Link>
           <span className="mx-2" aria-hidden="true">/</span>
-          <Link to="/en/guides" className="hover:text-azure transition-colors">Guides</Link>
+          <Link to="/en/guides/" className="hover:text-azure transition-colors">Guides</Link>
         </nav>
         <h1 className="font-display text-4xl md:text-5xl font-medium tracking-tight leading-[1.1] text-ink mb-4">{guide.title}</h1>
         <p className="font-mono text-xs text-ink/50 mb-10">
