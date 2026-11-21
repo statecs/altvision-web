@@ -20,7 +20,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
+  "theme_color": "#F4F7FC",
+  "background_color": "#F4F7FC",
   "description": "AI-powered alt text generator for WordPress, Chrome and Firefox. Make your website accessible with automated image descriptions."
 }

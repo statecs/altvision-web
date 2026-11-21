@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+// Languages written right to left; <html dir> follows the locale
+export const RTL_LOCALES = ['ar', 'he', 'ur'];
+
 const supportedLocales = ['ar','bn','cs','da','de','el','en','es','fi','fr','he','hi','hu','id','it','ja','ko','nl','no','pl','pt','ro','ru','sv','ta','th','tr','uk','ur','vi','zh'];
 
 interface LocaleRouterProps {
@@ -53,6 +56,7 @@ const LocaleRouter: React.FC<LocaleRouterProps> = ({ children }) => {
   useEffect(() => {
     if (!locale || !supportedLocales.includes(locale)) return;
     document.documentElement.lang = locale;
+    document.documentElement.dir = RTL_LOCALES.includes(locale) ? 'rtl' : 'ltr';
     if (/^\/[a-z]{2}\/?$/.test(location.pathname) && i18n.exists('home.hero.title')) {
       document.title = `AltVision – ${t('home.hero.title')} ${t('home.hero.titleHighlight')}`;
     }

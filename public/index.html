@@ -2,6 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <!-- "/" is the empty app shell; every language has its own prerendered
+         page. Send visitors straight there instead of waiting for the bundle
+         to load and redirect, picking the language the way i18next's detector
+         (src/i18n/config.ts) would. -->
+    <script>
+      (function () {
+        if (location.pathname !== '/') return;
+        var supported = ['ar','bn','cs','da','de','el','en','es','fi','fr','he','hi','hu','id','it','ja','ko','nl','no','pl','pt','ro','ru','sv','ta','th','tr','uk','ur','vi','zh'];
+        var candidates = [];
+        try {
+          var q = new URLSearchParams(location.search).get('lng');
+          if (q) candidates.push(q);
+          var c = document.cookie.match(/(?:^|; )altvision_lng=([^;]*)/);
+          if (c) candidates.push(decodeURIComponent(c[1]));
+          var ls = localStorage.getItem('altvision_lng');
+          if (ls) candidates.push(ls);
+        } catch (e) {}
+        candidates = candidates.concat(navigator.languages || [navigator.language || '']);
+        var locale = 'en';
+        for (var i = 0; i < candidates.length; i++) {
+          var lang = String(candidates[i]).toLowerCase().split(/[-_]/)[0];
+          if (lang === 'nb' || lang === 'nn') lang = 'no';
+          if (supported.indexOf(lang) !== -1) { locale = lang; break; }
+        }
+        location.replace('/' + locale + '/' + location.search + location.hash);
+      })();
+    </script>
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#F4F7FC" />
