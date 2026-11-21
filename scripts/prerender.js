@@ -29,19 +29,175 @@ const dropdownSrc = fs.readFileSync(path.join(ROOT, 'src/components/LanguageDrop
 const LANGUAGES = [...dropdownSrc.matchAll(/code: '([a-z]+)', name: '([^']+)'/g)].map(([, code, name]) => ({ code, name }));
 const LOCALES = LANGUAGES.map((l) => l.code).sort();
 
+// Open Graph wants language_TERRITORY
+const OG_LOCALES = {
+  ar: 'ar_AR', bn: 'bn_IN', cs: 'cs_CZ', da: 'da_DK', de: 'de_DE', el: 'el_GR', en: 'en_US', es: 'es_ES',
+  fi: 'fi_FI', fr: 'fr_FR', he: 'he_IL', hi: 'hi_IN', hu: 'hu_HU', id: 'id_ID', it: 'it_IT', ja: 'ja_JP',
+  ko: 'ko_KR', nl: 'nl_NL', no: 'nb_NO', pl: 'pl_PL', pt: 'pt_BR', ro: 'ro_RO', ru: 'ru_RU', sv: 'sv_SE',
+  ta: 'ta_IN', th: 'th_TH', tr: 'tr_TR', uk: 'uk_UA', ur: 'ur_PK', vi: 'vi_VN', zh: 'zh_CN',
+};
+const RTL_LOCALES = ['ar', 'he', 'ur'];
+
+const ORG_ID = `${SITE}/#organization`;
+const AUTHOR_ID = `${SITE}/#author`;
+const WP_ID = `${SITE}/#wordpress-plugin`;
+const EXT_ID = `${SITE}/#browser-extension`;
+const FIREFOX_ID = `${SITE}/#firefox-addon`;
+const LOGO = { '@type': 'ImageObject', '@id': `${SITE}/#logo`, url: `${SITE}/logo512.png`, width: 512, height: 512, caption: 'AltVision' };
+const OG_IMAGE = { '@type': 'ImageObject', url: `${SITE}/og-image.png`, width: 1200, height: 630 };
+const SCREENSHOTS = {
+  wordpress: { '@type': 'ImageObject', url: `${SITE}/screens/wordpress-alt-text-manager.webp`, width: 1100, height: 653 },
+  extension: { '@type': 'ImageObject', url: `${SITE}/screens/browser-extension.webp`, width: 1120, height: 860 },
+};
+
+// Version and release dates from the public store APIs, so the markup says
+// which release is current. A failed request just leaves the fields out.
+const getJson = async (url) => {
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(8000) });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return await res.json();
+  } catch (e) {
+    console.warn(`prerender: could not fetch ${url} (${e.message}); continuing without it`);
+    return null;
+  }
+};
+const isoDate = (s) => {
+  const d = s && new Date(String(s).replace(/(\d)(am|pm)/i, '$1 $2'));
+  return d && !isNaN(d) ? d.toISOString().slice(0, 10) : undefined;
+};
+const fetchStoreInfo = async () => {
+  if (process.env.SKIP_STORE_FETCH) return { wp: {}, ext: {} };
+  const wpSlug = WORDPRESS_URL.match(/plugins\/([^/]+)/)[1];
+  const amoSlug = FIREFOX_URL.match(/addon\/([^/]+)/)[1];
+  const [wp, amo] = await Promise.all([
+    getJson(`https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=${wpSlug}&request[fields][sections]=0`),
+    getJson(`https://addons.mozilla.org/api/v5/addons/addon/${amoSlug}/`),
+  ]);
+  return {
+    wp: wp ? { softwareVersion: wp.version, datePublished: isoDate(wp.added), dateModified: isoDate(wp.last_updated) } : {},
+    ext: amo ? { softwareVersion: amo.current_version && amo.current_version.version, dateModified: isoDate(amo.last_updated) } : {},
+  };
+};
+let STORE_INFO = { wp: {}, ext: {} };
+
+// Site-wide entities, on every page so each one is self-contained. Pages refer
+// to them by @id; `description` lets the home pages describe the apps in the
+// page's own language.
+const siteGraph = ({ locale = DEFAULT_LOCALE, description, wpFeatures, extFeatures } = {}) => {
+  const offers = { '@type': 'Offer', price: '0', priceCurrency: 'USD', availability: 'https://schema.org/InStock' };
+  const app = (fields) =>
+    Object.fromEntries(Object.entries({ ...fields }).filter(([, v]) => v !== undefined && !(Array.isArray(v) && !v.length)));
+  return [
+    {
+      '@type': 'Organization',
+      '@id': ORG_ID,
+      name: 'AltVision',
+      url: `${SITE}/`,
+      logo: LOGO,
+      image: { '@id': `${SITE}/#logo` },
+      description: 'AltVision makes AI alt text tools for websites: a WordPress plugin and a browser extension for Chrome and Firefox.',
+      founder: { '@id': AUTHOR_ID },
+      // No sameAs: the store listings and the GitHub repository identify the
+      // products (they are on the SoftwareApplication nodes), not AltVision.
+      contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@cstate.se' },
+    },
+    { '@type': 'Person', '@id': AUTHOR_ID, name: 'Christopher State', url: 'https://cstate.se', worksFor: { '@id': ORG_ID } },
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE}/#website`,
+      url: `${SITE}/`,
+      name: 'AltVision',
+      alternateName: ['AltVision AI', 'AltVision Alt Text Generator'],
+      publisher: { '@id': ORG_ID },
+      inLanguage: LOCALES,
+    },
+    app({
+      '@type': 'SoftwareApplication',
+      '@id': WP_ID,
+      name: 'AltVision – AI Alt Text Generator for WordPress',
+      alternateName: ['AltVision WordPress plugin', 'Alt Text Manager'],
+      applicationCategory: 'WebApplication',
+      applicationSubCategory: 'WordPress plugin',
+      operatingSystem: 'WordPress 5.0+',
+      description,
+      featureList: wpFeatures,
+      url: `${SITE}/${locale}/`,
+      downloadUrl: WORDPRESS_URL,
+      installUrl: WORDPRESS_URL,
+      screenshot: SCREENSHOTS.wordpress,
+      image: { '@id': `${SITE}/#logo` },
+      sameAs: [WORDPRESS_URL, GITHUB_URL],
+      license: 'https://www.gnu.org/licenses/gpl-2.0.html',
+      isAccessibleForFree: true,
+      offers,
+      author: { '@id': AUTHOR_ID },
+      publisher: { '@id': ORG_ID },
+      inLanguage: LOCALES,
+      ...STORE_INFO.wp,
+    }),
+    app({
+      '@type': 'SoftwareApplication',
+      '@id': EXT_ID,
+      name: 'AltVision – AI Alt Text & Accessibility Browser Extension',
+      alternateName: ['AltVision Chrome extension', 'AltVision Firefox add-on'],
+      applicationCategory: 'BrowserApplication',
+      applicationSubCategory: 'Browser extension',
+      operatingSystem: 'Chrome, Firefox',
+      description,
+      featureList: extFeatures,
+      url: `${SITE}/${locale}/`,
+      downloadUrl: [CHROME_URL, FIREFOX_URL],
+      installUrl: CHROME_URL,
+      screenshot: SCREENSHOTS.extension,
+      image: { '@id': `${SITE}/#logo` },
+      sameAs: [CHROME_URL, FIREFOX_URL],
+      isAccessibleForFree: true,
+      offers,
+      author: { '@id': AUTHOR_ID },
+      publisher: { '@id': ORG_ID },
+      inLanguage: LOCALES,
+    }),
+    // Version and update date come from addons.mozilla.org, so they describe
+    // the Firefox build only; Chrome can lag behind or run ahead of it.
+    ...(STORE_INFO.ext.softwareVersion
+      ? [app({
+          '@type': 'SoftwareApplication',
+          '@id': FIREFOX_ID,
+          name: 'AltVision for Firefox',
+          applicationCategory: 'BrowserApplication',
+          operatingSystem: 'Firefox',
+          url: FIREFOX_URL,
+          downloadUrl: FIREFOX_URL,
+          isPartOf: { '@id': EXT_ID },
+          publisher: { '@id': ORG_ID },
+          offers,
+          ...STORE_INFO.ext,
+        })]
+      : []),
+  ];
+};
+
 const esc = (s) =>
   String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 const load = (locale) => JSON.parse(fs.readFileSync(path.join(LOCALES_DIR, locale, 'translation.json'), 'utf8'));
 const homeUrl = (locale) => `${SITE}/${locale}/`;
 
-// Last commit touching the given paths, so lastmod reflects real content changes
+// Last commit touching the given paths, so lastmod reflects real content changes.
+// Memoised: the home graph and the sitemap ask for the same paths, and must
+// agree even if the fallback date is taken around midnight.
+const lastmodCache = new Map();
 const lastmod = (...paths) => {
-  try {
-    const d = execSync(`git log -1 --format=%cs -- ${paths.join(' ')}`, { cwd: ROOT }).toString().trim();
-    if (d) return d;
-  } catch (e) {}
-  return new Date().toISOString().slice(0, 10);
+  const key = paths.join(' ');
+  if (!lastmodCache.has(key)) {
+    let d = '';
+    try {
+      d = execSync(`git log -1 --format=%cs -- ${key}`, { cwd: ROOT }).toString().trim();
+    } catch (e) {}
+    lastmodCache.set(key, d || new Date().toISOString().slice(0, 10));
+  }
+  return lastmodCache.get(key);
 };
 
 // Meta descriptions: whole sentences up to ~160 characters
@@ -71,22 +227,19 @@ const pageCopy = (t) => {
   };
 };
 
+const siteCopy = (locale, t, copy) => ({
+  locale,
+  description: t.home.description,
+  wpFeatures: copy.wpFeatures.map(featureText),
+  extFeatures: copy.extFeatures.map(featureText),
+});
+
 const structuredData = (locale, t, copy) => {
   const url = homeUrl(locale);
-  const author = { '@type': 'Person', '@id': `${SITE}/#author`, name: 'Christopher State', url: 'https://cstate.se' };
-  const offers = { '@type': 'Offer', price: '0', priceCurrency: 'USD' };
   return {
     '@context': 'https://schema.org',
     '@graph': [
-      author,
-      {
-        '@type': 'WebSite',
-        '@id': `${SITE}/#website`,
-        url: `${SITE}/`,
-        name: 'AltVision',
-        publisher: { '@id': `${SITE}/#author` },
-        inLanguage: LOCALES,
-      },
+      ...siteGraph(siteCopy(locale, t, copy)),
       {
         '@type': 'WebPage',
         '@id': `${url}#webpage`,
@@ -95,43 +248,11 @@ const structuredData = (locale, t, copy) => {
         description: copy.description,
         inLanguage: locale,
         isPartOf: { '@id': `${SITE}/#website` },
-        primaryImageOfPage: `${SITE}/og-image.png`,
-        about: [{ '@id': `${SITE}/#wordpress-plugin` }, { '@id': `${SITE}/#browser-extension` }],
+        publisher: { '@id': ORG_ID },
+        primaryImageOfPage: OG_IMAGE,
+        about: [{ '@id': WP_ID }, { '@id': EXT_ID }],
         mainEntity: { '@id': `${url}#faq` },
-      },
-      {
-        '@type': 'SoftwareApplication',
-        '@id': `${SITE}/#wordpress-plugin`,
-        name: 'AltVision – AI Alt Text Generator for WordPress',
-        alternateName: 'Alt Text Manager',
-        applicationCategory: 'WebApplication',
-        applicationSubCategory: 'WordPress plugin',
-        operatingSystem: 'WordPress',
-        description: t.home.description,
-        featureList: copy.wpFeatures.map(featureText),
-        downloadUrl: WORDPRESS_URL,
-        installUrl: WORDPRESS_URL,
-        sameAs: [WORDPRESS_URL, GITHUB_URL],
-        isAccessibleForFree: true,
-        offers,
-        author: { '@id': `${SITE}/#author` },
-        inLanguage: locale,
-      },
-      {
-        '@type': 'SoftwareApplication',
-        '@id': `${SITE}/#browser-extension`,
-        name: 'AltVision – AI Alt Text & Accessibility Browser Extension',
-        applicationCategory: 'BrowserApplication',
-        operatingSystem: 'Chrome, Firefox',
-        description: t.home.description,
-        featureList: copy.extFeatures.map(featureText),
-        downloadUrl: [CHROME_URL, FIREFOX_URL],
-        installUrl: CHROME_URL,
-        sameAs: [CHROME_URL, FIREFOX_URL],
-        isAccessibleForFree: true,
-        offers,
-        author: { '@id': `${SITE}/#author` },
-        inLanguage: locale,
+        dateModified: lastmod(`public/locales/${locale}`, 'src'),
       },
       {
         '@type': 'FAQPage',
@@ -219,40 +340,84 @@ const guideIndexBody = () => `<div class="prerender">
 <ul>${GUIDES.map((g) => `<li><h2><a href="/en/guides/${g.slug}/">${esc(g.title)}</a></h2><p>${esc(g.description)}</p></li>`).join('')}</ul></main>
 </div>`;
 
-const breadcrumbs = (items) => ({
+const breadcrumbs = (id, items) => ({
   '@type': 'BreadcrumbList',
+  '@id': `${id}#breadcrumb`,
   itemListElement: items.map(([name, item], i) => ({ '@type': 'ListItem', position: i + 1, name, item })),
 });
 
-const guideData = (g) => ({
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'Article',
-      '@id': `${guideUrl(g.slug)}#article`,
-      headline: g.title,
-      description: g.description,
-      abstract: inlineText(g.summary),
-      url: guideUrl(g.slug),
-      mainEntityOfPage: guideUrl(g.slug),
-      datePublished: g.published,
-      dateModified: g.updated,
-      inLanguage: 'en',
-      image: `${SITE}/og-image.png`,
-      author: { '@type': 'Person', '@id': `${SITE}/#author`, name: 'Christopher State', url: 'https://cstate.se' },
-      publisher: { '@id': `${SITE}/#author` },
-      isPartOf: { '@id': `${SITE}/#website` },
-    },
-    breadcrumbs([['AltVision', homeUrl(DEFAULT_LOCALE)], ['Guides', GUIDES_URL], [g.title, guideUrl(g.slug)]]),
-    ...(g.faq.length
-      ? [{
-          '@type': 'FAQPage',
-          '@id': `${guideUrl(g.slug)}#faq`,
-          mainEntity: g.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-        }]
-      : []),
-  ],
-});
+// Site entities described in English, for the English-only pages
+let EN_SITE = {};
+
+const guideData = (g) => {
+  const url = guideUrl(g.slug);
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      ...siteGraph(EN_SITE),
+      {
+        '@type': 'WebPage',
+        '@id': `${url}#webpage`,
+        url,
+        name: g.title,
+        description: g.description,
+        inLanguage: 'en',
+        isPartOf: { '@id': `${SITE}/#website` },
+        breadcrumb: { '@id': `${url}#breadcrumb` },
+        primaryImageOfPage: OG_IMAGE,
+        datePublished: g.published,
+        dateModified: g.updated,
+      },
+      {
+        '@type': 'Article',
+        '@id': `${url}#article`,
+        headline: g.title,
+        description: g.description,
+        abstract: inlineText(g.summary),
+        url,
+        mainEntityOfPage: { '@id': `${url}#webpage` },
+        datePublished: g.published,
+        dateModified: g.updated,
+        inLanguage: 'en',
+        image: OG_IMAGE,
+        articleSection: 'Alt text guides',
+        about: [{ '@type': 'Thing', name: 'Alt text' }, { '@type': 'Thing', name: 'Web accessibility' }],
+        mentions: [{ '@id': WP_ID }, { '@id': EXT_ID }],
+        wordCount: guideMarkdown(g).split(/\s+/).length,
+        author: { '@id': AUTHOR_ID },
+        publisher: { '@id': ORG_ID },
+        isPartOf: { '@type': 'CollectionPage', '@id': `${GUIDES_URL}#webpage`, url: GUIDES_URL, name: 'Alt text guides' },
+      },
+      breadcrumbs(url, [['AltVision', homeUrl(DEFAULT_LOCALE)], ['Guides', GUIDES_URL], [g.title, url]]),
+      ...(g.faq.length
+        ? [{
+            '@type': 'FAQPage',
+            '@id': `${url}#faq`,
+            inLanguage: 'en',
+            mainEntity: g.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+          }]
+        : []),
+    ],
+  };
+};
+
+// A guide as Markdown, for llms-full.txt
+const blockMarkdown = (b) => {
+  if (b.p) return b.p;
+  if (b.ul) return b.ul.map((i) => `- ${i}`).join('\n');
+  if (b.ol) return b.ol.map((i, n) => `${n + 1}. ${i}`).join('\n');
+  if (b.code) return '```\n' + b.code + '\n```';
+  if (b.examples) return b.examples.map((e) => `- ${e.context}\n  - Weak: ${e.bad}\n  - Better: ${e.good}`).join('\n');
+  return '';
+};
+const guideMarkdown = (g) =>
+  [
+    `# ${g.title}`,
+    `Updated ${g.updated}`,
+    g.summary,
+    ...g.sections.map((sec) => `## ${sec.heading}\n\n${sec.blocks.map(blockMarkdown).join('\n\n')}`),
+    ...(g.faq.length ? [`## Questions\n\n${g.faq.map((f) => `### ${f.q}\n\n${f.a}`).join('\n\n')}`] : []),
+  ].join('\n\n');
 
 const ldScript = (data) => `<script type="application/ld+json">${JSON.stringify(data).replace(/</g, '\\u003c')}</script>`;
 
@@ -266,6 +431,9 @@ const hreflangLinks = () =>
     `<link rel="alternate" hreflang="x-default" href="${homeUrl(DEFAULT_LOCALE)}"/>`,
   ].join('');
 
+const ogLocaleAlternates = (locale) =>
+  LOCALES.filter((l) => l !== locale).map((l) => `<meta property="og:locale:alternate" content="${OG_LOCALES[l]}"/>`).join('');
+
 const setMeta = (html, attr, key, value) => {
   const re = new RegExp(`<meta ${attr}="${key}" content="[^"]*"\\s*/?>`);
   const tag = `<meta ${attr}="${key}" content="${esc(value)}"/>`;
@@ -273,15 +441,17 @@ const setMeta = (html, attr, key, value) => {
 };
 
 const renderHead = (template, { locale, title, description, canonical, extraHead = '' }) => {
+  const dir = RTL_LOCALES.includes(locale) ? ' dir="rtl"' : '';
   let html = template
-    .replace(/<html lang="[^"]*"[^>]*>/, `<html lang="${locale}">`)
+    .replace(/<html lang="[^"]*"[^>]*>/, `<html lang="${locale}"${dir}>`)
     .replace(/<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`);
   html = setMeta(html, 'name', 'description', description);
   html = setMeta(html, 'property', 'og:url', canonical);
   html = setMeta(html, 'property', 'og:title', title);
   html = setMeta(html, 'property', 'og:description', description);
-  html = setMeta(html, 'property', 'og:locale', locale);
+  html = setMeta(html, 'property', 'og:locale', OG_LOCALES[locale]);
   html = setMeta(html, 'property', 'og:site_name', 'AltVision');
+  html = setMeta(html, 'property', 'og:image:alt', 'AltVision – AI alt text generator for WordPress, Chrome and Firefox');
   html = setMeta(html, 'name', 'twitter:url', canonical);
   html = setMeta(html, 'name', 'twitter:title', title);
   html = setMeta(html, 'name', 'twitter:description', description);
@@ -294,40 +464,61 @@ const write = (rel, html) => {
   fs.writeFileSync(file, html);
 };
 
-// --- main ---
+const main = async () => {
+STORE_INFO = await fetchStoreInfo();
+
 const template = fs.readFileSync(path.join(BUILD, 'index.html'), 'utf8');
 if (!template.includes('<div id="root"></div>')) {
   throw new Error('prerender: build/index.html has no empty #root — was it already prerendered?');
 }
 
 const en = load(DEFAULT_LOCALE);
+const enCopy = pageCopy(en);
+EN_SITE = siteCopy(DEFAULT_LOCALE, en, enCopy);
+
+// Terms and privacy are English-only; every locale's copy points at the English one
+const legalPage = (page) => {
+  const url = `${SITE}/${DEFAULT_LOCALE}/${page}/`;
+  const title = `${en[page].title} – AltVision`;
+  return renderHead(template, {
+    locale: DEFAULT_LOCALE,
+    title,
+    description: `${en[page].title} for AltVision, the AI alt text generator for WordPress, Chrome and Firefox.`,
+    canonical: url,
+    extraHead: ldScript({
+      '@context': 'https://schema.org',
+      '@graph': [
+        ...siteGraph(EN_SITE),
+        {
+          '@type': 'WebPage',
+          '@id': `${url}#webpage`,
+          url,
+          name: title,
+          inLanguage: 'en',
+          isPartOf: { '@id': `${SITE}/#website` },
+          publisher: { '@id': ORG_ID },
+          breadcrumb: { '@id': `${url}#breadcrumb` },
+        },
+        breadcrumbs(url, [['AltVision', homeUrl(DEFAULT_LOCALE)], [en[page].title, url]]),
+      ],
+    }),
+  });
+};
 
 for (const locale of LOCALES) {
   const t = load(locale);
   const copy = pageCopy(t);
-  const jsonLd = JSON.stringify(structuredData(locale, t, copy)).replace(/</g, '\\u003c');
   let html = renderHead(template, {
     locale,
     title: copy.title,
     description: copy.description,
     canonical: homeUrl(locale),
-    extraHead: hreflangLinks() + PRERENDER_STYLE + `<script type="application/ld+json">${jsonLd}</script>`,
+    extraHead: hreflangLinks() + ogLocaleAlternates(locale) + PRERENDER_STYLE + ldScript(structuredData(locale, t, copy)),
   });
   html = html.replace('<div id="root"></div>', `<div id="root">${staticBody(locale, t, copy)}</div>`);
   write(locale, html);
 
-  // Terms and privacy are English-only, so every locale's copy points at the English one
-  for (const page of ['terms', 'privacy']) {
-    write(
-      `${locale}/${page}`,
-      renderHead(template, {
-        locale: DEFAULT_LOCALE,
-        title: `${en[page].title} – AltVision`,
-        description: `${en[page].title} for AltVision, the AI alt text generator for WordPress, Chrome and Firefox.`,
-        canonical: `${SITE}/${DEFAULT_LOCALE}/${page}/`,
-      })
-    );
-  }
+  for (const page of ['terms', 'privacy']) write(`${locale}/${page}`, legalPage(page));
 }
 
 // Unprefixed /terms and /privacy render the same English page
@@ -346,15 +537,24 @@ write(
     extraHead: PRERENDER_STYLE + ldScript({
       '@context': 'https://schema.org',
       '@graph': [
+        ...siteGraph(EN_SITE),
         {
           '@type': 'CollectionPage',
-          '@id': `${GUIDES_URL}#page`,
+          '@id': `${GUIDES_URL}#webpage`,
           url: GUIDES_URL,
           name: 'Alt text guides',
+          description: 'Practical guides to writing, checking and generating alt text for WordPress, WCAG compliance and everyday web work.',
           inLanguage: 'en',
-          hasPart: GUIDES.map((g) => ({ '@id': `${guideUrl(g.slug)}#article` })),
+          isPartOf: { '@id': `${SITE}/#website` },
+          publisher: { '@id': ORG_ID },
+          breadcrumb: { '@id': `${GUIDES_URL}#breadcrumb` },
+          hasPart: GUIDES.map((g) => ({ '@type': 'Article', '@id': `${guideUrl(g.slug)}#article`, url: guideUrl(g.slug), headline: g.title })),
+          mainEntity: {
+            '@type': 'ItemList',
+            itemListElement: GUIDES.map((g, i) => ({ '@type': 'ListItem', position: i + 1, url: guideUrl(g.slug), name: g.title })),
+          },
         },
-        breadcrumbs([['AltVision', homeUrl(DEFAULT_LOCALE)], ['Guides', GUIDES_URL]]),
+        breadcrumbs(GUIDES_URL, [['AltVision', homeUrl(DEFAULT_LOCALE)], ['Guides', GUIDES_URL]]),
       ],
     }),
   }).replace('<div id="root"></div>', `<div id="root">${guideIndexBody()}</div>`)
@@ -370,13 +570,13 @@ for (const g of GUIDES) {
   html = setMeta(html, 'property', 'og:type', 'article');
   html = setMeta(html, 'property', 'article:published_time', g.published);
   html = setMeta(html, 'property', 'article:modified_time', g.updated);
+  html = setMeta(html, 'property', 'article:author', 'https://cstate.se');
   write(`${DEFAULT_LOCALE}/guides/${g.slug}`, html.replace('<div id="root"></div>', `<div id="root">${guideBody(g)}</div>`));
 }
 
 // The root shell (also nginx's fallback for unknown paths) carries English
-// metadata and points search engines at /en/; the app redirects visitors to
-// their own language.
-const enCopy = pageCopy(en);
+// metadata and points search engines at /en/; an inline script in
+// public/index.html sends visitors to their own language before the bundle loads.
 fs.writeFileSync(
   path.join(BUILD, 'index.html'),
   renderHead(template, {
@@ -384,16 +584,19 @@ fs.writeFileSync(
     title: enCopy.title,
     description: enCopy.description,
     canonical: homeUrl(DEFAULT_LOCALE),
-    extraHead: hreflangLinks(),
+    extraHead: hreflangLinks() + ldScript({ '@context': 'https://schema.org', '@graph': siteGraph(EN_SITE) }),
   })
 );
 
 // --- sitemap.xml ---
 const alternates = hreflangLinks()
   .replace(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"\/>/g, '\n    <xhtml:link rel="alternate" hreflang="$1" href="$2"/>');
+const homeImages = [SCREENSHOTS.wordpress, SCREENSHOTS.extension]
+  .map((img) => `\n    <image:image><image:loc>${img.url}</image:loc></image:image>`)
+  .join('');
 const urls = [
   ...LOCALES.map(
-    (l) => `  <url>\n    <loc>${homeUrl(l)}</loc>\n    <lastmod>${lastmod(`public/locales/${l}`, 'src')}</lastmod>${alternates}\n  </url>`
+    (l) => `  <url>\n    <loc>${homeUrl(l)}</loc>\n    <lastmod>${lastmod(`public/locales/${l}`, 'src')}</lastmod>${alternates}${homeImages}\n  </url>`
   ),
   `  <url>\n    <loc>${GUIDES_URL}</loc>\n    <lastmod>${GUIDES.map((g) => g.updated).sort().pop()}</lastmod>\n  </url>`,
   ...GUIDES.map((g) => `  <url>\n    <loc>${guideUrl(g.slug)}</loc>\n    <lastmod>${g.updated}</lastmod>\n  </url>`),
@@ -403,21 +606,43 @@ const urls = [
 fs.writeFileSync(
   path.join(BUILD, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${urls.join('\n')}
 </urlset>
 `
 );
 
 // --- llms.txt (https://llmstxt.org) — a plain-text brief for AI assistants ---
+// The format keeps H2 sections for lists of links. Everything else (facts,
+// features, FAQ) comes before the first H2 and has no headings of its own.
 const h = en.home;
-fs.writeFileSync(
-  path.join(BUILD, 'llms.txt'),
-  `# AltVision
+const version = (info) => (info.softwareVersion ? ` (version ${info.softwareVersion}${info.dateModified ? `, updated ${info.dateModified}` : ''})` : '');
+const llms = `# AltVision
 
 > ${h.description}
 
 AltVision is an AI alt text generator available as a WordPress plugin and as a browser extension for Chrome and Firefox. It writes image descriptions in 31 languages and supports WCAG 2.1 accessibility work. The WordPress plugin is free for 10 images a day; premium raises that to 500 a day and adds bulk processing. The extension's checking tools are free.
+
+Key facts:
+
+- Products: a WordPress plugin${version(STORE_INFO.wp)} and a browser extension for Chrome and Firefox${STORE_INFO.ext.softwareVersion ? ` (Firefox version ${STORE_INFO.ext.softwareVersion}${STORE_INFO.ext.dateModified ? `, updated ${STORE_INFO.ext.dateModified}` : ''})` : ''}.
+- How it works: the AI reads the image and the text around it (headings, paragraphs, captions) and writes alt text to match; every description can be reviewed and edited.
+- Languages: alt text in 31 languages; this site is available in the same 31.
+- Pricing: the WordPress plugin is free for 10 images a day, with no API key needed. Premium allows up to 500 images a day and adds bulk processing of the media library.
+- Open source: the WordPress plugin's source is on GitHub (${GITHUB_URL}), licensed GPLv2 or later.
+- Made by Christopher State (https://cstate.se). Contact: support@cstate.se
+
+${h.wordpress.title}:
+
+${enCopy.wpFeatures.map((f) => `- ${f}`).join('\n')}
+
+${h.chrome.title}:
+
+${enCopy.extFeatures.map((f) => `- ${f}`).join('\n')}
+
+Frequently asked questions:
+
+${enCopy.faq.map((i) => `**${i.q}**\n\n${i.a}`).join('\n\n')}
 
 ## Install
 
@@ -426,18 +651,6 @@ AltVision is an AI alt text generator available as a WordPress plugin and as a b
 - [Firefox add-on](${FIREFOX_URL}): ${h.chrome.title}
 - [Source code (GitHub)](${GITHUB_URL}): the WordPress plugin is open source
 
-## ${h.wordpress.title}
-
-${enCopy.wpFeatures.map((f) => `- ${f}`).join('\n')}
-
-## ${h.chrome.title}
-
-${enCopy.extFeatures.map((f) => `- ${f}`).join('\n')}
-
-## FAQ
-
-${enCopy.faq.map((i) => `### ${i.q}\n\n${i.a}`).join('\n\n')}
-
 ## Guides
 
 ${GUIDES.map((g) => `- [${g.title}](${guideUrl(g.slug)}): ${inlineText(g.summary)}`).join('\n')}
@@ -445,13 +658,33 @@ ${GUIDES.map((g) => `- [${g.title}](${guideUrl(g.slug)}): ${inlineText(g.summary
 ## Pages
 
 - [Home (English)](${homeUrl('en')})
+- [Alt text guides](${GUIDES_URL})
 - [Terms of use](${SITE}/en/terms/)
 - [Privacy policy](${SITE}/en/privacy/)
 
 ## Languages
 
 ${LANGUAGES.map((l) => `- [${l.name}](${homeUrl(l.code)})`).join('\n')}
-`
+
+## Optional
+
+- [Full text of every guide](${SITE}/llms-full.txt)
+`;
+fs.writeFileSync(path.join(BUILD, 'llms.txt'), llms);
+
+// --- llms-full.txt — llms.txt followed by the full text of every guide ---
+fs.writeFileSync(
+  path.join(BUILD, 'llms-full.txt'),
+  `${llms.trim()}\n\n${GUIDES.map((g) => `---\n\nSource: ${guideUrl(g.slug)}\n\n${guideMarkdown(g)}`).join('\n\n')}\n`
 );
 
-console.log(`prerender: ${LOCALES.length} locales, ${GUIDES.length} guides, sitemap.xml (${urls.length} URLs), llms.txt`);
+console.log(
+  `prerender: ${LOCALES.length} locales, ${GUIDES.length} guides, sitemap.xml (${urls.length} URLs), llms.txt, llms-full.txt` +
+    ` · WordPress ${STORE_INFO.wp.softwareVersion || '?'}, extension ${STORE_INFO.ext.softwareVersion || '?'}`
+);
+};
+
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});

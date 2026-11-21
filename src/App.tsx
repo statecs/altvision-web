@@ -10,9 +10,10 @@ import LanguageSelector from './components/LanguageSelector';
 import ImageUploadDemo from './components/ImageUploadDemo';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
+import NotFound from './components/NotFound';
 import { GuidesIndex, GuidePage } from './components/Guides';
 import { trackEvent } from './analytics';
-import { BROWSER_STORES, WORDPRESS_PLUGIN_URL } from './lib/stores';
+import { BROWSER_STORES, WORDPRESS_PLUGIN_URL, storeLink } from './lib/stores';
 import wordpressShot from './images/wordpress-alt-text-manager.webp';
 import extensionShot from './images/browser-extension.webp';
 
@@ -58,6 +59,7 @@ const AltMarquee = () => {
   return (
   <div
     aria-hidden="true"
+    dir="ltr"
     onClick={() => setStopped((v) => !v)}
     className="group relative left-1/2 -translate-x-1/2 w-screen overflow-hidden border-y border-ink/15 bg-paper-deep/60 -rotate-1 my-14 cursor-pointer select-none"
   >
@@ -130,7 +132,7 @@ const HomePage = () => {
               {BROWSER_STORES.map((store) => (
                 <a
                   key={store.id}
-                  href={store.url}
+                  href={storeLink(store.url, 'hero')}
                   rel="noopener noreferrer"
                   className="border border-ink/30 text-ink px-6 py-3 rounded-md font-medium hover:border-ink hover:bg-ink/5 active:scale-[0.97] transition-[border-color,background-color,transform] duration-150 ease-out-strong"
                   onClick={() => trackEvent('cta_click', { label: store.trackLabel })}
@@ -240,7 +242,7 @@ const HomePage = () => {
               {BROWSER_STORES.map((store) => (
                 <a
                   key={store.id}
-                  href={store.url}
+                  href={storeLink(store.url, 'features')}
                   rel="noopener noreferrer"
                   className="text-azure hover:text-azure-deep underline underline-offset-4 transition-colors"
                   onClick={() => trackEvent('cta_click', { label: store.trackLabel })}
@@ -289,6 +291,8 @@ const App = () => {
           <Route path="/" element={<LocaleRouter><HomePage /></LocaleRouter>} />
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/:locale/*" element={<LocaleRouter><NotFound /></LocaleRouter>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -2,7 +2,10 @@ import React, { useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const supportedLocales = ['ar','bn','cs','da','de','el','en','es','fi','fr','he','hi','hu','id','it','ja','ko','nl','no','pl','pt','ro','ru','sv','ta','th','tr','uk','ur','vi','zh'];
+// Languages written right to left; <html dir> follows the locale
+export const RTL_LOCALES = ['ar', 'he', 'ur'];
+
+export const supportedLocales = ['ar','bn','cs','da','de','el','en','es','fi','fr','he','hi','hu','id','it','ja','ko','nl','no','pl','pt','ro','ru','sv','ta','th','tr','uk','ur','vi','zh'];
 
 interface LocaleRouterProps {
   children: React.ReactNode;
@@ -25,10 +28,16 @@ const LocaleRouter: React.FC<LocaleRouterProps> = ({ children }) => {
           i18n.changeLanguage(locale);
         }
         shouldRender = true;
-      } else {
-        // Redirect to default locale if unsupported locale in URL
+      } else if (/^[a-z]{2}([-_][a-z]{2})?$/i.test(locale)) {
+        // An unsupported locale code (/xx/terms): swap it for English
         const pathWithoutLocale = location.pathname.replace(`/${locale}`, '') || '/';
         navigate(`/en${pathWithoutLocale}`, { replace: true });
+        shouldRender = false;
+      } else {
+        // Not a locale at all (/guides/, /not-a-real-page/): the path is
+        // missing its locale, so add one. Unknown pages then reach NotFound.
+        const targetLocale = supportedLocales.includes(i18n.language) ? i18n.language : 'en';
+        navigate(`/${targetLocale}${location.pathname}`, { replace: true });
         shouldRender = false;
       }
     } else {
@@ -53,6 +62,7 @@ const LocaleRouter: React.FC<LocaleRouterProps> = ({ children }) => {
   useEffect(() => {
     if (!locale || !supportedLocales.includes(locale)) return;
     document.documentElement.lang = locale;
+    document.documentElement.dir = RTL_LOCALES.includes(locale) ? 'rtl' : 'ltr';
     if (/^\/[a-z]{2}\/?$/.test(location.pathname) && i18n.exists('home.hero.title')) {
       document.title = `AltVision – ${t('home.hero.title')} ${t('home.hero.titleHighlight')}`;
     }

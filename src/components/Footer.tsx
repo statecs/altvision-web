@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Github } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { BROWSER_STORES, WORDPRESS_PLUGIN_URL } from '../lib/stores';
+import { BROWSER_STORES, WORDPRESS_PLUGIN_URL, storeLink } from '../lib/stores';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -29,7 +29,7 @@ const Footer = () => {
                 {BROWSER_STORES.map((store) => (
                   <a
                     key={store.id}
-                    href={store.url}
+                    href={storeLink(store.url, 'footer')}
                     rel="noopener noreferrer"
                     className="border border-paper/30 text-paper hover:border-paper hover:bg-paper/10 px-6 py-3 rounded-md text-sm font-medium inline-flex items-center gap-2 active:scale-[0.97] transition-[border-color,background-color,transform] duration-150 ease-out-strong w-fit"
                   >
