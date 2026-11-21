@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Footer from './Footer';
+import { useNoindex } from './NotFound';
 import guides from '../content/guides.json';
 
 // Guides are written in English only; scripts/prerender.js renders the same
@@ -124,6 +125,7 @@ export const GuidePage = () => {
   const { slug } = useParams<{ slug: string }>();
   const guide = GUIDES.find((g) => g.slug === slug);
   usePageTitle(guide ? `${guide.title} – AltVision` : 'Guide not found – AltVision');
+  useNoindex(!guide);
 
   if (!guide) {
     return (

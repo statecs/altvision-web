@@ -28,10 +28,16 @@ const LocaleRouter: React.FC<LocaleRouterProps> = ({ children }) => {
           i18n.changeLanguage(locale);
         }
         shouldRender = true;
-      } else {
-        // Redirect to default locale if unsupported locale in URL
+      } else if (/^[a-z]{2}([-_][a-z]{2})?$/i.test(locale)) {
+        // An unsupported locale code (/xx/terms): swap it for English
         const pathWithoutLocale = location.pathname.replace(`/${locale}`, '') || '/';
         navigate(`/en${pathWithoutLocale}`, { replace: true });
+        shouldRender = false;
+      } else {
+        // Not a locale at all (/guides/, /not-a-real-page/): the path is
+        // missing its locale, so add one. Unknown pages then reach NotFound.
+        const targetLocale = supportedLocales.includes(i18n.language) ? i18n.language : 'en';
+        navigate(`/${targetLocale}${location.pathname}`, { replace: true });
         shouldRender = false;
       }
     } else {
