@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 // Languages written right to left; <html dir> follows the locale
 export const RTL_LOCALES = ['ar', 'he', 'ur'];
 
-const supportedLocales = ['ar','bn','cs','da','de','el','en','es','fi','fr','he','hi','hu','id','it','ja','ko','nl','no','pl','pt','ro','ru','sv','ta','th','tr','uk','ur','vi','zh'];
+export const supportedLocales = ['ar','bn','cs','da','de','el','en','es','fi','fr','he','hi','hu','id','it','ja','ko','nl','no','pl','pt','ro','ru','sv','ta','th','tr','uk','ur','vi','zh'];
 
 interface LocaleRouterProps {
   children: React.ReactNode;

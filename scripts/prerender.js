@@ -42,6 +42,7 @@ const ORG_ID = `${SITE}/#organization`;
 const AUTHOR_ID = `${SITE}/#author`;
 const WP_ID = `${SITE}/#wordpress-plugin`;
 const EXT_ID = `${SITE}/#browser-extension`;
+const FIREFOX_ID = `${SITE}/#firefox-addon`;
 const LOGO = { '@type': 'ImageObject', '@id': `${SITE}/#logo`, url: `${SITE}/logo512.png`, width: 512, height: 512, caption: 'AltVision' };
 const OG_IMAGE = { '@type': 'ImageObject', url: `${SITE}/og-image.png`, width: 1200, height: 630 };
 const SCREENSHOTS = {
@@ -97,7 +98,8 @@ const siteGraph = ({ locale = DEFAULT_LOCALE, description, wpFeatures, extFeatur
       image: { '@id': `${SITE}/#logo` },
       description: 'AltVision makes AI alt text tools for websites: a WordPress plugin and a browser extension for Chrome and Firefox.',
       founder: { '@id': AUTHOR_ID },
-      sameAs: [WORDPRESS_URL, CHROME_URL, FIREFOX_URL, GITHUB_URL],
+      // No sameAs: the store listings and the GitHub repository identify the
+      // products (they are on the SoftwareApplication nodes), not AltVision.
       contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: 'support@cstate.se' },
     },
     { '@type': 'Person', '@id': AUTHOR_ID, name: 'Christopher State', url: 'https://cstate.se', worksFor: { '@id': ORG_ID } },
@@ -155,8 +157,24 @@ const siteGraph = ({ locale = DEFAULT_LOCALE, description, wpFeatures, extFeatur
       author: { '@id': AUTHOR_ID },
       publisher: { '@id': ORG_ID },
       inLanguage: LOCALES,
-      ...STORE_INFO.ext,
     }),
+    // Version and update date come from addons.mozilla.org, so they describe
+    // the Firefox build only; Chrome can lag behind or run ahead of it.
+    ...(STORE_INFO.ext.softwareVersion
+      ? [app({
+          '@type': 'SoftwareApplication',
+          '@id': FIREFOX_ID,
+          name: 'AltVision for Firefox',
+          applicationCategory: 'BrowserApplication',
+          operatingSystem: 'Firefox',
+          url: FIREFOX_URL,
+          downloadUrl: FIREFOX_URL,
+          isPartOf: { '@id': EXT_ID },
+          publisher: { '@id': ORG_ID },
+          offers,
+          ...STORE_INFO.ext,
+        })]
+      : []),
   ];
 };
 
@@ -166,13 +184,20 @@ const esc = (s) =>
 const load = (locale) => JSON.parse(fs.readFileSync(path.join(LOCALES_DIR, locale, 'translation.json'), 'utf8'));
 const homeUrl = (locale) => `${SITE}/${locale}/`;
 
-// Last commit touching the given paths, so lastmod reflects real content changes
+// Last commit touching the given paths, so lastmod reflects real content changes.
+// Memoised: the home graph and the sitemap ask for the same paths, and must
+// agree even if the fallback date is taken around midnight.
+const lastmodCache = new Map();
 const lastmod = (...paths) => {
-  try {
-    const d = execSync(`git log -1 --format=%cs -- ${paths.join(' ')}`, { cwd: ROOT }).toString().trim();
-    if (d) return d;
-  } catch (e) {}
-  return new Date().toISOString().slice(0, 10);
+  const key = paths.join(' ');
+  if (!lastmodCache.has(key)) {
+    let d = '';
+    try {
+      d = execSync(`git log -1 --format=%cs -- ${key}`, { cwd: ROOT }).toString().trim();
+    } catch (e) {}
+    lastmodCache.set(key, d || new Date().toISOString().slice(0, 10));
+  }
+  return lastmodCache.get(key);
 };
 
 // Meta descriptions: whole sentences up to ~160 characters
@@ -588,6 +613,8 @@ ${urls.join('\n')}
 );
 
 // --- llms.txt (https://llmstxt.org) — a plain-text brief for AI assistants ---
+// The format keeps H2 sections for lists of links. Everything else (facts,
+// features, FAQ) comes before the first H2 and has no headings of its own.
 const h = en.home;
 const version = (info) => (info.softwareVersion ? ` (version ${info.softwareVersion}${info.dateModified ? `, updated ${info.dateModified}` : ''})` : '');
 const llms = `# AltVision
@@ -596,14 +623,26 @@ const llms = `# AltVision
 
 AltVision is an AI alt text generator available as a WordPress plugin and as a browser extension for Chrome and Firefox. It writes image descriptions in 31 languages and supports WCAG 2.1 accessibility work. The WordPress plugin is free for 10 images a day; premium raises that to 500 a day and adds bulk processing. The extension's checking tools are free.
 
-## Key facts
+Key facts:
 
-- Products: a WordPress plugin${version(STORE_INFO.wp)} and a browser extension for Chrome and Firefox${version(STORE_INFO.ext)}.
+- Products: a WordPress plugin${version(STORE_INFO.wp)} and a browser extension for Chrome and Firefox${STORE_INFO.ext.softwareVersion ? ` (Firefox version ${STORE_INFO.ext.softwareVersion}${STORE_INFO.ext.dateModified ? `, updated ${STORE_INFO.ext.dateModified}` : ''})` : ''}.
 - How it works: the AI reads the image and the text around it (headings, paragraphs, captions) and writes alt text to match; every description can be reviewed and edited.
 - Languages: alt text in 31 languages; this site is available in the same 31.
 - Pricing: the WordPress plugin is free for 10 images a day, with no API key needed. Premium allows up to 500 images a day and adds bulk processing of the media library.
 - Open source: the WordPress plugin's source is on GitHub (${GITHUB_URL}), licensed GPLv2 or later.
 - Made by Christopher State (https://cstate.se). Contact: support@cstate.se
+
+${h.wordpress.title}:
+
+${enCopy.wpFeatures.map((f) => `- ${f}`).join('\n')}
+
+${h.chrome.title}:
+
+${enCopy.extFeatures.map((f) => `- ${f}`).join('\n')}
+
+Frequently asked questions:
+
+${enCopy.faq.map((i) => `**${i.q}**\n\n${i.a}`).join('\n\n')}
 
 ## Install
 
@@ -611,18 +650,6 @@ AltVision is an AI alt text generator available as a WordPress plugin and as a b
 - [Chrome extension](${CHROME_URL}): ${h.chrome.title}
 - [Firefox add-on](${FIREFOX_URL}): ${h.chrome.title}
 - [Source code (GitHub)](${GITHUB_URL}): the WordPress plugin is open source
-
-## ${h.wordpress.title}
-
-${enCopy.wpFeatures.map((f) => `- ${f}`).join('\n')}
-
-## ${h.chrome.title}
-
-${enCopy.extFeatures.map((f) => `- ${f}`).join('\n')}
-
-## FAQ
-
-${enCopy.faq.map((i) => `### ${i.q}\n\n${i.a}`).join('\n\n')}
 
 ## Guides
 

@@ -28,9 +28,11 @@ const isFirefox = typeof navigator !== 'undefined' && /firefox/i.test(navigator.
 
 export const BROWSER_STORES: BrowserStore[] = isFirefox ? [FIREFOX, CHROME] : [CHROME, FIREFOX];
 
-// Chrome Web Store and addons.mozilla.org both report utm_source/utm_medium/
-// utm_content in their listing stats, so tag every link from the site with
-// where on the page it was clicked. WordPress.org has no such report.
+// Tag every store link with where on the page it was clicked. The Chrome Web
+// Store dashboard (and Google Analytics) break traffic down by utm_source,
+// utm_medium and utm_campaign only, so for Chrome the placement also goes in
+// utm_campaign; addons.mozilla.org reports utm_content. WordPress.org has no
+// such report.
 // Structured data and llms.txt keep the clean URLs (scripts/prerender.js).
 export const storeLink = (url: string, placement: string) => {
   if (url === WORDPRESS_PLUGIN_URL) return url;
@@ -38,5 +40,6 @@ export const storeLink = (url: string, placement: string) => {
   u.searchParams.set('utm_source', 'altvision.se');
   u.searchParams.set('utm_medium', 'website');
   u.searchParams.set('utm_content', placement);
+  if (u.hostname === 'chromewebstore.google.com') u.searchParams.set('utm_campaign', placement);
   return u.toString();
 };
